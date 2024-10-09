@@ -10,17 +10,12 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   <html lang='en'>
-    <head>
-      <link rel="icon" href="/assets/logos/sblogo.png" type="image/x-icon" />
-      <link rel="apple-touch-icon" href="/assets/logos/sblogo.png" />
-    </head>
     <body>
-
-      {/*
+      
         <div className='main'>
           <div className='gradient' />
         </div>
-      */}
+      
         <main className='overflow-hidden'>
           <Nav/>
           {children}
