@@ -5,14 +5,14 @@ export const Hero = () => {
     <section
       className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/computer.jpg')",
+        backgroundImage: "url('/assets/photos/IEEEXTREME_COMPETITION.png')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'sb_office',
       }}
     >
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
-          <div className="orange_gradient caption uppercase">
+          <div className="blue_gradient caption uppercase">
             NON PROFIT ORGANISATION | TECH & SCIENCE
           </div>
           <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
