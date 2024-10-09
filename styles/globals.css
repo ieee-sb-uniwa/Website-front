@@ -79,7 +79,9 @@
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
-
+.purple_gradient{
+  @apply bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent;
+} 
 @layer base {
   html {
     @apply bg-s1;
