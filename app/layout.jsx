@@ -10,12 +10,14 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   <html lang='en'>
-    <body>
-      
+    <head>
+      <link rel="icon" href="/assets/logos/sblogo.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="/assets/logos/sblogo.png" type="image/x-icon" />
+    </head>
+    <body>      
         <div className='main'>
           <div className='gradient' />
         </div>
-      
         <main className='overflow-hidden'>
           <Nav/>
           {children}
