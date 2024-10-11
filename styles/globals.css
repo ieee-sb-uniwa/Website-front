@@ -269,7 +269,9 @@
   .hero-img_res {
     @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
   }
-
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
+  }
   /* END of Hero */
   /*START of Custom Button*/
   .inner-before {
