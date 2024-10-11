@@ -5,7 +5,7 @@ export const Hero = () => {
     <section
       className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
+        backgroundImage: "url('/assets/photos/computer.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
