@@ -1,5 +1,5 @@
 import Image from "next/image"; // Import Next.js Image component
-import { socials } from "../constants/socials.jsx"; // Import your socials data
+import { socials } from "../constants/socials.js"; // Import your socials data
 
 export const Footer = () => {
   return (
