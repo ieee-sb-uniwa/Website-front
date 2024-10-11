@@ -22,6 +22,23 @@ module.exports = {
           DEFAULT: "#000000",
           100: "#05091D",
         },
+        white: {
+          DEFAULT: "#ffffff",
+        },
+      },
+      animation: {
+        linear: 'backgroundLinear 3s linear infinite',
+        slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards;',
+      },
+      keyframes: {
+        backgroundLinear: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '200% 50%' },
+        },
+        backgroundSlide: {
+          '0%': { backgroundPosition: '0 0%' },
+          '100%': { backgroundPosition: '100% 50%' },
+        },
       },
       boxShadow: {
         100: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",

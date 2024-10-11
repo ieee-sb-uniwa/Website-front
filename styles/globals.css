@@ -70,6 +70,13 @@
     padding: 0;
   }
 }
+.text-border {
+  -webkit-text-stroke: 0.5px white;
+}
+.milky_way {
+  @apply bg-clip-text text-transparent bg-[url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] animate-slide;
+}
+
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
@@ -112,6 +119,10 @@
   /* START of Typography */
   .h-num {
     @apply font-inter text-[72px] font-bold leading-[84px];
+  }
+  
+  .title {
+    @apply text-[104px] font-black leading-[104px] tracking-[-0.04em];
   }
 
   .h1 {

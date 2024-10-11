@@ -5,17 +5,17 @@ export const Hero = () => {
     <section
       className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/IEEEXTREME_COMPETITION.png')",
+        backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
         backgroundSize: 'cover',
-        backgroundPosition: 'sb_office',
+        backgroundPosition: 'center',
       }}
     >
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
-          <div className="blue_gradient caption uppercase">
+          <div className="orange_gradient text-p4 caption uppercase">
             NON PROFIT ORGANISATION | TECH & SCIENCE
           </div>
-          <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
+          <h1 className="milky_way text-border mb-6 title uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-6xl max-md:leading-12 ">
             IEEE UNIWA
           </h1>
           <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-p4">
