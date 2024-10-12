@@ -9,13 +9,13 @@ export const Hero = () => {
         backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%)',
-        WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%)',
+        maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)',
+        WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)',
       }}
     >
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
-          <div className="orange_gradient text-p4 small-2 caption uppercase">
+          <div className="orange_gradient text-p4 small-1 uppercase">
             {t('caption')}
           </div>
           <h1 className="milky_way text-border mb-6 title uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-6xl max-md:leading-12 ">
