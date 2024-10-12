@@ -1,0 +1,14 @@
+{
+    "Hero": {
+      "caption": "NON PROFIT ORGANISATION | TECH & SCIENCE",
+      "p": "We are simply amazing people advancing technology with the support of IEEE"
+    },
+    "Nav": {
+        "contact": "CONTACT",
+        "about": "ABOUT US",
+        "news": "NEWS",
+        "teams": "OUR TEAMS",
+        "events": "EVENTS",
+        "join": "JOIN IEEE"
+    }
+  }

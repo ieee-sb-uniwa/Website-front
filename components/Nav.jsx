@@ -1,11 +1,12 @@
 "use client"; // Declare the component as a client-side component
-
+import {useTranslations} from 'next-intl';
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";  // Import Next.js Link component
 
 export const Nav = () => {
+  const t = useTranslations('Nav');
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,15 +45,15 @@ export const Nav = () => {
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
                   <Link href="/about" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    Σχετικα με εμας
+                    {t('about')}
                   </Link>
                   <div className="dot" />
                   <Link href="/news" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    νεα
+                    {t('news')}
                   </Link>
                   <div className="dot" />
                   <Link href="/teams" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    ομαδες
+                    {t('teams')}
                   </Link>
                 </li>
 
@@ -69,15 +70,15 @@ export const Nav = () => {
 
                 <li className="nav-li">
                   <Link href="/events" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    εκδηλωσεις
+                    {t('events')}
                   </Link>
                   <div className="dot" />
                   <Link href="/contact" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    επικοινωνια
+                    {t('contact')}
                   </Link>
                   <div className="dot" />
                   <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    join ieee
+                    {t('join')}
                   </Link>
                 </li>
               </ul>
