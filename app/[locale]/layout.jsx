@@ -10,7 +10,8 @@ export const metadata = {
   description: "Innovation and technology non-profit organization",
 };
 
-const RootLayout = async ({ children, params: { locale } }) => {
+const RootLayout = async ({ children, params }) => {
+  const { locale } = params;
   // Fetch messages for the current locale
   const messages = await getMessages(locale);
   return (
