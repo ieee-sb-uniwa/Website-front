@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import {Link} from '@/i18n/routing';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export const Nav = () => {
   const t = useTranslations('Nav');
@@ -80,7 +81,10 @@ export const Nav = () => {
                   <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('join')}
                   </Link>
+                  {/* Language Switcher */}
+                  <LanguageSwitcher />                
                 </li>
+
               </ul>
             </nav>
 
