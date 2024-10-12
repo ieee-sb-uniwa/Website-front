@@ -3,7 +3,7 @@ import {useTranslations} from 'next-intl';
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";  // Import Next.js Link component
+import {Link} from '@/i18n/routing';
 
 export const Nav = () => {
   const t = useTranslations('Nav');
