@@ -80,6 +80,9 @@
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
+.green_gradient {
+  @apply bg-gradient-to-r from-[#40E0D0] to-green-500 bg-clip-text text-transparent;
+}
 .blue_btn {
   @apply rounded-full border border-p2 bg-s1 py-1.5 px-5 text-white transition-all hover:bg-none hover:text-p2 text-center text-sm font-inter flex items-center justify-center;
 }
