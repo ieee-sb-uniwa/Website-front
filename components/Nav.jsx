@@ -5,12 +5,35 @@ import clsx from "clsx";
 import Image from "next/image";
 import {Link} from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
+import CustomDropdown from "./CustomDropdown";
 
 export const Nav = () => {
   const t = useTranslations('Nav');
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
+  // Menu items for Teams and Events
+  const menuItems = {
+    teams: [
+      {
+        title: t('departments'),
+        link: "/departments",
+      },
+      {
+        title: t('scientific_teams'),
+        link: "/science-teams",
+      },
+    ],
+    events: [
+      {
+        title: t('sb_events'),
+        link: "/sb-events",
+      },
+      {
+        title: t('third_party_events'),
+        link: "/third-party-events",
+      },
+    ]
+  }
   useEffect(() => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 32);
@@ -53,9 +76,7 @@ export const Nav = () => {
                     {t('news')}
                   </Link>
                   <div className="dot" />
-                  <Link href="/teams" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    {t('teams')}
-                  </Link>
+                  <CustomDropdown category={t('teams')} items={menuItems.teams} />
                 </li>
 
                 <li className="nav-logo">
@@ -70,9 +91,7 @@ export const Nav = () => {
                 </li>
 
                 <li className="nav-li">
-                  <Link href="/events" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-                    {t('events')}
-                  </Link>
+                  <CustomDropdown category={t('events')} items={menuItems.events} />
                   <div className="dot" />
                   <Link href="/contact" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('contact')}
