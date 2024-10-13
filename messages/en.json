@@ -11,6 +11,8 @@
         "events": "EVENTS",
         "join": "JOIN IEEE",
         "scientific_teams": "SCIENTIFIC TEAMS",
-        "departments": "DEPARTMENTS"
+        "departments": "DEPARTMENTS",
+        "third_party_events": "THIRD PARTY EVENTS",
+        "sb_events":"STUDENT BRANCH EVENTS"
     }
   }

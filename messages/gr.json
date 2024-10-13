@@ -7,10 +7,12 @@
           "contact": "ΕΠΙΚΟΙΝΩΝΙΑ",
           "about": "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ",
           "news": "ΝΕΑ",
-          "teams": "ΟΜΑΔΕΣ ΜΑΣ",
+          "teams": "ΟΜΑΔΕΣ",
           "events": "ΕΚΔΗΛΩΣΕΙΣ",
           "join": "JOIN IEEE",
           "scientific_teams": "ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΟΜΑΔΕΣ",
-          "departments": "ΤΜΗΜΑΤΑ"
+          "departments": "ΤΜΗΜΑΤΑ",
+          "third_party_events": "ΕΚΔΗΛΩΣΕΙΣ ΤΡΙΤΩΝ",
+          "sb_events":"ΕΚΔΗΛΩΣΕΙΣ"
     }
   }
