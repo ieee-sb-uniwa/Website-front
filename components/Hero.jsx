@@ -6,7 +6,7 @@ export const Hero = () => {
     <section
       className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/IEEE_SB_UNIWA_PIREAUS.jfif')",
+        backgroundImage: "url('/assets/photos/computer.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)',
