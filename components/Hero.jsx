@@ -6,7 +6,7 @@ export const Hero = () => {
     <section
       className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/computer.jpg')",
+        backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
@@ -23,6 +23,7 @@ export const Hero = () => {
           <h1 className="milky_way text-border mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-md:mb-4 max-md:h2 max-md:leading-12 ">
             IEEE UNIWA
           </h1>
+          <h6 className='text-shadow max-w-440 h6 max-lg:body-1 text-p6'>{t('subheading')}</h6>
           <p className="text-shadow max-w-440 mb-14 h6 max-lg:body-1 max-md:mb-10 text-p4">
             {t('p')} 💖
           </p>
