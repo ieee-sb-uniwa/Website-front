@@ -9,10 +9,12 @@ export const Hero = () => {
         backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)',
-        WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)',
+        maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
+        WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
       }}
     >
+      {/* Mask Overlay */}
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
           <div className="text-shadow text-p6 small-1 uppercase">
