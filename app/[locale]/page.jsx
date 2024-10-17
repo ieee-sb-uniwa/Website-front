@@ -1,4 +1,4 @@
-import Hero from "@components/Hero";
+import Hero from "@components/sections/Hero";
 import MapWrapper from "@components/MapWrapper";
 import { useTranslations } from 'next-intl';
 
