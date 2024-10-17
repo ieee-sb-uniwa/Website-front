@@ -1,19 +1,9 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
 
 export const Map = () => {
   const t = useTranslations('Map');
   return (
-    <section className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto ">
-      <div className="max-w-xl mx-auto mb-12 mt-12 text-center">
-          <h1 className="text-3xl font-bold sm:text-4xl green_gradient">
-            {t('map_heading')}
-          </h1>
-          <p className="mt-3 body-2 max-lg:body-3 text-p4">
-            {t('location_details')}
-          </p>
-      </div>
       <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.005468277853!2d23.6731513!3d37.977001699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc9c910c0ced%3A0xe927c6c38d782d6!2sIEEE%20SB%20UniWA!5e0!3m2!1sel!2sgr!4v1729064521742!5m2!1sel!2sgr"
           className="rounded-2xl mx-auto w-[80%] sm:w-[70%] lg:w-[80%] aspect-video max-w-[70rem]"
@@ -22,15 +12,9 @@ export const Map = () => {
           aria-label="Location of IEEE SB UniWA in Google Maps"
           referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <noscript>
-        <p className="text-center mt-4">
-          {t('map_unavailable')}
-        </p>
-      </noscript>
-    </section>
   );
 };
 
-export default dynamic(() => Promise.resolve(Map), { ssr: false });
+export default Map;
 
 

@@ -1,11 +1,15 @@
 import Hero from "@components/Hero";
-import Map from "@components/Map";
+import MapWrapper from "@components/MapWrapper";
+import { useTranslations } from 'next-intl';
 
-const Home = () => (
+const Home = () => {
+  const t = useTranslations('Map');
+  return (
   <section className='w-full flex-center flex-col'>
     <Hero/>
-    <Map/>
+    <MapWrapper/>
   </section>
 );
+};
 
 export default Home;
