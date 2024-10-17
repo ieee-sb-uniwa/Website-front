@@ -41,26 +41,30 @@ export const socials = [
 export const council = [
     {
         id: "0",
-        title: "Chair",
-        photo: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
-        name: "Σταύρος Αλεξίου",
+        role: "Chair",
+        photo: "/assets/photos/stavrosalexiou.jfif",
+        name: "Stavros Alexiou",
+        email: "Unknown"
       },
       {
         id: "1",
-        title: "Vice Chair",
-        photo: "../assets/photos/COUNCIL.png",
-        name: "Ανδρέας Κυρκιώτης",
+        role: "Vice Chair",
+        photo: "/assets/photos/Male-Face-PNG-Image-Transparent.png",
+        name: "Andreas Kirkiotis",
+        email: "eee20387123@uniwa.gr"
       },
       {
         id: "2",
-        title: "Secretary",
-        photo: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
-        name: "Βαγγέλης Μήτικας",
+        role: "Secretary",
+        photo: "/assets/photos/vaggelismitikas.jfif",
+        name: "Vaggelis Mitikas",
+        email: "eee19387165@uniwa.gr"
       },
       {
         id: "3",
-        title: "Treasurer",
-        photo: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png",
-        name: "Γιάννης Χριστόπουλος",
+        role: "Treasurer",
+        photo: "/assets/photos/Male-Face-PNG-Image-Transparent.png",
+        name: "Ioannis Christopoulos",
+        email: "eee20387291@uniwa.gr"
       },
 ];
