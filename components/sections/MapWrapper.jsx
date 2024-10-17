@@ -9,11 +9,11 @@ const MapWrapper = () => {
   const t = useTranslations('Map');
 
   return (
-    <section className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <section className="relative z-2 py-24 md:py-28 lg:py-40">
       <div className="max-w-xl mx-auto mb-12 mt-12 text-center">
-        <h1 className="text-3xl font-bold sm:text-4xl">
+        <h3 className='h3 max-md:h5 text-p4'>
           {t('map_heading')}
-        </h1>
+        </h3>
         <p className="mt-3 body-2 max-lg:body-3 text-p4">
           {t('location_details')}
         </p>
