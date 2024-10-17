@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import {Link} from '@/i18n/routing';
-import LanguageSwitcher from './LanguageSwitcher';
-import CustomDropdown from "./CustomDropdown";
+import LanguageSwitcher from '../ui/LanguageSwitcher';
+import CustomDropdown from "../ui/CustomDropdown";
 
 export const Nav = () => {
   const t = useTranslations('Nav');

@@ -1,5 +1,5 @@
-import Hero from "@components/Hero";
-import MapWrapper from "@components/MapWrapper";
+import Hero from "@components/sections/Hero";
+import MapWrapper from "@components/sections/MapWrapper";
 import { useTranslations } from 'next-intl';
 
 const Home = () => {
