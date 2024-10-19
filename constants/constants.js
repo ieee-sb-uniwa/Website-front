@@ -42,28 +42,28 @@ export const council = [
     {
         id: "0",
         role: "Chair",
-        photo: "/assets/photos/stavrosalexiou.jfif",
+        photo: "/assets/photos/stavrosalexiou-removebg.png",
         name: "Stavros Alexiou",
-        email: "Unknown"
+        email: "eee20387xxx@uniwa.gr"
       },
       {
         id: "1",
-        role: "Vice Chair",
-        photo: "/assets/photos/Male-Face-PNG-Image-Transparent.png",
-        name: "Andreas Kirkiotis",
+        role: "Vice-Chair",
+        photo: "/assets/photos/linus-torvalds.png",
+        name: "Andreas Kyrkiotis",
         email: "eee20387123@uniwa.gr"
       },
       {
         id: "2",
         role: "Secretary",
-        photo: "/assets/photos/vaggelismitikas.jfif",
-        name: "Vaggelis Mitikas",
+        photo: "/assets/photos/vaggelismitikas.png",
+        name: "Evangelos Mitikas",
         email: "eee19387165@uniwa.gr"
       },
       {
         id: "3",
         role: "Treasurer",
-        photo: "/assets/photos/Male-Face-PNG-Image-Transparent.png",
+        photo: "/assets/photos/linus-torvalds.png",
         name: "Ioannis Christopoulos",
         email: "eee20387291@uniwa.gr"
       },
