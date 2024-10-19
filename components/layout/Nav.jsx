@@ -100,13 +100,9 @@ export const Nav = () => {
                   <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('join')}
                   </Link>
-                  {/* Language Switcher */}
-                  <LanguageSwitcher />                
                 </li>
-
               </ul>
             </nav>
-
             <div className="lg:hidden block absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-290px] -translate-y-1/2 rotate-90">
               <Image
                 src="/assets/images/Circuit Primary.svg"
@@ -115,12 +111,15 @@ export const Nav = () => {
                 alt="outline"
                 className="relative z-2"
               />
-            </div>
+            </div> 
           </div>
         </div>
-
+        <div className="dot-invisible" />
+        <div className="flex items-center"> 
+          <LanguageSwitcher/>
+        </div>
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
+          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center ml-4"
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
           <Image
