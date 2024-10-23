@@ -76,7 +76,6 @@ const CustomDropdown = ({ category, items }) => {
               <Button
                 variant="text"
                 className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 flex items-center gap-3 "
-                onClick={toggleMenu}
               >
                 {category}{" "}
                 <ChevronDownIcon
@@ -87,7 +86,7 @@ const CustomDropdown = ({ category, items }) => {
                 />
               </Button>
             </MenuHandler>
-            <MenuList className="bg-s1 w-[16em] gap-3 lg:grid mt-5 rounded-lg">
+            <MenuList className="bg-s2 w-[16em] gap-3 lg:grid mt-5 rounded-lg">
               <ul className="col-span-4 flex w-full flex-col gap-2 mt-1 mb-1">
                 {items.map(({ title, link }) => (
                   <li key={title}>
