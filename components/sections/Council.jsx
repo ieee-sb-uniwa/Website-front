@@ -4,7 +4,9 @@ import CouncilMember from './CouncilMember.jsx';
 import {useTranslations} from 'next-intl';
 export const Council = () => {
   const t = useTranslations('Council');
-  const halfLength = Math.floor(council.length/2);
+  const memberKeys = ['0', '1', '2', '3']; 
+  {/* const halfLength = Math.floor(council.length/2); */}
+  const halfLength = Math.floor(memberKeys.length/2);
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
         <div className="container block lg:flex">
@@ -14,19 +16,34 @@ export const Council = () => {
             </div>
             <div className=' council_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block'> 
                 <div className=' flex-50'>
-                    {council.slice(0, halfLength).map((council) => (
+                   {/*{council.slice(halfLength).map((council) => (
                         <CouncilMember 
                             key={council.id} 
                             item={council} 
+                            */}
+                    {memberKeys.slice(0, halfLength).map((key) => (
+                        <CouncilMember
+                            key={key}
+                            item={{
+                                role: t(`members.${key}.role`),
+                                photo: t(`members.${key}.photo`),
+                                name: t(`members.${key}.name`),
+                                email: t(`members.${key}.email`),
+                            }}
                             containerClassName="last:after-hidden last:after:max-md:block"
                         />
                     ))}
                 </div>
                 <div className='flex-50'>
-                    {council.slice(halfLength).map((council) => (
-                        <CouncilMember 
-                            key={council.id} 
-                            item={council} 
+                    {memberKeys.slice(halfLength).map((key) => (
+                        <CouncilMember
+                            key={key}
+                            item={{
+                                role: t(`members.${key}.role`),
+                                photo: t(`members.${key}.photo`),
+                                name: t(`members.${key}.name`),
+                                email: t(`members.${key}.email`),
+                            }}
                             containerClassName="last:after-hidden after:right-auto after:left-0 after:max-md:-left-4 md:px-12"
                         />
                     ))}
