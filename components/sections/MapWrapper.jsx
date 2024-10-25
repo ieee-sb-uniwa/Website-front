@@ -11,10 +11,10 @@ const MapWrapper = () => {
   return (
     <section className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
       <div className="max-w-xl mx-auto mb-12 mt-12 text-center">
-        <h1 className="text-3xl font-bold sm:text-4xl green_gradient">
+        <h1 className="text-3xl font-bold sm:text-4xl text-p4">
           {t('map_heading')}
         </h1>
-        <p className="mt-3 body-2 max-lg:body-3 text-p4">
+        <p className="mt-3 body-2 max-lg:body-3 text-p5">
           {t('location_details')}
         </p>
       </div>
@@ -23,8 +23,8 @@ const MapWrapper = () => {
 
       {/* Fallback content when JavaScript is disabled */}
       <noscript>
-        <div className="text-center body-2 max-lg:body-3 text-red-500">
-          <p>{t('map_unavailable')}</p>
+        <div className="max-w-xl mx-auto mb-12 mt-12 text-center">
+          <p className='text-red-500 mt-3 body-2 max-lg:body-3 text-p5'>{t('map_unavailable')}</p>
         </div>
       </noscript>
     </section>
