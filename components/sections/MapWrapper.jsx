@@ -24,7 +24,7 @@ const MapWrapper = () => {
       {/* Fallback content when JavaScript is disabled */}
       <noscript>
         <div className="max-w-xl mx-auto mb-12 mt-12 text-center">
-          <p className='text-red-500 mt-3 body-2 max-lg:body-3 text-p5'>{t('map_unavailable')}</p>
+          <p className='text-red-500 mt-3 body-2 max-lg:body-3'>{t('map_unavailable')}</p>
         </div>
       </noscript>
     </section>
