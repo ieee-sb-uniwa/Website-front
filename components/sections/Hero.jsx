@@ -4,9 +4,9 @@ export const Hero = () => {
   const t = useTranslations('Hero');
   return (
     <section
-      className="relative pt-80 pb-60 max-lg:pt-64 max-lg:pb-52 max-md:pt-52 max-md:pb-48"
+      className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32"
       style={{
-        backgroundImage: "url('/assets/photos/IEEEXTREME_2023.jpg')",
+        backgroundImage: "url('/assets/photos/ieeextreme-17.0.jfif')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%)',
