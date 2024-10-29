@@ -1,6 +1,7 @@
 
-export const third_party_events = [
+export const news_gr = [
     {
+        id: 0,
         date: "",
         title: "Παράταση δηλώσεων για τον IEEEXtreme18.0!",
         images: [],
@@ -12,6 +13,27 @@ export const third_party_events = [
             },
             {
                 title: "Φόρμα participation",
+                url: "https://forms.gle/81k7X5ZoGY73ZTsSA"
+            }
+        ]
+    }
+]
+
+
+export const news_en = [
+    {
+        id: 0,
+        date: "",
+        title: "Extension for IEEEXtreme18.0 Registration!",
+        images: [],
+        description: "An extension has been granted until next Monday, 10/21. If you are interested in participating, please complete your team’s registration on the IEEE platform and then fill out our participation form!",
+        links: [
+            {
+                title: "IEEEXtreme Registration Page",
+                url: "https://xtreme.vtools.ieee.org/"
+            },
+            {
+                title: "Participation Form",
                 url: "https://forms.gle/81k7X5ZoGY73ZTsSA"
             }
         ]
