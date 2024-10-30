@@ -97,7 +97,7 @@ export const Nav = () => {
                     {t('contact')}
                   </Link>
                   <div className="dot" />
-                  <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                  <Link href="/join" className="base-bold text-p1 uppercase transition-colors duration-500 cursor-pointer hover:text-p4 max-lg:my-4 max-lg:h5">
                     {t('join')}
                   </Link>
                 </li>
@@ -115,7 +115,7 @@ export const Nav = () => {
           </div>
         </div>
         <div className="dot-invisible" />
-        <div className="flex items-center"> 
+        <div className="flex items-center ml-4"> 
           <LanguageSwitcher/>
         </div>
         <button
