@@ -30,6 +30,7 @@ module.exports = {
 		animation: {
 		  linear: 'backgroundLinear 3s linear infinite',
 		  slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards;',
+		  rotate: "rotate 10s linear infinite both",
 		},
 		keyframes: {
 		  backgroundLinear: {
@@ -39,6 +40,10 @@ module.exports = {
 		  backgroundSlide: {
 			'0%': { backgroundPosition: '0 0%' },
 			'100%': { backgroundPosition: '100% 50%' },
+		  },
+		  rotate: {
+				"0%": { transform: "rotate(0deg) scale(10)" },
+				"100%": { transform: "rotate(-360deg) scale(10)" },
 		  },
 		},
 		boxShadow: {
