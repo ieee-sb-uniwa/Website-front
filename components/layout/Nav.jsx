@@ -6,6 +6,7 @@ import Image from "next/image";
 import {Link} from '@/i18n/routing';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import CustomDropdown from "../ui/CustomDropdown";
+import MovingBorder from "../ui/MovingBorder";
 
 export const Nav = () => {
   const t = useTranslations('Nav');
@@ -97,9 +98,16 @@ export const Nav = () => {
                     {t('contact')}
                   </Link>
                   <div className="dot" />
+                  <MovingBorder bgColor="s3">
+                    <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                      {t('join')}
+                    </Link>
+                  </MovingBorder>
+                  {/*
                   <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 join-button">
                     {t('join')}
                   </Link>
+                  */}
                 </li>
               </ul>
             </nav>
@@ -114,12 +122,11 @@ export const Nav = () => {
             </div> 
           </div>
         </div>
-        <div className="dot-invisible" />
-        <div className="flex items-center ml-4"> 
-          <LanguageSwitcher/>
+        <div className="flex items-center ml-5"> 
+            <LanguageSwitcher/>
         </div>
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center ml-4"
+          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center ml-5"
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
           <Image
