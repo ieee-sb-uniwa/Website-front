@@ -1,5 +1,5 @@
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import { motion } from 'framer-motion'; 
 import Image from 'next/image'; 
@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function LanguageSwitcher() {
   const router = useRouter();
   const locale = useLocale(); // Get the current locale
+  const pathname = usePathname();  // Get the current pathname
   const [isPending, startTransition] = useTransition();
   const [isSwitching, setIsSwitching] = useState(false); 
 
@@ -17,10 +18,13 @@ export default function LanguageSwitcher() {
     setIsSwitching(true);
     setTimeout(() => {
       startTransition(() => {
-        router.replace(`/${nextLocale}`);  
+        // Remove the current locale from the pathname
+        const currentPage = pathname.replace(`/${locale}`, '');
+        // Construct the new URL with the next locale
+        router.replace(`/${nextLocale}${currentPage}`);
       });
       setIsSwitching(false);  
-    }, 500);  // Matching the duration of the animation
+    }, 100);  // Matching the duration of the animation
   };
 
   return (
