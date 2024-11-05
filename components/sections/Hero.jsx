@@ -1,5 +1,8 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
+import Button from '../ui/Button.jsx';
+import {Link} from '@/i18n/routing';
+
 export const Hero = () => {
   const t = useTranslations('Hero');
   return (
@@ -27,6 +30,9 @@ export const Hero = () => {
           <p className="text-shadow max-w-440 mb-14 h6 max-lg:body-1 max-md:mb-10 text-p4">
             {t('p')} 💖
           </p>
+          <Link href="/about" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+            <Button icon="/assets/images/book.png">{t('learn_button')}</Button>
+          </Link>
         </div>
       </div>
     </section>

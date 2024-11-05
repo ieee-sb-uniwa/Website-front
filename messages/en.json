@@ -2,7 +2,8 @@
     "Hero": {
       "caption": "IEEE STUDENT BRANCH | TECH & SCIENCE",
       "subheading": "WHERE HARD WORK MEETS SUCCESS",
-      "p": "We are simply amazing people advancing technology with the support of IEEE"
+      "p": "We are simply amazing people advancing technology with the support of IEEE",
+      "learn_button": "LEARN MORE"
     },
     "Nav": {
         "contact": "CONTACT",
