@@ -8,7 +8,7 @@ const MovingBorder = ({ children, bgColor = "bg-slate-900" }) => {
       <div
         className="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#35edcc_20deg,transparent_120deg)]"
       ></div>
-      <div className={`relative z-20 flex items-center justify-center px-1.5 py-1.5 rounded-full ${bgColor} min-h-[40px]`}>
+      <div className={`relative z-20 flex items-center justify-center px-2 py-1.5 max-lg:py-0 rounded-full ${bgColor} min-h-[40px]`}>
         {children}
       </div>
     </div>
