@@ -31,7 +31,7 @@ export const Hero = () => {
             {t('p')} 💖
           </p>
           <Link href="/about" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-            <Button icon="/assets/images/book.png">{t('learn_button')}</Button>
+            <Button icon="/assets/images/book.png" iconWidth={26} iconHeight={26}>{t('learn_button')}</Button>
           </Link>
         </div>
       </div>

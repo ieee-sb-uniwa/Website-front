@@ -2,15 +2,15 @@ import React from 'react'
 import clsx from 'clsx';
 import Image from 'next/image';
 
-const Button = ({icon, children, href, containerClassName, onClick}) => {
+const Button = ({icon, iconWidth, iconHeight, children, href, containerClassName, onClick}) => {
   const Inner = () => (
     <>
         <span className='relative flex items-center min-h-[60px] px-4 g4 rounded-2xl inner-before group-hover:before:opacity-100 overflow-hidden'>
             {icon && (
                 <Image
                     src={icon}
-                    width={26}
-                    height={26}
+                    width={iconWidth}
+                    height={iconHeight}
                     alt="circle"
                     className="mr-5 object-contain z-10"
                 />
