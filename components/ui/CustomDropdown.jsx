@@ -70,7 +70,7 @@ const CustomDropdown = ({ category, items }) => {
         </div>
       ) : (
         // Desktop Dropdown
-        <div className="sm:max-lg:hidden">
+        <div className="max-lg:hidden">
           <Menu open={openMenu} handler={setOpenMenu} allowHover>
             <MenuHandler>
               <Button
