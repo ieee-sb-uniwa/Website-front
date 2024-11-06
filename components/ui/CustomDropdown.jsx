@@ -58,7 +58,7 @@ const CustomDropdown = ({ category, items }) => {
                   <li key={title}>
                     <Link
                       href={link}
-                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 ml-6 max-lg:h5"
                     >
                       {title}
                     </Link>
