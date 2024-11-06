@@ -1,4 +1,8 @@
-
+export const heroImages = [
+  "/assets/photos/IEEEXTREME_18.0.jpg",
+  "/assets/photos/IEEEXTREME-17.0.jpg",
+  "/assets/photos/Git-Workshop.jpg",
+];
 export const socials = [
     {
       id: "0",
