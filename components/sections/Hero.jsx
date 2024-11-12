@@ -13,7 +13,7 @@ export const Hero = () => {
       {/* HeroSlider Background */}
       <ButtonsSlider/>
       {/* Mask Overlay */}
-      <div className="absolute inset-0 bg-black/25 z-0"></div>
+      <div className="absolute inset-0 bg-black/25 z-2"></div>
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
           <div className="text-shadow text-p4 small-1 uppercase">
