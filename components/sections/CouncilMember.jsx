@@ -18,7 +18,7 @@ const CouncilMember = ({item, containerClassName}) => {
                         opacity:1,
                         transition: {delay: 0.4, duration: 0.4, ease: "easeInOut" },
                     }}
-                    className="w-[160px] xl:w-[160px] h-[160px] xl:h-[160px]"
+                    className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px]"
                 >
                     <Image
                         src={item.photo}
@@ -29,7 +29,7 @@ const CouncilMember = ({item, containerClassName}) => {
                     />
                     {/*circle*/}
                     <motion.svg 
-                        className="absolute -top-6 -left-5 w-[310px] xl:w-[310px] h-[310px] xl:h-[310px] max-md:hidden"
+                        className="absolute -top-1.5 -left-0 xl:-top-6 xl:-left-5 w-[233px] xl:w-[310px] h-[233px] xl:h-[310px] max-md:hidden"
                         fill="transparent"
                         viewBox="0 0 506 506"
                         xmlns="http://www.w3.org/2000/svg"
