@@ -60,3 +60,21 @@ export const council_en = [
         photo: "/assets/photos/ioannis-christopoulos.png"
     }
 ]
+
+
+export const counselor_gr = {
+        id: 0,
+        role: "Counselor",
+        name: "Χαράλαμπος Πατρικάκης",
+        email: "bpatr@uniwa.gr",
+        photo: "/assets/photos/stavros-alexiou.png"
+}
+
+
+export const counselor_en = {
+        id: 0,
+        role: "Counselor",
+        name: "Charalampos Patrikakis",
+        email: "bpatr@uniwa.gr",
+        photo: "/assets/photos/stavros-alexiou.png"
+}
