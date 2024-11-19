@@ -18,9 +18,14 @@
         "sb_events":"OUR EVENTS"
     },
     "Map":{
-      "map_heading": "Where to find us?",
-      "location_details": "The Student Branch has its own office within the University of West Attica. You will find us at the Archaios Elaionas Campus (P2), building Z, office ZB006. ",
-      "office_hours": "Office hours: Tuesday 12:00 - 18:00 Thursday 12:00 - 18:00 Other days/times by prior arrangement ",
+      "map_heading": "Where to find us",
+      "location_details": "The Student Branch has its own office within the University of West Attica!",
+      "office_location": "Archaios Elaionas Campus (Campus 2), building Z, office ZB006.",
       "map_unavailable": "Map cannot be displayed because JavaScript is disabled. Please enable it or use the following address: IEEE SB UniWA, Thivon 250, Aigaleo 122 41."
+    },
+    "Sponsors":{
+      "heading":"Sponsors & Partners",
+      "caption":"Grateful for your support",
+      "paragraph":"Discover the organizations that make this journey possible by exploring the links below"
     }
   }
