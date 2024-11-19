@@ -8,11 +8,16 @@ import 'hero-slider/dist/index.css';
 export default function ButtonsSlider() {
   return (
     <HeroSlider
-        height={"100vh"}
         autoplay
-        controller={{
+        orientation="horizontal"
+        settings={{
           slidingDuration: 500,
           slidingDelay: 100,
+          shouldAutoplay: true,
+          autoplayDuration: 5000,
+          height: '90vmin',
+        }}
+        controller={{
           onSliding: (nextSlide) =>
             console.debug("onSliding(nextSlide): ", nextSlide),
           onBeforeSliding: (previousSlide, nextSlide) =>
