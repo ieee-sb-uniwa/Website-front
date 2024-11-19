@@ -13,14 +13,15 @@ export const Hero = () => {
       {/* HeroSlider Background */}
       <ButtonsSlider/>
       {/* Mask Overlay */}
-      <div className="absolute inset-0 bg-black/25 z-2"></div>
+      <div className="absolute inset-0 bg-black/35 z-2"></div>
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">
           <div className="text-shadow text-p4 small-1 uppercase">
             {t('caption')}
           </div>
-          <h1 className="milky_way text-border mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-md:mb-4 max-md:h2 max-md:leading-12 ">
-            IEEE UNIWA
+          <h1 className="milky_way text-border mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-md:mb-4 max-md:h2 max-md:leading-12"
+            style={{ letterSpacing: '3px' }}>
+            IEEE SB UNIWA
           </h1>
           <h6 className='text-shadow max-w-440 h6 max-lg:body-1 text-p6'>{t('subheading')}</h6>
           <p className="text-shadow max-w-440 mb-14 h6 max-lg:body-1 max-md:mb-10 text-p4">
