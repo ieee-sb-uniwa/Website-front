@@ -1,8 +1,8 @@
 export const sponsors= [
-  { title: "HP", img: "/assets/logos/sponsors/HP.png", url: "https://www.hp.com" },
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MathysisTechnologies.png", url: "https://www.mathisys-hellas.com" },
+  {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.jpg", url: "https://www.kitheronfarms.gr"},
+  { title: "HP", img: "/assets/logos/sponsors/HP.png", url: "https://www.hp.com" },
   { title: "Red Bull", img: "/assets/logos/sponsors/red-bull.png", url: "https://www.redbull.com" },
-  {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.jpg", url: "https://www.kitheronfarms.gr"}
 ];
 
 export const heroImages = [
