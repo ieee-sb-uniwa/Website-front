@@ -1,7 +1,15 @@
+export const sponsors= [
+  { title: "HP", img: "/assets/logos/sponsors/HP.png", url: "https://www.hp.com" },
+  { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MathysisTechnologies.png", url: "https://www.mathisys-hellas.com" },
+  { title: "Red Bull", img: "/assets/logos/sponsors/red-bull.png", url: "https://www.redbull.com" },
+  {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.jpg", url: "https://www.kitheronfarms.gr"}
+];
+
 export const heroImages = [
   "/assets/photos/IEEEXTREME_18.0.jpg",
-  "/assets/photos/IEEEXTREME-17.0.jpg",
-  "/assets/photos/Git-Workshop.jpg",
+  "/assets/photos/incubation_centre.jpg",
+  //"/assets/photos/Git-Workshop.jpg",
+  "/assets/photos/IEEEXTREME-17.0.jpg"
 ];
 export const socials = [
     {
