@@ -11,7 +11,7 @@ const Button = ({icon, iconWidth, iconHeight, children, href, containerClassName
                     src={icon}
                     width={iconWidth}
                     height={iconHeight}
-                    alt="circle"
+                    alt="button-icon"
                     className="mr-5 object-contain z-10"
                 />
             )}
