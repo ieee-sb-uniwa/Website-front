@@ -2,7 +2,7 @@ import React from 'react'
 import { sponsors } from "@/constants/constants.js";
 import { FocusCards } from "@/components/ui/FocusCards";
 import { useTranslations } from 'next-intl';
-import SponsorCards from '@components/ui/SponsorCards';
+
 export const Sponsors = () => {
   const t = useTranslations('Sponsors');
   return (
