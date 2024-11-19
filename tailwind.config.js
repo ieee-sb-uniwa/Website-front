@@ -28,8 +28,8 @@ module.exports = {
 		  p6: "#35edcc",
 		},
 		animation: {
-		  linear: 'backgroundLinear 3s linear infinite',
-		  slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards;',
+		  linear: 'backgroundLinear 120s linear infinite',
+		  slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards',
 		  rotate: "rotate 10s linear infinite both",
 		},
 		keyframes: {

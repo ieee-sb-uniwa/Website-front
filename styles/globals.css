@@ -74,14 +74,14 @@
   -webkit-text-stroke: 1px white;
 }
 .milky_way {
-  @apply bg-clip-text text-transparent bg-[url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] animate-slide;
+  @apply bg-clip-text text-transparent bg-[url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] animate-linear;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent animate-linear ;
 }
 .green_gradient {
-  @apply bg-gradient-to-r from-[#40E0D0] to-green-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#40E0D0] to-green-500 bg-clip-text text-transparent bg-[length:200%_auto] ;
 }
 
 .blue_btn {
