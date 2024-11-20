@@ -16,10 +16,6 @@ const RootLayout = async ({ children, params }) => {
   const messages = await getMessages(locale);
   return (
     <html lang={locale}>
-      <head>
-        <link rel="icon" href="/assets/logos/sblogo.svg" type="image/x-icon" />
-        <link rel="shortcut icon" href="/assets/logos/sblogo.svg" type="image/x-icon" />
-      </head>
       <body>    
         <NextIntlClientProvider messages={messages}>  
           {/*
