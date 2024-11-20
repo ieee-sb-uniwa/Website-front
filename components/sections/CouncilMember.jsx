@@ -3,8 +3,10 @@ import React from 'react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { delay, motion } from 'framer-motion'; 
+import { socials } from "../../constants/constants.js"; 
 
 const CouncilMember = ({item, containerClassName}) => {
+  const emailSocial = socials.find(social => social.title === "Email");
   return (
     <div className={clsx(
         "relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md",
@@ -38,7 +40,7 @@ const CouncilMember = ({item, containerClassName}) => {
                             cx="253"
                             cy="253" 
                             r="150" 
-                            stroke="#2EF2FF" 
+                            stroke="#2EF2FF"
                             strokeWidth="3" 
                             strokeLinecap="round" 
                             strokeLinejoin="round"
@@ -59,9 +61,18 @@ const CouncilMember = ({item, containerClassName}) => {
             {/* Member Details */}
             <div>
                 <h4 className="body-2 mb-1 text-p1">{item.name}</h4>
-                <p className="small-1 uppercase text-s3 mb-2">{item.role}</p>
-                <a href={`mailto:${item.email}`} className='small-1 text-p4 hover:text-p6'>{item.email}</a>
-
+                <p className="my-3 small-1 uppercase text-p3">{item.role}</p>
+                {emailSocial && ( 
+                  <a href={`mailto:${item.email}`} className="social-icon" target="_blank" rel="noopener noreferrer"> 
+                    <Image
+                      src={emailSocial.icon} // Use the icon from the emailSocial object
+                      alt={emailSocial.title} // Use the title from the emailSocial object
+                      width={30} 
+                      height={30} 
+                      className="size-2/3 z-2 object-contain" 
+                    />
+                  </a>
+                )}
             </div>
         </div>
     </div>
