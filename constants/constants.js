@@ -63,7 +63,7 @@ export const council = [
       {
         id: "3",
         role: "Treasurer",
-        photo: "/assets/photos/linus-torvalds.png",
+        photo: "/assets/photos/ioannis-christopoulos.jfif",
         name: "Ioannis Christopoulos",
         email: "eee20387291@uniwa.gr"
       },
