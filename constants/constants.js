@@ -42,29 +42,73 @@ export const council = [
     {
         id: "0",
         role: "Chair",
-        photo: "/assets/photos/stavrosalexiou-removebg.png",
+        photo: "/assets/photos/stavrosalexiou.png",
         name: "Stavros Alexiou",
-        email: "eee20387xxx@uniwa.gr"
+        socials: [
+          {
+              id: "0",
+              type: "email",
+              url: "eeexxxxxx@uniwa.gr"
+          },
+          {
+              id: "1",
+              type: "linkedin",
+              url: "https://www.linkedin.com/in/stavros-alexiou-468767252/" 
+          }
+        ]
       },
       {
         id: "1",
         role: "Vice-Chair",
-        photo: "/assets/photos/linus-torvalds.png",
+        photo: "/assets/photos/Andreas_Kirkiotis.jpg",
         name: "Andreas Kyrkiotis",
-        email: "eee20387123@uniwa.gr"
+        socials: [
+          {
+              id: "0",
+              type: "email",
+              url: "eeexxxxxx@uniwa.gr"
+          },
+          {
+              id: "1",
+              type: "linkedin",
+              url: "https://www.linkedin.com/in/andreas-kyrkiotis-8ba048290/" 
+          }
+        ]
       },
       {
         id: "2",
         role: "Secretary",
-        photo: "/assets/photos/vaggelismitikas.png",
+        photo: "/assets/photos/Evangelos_Mitikas.jpg",
         name: "Evangelos Mitikas",
-        email: "eee19387165@uniwa.gr"
+        socials: [
+          {
+              id: "0",
+              type: "email",
+              url: "mailto:eeexxxxxx@uniwa.gr"
+          },
+          {
+              id: "1",
+              type: "linkedin",
+              url: "https://www.linkedin.com/in/evangelos-mitikas/" 
+          }
+        ]
       },
       {
         id: "3",
         role: "Treasurer",
         photo: "/assets/photos/ioannis-christopoulos.jfif",
         name: "Ioannis Christopoulos",
-        email: "eee20387291@uniwa.gr"
+        socials: [
+          {
+              id: "0",
+              type: "email",
+              url: "eee20387291@uniwa.gr"
+          },
+          {
+              id: "1",
+              type: "linkedin",
+              url: "https://www.linkedin.com/in/ioannis-christopoulos-3abab6227/" 
+          }
+        ]
       },
 ];

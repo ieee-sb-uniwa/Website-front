@@ -6,7 +6,7 @@ import { delay, motion } from 'framer-motion';
 import { socials } from "../../constants/constants.js"; 
 
 const CouncilMember = ({item, containerClassName}) => {
-  const emailSocial = socials.find(social => social.title === "Email");
+  const getSocialIcon = (type) => socials.find((social) => social.title.toLowerCase() === type)?.icon;
   return (
     <div className={clsx(
         "relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md",
@@ -62,17 +62,26 @@ const CouncilMember = ({item, containerClassName}) => {
             <div>
                 <h4 className="body-2 mb-1 text-p1">{item.name}</h4>
                 <p className="my-3 small-1 uppercase text-p3">{item.role}</p>
-                {emailSocial && ( 
-                  <a href={`mailto:${item.email}`} className="social-icon" target="_blank" rel="noopener noreferrer"> 
-                    <Image
-                      src={emailSocial.icon} // Use the icon from the emailSocial object
-                      alt={emailSocial.title} // Use the title from the emailSocial object
-                      width={30} 
-                      height={30} 
-                      className="size-2/3 z-2 object-contain" 
-                    />
-                  </a>
-                )}
+                <ul className="flex flex-1 max-md:mt-10 gap-3">
+                {item.socials?.map((social) => (
+                    <li key={social.id}>
+                    <a
+                        href={social.type === "email" ? `mailto:${social.url}` : social.url} // Dynamically set href
+                        className="social-icon"
+                        target={social.type !== "email" ? "_blank" : undefined} // Open in new tab for non-email links
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                        src={getSocialIcon(social.type)} // Get icon dynamically
+                        alt={social.type}
+                        width={30} // Set appropriate width
+                        height={30} // Set appropriate height
+                        className="size-2/3 z-2 object-contain" // Maintain your existing class
+                        />
+                    </a>
+                    </li>
+                ))}
+                </ul>
             </div>
         </div>
     </div>
