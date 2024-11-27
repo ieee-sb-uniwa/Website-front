@@ -1,10 +1,7 @@
 export const sponsors= [
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MathysisTechnologies.png", url: "https://www.mathisys-hellas.com" },
   {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.webp", url: "https://www.kitheronfarms.gr"},
-  { title: "HP", img: "/assets/logos/sponsors/pizza-fan.png", url: "https://www.pizzafan.gr/el/" },
-  { title: "Red Bull", img: "/assets/logos/sponsors/red-bull.png", url: "https://www.redbull.com" },
-  { title: "AMD", img: "/assets/logos/sponsors/AMD.png", url: "https://www.AMD.com" },
-  { title: "HP", img: "/assets/logos/sponsors/HP.png", url: "https://www.HP.com" }
+  { title: "CoNSeRT research laboratory", img: "/assets/logos/sponsors/consert.png", url: "https://consert.eee.uniwa.gr/" },
 ];
 
 export const heroImages = [
