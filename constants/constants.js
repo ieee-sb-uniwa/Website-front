@@ -2,6 +2,7 @@ export const sponsors= [
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MathysisTechnologies.png", url: "https://www.mathisys-hellas.com" },
   {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.webp", url: "https://www.kitheronfarms.gr"},
   { title: "CoNSeRT research laboratory", img: "/assets/logos/sponsors/consert.png", url: "https://consert.eee.uniwa.gr/" },
+  { title: "Red Bull", img: "https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg", url: "https://www.redbull.com/gr-el" },
 ];
 
 export const heroImages = [
