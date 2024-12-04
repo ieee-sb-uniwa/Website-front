@@ -3,7 +3,7 @@ import {useTranslations} from 'next-intl';
 import Button from '../ui/Button.jsx';
 import {Link} from '@/i18n/routing';
 import ButtonsSlider from '@components/ui/ButtonsSlider.jsx';
-
+import { GiWhiteBook } from "react-icons/gi";
 
 export const Hero = () => {
   const t = useTranslations('Hero');
@@ -29,7 +29,7 @@ export const Hero = () => {
             {t('p')} 💖
           </p>
           <Link href="/about" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-            <Button icon="/assets/icons/books.svg" iconHeight={26} iconWidth={26}>{t('learn_button')}</Button>
+            <Button icon={<GiWhiteBook size= {26} color="white"/>}>{t('learn_button')}</Button>
           </Link>
         </div>
       </div>
