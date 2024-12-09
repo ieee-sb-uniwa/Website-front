@@ -1,8 +1,8 @@
 export const sponsors= [
-  { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MathysisTechnologies.png", url: "https://www.mathisys-hellas.com" },
-  {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/agroktimata.webp", url: "https://www.kitheronfarms.gr"},
-  { title: "CoNSeRT research laboratory", img: "/assets/logos/sponsors/consert.png", url: "https://consert.eee.uniwa.gr/" },
-  { title: "Red Bull", img: "https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg", url: "https://www.redbull.com/gr-el" },
+  { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358},
+  {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130},
+  { title: "CoNSeRT research laboratory", img: "/assets/logos/sponsors/consert.png", url: "https://consert.eee.uniwa.gr/", imgWidth:150, imgHeight:93 },
+  { title: "Red Bull", img: "/assets/logos/sponsors/redbull.svg", url: "https://www.redbull.com/gr-el",imgWidth:225, imgHeight:36 }
 ];
 
 export const heroImages = [
