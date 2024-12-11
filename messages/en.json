@@ -27,5 +27,11 @@
       "heading":"Sponsors & Partners",
       "caption":"Grateful for your support",
       "paragraph":"Discover the organizations that make this journey possible by exploring the links below"
+    },
+    "JoinPage":{
+      "h3" : "Flexible Membership Options: IEEE or SB",
+      "option1" : "Volunteer in our branch",
+      "option2" : "Join IEEE Organisation"
+      
     }
   }
