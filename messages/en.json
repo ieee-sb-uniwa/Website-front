@@ -33,5 +33,9 @@
       "option1" : "Volunteer in our branch",
       "option2" : "Join IEEE Organisation",
       "sb_intro" : "A member of our branch can be involved either in one of our scientific groups or in one of our departments. Follow the steps below to get started!"
+    },
+    "Council":{
+      "heading": "The Executive Commitee",
+      "caption": "The driving force"
     }
   }
