@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { delay, motion } from 'framer-motion'; 
 import { socials } from "../../constants/constants.js"; 
 
-const CouncilMember = ({item, containerClassName}) => {
+const TeamMember = ({item, containerClassName}) => {
   const getSocialIcon = (type) => socials.find((social) => social.title.toLowerCase() === type)?.icon;
   return (
     <div className={clsx(
@@ -88,4 +88,4 @@ const CouncilMember = ({item, containerClassName}) => {
   )
 }
 
-export default CouncilMember
+export default TeamMember

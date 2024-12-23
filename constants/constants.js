@@ -42,7 +42,7 @@ export const council = [
     {
         id: "0",
         role: "Chair",
-        photo: "/assets/photos/stavrosalexiou.png",
+        photo: "/assets/photos/stavros-alexiou.png",
         name: "Stavros Alexiou",
         socials: [
           {
@@ -60,7 +60,7 @@ export const council = [
       {
         id: "1",
         role: "Vice-Chair",
-        photo: "/assets/photos/Andreas_Kirkiotis.jpg",
+        photo: "/assets/photos/andreas-kyrkiotis.png",
         name: "Andreas Kyrkiotis",
         socials: [
           {
@@ -78,7 +78,7 @@ export const council = [
       {
         id: "2",
         role: "Secretary",
-        photo: "/assets/photos/Evangelos_Mitikas.jpg",
+        photo: "/assets/photos/evangelos-mitikas.png",
         name: "Evangelos Mitikas",
         socials: [
           {
@@ -96,7 +96,7 @@ export const council = [
       {
         id: "3",
         role: "Treasurer",
-        photo: "/assets/photos/ioannis-christopoulos.jfif",
+        photo: "/assets/photos/ioannis-christopoulos.png",
         name: "Ioannis Christopoulos",
         socials: [
           {

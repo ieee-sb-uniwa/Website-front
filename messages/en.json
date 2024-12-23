@@ -23,33 +23,7 @@
       "map_unavailable": "Map cannot be displayed because JavaScript is disabled. Please enable it or use the following address: IEEE SB UniWA, Thivon 250, Aigaleo 122 41."
     },
     "Council":{
-      "council_heading": "The Executive Commitee",
-      "council_caption": "The driving force",
-      "members": {
-        "0": {
-          "role": "Chair",
-          "photo": "/assets/photos/stavrosalexiou-removebg.png",
-          "name": "Stavros Alexiou",
-          "email": "eee20387xxx@uniwa.gr"
-        },
-        "1": {
-          "role": "Vice-Chair",
-          "photo": "/assets/photos/linus-torvalds.png",
-          "name": "Andreas Kyrkiotis",
-          "email": "eee20387123@uniwa.gr"
-        },
-        "2": {
-          "role": "Secretary",
-          "photo": "/assets/photos/vaggelismitikas.png",
-          "name": "Evangelos Mitikas",
-          "email": "eee19387165@uniwa.gr"
-        },
-        "3": {
-          "role": "Treasurer",
-          "photo": "/assets/photos/linus-torvalds.png",
-          "name": "Ioannis Christopoulos",
-          "email": "eee20387291@uniwa.gr"
-        }
-      }
+      "heading": "The Executive Commitee",
+      "caption": "The driving force"
     }
   }

@@ -23,33 +23,7 @@
       "map_unavailable": "Ο χάρτης δεν μπορεί να εμφανιστεί επειδή η JavaScript είναι απενεργοποιημένη. Παρακαλούμε ενεργοποιήστε την ή χρησιμοποιήστε την ακόλουθη διεύθυνση: IEEE SB UniWA, Θηβών 250, Αιγάλεω 122 41"
     },
     "Council":{
-      "council_heading": "Το Προεδρείο",
-      "council_caption": "Η κινητηριος δυναμη",
-      "members": {
-        "0": {
-          "role": "Προεδρος",
-          "photo": "/assets/photos/stavrosalexiou-removebg.png",
-          "name": "Σταύρος Αλεξίου",
-          "email": "eee20387xxx@uniwa.gr"
-        },
-        "1": {
-          "role": "Αντιπροεδρος",
-          "photo": "/assets/photos/linus-torvalds.png",
-          "name": "Ανδρέας Κυρκιώτης",
-          "email": "eee20387123@uniwa.gr"
-        },
-        "2": {
-          "role": "Γραμματεας",
-          "photo": "/assets/photos/vaggelismitikas.png",
-          "name": "Ευάγγελος Μήτικας",
-          "email": "eee19387165@uniwa.gr"
-        },
-        "3": {
-          "role": "Ταμιας",
-          "photo": "/assets/photos/linus-torvalds.png",
-          "name": "Ιωάννης Χριστόπουλος",
-          "email": "eee20387291@uniwa.gr"
-        }
-      }
+      "heading": "Το Προεδρείο",
+      "caption": "Η κινητηριος δυναμη"
     }  
 }

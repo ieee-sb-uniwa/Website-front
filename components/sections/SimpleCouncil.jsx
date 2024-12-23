@@ -1,6 +1,6 @@
 "use client"
 import {council} from "../../constants/constants.js"
-import CouncilMember from './CouncilMember.jsx';
+import CouncilMember from './TeamMember.jsx';
 import {
     Card,
     CardBody,
