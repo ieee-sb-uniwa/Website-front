@@ -7,11 +7,11 @@ export const Team = ({team, translationsComponent}) => {
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
         <div className="container block lg:flex">
-            <div className='team_head-res relative z-2 mr-200 flex-300'>
+            <div className='team_head-res relative z-2 mr-20 flex-300'>
                 <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{translationsComponent('caption')}</p>
                 <h3 className='h3 max-md:h5 text-p4'>{translationsComponent('heading')}</h3>
             </div>
-            <div className=' team_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block'> 
+            <div className='team_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block'> 
                 <div className='flex-50'>
                     {sortedTeam.slice(0, halfLength).map((member) => (
                     <TeamMember
