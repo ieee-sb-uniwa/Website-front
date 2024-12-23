@@ -1,5 +1,6 @@
 'use server';
 import { notFound } from 'next/navigation';
+
 export async function getCouncil(locale) {
     const apiUrl = process.env.API_URL;
     // Determine the endpoint based on the locale
@@ -7,8 +8,8 @@ export async function getCouncil(locale) {
   try {
     // Fetch data from the API
     const response = await fetch(`${apiUrl}/${endpoint}`);
-    if (response.status === 500) {
-      notFound(); // Handle 404 explicitly
+    if (response.status === 404) {
+      notFound(); 
       return;
     }
     if (!response.ok) {

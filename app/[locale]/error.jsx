@@ -19,7 +19,7 @@ export default function Error({ error, reset }) {
           className="rounded-md bg-blue-600 px-4 py-2 text-p4 hover:bg-blue-500 transition-colors"
           onClick={reset}
         >
-          TRY AGAIN
+          Try Again
         </button>
       </div>
     </main>
