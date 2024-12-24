@@ -37,5 +37,15 @@
     "Council":{
       "heading": "The Executive Commitee",
       "caption": "The driving force"
+    },
+    "NotFoundPage": {
+      "h4": "Work in Progress ...",
+      "paragraph": "Looks like we haven't built this page yet. We're probably on a coffee break. Maybe next semester?",
+      "button_text": "Take Me Back"
+    },
+    "ErrorPage": {
+      "h4": "Whoops! The Code Just Blue-Screened",
+      "paragraph": "The server threw an exception... and we caught it!. But it seems like the bug is still at large. Try debugging it by refreshing later.",
+      "button_text": "Retry"
     }
   }
