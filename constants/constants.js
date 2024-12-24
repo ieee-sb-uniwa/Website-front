@@ -8,8 +8,8 @@ export const sponsors= [
 export const heroImages = [
   "/assets/photos/IEEEXTREME_18.0.jpg",
   "/assets/photos/incubation_centre.jpg",
-  //"/assets/photos/Git-Workshop.jpg",
-  "/assets/photos/IEEEXTREME-17.0.jpg"
+  //"/assets/photos/git-workshop.jpg",
+  "/assets/photos/IEEEXtreme-17.0.jpg"
 ];
 export const socials = [
     {
