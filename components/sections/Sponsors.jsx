@@ -14,7 +14,7 @@ export const Sponsors = () => {
                   <h3 className='h3 max-md:h5 text-p4 my-10'>
                       {t('heading')}
                   </h3>
-                  <p className='my-10 body-2 max-lg:body-3 text-p5'>{t('paragraph')}</p>
+                  <p className='my-10 h6 max-lg:body-2 text-p5'>{t('paragraph')}</p>
               </header>
               <FocusCards cards={sponsors}/>
           </div>

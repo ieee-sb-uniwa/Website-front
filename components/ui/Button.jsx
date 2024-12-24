@@ -1,6 +1,7 @@
 import React from 'react'
 import clsx from 'clsx';
 import Image from 'next/image';
+import {Link} from '@/i18n/routing';
 
 const Button = ({icon, iconWidth = 26, iconHeight = 26, children, href, containerClassName, onClick}) => {
   const Inner = () => (
@@ -23,21 +24,21 @@ const Button = ({icon, iconWidth = 26, iconHeight = 26, children, href, containe
                 )}
               </span>
             )}
-            <span className='relative z-2 font-poppins base-bold text-p1 uppercase'>{children}</span>
+            <span className='relative z-2 font-inter base-bold text-p1 uppercase'>{children}</span>
         </span>
         <span className='glow-before glow-after' />
     </>
   );
   return href ? (
-    <a
-      className={clsx(
-        "relative p-0.5 g5 rounded-2xl shadow-500 group",
-        containerClassName,
-      )}
-      href={href}
+    <Link
+    className={clsx(
+      "relative p-0.5 g5 rounded-2xl shadow-500 group",
+      containerClassName,
+    )}
+    href={href} 
     >
       <Inner />
-    </a>
+    </Link>
   ) : (
     <button
       className={clsx(

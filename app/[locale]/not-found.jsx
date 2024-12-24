@@ -1,18 +1,18 @@
-import {Link} from '@/i18n/routing';
-import { FaceFrownIcon } from '@heroicons/react/24/outline';
- 
+import { FaGears } from "react-icons/fa6";
+import { TiArrowBack } from "react-icons/ti";
+import Button from '@components/ui/Button';
+import { useTranslations } from 'next-intl';
+
 export default function NotFound() {
+  const notFoundTranslations = useTranslations("NotFoundPage");
   return (
     <main className="flex h-screen flex-col items-center justify-center gap-2">
-      <FaceFrownIcon className="w-10 text-p4" />
-      <h2 className="text-xl font-semibold">404 Not Found</h2>
-      <p>Could not find the requested page.</p>
-      <Link
-        href="/"
-        className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-400"
-      >
-        Go Back
-      </Link>
+      <FaGears size={160} className='text-p4' />
+      <h4 className='green_gradient max-w-440 h4 max-lg:h5 text-p4 mb-10'>{notFoundTranslations('h4')}</h4>
+      <p className='max-w-440 mb-14 body-1 max-lg:body-2 max-md:mb-10 text-p5'>{notFoundTranslations('paragraph')}</p>
+      <Button href="/" icon={<TiArrowBack size={36} color="white"/>} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+        {notFoundTranslations('button_text')}
+      </Button>
     </main>
   );
 }

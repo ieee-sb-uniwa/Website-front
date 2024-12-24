@@ -60,8 +60,8 @@ const TeamMember = ({item, containerClassName}) => {
             </div>
             {/* Member Details */}
             <div>
-                <h4 className="body-2 mb-1 text-p1">{item.name}</h4>
-                <p className="my-3 small-1 uppercase text-p3">{item.role}</p>
+                <h4 className="body-2 mx-4 mb-1 text-p1">{item.name}</h4>
+                <p className="my-3 mx-4 small-1 uppercase text-p3">{item.role}</p>
                 <ul className="flex flex-1 max-md:mt-10 gap-3">
                 {item.socials?.map((social) => (
                     <li key={social.id}>
