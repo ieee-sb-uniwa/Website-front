@@ -7,7 +7,7 @@ export async function getCouncil(locale) {
     const endpoint = locale === 'gr' ? 'council_gr' : 'council_en';
   try {
     // Fetch data from the API
-    const response = await fetch(`${apiUrl}/${endpoint}`);
+    const response = await fetch(`${apiUrl}/${endpoint}`, { cache: 'no-store' });
     if (response.status === 404) {
       notFound(); 
       return;
