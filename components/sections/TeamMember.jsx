@@ -66,9 +66,9 @@ const TeamMember = ({item, containerClassName}) => {
                 {item.socials?.map((social) => (
                     <li key={social.id}>
                     <a
-                        href={social.type === "email" ? social.url : undefined} // Dynamically set href
+                        href={social.url} // Dynamically set href
                         className="social-icon"
-                        target={social.type !== "email" ? "_blank" : undefined} // Open in new tab for non-email links
+                        target="_blank" // Open in new tab for non-email links
                         rel="noopener noreferrer"
                     >
                         <Image
