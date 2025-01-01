@@ -1,9 +1,6 @@
 export const sponsors= [
-  { title: "CoNSeRT research laboratory", img: "/assets/logos/sponsors/consert.png", url: "https://consert.eee.uniwa.gr/", imgWidth:150, imgHeight:93 },
   {title: "Αγροκτήμτα Κιθαιρώνα",img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130},
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
-  { title: "Pizza Fan", img: "/assets/logos/sponsors/pizza-fan.png", url: "https://www.pizzafan.gr/el",imgWidth:212, imgHeight:76 },
-  { title: "Red Bull", img: "/assets/logos/sponsors/redbull.svg", url: "https://www.redbull.com/gr-el",imgWidth:225, imgHeight:36 },
 ];
 
 export const heroImages = [

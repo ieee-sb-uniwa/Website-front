@@ -18,7 +18,7 @@ const TeamMember = ({item, containerClassName}) => {
                     initial={{opacity: 0}}
                     animate={{
                         opacity:1,
-                        transition: {delay: 0.4, duration: 0.4},
+                        transition: {delay: 0.4, duration: 0.4,  ease: "easeInOut",},
                     }}
                     className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px]"
                 >
