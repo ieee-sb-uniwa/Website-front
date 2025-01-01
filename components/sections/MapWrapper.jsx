@@ -33,7 +33,7 @@ const MapWrapper = () => {
             <span className='body-2 max-lg:body-3 relative z-2 text-p4'>{t('workplace_location')}</span>
           </span>
         </div>
-          <p className="body-2 max-lg:body-3 text-p5 mt-10">
+          <p className="body-2 max-lg:body-3 text-p5 mt-10 uppercase">
             In case you get lost, We've got you covered:&nbsp;&nbsp;
             <Hyperlink
               href="https://campusplan.uniwa.gr/2"

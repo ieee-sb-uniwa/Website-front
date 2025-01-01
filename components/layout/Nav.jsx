@@ -7,6 +7,7 @@ import {Link} from '@/i18n/routing';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import CustomDropdown from "../ui/CustomDropdown";
 import MovingBorder from "../ui/MovingBorder";
+import { ThemeSwitcher } from '@components/ThemeSwitcher';
 
 export const Nav = () => {
   const t = useTranslations('Nav');
@@ -123,8 +124,9 @@ export const Nav = () => {
             </div> 
           </div>
         </div>
-        <div className="flex items-center ml-5"> 
+        <div className="flex items-center ml-5 gap-x-4"> 
             <LanguageSwitcher/>
+            <ThemeSwitcher />
         </div>
         <button
           className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center ml-5"
