@@ -56,9 +56,7 @@ module.exports = {
 		fontFamily: {
 		  inter: ["Inter", "sans-serif"],
 		  poppins: ["Poppins", "sans-serif"],
-		  notosans: ["Noto Sans", "sans-serif"],
 		  roboto: ["Roboto", "sans-serif"],
-		  sourcesanspro: ["Source Sans Pro", "sans-serif"],
 		},
 		transitionProperty: {
 		  borderColor: "border-color",
