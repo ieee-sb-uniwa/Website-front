@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Import Roboto font */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 @tailwind base;
@@ -87,13 +85,11 @@
 .green_gradient {
   @apply bg-gradient-to-r from-[#40E0D0] to-green-500 bg-clip-text text-transparent bg-[length:200%_auto] ;
 }
-
 .blue_btn {
   @apply rounded-full border border-p2 bg-s1 py-1.5 px-5 text-white transition-all hover:bg-none hover:text-p2 text-center text-sm font-inter flex items-center justify-center;
 }
-
 .blue_gradient {
-  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-cyan-400 via-cyan-600 to-cyan-300 bg-clip-text text-transparent;
 }
 .purple_gradient{
   @apply bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent;
@@ -338,8 +334,45 @@
     @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
   }
 
-  /* END of Join Us Page*/
+  /* END of JOIN US Page*/
 
+  /* START of NEWS*/
+  .section_container {
+    @apply px-6 py-10 max-w-7xl mx-auto;
+  }
+  .card_grid {
+    @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+  }
+  .card_grid-sm {
+    @apply grid sm:grid-cols-2 gap-5;
+  }
+  .event-card2 {
+    @apply bg-s5 border-[2px] border-s5 py-5 px-4 rounded-[22px] shadow-200 hover:scale-105 transition-transform hover:bg-s3 duration-200 hover:shadow-300 ;
+  }
+  .event-card {
+    @apply bg-s1 border-[3px] border-s3 backdrop-blur-lg py-4 px-4 rounded-[22px] transition-transform duration-200 ;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  .event-card_date {
+    @apply  bg-primary-100 px-4 py-2 rounded-full group-hover:bg-white-100;
+  }
+  .event-card_desc {
+    @apply line-clamp-2 my-3 text-p4 break-all;
+  }
+  .no-events {
+    @apply text-p4 text-sm font-normal;
+  }
+  .event-card_img {
+    @apply w-full h-[188px] rounded-[10px] object-cover ;
+  }
+
+  .event-card_skeleton {
+    @apply w-full h-96 rounded-[22px] bg-zinc-400;
+  }
+  /* END of NEWS*/
+
+  /* START of FAQ */
   .faq-glow_before {
     @apply before:absolute before:left-[calc(50%-160px)] before:top-[-160px] before:size-[320px] before:bg-s4/25 before:mix-blend-soft-light before:blur-[200px] before:content-[''];
   }
@@ -367,12 +400,6 @@
   }
   /* END of TEAMS*/
 
-  /* START of HYPERLINK */
-
-  /* Arrow styling */
-
-  
-  /* END of HYPERLINK */
 
   /*  START of Footer */
   .legal-after {
