@@ -18,16 +18,16 @@ const EventCard = ({ event , locale}) => {
         />
       )}
       <div className="mt-5">
-        <h5 className="h5 blue_gradient line-clamp-1">{title}</h5>
+        <h5 className="h5 text-p4 line-clamp-1">{title}</h5>
         <div className="flex items-center my-3 gap-2">
             <PiMapPinAreaFill color="white" size={26}/>
-            <p className="body-3 text-p4 event_card_location">{location}</p>
+            <p className="body-3 text-p5 event_card_location">{location}</p>
         </div>
         <div className="flex items-center gap-2">
           <PiCalendarDotsFill color="white" size={26}/>
-          <p className="body-3 text-p4 event_card_date">{formatDate(date,locale)}</p>
+          <p className="body-3 text-p5 event_card_date">{formatDate(date,locale)}</p>
           <div className="dot" />
-          <p className="body-3 text-p4 event_card_date">{formatTime(date,locale)}</p>
+          <p className="body-3 text-p5 event_card_date">{formatTime(date,locale)}</p>
         </div>
       </div>
       <Hyperlink className="uppercase body-2 text-cyan-200" href={`/events/${id}`}>Read More</Hyperlink>

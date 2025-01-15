@@ -347,15 +347,13 @@
     @apply grid sm:grid-cols-2 gap-5;
   }
   .event-card2 {
-    @apply bg-s5 border-[2px] border-s5 py-5 px-4 rounded-[22px] shadow-200 hover:scale-105 transition-transform hover:bg-s3 duration-200 hover:shadow-300 ;
+    @apply bg-s5 border-[1px] border-s5 py-5 px-4 rounded-[22px] shadow-200 hover:scale-105 transition-transform hover:bg-s3 duration-200 hover:shadow-300 ;
   }
   .event-card {
-    @apply bg-s1 border-[3px] border-s3 backdrop-blur-lg py-4 px-4 rounded-[22px] transition-transform duration-200 ;
-    backdrop-filter: blur(10px) !important;
+    @apply g7 border-[1px] border-s3  py-4 px-4 rounded-[22px] transition-transform duration-200;
   }
-
   .event-card_date {
-    @apply  bg-primary-100 px-4 py-2 rounded-full group-hover:bg-white-100;
+    @apply  bg-p1-100 px-4 py-2 rounded-full group-hover:bg-white-100;
   }
   .event-card_desc {
     @apply line-clamp-2 my-3 text-p4 break-all;
@@ -364,9 +362,11 @@
     @apply text-p4 text-sm font-normal;
   }
   .event-card_img {
-    @apply w-full h-[188px] rounded-[10px] object-cover ;
+    @apply w-full h-[188px] rounded-[10px] object-cover border-[1px] border-p6/30 hover:border-[3px] hover:border-p6  hover:scale-105;
   }
-
+  .event-card_img:hover {
+    background: linear-gradient(to right, #22d3ee, #0891b2, #06b6d4);
+  }
   .event-card_skeleton {
     @apply w-full h-96 rounded-[22px] bg-zinc-400;
   }
