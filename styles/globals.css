@@ -364,8 +364,9 @@
   .event-card_img {
     @apply w-full h-[188px] rounded-[10px] object-cover border-[1px] border-p6/30 hover:border-[3px] hover:border-p6  hover:scale-105;
   }
-  .event-card_img:hover {
-    background: linear-gradient(to right, #22d3ee, #0891b2, #06b6d4);
+
+ .read-more:hover {
+    transform: translateX(5px);
   }
   .event-card_skeleton {
     @apply w-full h-96 rounded-[22px] bg-zinc-400;

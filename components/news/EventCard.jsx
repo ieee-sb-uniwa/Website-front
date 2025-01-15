@@ -30,7 +30,7 @@ const EventCard = ({ event , locale}) => {
           <p className="body-3 text-p5 event_card_date">{formatTime(date,locale)}</p>
         </div>
       </div>
-      <Hyperlink className="uppercase body-2 text-cyan-200" href={`/events/${id}`}>Read More</Hyperlink>
+      <Hyperlink className="uppercase h6 text-p3" arrow={true} href={`/events/${id}`}>Read More</Hyperlink>
     </li>
   );
 };
