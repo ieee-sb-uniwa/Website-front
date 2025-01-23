@@ -30,7 +30,15 @@ const EventCard = ({ event , locale}) => {
           <p className="body-3 text-p5 event_card_date">{formatTime(date,locale)}</p>
         </div>
       </div>
-      <Hyperlink className="uppercase h6 text-p3" arrow={true} href={`/events/${id}`}>Read More</Hyperlink>
+      <hr className="mx-0 my-4 border-top border-solid border-s3 opacity-100" />
+      <div className="flex gap-2"> {/* Flex container for the hyperlinks */}
+        <Hyperlink className="uppercase h6 text-p7 border border-p7 focus:ring-4  focus:ring-p7/30 rounded-14 px-5 focus:outline-none" arrow={false} href={links[0].url}>
+          Fill the form
+        </Hyperlink>
+        <Hyperlink className="uppercase h6 text-p4" arrow={true} href={`/events/${id}`}>
+          View details
+        </Hyperlink>
+      </div>
     </li>
   );
 };

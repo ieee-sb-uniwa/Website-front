@@ -26,6 +26,7 @@ module.exports = {
 			DEFAULT: "#ffffff",
 		  },
 		  p6: "#35edcc",
+		  p7: "#cfea00",
 		},
 		animation: {
 		  linear: 'backgroundLinear 120s linear infinite',

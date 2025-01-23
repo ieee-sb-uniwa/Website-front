@@ -5,13 +5,13 @@ const ToggleButton = ({ leftText, rightText, state, setState }) => {
   return (
     <div className='relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-310px'>
       <button
-        className={clsx("toggle_btn", "text-xl",state && "text-p3")}
+        className={clsx("toggle_btn", "text-xl",state && "text-p4")}
         onClick={() => setState(true)}
       >
         {leftText}
       </button>
       <button
-        className={clsx("toggle_btn", !state && "text-p3")}
+        className={clsx("toggle_btn", !state && "text-p4")}
         onClick={() => setState(false)}
       >
         {rightText}
