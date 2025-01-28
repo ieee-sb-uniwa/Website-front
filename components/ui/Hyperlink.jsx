@@ -32,7 +32,7 @@ const Hyperlink = ({ href = '#', children, className = '', arrow = true }) => {
     >
       <span className="relative flex items-center min-h-[40px] px-4 overflow-hidden">
       {arrow ? (
-        <span className="text relative z-2 base-bold transition-all duration-300 ease-in-out flex items-center hover:translate-x-4">
+        <span className="text relative z-2 base-bold transition-all duration-300 ease-in-out flex items-center hover:translate-x-3">
           {children}
           <ArrowIcon />
         </span>

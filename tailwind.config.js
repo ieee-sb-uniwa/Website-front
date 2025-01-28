@@ -26,13 +26,14 @@ module.exports = {
 			DEFAULT: "#ffffff",
 		  },
 		  p6: "#35edcc",
-		  p7: "#cfea00",
+		  p7: "#71c526",
 		},
 		animation: {
 		  linear: 'backgroundLinear 120s linear infinite',
 		  slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards',
 		  rotate: "rotate 10s linear infinite both",
 		},
+		
 		keyframes: {
 		  backgroundLinear: {
 			'0%': { backgroundPosition: '0% 50%' },
@@ -45,6 +46,9 @@ module.exports = {
 		  rotate: {
 				"0%": { transform: "rotate(0deg) scale(10)" },
 				"100%": { transform: "rotate(-360deg) scale(10)" },
+		  },
+		  pulse: {
+			"50%" : {opacity: "0.5"},
 		  },
 		},
 		boxShadow: {
