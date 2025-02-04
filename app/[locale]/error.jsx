@@ -1,6 +1,8 @@
 'use client';
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Button from '@components/ui/Button';
+import { MdOutlineReplay } from "react-icons/md";
 
 export default function Error({ error, reset }) {
   useEffect(() => {
@@ -11,16 +13,16 @@ export default function Error({ error, reset }) {
   return (
     <main className="flex h-screen flex-col items-center justify-center">
       <div className="text-center p-8 bg-s5 shadow-md rounded-lg">
-        <h4 className="h4 font-semibold text-red-600 mb-4">{errorTranslations('h4')}</h4>
-        <p className="text-p5 mb-6">
+        <h5 className="h5 font-semibold text-red-600 mb-4">{errorTranslations('h4')}</h5>
+        <p className="text-p5 mb-6 body-2">
           {error?.message || errorTranslations('paragraph')}
         </p>
-        <button
-          className="rounded-md bg-blue-600 px-4 py-2 text-p4 hover:bg-blue-500 transition-colors"
+        <Button
+          icon={<MdOutlineReplay size={36} color="white"/>}
           onClick={reset}
         >
           {errorTranslations('button_text')}
-        </button>
+        </Button>
       </div>
     </main>
   );

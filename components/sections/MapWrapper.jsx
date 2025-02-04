@@ -33,14 +33,11 @@ const MapWrapper = () => {
             <span className='body-2 max-lg:body-3 relative z-2 text-p4'>{t('workplace_location')}</span>
           </span>
         </div>
-          <p className="body-2 max-lg:body-3 text-p5 mt-10 uppercase">
-            In case you get lost, We've got you covered:&nbsp;&nbsp;
-            <Hyperlink
-              href="https://campusplan.uniwa.gr/2"
-              label="Campus 2 Interactive Map"
-              className="inline-flex items-center font-roboto text-p4 uppercase hover:underline hover:text-p1"
-              arrow= {false}
-            />
+          <p className="body-2 max-lg:body-3 text-p5 mt-10 ">
+            In case you get lost, We've got you covered:
+            <Hyperlink href="https://campusplan.uniwa.gr/2" className="body-2 max-lg:body-3 inline-flex items-center text-p4" arrow= {false}>
+              Campus 2 Interactive Map
+            </Hyperlink>
           </p>
       </div>
       <Map />
