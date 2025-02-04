@@ -39,14 +39,21 @@
       "heading": "The Executive Commitee",
       "caption": "The driving force"
     },
+    "Events":{
+      "heading":"Recent Activities"
+    },
+    "EventCard":{
+      "read_more": "View Details",
+      "isOver":"Completed"
+    },
     "NotFoundPage": {
       "h4": "Work in Progress ...",
       "paragraph": "Looks like we haven't built this page yet. We're probably studying for exams. Maybe next semester?",
       "button_text": "Take Me Back"
     },
     "ErrorPage": {
-      "h4": "Whoops! The Code Just Blue-Screened",
-      "paragraph": "The server threw an exception... and we caught it!. But it seems like the bug is still at large. Try debugging it by refreshing later.",
+      "h4": "An exception was thrown... ",
+      "paragraph": "Try debugging by refreshing later.",
       "button_text": "Retry"
     }
   }

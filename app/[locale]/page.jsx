@@ -16,7 +16,6 @@ export default async function Home({ params }) {
   const events = await getEvents(locale);
   if (!council || !events) notFound();
   const councilTranslations =  await getTranslations('Council');
-  
   return (
   <section className='w-full flex-center flex-col'>
     <Hero/>
