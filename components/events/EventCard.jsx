@@ -4,6 +4,7 @@ import Hyperlink from "@components/ui/Hyperlink";
 import { formatDate, formatTime, hasDatePassed } from "@lib/utils";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
 import { useTranslations } from 'next-intl';
+import Link from "@node_modules/next/link";
 
 const EventCard = ({ event , locale}) => {
   const { id, date, location, title, images, description, links } = event;
@@ -46,9 +47,9 @@ const EventCard = ({ event , locale}) => {
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
       <div className="flex justify-center gap-5">
           { !hasDatePassed(date) ? (
-            <Hyperlink className="uppercase bg-p3 text-s2 hover:bg-p3/80 focus:ring-4 focus:ring-p3/30 rounded-14 px-5 focus:outline-none" arrow={false} href={links[0].url}>
+            <Link className="uppercase base-bold bg-p3 text-s2 hover:bg-p3/80 focus:ring-4 focus:ring-p3/30 rounded-14 px-5 focus:outline-none" href={links[0].url}>
               Fill the form
-            </Hyperlink>
+            </Link>
           ) : (
             <p className="uppercase body-2 text-red-400 base-bold flex items-center">
               {eventTranslations('isOver')}

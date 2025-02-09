@@ -39,8 +39,13 @@
       "heading": "The Executive Commitee",
       "caption": "The driving force"
     },
-    "Events":{
-      "heading":"Recent Activities"
+    "RecentEvents":{
+      "caption": "What's Happening Now",
+      "heading":"Recent Activities",
+      "flippingWords": ["competitions", "seminars", "workshops", "courses"],
+      "sentence_before_words":"Stay updated with the latest ",
+      "sentence_after_words":"both online and in-person.",
+      "sentence2":"Get involved, and you might just discover your next big passion-or at least grab a free snack!"
     },
     "EventCard":{
       "read_more": "View Details",
