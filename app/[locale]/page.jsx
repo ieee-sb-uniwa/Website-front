@@ -13,7 +13,7 @@ import RecentActivities from "@components/sections/RecentActivities";
 export default async function Home({ params }) {
   const locale = params.locale; 
   const council = await getCouncil(locale);
-  const events = await getEvents(locale);
+  const events = await getEvents(locale,3);
   if (!council || !events) notFound();
   const councilTranslations =  await getTranslations('Council');
   return (

@@ -1,13 +1,18 @@
 'use server';
 import { notFound } from 'next/navigation';
 
-export async function getEvents(locale) {
+export async function getEvents(locale, numOfEvents) {
     const apiUrl = process.env.API_URL;
+    // Validate numOfEvents as a numeric value
+    const parsedNumOfEvents = Number(numOfEvents);
+    if (isNaN(parsedNumOfEvents) || parsedNumOfEvents <= 0) {
+      throw new Error('Invalid numOfEvents parameter. It must be a positive number.');
+    }
     // Determine the endpoint based on the locale
     const endpoint = locale === 'gr' ? 'events_gr' : 'events_en';
   try {
     // Fetch data from the API
-    const response = await fetch(`${apiUrl}/${endpoint}`, { cache: 'no-store' });
+    const response = await fetch(`${apiUrl}/${endpoint}?limit=${parsedNumOfEvents}&sortBy=date`, { cache: 'no-store' });
     if (response.status === 404) {
       notFound(); 
       return;
