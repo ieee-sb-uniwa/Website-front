@@ -5,6 +5,7 @@ import { formatDate, formatTime, hasDatePassed } from "@lib/utils";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
 import { useTranslations } from 'next-intl';
 import Link from "@node_modules/next/link";
+import { MdEditDocument } from "react-icons/md";
 
 const EventCard = ({ event , locale}) => {
   const { id, date, location, title, images, description, links } = event;
@@ -45,17 +46,18 @@ const EventCard = ({ event , locale}) => {
         </div>
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-5">
+      <div className="flex justify-center gap-6 mt-3">
           { !hasDatePassed(date) ? (
-            <Link className="uppercase base-bold bg-p3 text-s2 hover:bg-p3/80 focus:ring-4 focus:ring-p3/30 rounded-14 px-5 focus:outline-none" href={links[0].url}>
-              Fill the form
+            <Link className=" flex items-center gap-1 uppercase base-bold bg-p7 text-s1 hover:bg-p7/80 focus:ring-4 focus:ring-p7/30 rounded-14 px-4 py-2 focus:outline-none" href={links[0].url}>
+              <MdEditDocument size={24}/>
+              {eventTranslations('participation_form')}
             </Link>
           ) : (
             <p className="uppercase body-2 text-red-400 base-bold flex items-center">
               {eventTranslations('isOver')}
             </p>     
           )}
-          <Hyperlink className="uppercase text-p4" arrow={true} href={`/events/${id}`}>
+          <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={`/events/${id}`}>
             {eventTranslations('read_more')}
           </Hyperlink>
       </div>

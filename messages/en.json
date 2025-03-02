@@ -50,7 +50,8 @@
       "sentence2":"Get involved, and you might just discover your next big passion-or at least grab a free snack!"
     },
     "EventCard":{
-      "read_more": "View Details",
+      "participation_form":"Register",
+      "read_more": "Details",
       "isOver":"Completed"
     },
     "NotFoundPage": {

@@ -5,13 +5,13 @@ import { useTranslations } from 'next-intl';
 import { PiMapPinAreaFill } from "react-icons/pi";
 import Hyperlink from '@components/ui/Hyperlink';
 
-const Map = dynamic(() => import('./Map'), { ssr: false });
+const Map = dynamic(() =>  import('./Map'), { ssr: false, loading: () => <p className='orange_gradient body-1 max-lg:body-2'>Loading map...</p> });
 
 const MapWrapper = () => {
   const t = useTranslations('Map');
 
   return (
-    <section className="relative pb-32 pt-24 max-lg:pb-24 max-md:py-16">
+    <section className="relative pt-24 max-lg:pb-24 max-md:py-16">
       <div className="container">
         <div className='flex items-center'>
           <div className='relative mr-6 flex-540 max-xl:flex-280 max-lg:flex-256 max-md:flex-100'>
@@ -47,18 +47,21 @@ const MapWrapper = () => {
                   </Hyperlink>
                 </p>
             </div>
+            {/*Desktop*/}
             <div className="mb-10 max-md:hidden">
-              <div className="map_preview-before map_preview-after rounded-40 relative w-[955px] border-2 border-s5 p-3">
-                <div className="relative rounded-3xl bg-s1 px-2 pb-2 pt-4">
-                  <span className="download_preview-dot left-6 bg-p2" />
-                  <span className="download_preview-dot left-11 bg-s3" />
-                  <span className="download_preview-dot left-16 bg-p1/15" />
+              <div className="map_preview-before map_preview-after rounded-40 relative w-[900px] border-2 border-s5 p-3">
+                <div className="relative rounded-3xl bg-s1 px-2 pb-2 pt-2">
                   <Map/>
                 </div>
               </div>
             </div>
         </div>
-
+        {/*Mobile*/}
+        <div className="md:hidden map_preview-before map_preview-after rounded-40 relative sm:w-[555px] sm:h-[355px] border-2 border-s5 p-3">
+            <div className="relative rounded-3xl bg-s1 px-2 pb-2 pt-2">
+                <Map/>
+            </div>
+        </div>
       </div>
      
 
