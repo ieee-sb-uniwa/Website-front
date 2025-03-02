@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import {Link} from '@/i18n/routing';
-import LanguageSwitcher from '../ui/LanguageSwitcher';
+import LanguageSwitcher from './LanguageSwitcher';
 import CustomDropdown from "../ui/CustomDropdown";
 import MovingBorder from "../ui/MovingBorder";
 
@@ -103,7 +103,7 @@ export const Nav = () => {
                       {t('join')}
                     </Link>
                   </MovingBorder>
-
+                  
                   {/* Old button (not animated)
                   <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 join-button">
                     {t('join')}

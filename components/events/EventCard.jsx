@@ -46,7 +46,7 @@ const EventCard = ({ event , locale}) => {
         </div>
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-6 mt-3">
+      <div className="flex justify-center gap-8 mt-3">
           { !hasDatePassed(date) ? (
             <Link className=" flex items-center gap-1 uppercase base-bold bg-p7 text-s1 hover:bg-p7/80 focus:ring-4 focus:ring-p7/30 rounded-14 px-4 py-2 focus:outline-none" href={links[0].url}>
               <MdEditDocument size={24}/>

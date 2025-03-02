@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { PiMapPinAreaFill } from "react-icons/pi";
 import Hyperlink from '@components/ui/Hyperlink';
 
-const Map = dynamic(() =>  import('./Map'), { ssr: false, loading: () => <p className='orange_gradient body-1 max-lg:body-2'>Loading map...</p> });
+const Map = dynamic(() =>  import('./Map.jsx'), { ssr: false, loading: () => <p className='orange_gradient body-1 max-lg:body-2'>Loading map...</p> });
 
 const MapWrapper = () => {
   const t = useTranslations('Map');
@@ -49,7 +49,7 @@ const MapWrapper = () => {
             </div>
             {/*Desktop*/}
             <div className="mb-10 max-md:hidden">
-              <div className="map_preview-before map_preview-after rounded-40 relative w-[900px] border-2 border-s5 p-3">
+              <div className="map_preview-before map_preview-after rounded-40 relative w-[855px] border-2 border-s5 p-3">
                 <div className="relative rounded-3xl bg-s1 px-2 pb-2 pt-2">
                   <Map/>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { delay, motion } from 'framer-motion'; 
-import { socials } from "../../constants/constants.js"; 
+import { socials } from "@constants/constants.js"; 
 
 const TeamMember = ({item, containerClassName}) => {
   const getSocialIcon = (type) => socials.find((social) => social.title.toLowerCase() === type)?.icon;

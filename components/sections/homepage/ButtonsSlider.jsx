@@ -2,7 +2,7 @@
 import React from 'react';
 import HeroSlider, {Nav} from 'hero-slider';
 import { heroImages } from '@constants/constants';
-import HeroImageSlide from '@components/ui/HeroImageSlide'; // Import the new component
+import HeroImageSlide from '@components/sections/homepage/HeroImageSlide'; // Import the new component
 import 'hero-slider/dist/index.css';
 
 export default function ButtonsSlider() {

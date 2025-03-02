@@ -1,8 +1,8 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
-import Button from '../ui/Button.jsx';
+import Button from '../../ui/Button.jsx';
 import {Link} from '@/i18n/routing';
-import ButtonsSlider from '@components/ui/ButtonsSlider.jsx';
+import ButtonsSlider from '@components/sections/homepage/ButtonsSlider.jsx';
 import { GiRead } from "react-icons/gi";
 
 export const Hero = () => {
