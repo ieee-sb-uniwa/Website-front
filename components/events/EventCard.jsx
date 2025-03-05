@@ -1,11 +1,12 @@
 
 import PropTypes from "prop-types";
 import Hyperlink from "@components/ui/Hyperlink";
-import { formatDate, formatTime, hasDatePassed } from "@lib/utils";
+import { isValidISODate,formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
 import { useTranslations } from 'next-intl';
 import Link from "@node_modules/next/link";
-import { MdEditDocument } from "react-icons/md";
+import { MdEditDocument} from "react-icons/md";
+import { RiHourglassFill } from "react-icons/ri";
 
 const EventCard = ({ event , locale}) => {
   const { id, date, location, title, images, description, links } = event;
@@ -31,33 +32,52 @@ const EventCard = ({ event , locale}) => {
               </div>
             ))}
           </div>
+        {/*TITLE*/}
         <h5 className="h5 text-p3 line-clamp-1">{title}</h5>
-        <div className="relative flex items-center my-3 gap-3">
-            <PiMapPinAreaFill className="text-p4" size={26}/>
+        {/*LOCATION*/}
+        {location && (
+          <div className="relative flex items-center my-3 gap-3">
+            <PiMapPinAreaFill className="text-p4" size={26} />
             <p className="body-2 event_card_location">{location}</p>
-        </div>
+          </div>
+        )}
+        {/*DATE*/}
+        {date && (
+          <div className="flex items-center my-3 gap-3">
+            <PiCalendarDotsFill className="text-p4" size={26} />
+            <p className="body-2 event_card_date">{formatDate(date, locale)}</p>
+          </div>
+        )}
+        {/*TIME*/}
+        {date && (
+          <div className="flex items-center my-3 gap-3">
+            <PiClockFill className="text-p4" size={26} />
+            <p className="body-2 event_card_date">{formatTime(date, locale)}</p>
+          </div>
+        )}
+        {/*DEADLINE*/}
+        {isValidISODate(date) && !hasDatePassed(date) && (
         <div className="flex items-center my-3 gap-3">
-          <PiCalendarDotsFill  className="text-p4" size={26}/>
-          <p className="body-2 event_card_date">{formatDate(date,locale)}</p>     
-        </div>   
-        <div className="flex items-center my-3 gap-3">
-          <PiClockFill className="text-p4" size={26}/>
-          <p className="body-2  event_card_date">{formatTime(date,locale)}</p>
+          {/*<RiHourglassFill className="text-amber-300" size={26} />*/}
+          <p className="body-2 text-amber-400 event_card_date">
+            {eventTranslations('register_before')} {formatDate2Digits(date, locale)}
+          </p>
         </div>
+        )}
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-8 mt-3">
-          { !hasDatePassed(date) ? (
+      <div className="flex justify-center gap-4 mt-3">
+          { isValidISODate(date) && !hasDatePassed(date) ? (
             <Link className=" flex items-center gap-1 uppercase base-bold bg-p7 text-s1 hover:bg-p7/80 focus:ring-4 focus:ring-p7/30 rounded-14 px-4 py-2 focus:outline-none" href={links[0].url}>
               <MdEditDocument size={24}/>
               {eventTranslations('participation_form')}
             </Link>
           ) : (
-            <p className="uppercase body-2 text-red-400 base-bold flex items-center">
+            <p className="uppercase body-2 text-red-500 base-bold flex items-center">
               {eventTranslations('isOver')}
             </p>     
           )}
-          <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={`/events/${id}`}>
+          <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={`/sb-events/${id}`}>
             {eventTranslations('read_more')}
           </Hyperlink>
       </div>

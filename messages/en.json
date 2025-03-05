@@ -52,7 +52,8 @@
     "EventCard":{
       "participation_form":"Register",
       "read_more": "Details",
-      "isOver":"Completed"
+      "isOver":"Completed",
+      "register_before":"Register before:"
     },
     "NotFoundPage": {
       "h4": "Work in Progress ...",

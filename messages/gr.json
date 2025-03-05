@@ -57,7 +57,8 @@
     "EventCard":{
       "participation_form":"Εγγραφη",
       "read_more": "Λεπτομερειες",
-      "isOver":"ολοκληρωθηκε"
+      "isOver":"ολοκληρωθηκε",
+      "register_before":"Εγγραφές πρίν από:"
     },
     "ErrorPage": {
       "h4": "An exception was thrown... ",
