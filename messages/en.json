@@ -63,5 +63,9 @@
       "h4": "An exception was thrown... ",
       "paragraph": "Try debugging by refreshing later.",
       "button_text": "Retry"
+    },
+    "Error404": {
+      "h4": "Page Not Found...",
+      "paragraph": "The page you're looking for doesn't exist. Click the button below to navigate back to homepage."
     }
   }

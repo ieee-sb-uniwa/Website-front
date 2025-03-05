@@ -4,6 +4,8 @@ import Nav from "@components/layout/Nav";
 import Footer from "@components/layout/Footer";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import { routing } from "@i18n/routing";
 
 export const metadata = {
   title: "IEEE UniWA Student Branch",
@@ -12,6 +14,10 @@ export const metadata = {
 
 const RootLayout = async ({ children, params }) => {
   const { locale } = params;
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale)) {
+      notFound();
+  }
   // Fetch messages for the current locale
   const messages = await getMessages(locale);
   return (
