@@ -251,7 +251,7 @@
   /* END of Common */
   /* START of Header */
   .nav-active {
-    @apply text-p3;
+    @apply text-p1;
   }
 
   .nav-li {

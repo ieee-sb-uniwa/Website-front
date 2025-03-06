@@ -39,7 +39,7 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
         <div className="lg:hidden">
           <Button
             variant="text"
-            className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 flex items-center gap-3"
+            className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 flex items-center gap-3 mr-4"
             onClick={toggleMenu}
           >
             {category}{" "}
@@ -53,13 +53,13 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
 
           {openMenu && (
             <div className="w-full mt-2 rounded-lg p-2">
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-4 mt-1 mb-1">
                 {items.map(({ title, link }) => (
                   <li key={title}>
                     <Link
                       href={link}
                       onClick={()=>setIsOpen(false)}
-                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 ml-6 max-lg:h5"
+                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 ml-4 max-lg:h5"
                     >
                       {title}
                     </Link>
@@ -76,7 +76,8 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
             <MenuHandler>
               <Button
                 variant="text"
-                className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 flex items-center gap-3 "
+                className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5 flex items-center gap-3 mr-4"
+                onClick={toggleMenu}
               >
                 {category}{" "}
                 <ChevronDownIcon
@@ -87,8 +88,8 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
                 />
               </Button>
             </MenuHandler>
-            <MenuList className="bg-s2 w-[16em] gap-3 lg:grid mt-2 z-50 rounded-lg">
-              <ul className="col-span-4 flex w-full flex-col gap-2 mt-1 mb-1">
+            <MenuList className="bg-s2 w-[18em] gap-3 mt-2 z-50 overflow:visible rounded-lg">
+              <ul className="col-span-4 flex w-full flex-col gap-1">
                 {items.map(({ title, link }) => (
                   <li key={title}>
                     <Link
