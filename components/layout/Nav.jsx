@@ -69,15 +69,15 @@ export const Nav = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <Link href="/about" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                  <Link href="/about" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('about')}
                   </Link>
                   <div className="dot" />
-                  <Link href="/news" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                  <Link href="/news" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('news')}
                   </Link>
                   <div className="dot" />
-                  <CustomDropdown category={t('teams')} items={menuItems.teams} />
+                  <CustomDropdown category={t('teams')} setIsOpen={setIsOpen} items={menuItems.teams} />
                 </li>
 
                 <li className="nav-logo">
@@ -92,14 +92,14 @@ export const Nav = () => {
                 </li>
 
                 <li className="nav-li">
-                  <CustomDropdown category={t('events')} items={menuItems.events} />
+                  <CustomDropdown category={t('events')} setIsOpen={setIsOpen} items={menuItems.events} />
                   <div className="dot" />
-                  <Link href="/contact" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                  <Link href="/contact" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('contact')}
                   </Link>
                   <div className="dot" />
                   <MovingBorder bgColor="bg-s5">
-                    <Link href="/join" className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+                    <Link href="/join" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                       {t('join')}
                     </Link>
                   </MovingBorder>

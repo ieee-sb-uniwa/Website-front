@@ -10,7 +10,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { Link } from '@/i18n/routing'; 
 
-const CustomDropdown = ({ category, items }) => {
+const CustomDropdown = ({ category, items, setIsOpen }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,6 +58,7 @@ const CustomDropdown = ({ category, items }) => {
                   <li key={title}>
                     <Link
                       href={link}
+                      onClick={()=>setIsOpen(false)}
                       className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 ml-6 max-lg:h5"
                     >
                       {title}
@@ -92,6 +93,7 @@ const CustomDropdown = ({ category, items }) => {
                   <li key={title}>
                     <Link
                       href={link}
+                      onClick={()=>setIsOpen(false)}
                       className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
                     >
                       <MenuItem>{title}</MenuItem>

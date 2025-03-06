@@ -59,7 +59,7 @@ const EventCard = ({ event , locale}) => {
         {isValidISODate(date) && !hasDatePassed(date) && (
         <div className="flex items-center my-3 gap-3">
           {/*<RiHourglassFill className="text-amber-300" size={26} />*/}
-          <p className="body-2 text-amber-400 event_card_date">
+          <p className="body-2 text-warning event_card_date">
             {eventTranslations('register_before')} {formatDate2Digits(date, locale)}
           </p>
         </div>
@@ -68,7 +68,7 @@ const EventCard = ({ event , locale}) => {
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
       <div className="flex justify-center gap-4 mt-3">
           { isValidISODate(date) && !hasDatePassed(date) ? (
-            <Link className=" flex items-center gap-1 uppercase base-bold bg-p7 text-s1 hover:bg-p7/80 focus:ring-4 focus:ring-p7/30 rounded-14 px-4 py-2 focus:outline-none" href={links[0].url}>
+            <Link className="flex items-center gap-1 uppercase register-btn" href={links[0].url}>
               <MdEditDocument size={24}/>
               {eventTranslations('participation_form')}
             </Link>

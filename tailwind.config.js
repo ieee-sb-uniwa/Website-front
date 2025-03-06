@@ -18,6 +18,7 @@ module.exports = {
 		  s3: "#334679",
 		  s4: "#1959AD",
 		  s5: "#263466",
+		  warning: "#ecad15",
 		  black: {
 			DEFAULT: "#000000",
 			100: "#05091D",
@@ -25,8 +26,8 @@ module.exports = {
 		  white: {
 			DEFAULT: "#ffffff",
 		  },
-		  p6: "#35edcc",
-		  p7: "#71c526",
+		  p6: "#35edcc", //turquise
+		  p7: "#71c526", // green
 		},
 		animation: {
 		  linear: 'backgroundLinear 120s linear infinite',
