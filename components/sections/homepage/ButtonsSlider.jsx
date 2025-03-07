@@ -2,7 +2,7 @@
 import React from 'react';
 import HeroSlider, {Nav} from 'hero-slider';
 import { heroImages } from '@constants/constants';
-import HeroImageSlide from '@components/sections/homepage/HeroImageSlide'; // Import the new component
+import HeroImageSlide from './HeroImageSlide'; 
 import 'hero-slider/dist/index.css';
 
 export default function ButtonsSlider() {
@@ -11,10 +11,10 @@ export default function ButtonsSlider() {
         autoplay
         orientation="horizontal"
         settings={{
-          slidingDuration: 500,
+          slidingDuration: 1000,
           slidingDelay: 100,
           shouldAutoplay: true,
-          autoplayDuration: 5000,
+          autoplayDuration: 4000,
           height: '90vmin',
         }}
         controller={{
@@ -41,8 +41,8 @@ export default function ButtonsSlider() {
           />
         ))}
         <Nav
-            color="#ffffff"    // Default color; customize as needed
-            activeColor="#2EF2FF"               // Active slide indicator color
+            color="#ffffff"    
+            activeColor="#1959AD"              
         />
     </HeroSlider>
   );
