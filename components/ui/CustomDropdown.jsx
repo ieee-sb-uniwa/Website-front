@@ -88,7 +88,7 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
                 />
               </Button>
             </MenuHandler>
-            <MenuList className="bg-s2 w-[18em] gap-3 mt-2 z-50 overflow:visible rounded-lg">
+            <MenuList className="bg-s2 w-[16em] gap-3 mt-2 z-50 overflow:visible rounded-lg">
               <ul className="col-span-4 flex w-full flex-col gap-1">
                 {items.map(({ title, link }) => (
                   <li key={title}>
