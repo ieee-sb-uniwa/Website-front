@@ -3,7 +3,7 @@ import {useTranslations} from 'next-intl';
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import {Link} from '@/i18n/routing';
+import {Link} from '@/i18n/navigation.js';
 import LanguageSwitcher from './LanguageSwitcher';
 import CustomDropdown from "../ui/CustomDropdown";
 import MovingBorder from "../ui/MovingBorder";

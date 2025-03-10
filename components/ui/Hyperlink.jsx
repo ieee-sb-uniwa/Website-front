@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '@i18n/routing';
+import { Link } from '@i18n/navigation';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 

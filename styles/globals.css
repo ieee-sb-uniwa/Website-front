@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Import Roboto font */
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -277,6 +276,12 @@
   /* START of Hero */
   .hero-img_res {
     @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
+  }
+  .splide__pagination button {
+    @apply bg-p4 rounded-[2.5px] inline-block h-[8px] w-[40px] border-[12px] border-transparent cursor-pointer mx-[20px] my-[20px] opacity-70 transition-colors duration-200;
+  }
+  .splide__pagination button.is-active {
+    @apply bg-p2 border-[12px] border-p2 opacity-100;
   }
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
