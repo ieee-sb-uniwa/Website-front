@@ -10,8 +10,9 @@ export const dynamic = 'force-dynamic'
 import {getTranslations} from 'next-intl/server';
 import RecentActivities from "@components/sections/homepage/RecentActivities";
 
-export default async function Home({ params }) {
-  const locale = params.locale; 
+export default async function Home(props) {
+  const params = await props.params;
+  const locale = params.locale;
   const council = await getCouncil(locale);
   const events = await getEvents(locale,3);
   if (!council || !events) notFound();

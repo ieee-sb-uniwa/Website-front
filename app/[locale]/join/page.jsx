@@ -26,11 +26,11 @@ const page = () => {
                   <div>
                     <p className=''>{t('sb_intro')}</p>  
                     <h4 className='h4 max-lg:h5 max-md:h6 py-3 md:py-5 z-3 mx-auto relative mx-w-lg mb-11 text-p4 max-md:mb-7 max-sm:max-w-sm'>Βήματα εγγραφής στο ΙΕΕΕ SB UniWA</h4>
-                    <ol class="overflow-hidden space-y-8">
-                      <li class="relative flex-1">
+                    <ol className="overflow-hidden space-y-8">
+                      <li className="relative flex-1">
                         Submit a registration request in the form below:
                       </li>
-                      <li class="relative flex-1 ">
+                      <li className="relative flex-1 ">
                         A member of the student branch will contact you and discuss how you can get involved in the branch based on your skills and strengths.
                       </li>
                     </ol>

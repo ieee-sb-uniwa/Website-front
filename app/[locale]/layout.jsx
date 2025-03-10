@@ -12,14 +12,14 @@ export const metadata = {
   description: "Innovation and technology non-profit organization",
 };
 
-const RootLayout = async ({ children, params }) => {
-  const { locale } = params;
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale)) {
       notFound();
   }
-  // Fetch messages for the current locale
-  const messages = await getMessages(locale);
+  // Providing all messages to the client side is the easiest way to get started
+  const messages = await getMessages();
   return (
     <html lang={locale}>
       <body>    
@@ -40,6 +40,4 @@ const RootLayout = async ({ children, params }) => {
       </body>
     </html>
   );
-};
-
-export default RootLayout;
+}
