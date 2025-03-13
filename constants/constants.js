@@ -10,7 +10,17 @@ export const heroImages = [
   "/assets/photos/OPEN-DAY.jpg",
  // "/assets/photos/IEEEXtreme-17.0.jpg"
 ];
-
+export const joinSBSteps = [
+  "To register for the branch, simply fill out the registration form https://forms.gle/QM1pkrSQfDRZKCaPA.",
+  'Afterwards, a member of HR of the branch will contact you directly via Discord to discuss your interests and find the appropriate team for you.',
+  'Once the process is successfully completed, you will officially be a member of IEEE SB UniWA.',
+];
+export const joinIEEESteps = [
+  'To subscribe to IEEE, you can visit the link (here link to the IEEE main page).',
+  'You will need to create an account and then log in with it.',
+  'Next, select "Join IEEE" and follow the subscription steps.',
+  'The annual Subscription comes at around $27 USD.',
+];
 export const socials = [
     {
       id: "0",

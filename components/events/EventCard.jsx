@@ -66,7 +66,7 @@ const EventCard = ({ event , locale}) => {
         )}
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-4 mt-3">
+      <div className="flex justify-center gap-4 mt-3 my-4">
           { isValidISODate(date) && !hasDatePassed(date) ? (
             <Link className="flex items-center gap-1 uppercase register-btn" href={links[0].url}>
               <MdEditDocument size={24}/>

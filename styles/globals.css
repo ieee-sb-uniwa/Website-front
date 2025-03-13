@@ -313,7 +313,7 @@
   }
 
   .toggle_btn {
-    @apply base-bold relative z-2 h-16 flex-1 uppercase text-p5 transition-colors duration-500 hover:text-p4;
+    @apply base-bold tracking-[2px] relative z-2 h-16 flex-1 uppercase text-p4 transition-colors duration-500 hover:text-p3 focus:text-p3
   }
 
   .toggle_btn_before {
@@ -341,8 +341,19 @@
   }
 
   /* END of JOIN US Page*/
+ /* searchform */
+ .search-form {
+  @apply max-w-3xl max-lg:w-full w-[50%] min-h-[80px] bg-s2 focus-within:ring-2 focus-within:ring-p1 focus-within:shadow-sm outline-none duration-200 rounded-[80px] text-[22px] mt-8 px-5 flex flex-row items-center gap-5;
+  }
 
-  /* START of NEWS*/
+  .search-input {
+    @apply flex-1 font-bold bg-s2/20 placeholder:font-semibold placeholder:text-p5 w-full h-auto outline-none;
+  }
+
+  .search-btn {
+    @apply size-[50px] rounded-full bg-black hover:scale-110 hover:border-s3 flex justify-center items-center !important;
+  }
+  /* EVENTS-RELATED PAGES*/
   .section_container {
     @apply px-6 py-10 max-w-7xl mx-auto;
   }
@@ -386,7 +397,7 @@
   .event-card_skeleton {
     @apply w-full h-96 rounded-[22px] bg-zinc-400;
   }
-  /* END of NEWS*/
+  /* EVENTS-RELATED PAGES*/
 
   /* START of FAQ */
   .faq-glow_before {

@@ -17,21 +17,18 @@ const Hyperlink = ({ href = '#', children, className = '', arrow = true }) => {
   return (
     <Link
       href={href}
-      className={clsx('', className)} 
-      role="button"
+      className={clsx('inline-flex items-center space-x-2', className)} 
     >
-      <span className="relative flex items-center min-h-[40px] px-6 py-4 overflow-hidden">
       {arrow ? (
-        <span className="text relative z-2 base-bold transition-all duration-300 ease-in-out flex ">
+        <span className="relative z-2 base-bold transition-all duration-300 ease-in-out flex items-center">
           {children}
           <ArrowIcon />
         </span>
-        ) : (
-        <span className="text relative z-2 transition-all duration-300 ease-in-out flex underline underline-offset-8 decoration-p1 decoration-1 hover:decoration-[3px]">
+      ) : (
+        <span className="relative z-2 transition-all duration-300 ease-in-out underline underline-offset-4 decoration-p1 decoration-1 hover:decoration-[3px]">
           {children}
         </span>
-        )}
-      </span>
+      )}
     </Link>
   );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import EventCard from "@components/events/EventCard";
 
-const CardsCollection = ({ events = [], maxCards = 4, locale }) => {
-  const displayedEvents = events.slice(0, maxCards);
+const CardsCollection = ({ events = [], maxCards, locale }) => {
+  // if maxCards is null or undefined return all events
+  const displayedEvents = maxCards != null ? events.slice(0, maxCards) : events;
 
   return (
     <ul className="mt-7 card_grid">

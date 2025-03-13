@@ -32,10 +32,19 @@
       "paragraph":"Discover the organizations that make this journey possible by exploring the links below"
     },
     "JoinPage":{
-      "h3" : "Flexible Membership Options: IEEE or SB",
-      "option1" : "Volunteer in our branch",
-      "option2" : "Join IEEE Organisation",
-      "sb_intro" : "A member of our branch can be involved either in one of our scientific groups or in one of our departments. Follow the steps below to get started!"
+      "h3" : "Join Us",
+      "subheading_first_part": "We offer flexible options to join, you can either or become an ",
+      "volunteer": "volunteer in our branch",
+      "subheading_second_part": " official member by subscribing to ",
+      "ieee": "ΙΕΕΕ organization.",
+      "option1" : "SB of UniWa",
+      "option2" : "IEEE organization",
+      "sb_intro1" : "A member of our branch can be involved either in one of our ",
+      "scientific_groups":"scientific groups",
+      "sb_intro2":" or in one of our ",
+      "departments":"departments.",
+      "ieee_intro" : "According to the IEEE, official members of the IEEE SB UniWA are all students of the University of West Attica who are registered members of the organization through an annual subscription.",
+      "join_steps" : "How to Join?"
     },
     "Council":{
       "heading": "The Executive Commitee",
@@ -58,7 +67,7 @@
     "NotFoundPage": {
       "h4": "Work in Progress ...",
       "paragraph": "Looks like we haven't built this page yet. We're probably studying for exams. Maybe next semester?",
-      "button_text": "Take Me Back"
+      "button_text": "Take Me Home"
     },
     "ErrorPage": {
       "h4": "An exception was thrown... ",
@@ -68,5 +77,10 @@
     "Error404": {
       "h4": "Page Not Found...",
       "paragraph": "The page you're looking for doesn't exist. Click the button below to navigate back to homepage."
+    },    
+    "EventsPage": {
+      "heading":"Events",
+      "subheading":"All events",
+      "search_results": "Search results for "
     }
   }

@@ -1,18 +1,33 @@
-import { FaGears } from "react-icons/fa6";
-import { TiArrowBack } from "react-icons/ti";
-import Button from '@components/ui/Button';
-import { useTranslations } from 'next-intl';
+import {getTranslations} from 'next-intl/server';
+import CardsCollection from '@components/events/CardsCollection';
+import SearchForm from "@/components/ui/SearchForm";
+import { getAllThirdPartyEvents } from '@actions/getAllThirdPartyEvents';
 
-export default function WorkInProgress() {
-  const notFoundTranslations = useTranslations("NotFoundPage");
+export default async function SbEvents({ params, searchParams }) {
+  const query = (await searchParams).query;
+  const locale = (await params).locale; 
+  const fetchParams = { search: query || null };
+  const events = await getAllThirdPartyEvents(locale);
+  const eventsTranslations = await getTranslations("EventsPage");
   return (
-    <main className="flex h-screen flex-col items-center justify-center gap-2 mx-4">
-      <FaGears size={160} className='text-p4' />
-      <h4 className='green_gradient max-w-440 h4 max-lg:h5 text-p4 mb-10 animate-pulse'>{notFoundTranslations('h4')}</h4>
-      <p className='max-w-440 mb-14 body-1 max-lg:body-2 max-md:mb-10 text-p5'>{notFoundTranslations('paragraph')}</p>
-      <Button href="/" icon={<TiArrowBack size={36} color="white"/>} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-        {notFoundTranslations('button_text')}
-      </Button>
-    </main>
+    <>
+      <section>
+        <div className='container'>
+          <h2 className='h2 max-md:h3 text-p4 mt-32 mb-10'>
+              {eventsTranslations('heading')}
+          </h2>
+          <SearchForm query={query} placeholder={"What event you want to attend?"}/>
+        </div>
+      </section>
+      <section>
+        <div className='container'>
+          <h4 className='h4 max-md:h5 text-p4 my-10'>
+            {query ? `${eventsTranslations('search_results')} "${query}"` : eventsTranslations('subheading')}
+          </h4>
+          
+            <CardsCollection events={events} locale={locale}/>
+        </div>
+      </section>
+    </>
   );
 }

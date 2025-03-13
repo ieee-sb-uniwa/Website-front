@@ -40,8 +40,8 @@ const MapWrapper = () => {
                     </span>
               </div>
                   
-                <p className="body-2 max-lg:body-3 my-10 mx-w-md flex items-center gap-1">
-                  {t('CampusMapText')}
+                <p className="body-2 max-lg:body-3 my-10 max-w-md flex items-center gap-1">
+                  {t('CampusMapText')}&nbsp;
                   <Hyperlink href="https://campusplan.uniwa.gr/2" className="body-2 max-lg:body-3 text-p4" arrow={false}>
                     {t('CampusMap')}
                   </Hyperlink>
