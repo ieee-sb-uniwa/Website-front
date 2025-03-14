@@ -11,12 +11,12 @@ import { RiHourglassFill } from "react-icons/ri";
 const EventCard = ({ event , locale}) => {
   const { id, date, location, title, images, description, links } = event;
   const eventTranslations = useTranslations('EventCard');
-
+  const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   return (
     <li key={id} className="event-card group">
-      {images && images.length > 0 && (
+      {images && images.length > 0 && images[0].trim() !== "" && (
         <img
-          src={images[0]}
+          src={`${imagesUrl}${images[0]}`}
           alt={title}
           className="event-card_img"
         />

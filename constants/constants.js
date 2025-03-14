@@ -1,3 +1,4 @@
+import Hyperlink from "@components/ui/Hyperlink";
 export const sponsors= [
   {title: "Αγροκτήματα Κιθαιρώνα",img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130},
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
@@ -10,16 +11,50 @@ export const heroImages = [
   "/assets/photos/OPEN-DAY.jpg",
  // "/assets/photos/IEEEXtreme-17.0.jpg"
 ];
-export const joinSBSteps = [
-  "To register for the branch, simply fill out the registration form https://forms.gle/QM1pkrSQfDRZKCaPA.",
+
+export const joinSBStepsEN = [
+  <>
+    To register for the branch, simply fill out the{' '}
+    <Hyperlink href="https://forms.gle/QM1pkrSQfDRZKCaPA" className="text-p4" arrow={false}>
+      registration form
+    </Hyperlink>.
+  </>,
   'Afterwards, a member of HR of the branch will contact you directly via Discord to discuss your interests and find the appropriate team for you.',
   'Once the process is successfully completed, you will officially be a member of IEEE SB UniWA.',
 ];
-export const joinIEEESteps = [
-  'To subscribe to IEEE, you can visit the link (here link to the IEEE main page).',
+
+export const joinIEEEStepsEN = [
+  <>
+    To subscribe to IEEE, you can visit the{' '}
+    <Hyperlink href="https://www.ieee.org/membership/index.html" className="text-p4" arrow={false}>
+      IEEE Main Page
+    </Hyperlink>.
+  </>,
   'You will need to create an account and then log in with it.',
   'Next, select "Join IEEE" and follow the subscription steps.',
   'The annual Subscription comes at around $27 USD.',
+];
+export const joinSBStepsGR = [
+  <>
+    Για την εγγραφή σας στο παράρτημα αρκεί να συμπληρώσετε την φόρμα εγγραφής{' '}
+    <Hyperlink href="https://forms.gle/QM1pkrSQfDRZKCaPA" className="text-p4" arrow={false}>
+      φόρμα εγγραφής
+    </Hyperlink>.
+  </>,
+  'Στη συνέχεια θα επικοινωνήσει άμεσα μαζί σας ένα μέλος του παραρτήματος μέσω discord προκειμένου να συζητήσετε με βάση τα ενδιαφέροντά σας με στόχο να βρείτε την κατάλληλη ομάδα.',
+  'Μόλις ολοκληρωθεί επιτυχώς η διαδικασία είστε και επίσημα μέλος του IEEE SB UniWA.',
+];
+
+export const joinIEEEStepsGR = [
+  <>
+    Για την συνδρομή στο IEEE μπορείτε να απευθυνθείτε στην{' '}
+    <Hyperlink href="https://www.ieee.org/membership/index.html" className="text-p4" arrow={false}>
+      κεντρική σελίδα του IEEE
+    </Hyperlink>.
+  </>,
+  'Πρέπει να δημιουργήσετε έναν λογαριασμό και στην συνέχεια να κάνετε log in με αυτόν.',
+  'Στη συνέχεια επιλέγετε Join IEEE και ακολουθείτε τα βήματα συνδρομής.',
+  'Η ετήσια συνδρομή ανέρχεται στα 27 δολάρια.',
 ];
 export const socials = [
     {

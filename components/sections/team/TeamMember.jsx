@@ -7,6 +7,7 @@ import { socials } from "@constants/constants.js";
 
 const TeamMember = ({item, containerClassName}) => {
   const getSocialIcon = (type) => socials.find((social) => social.title.toLowerCase() === type)?.icon;
+  const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   return (
     <div className={clsx(
         "relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md",
@@ -23,7 +24,7 @@ const TeamMember = ({item, containerClassName}) => {
                     className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px]"
                 >
                     <Image
-                        src={item.photo}
+                        src={`${imagesUrl}${item.photo}`}
                         width="800"
                         height="800"
                         alt={item.name}

@@ -2,7 +2,7 @@
 import { notFound } from 'next/navigation';
 
 export async function getCouncil(locale) {
-    const apiUrl = process.env.API_URL;
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     // Determine the endpoint based on the locale
     const endpoint = locale === 'gr' ? 'council_gr' : 'council_en';
   try {

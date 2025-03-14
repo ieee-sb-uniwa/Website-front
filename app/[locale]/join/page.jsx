@@ -4,9 +4,16 @@ import ToggleButton from '@components/ui/ToggleButton';
 import {useTranslations} from 'next-intl';
 import Hyperlink from '@components/ui/Hyperlink';
 import StepsList from '@components/sections/joinpage/StepsList';
+import { joinIEEEStepsGR, joinSBStepsGR, joinIEEEStepsEN, joinSBStepsEN } from '@constants/constants';
+import { useParams } from 'next/navigation';
 
-const page = () => {
+const page = ({ params }) => {
+  const { locale } = useParams(); // Get locale from URL params
   const [SB, setSB] = useState(true);  
+  // Select the correct steps based on the locale
+  const joinIEEESteps = locale === 'gr' ? joinIEEEStepsGR : joinIEEEStepsEN;
+  const joinSBSteps = locale === 'gr' ? joinSBStepsGR : joinSBStepsEN;
+
   const t = useTranslations("JoinPage");
   return (
     <section>
@@ -31,27 +38,27 @@ const page = () => {
                 <div className="mt-10 ml-5">
                 {SB ? (
                   <div>
-                    <p className='body-1 max-md:body-3 max-lg:body-2 relative mx-auto text-p4'>
+                    <p className='body-1 max-lg:body-2 relative mx-auto text-p4'>
                       {t('sb_intro1')}&nbsp;
-                      <Hyperlink href="/science-teams" className="body-1 max-md:body-3 max-lg:body-2 text-p4 mx-auto" arrow={false}>
+                      <Hyperlink href="/science-teams" className="body-1 max-lg:body-2 text-p4 mx-auto" arrow={false}>
                         {t('scientific_groups')}
                       </Hyperlink>
                       {t('sb_intro2')}
-                      <Hyperlink href="/departments" className="body-1 max-md:body-3 max-lg:body-2 text-p4" arrow={false}>
+                      <Hyperlink href="/departments" className="body-1 max-lg:body-2 text-p4" arrow={false}>
                         {t('departments')}
                       </Hyperlink>
                     </p>
                   </div>
                 ) : (
                   <div>
-                    <p className='body-1 max-md:body-3 max-lg:body-2 relative mx-auto text-p4'>{t('ieee_intro')}</p>  
+                    <p className='body-1 max-lg:body-2 relative mx-auto text-p4'>{t('ieee_intro')}</p>  
                   </div>
                 )}
-                <h4 className='h4 max-lg:h5 max-md:h6 py-3 md:py-5 z-3 mx-auto relative mx-w-lg my-10 text-p4 max-md:my-8'>{t('join_steps')}</h4>
+                <h4 className='h4 max-lg:h5 py-3 md:py-5 z-3 mx-auto relative mx-w-lg my-10 text-p4 max-md:my-8'>{t('join_steps')}</h4>
                 {SB ? ( 
-                  <StepsList/>
+                  <StepsList steps={joinSBSteps}/>
                 ) : (
-                  <StepsList/>
+                  <StepsList steps={joinIEEESteps}/>
                 )}
               </div>
             </div>
