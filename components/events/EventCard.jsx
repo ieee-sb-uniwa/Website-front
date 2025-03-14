@@ -1,4 +1,5 @@
 
+'use client';
 import PropTypes from "prop-types";
 import Hyperlink from "@components/ui/Hyperlink";
 import { isValidISODate,formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
@@ -10,9 +11,10 @@ import { RiHourglassFill } from "react-icons/ri";
 import Image from 'next/image';
 
 const EventCard = ({ event , locale}) => {
-  const { id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
+  const {id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
   const eventTranslations = useTranslations('EventCard');
   const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
+
   return (
     <li key={id} className="event-card group">
       {images && images.length > 0 && images[0].trim() !== "" && (
@@ -20,8 +22,9 @@ const EventCard = ({ event , locale}) => {
           src={`${imagesUrl}${thumbnail}`}
           alt={title}
           className="event-card_img"
-          width={1200} 
-          height={800} 
+          width={1200}
+          height={800}
+          priority
         />
       )}
       <div className="mt-5">
