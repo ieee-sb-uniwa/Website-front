@@ -9,7 +9,7 @@ const CardsCollection = ({ events = [], maxCards, locale }) => {
     <ul className="mt-7 card_grid">
       {displayedEvents && displayedEvents.length > 0 ? (
         displayedEvents.map((event, index) => (
-          <EventCard key={event.id || index} event={event} locale={locale} />
+          <EventCard key={event._id || index} event={event} locale={locale} />
         ))
       ) : (
         <h4 className="h4 max-md:h6 text-red-400">No Events ☹</h4>
