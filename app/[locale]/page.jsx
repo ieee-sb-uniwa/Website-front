@@ -1,6 +1,7 @@
 import Hero from "@components/sections/homepage/Hero";
 import MapWrapper from "@components/sections/map/MapWrapper";
 import { Sponsors } from "@components/sections/homepage/Sponsors";
+import ScienceGroupsOverview from "@components/sections/homepage/ScienceGroupsOverview";
 import Team from "@components/sections/team/Team";
 //import {council} from "@constants/constants.js"
 //import {events} from "@constants/constants.js"
@@ -21,6 +22,7 @@ export default async function Home(props) {
   <section className='w-full flex-center flex-col'>
     <Hero/>
     <RecentActivities activities={events} locale={locale}/>
+    <ScienceGroupsOverview/>
     <Team team={council} translationsComponent={councilTranslations}/>
     <Sponsors/>
     <MapWrapper/>
