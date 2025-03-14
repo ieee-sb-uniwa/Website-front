@@ -1,10 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'; 
 import Step from './Step';
-import {fadeIn} from '@lib/motion.js'
+import {fadeIn, staggerContainer, planetVariants} from '@lib/motion.js'
 
-const StepsList = ({steps}) => {
+const StepsList = ({steps, imgUrl}) => {
   return (
+    <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className='2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8'
+  >
     <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
@@ -19,6 +26,8 @@ const StepsList = ({steps}) => {
         ))}
         </div>
     </motion.div>
+
+  </motion.div>
   )
 }
 

@@ -10,11 +10,11 @@ import { MdEditDocument} from "react-icons/md";
 import { RiHourglassFill } from "react-icons/ri";
 import Image from 'next/image';
 
-const EventCard = ({ event , locale}) => {
-  const {id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
+const EventCard = ({ event , locale, eventType}) => {
+  const {_id, id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
   const eventTranslations = useTranslations('EventCard');
   const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
-
+  const eventDetailsLink = eventType === "third-party" ? `/third-party-events/${_id}` : `/sb-events/${_id}`;
   return (
     <li key={id} className="event-card group">
       {images && images.length > 0 && images[0].trim() !== "" && (
@@ -83,7 +83,7 @@ const EventCard = ({ event , locale}) => {
               {eventTranslations('isOver')}
             </p>     
           )}
-          <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={`/sb-events/${id}`}>
+          <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={eventDetailsLink}>
             {eventTranslations('read_more')}
           </Hyperlink>
       </div>
@@ -93,6 +93,7 @@ const EventCard = ({ event , locale}) => {
 
 EventCard.propTypes = {
   event: PropTypes.shape({
+    _id: PropTypes.number.isRequired,
     id: PropTypes.number.isRequired,
     date: PropTypes.string,
     location: PropTypes.string.isRequired,

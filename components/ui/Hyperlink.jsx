@@ -25,7 +25,7 @@ const Hyperlink = ({ href = '#', children, className = '', arrow = true }) => {
           <ArrowIcon />
         </span>
       ) : (
-        <span className="relative z-2 transition-all duration-300 ease-in-out underline underline-offset-4 decoration-p1 decoration-1 hover:decoration-[3px]">
+        <span className="relative z-2 transition-all duration-300 ease-in-out underline underline-offset-8 decoration-p1 decoration-1 hover:decoration-[3px]">
           {children}
         </span>
       )}

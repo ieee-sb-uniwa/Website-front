@@ -77,8 +77,9 @@ export const Nav = () => {
                     {t('news')}
                   </Link>
                   <div className="dot" />
-                </li>
+                
                 <CustomDropdown category={t('teams')} setIsOpen={setIsOpen} items={menuItems.teams} />
+                </li>
                 <li className="nav-logo">
                   <Link href="/" className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer")}>
                     <Image
@@ -89,8 +90,9 @@ export const Nav = () => {
                     />
                   </Link>
                 </li>
-                <CustomDropdown category={t('events')} setIsOpen={setIsOpen} items={menuItems.events} />
                 <li className="nav-li">
+                <CustomDropdown category={t('events')} setIsOpen={setIsOpen} items={menuItems.events} />
+                
                   <div className="dot" />
                   <Link href="/contact" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                     {t('contact')}

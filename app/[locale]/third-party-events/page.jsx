@@ -25,7 +25,7 @@ export default async function SbEvents({ params, searchParams }) {
             {query ? `${eventsTranslations('search_results')} "${query}"` : eventsTranslations('subheading')}
           </h4>
           
-            <CardsCollection events={events} locale={locale}/>
+            <CardsCollection events={events} locale={locale} eventsType={'third-party'}/>
         </div>
       </section>
     </>

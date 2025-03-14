@@ -1,7 +1,7 @@
 import React from 'react';
 import EventCard from "@components/events/EventCard";
 
-const CardsCollection = ({ events = [], maxCards, locale }) => {
+const CardsCollection = ({ events = [], maxCards, locale, eventsType }) => {
   // if maxCards is null or undefined return all events
   const displayedEvents = maxCards != null ? events.slice(0, maxCards) : events;
 
@@ -9,7 +9,7 @@ const CardsCollection = ({ events = [], maxCards, locale }) => {
     <ul className="mt-7 card_grid">
       {displayedEvents && displayedEvents.length > 0 ? (
         displayedEvents.map((event, index) => (
-          <EventCard key={event._id || index} event={event} locale={locale} />
+          <EventCard key={event._id || index} event={event} locale={locale} eventType={eventsType}/>
         ))
       ) : (
         <h4 className="h4 max-md:h6 text-red-400">No Events ☹</h4>

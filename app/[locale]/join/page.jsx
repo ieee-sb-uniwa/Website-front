@@ -6,6 +6,7 @@ import Hyperlink from '@components/ui/Hyperlink';
 import StepsList from '@components/sections/joinpage/StepsList';
 import { joinIEEEStepsGR, joinSBStepsGR, joinIEEEStepsEN, joinSBStepsEN } from '@constants/constants';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 
 const Page = () => {
   const { locale } = useParams(); 
@@ -13,7 +14,6 @@ const Page = () => {
   // Select the correct steps based on the locale
   const joinIEEESteps = locale === 'gr' ? joinIEEEStepsGR : joinIEEEStepsEN;
   const joinSBSteps = locale === 'gr' ? joinSBStepsGR : joinSBStepsEN;
-
   const t = useTranslations("JoinPage");
   return (
     <section>
@@ -34,6 +34,15 @@ const Page = () => {
                   state={SB}
                   setState={setSB}
                 />
+                <div className='flex-1 flex justify-center items-center'>
+                    <Image
+                      src={SB ? "/assets/logos/sblogo-text-white.svg" : "/assets/logos/IEEE_logo.png"}
+                      alt="logo"
+                      width={525}
+                      height={180}
+                      className="max-sm:w-[50%] max-sm:h-[50%] max-md:w-[40%] max-md:h-[40%] w-[30%] h-[30%] object-contain mt-10"
+                    />
+                </div>
                 {/* Conditionally render different text based on the toggle state */}
                 <div className="mt-10 ml-5">
                 {SB ? (
@@ -55,11 +64,8 @@ const Page = () => {
                   </div>
                 )}
                 <h4 className='h4 max-lg:h5 py-3 md:py-5 z-3 mx-auto relative mx-w-lg my-10 text-p4 max-md:my-8'>{t('join_steps')}</h4>
-                {SB ? ( 
-                  <StepsList steps={joinSBSteps}/>
-                ) : (
-                  <StepsList steps={joinIEEESteps}/>
-                )}
+                {/* Re-mount StepsList with a unique key when toggled */}
+                <StepsList key={SB ? 'sb-steps' : 'ieee-steps'} steps={SB ? joinSBSteps : joinIEEESteps} imgUrl={'/assets/logos/sblogo-text-white.svg'} />
               </div>
             </div>
         </div>

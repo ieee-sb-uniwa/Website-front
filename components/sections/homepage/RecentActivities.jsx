@@ -14,7 +14,7 @@ const RecentActivities = ({activities = [], locale}) => {
         {t('sentence_after_words')}
       </div>
       <p className='my-8 body-1 max-lg:body-2 text-p5'>{t('sentence2')} 🍕</p>
-      <CardsCollection events={activities} maxCards={3} locale={locale}/>
+      <CardsCollection events={activities} maxCards={3} locale={locale} eventsType={'sb-events'}/>
     </section>
   )
 }
