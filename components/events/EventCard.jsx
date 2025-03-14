@@ -7,23 +7,26 @@ import { useTranslations } from 'next-intl';
 import Link from "@node_modules/next/link";
 import { MdEditDocument} from "react-icons/md";
 import { RiHourglassFill } from "react-icons/ri";
+import Image from 'next/image';
 
 const EventCard = ({ event , locale}) => {
-  const { id, date, location, title, images, description, links } = event;
+  const { id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
   const eventTranslations = useTranslations('EventCard');
   const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   return (
     <li key={id} className="event-card group">
       {images && images.length > 0 && images[0].trim() !== "" && (
-        <img
-          src={`${imagesUrl}${images[0]}`}
+          <Image
+          src={`${imagesUrl}${thumbnail}`}
           alt={title}
           className="event-card_img"
+          width={1200} 
+          height={800} 
         />
       )}
       <div className="mt-5">
         <div className="relative flex flex-wrap gap-2 items-center pb-4">
-          {event.keywords.map((keyword, index) => (
+          {keywords.map((keyword, index) => (
               <div
                 key={index}
                 className="flex gap-1 small-2 rounded-20 relative z-2 border-2 px-4 py-1.5 uppercase border-p3 text-p3"
@@ -56,19 +59,19 @@ const EventCard = ({ event , locale}) => {
           </div>
         )}
         {/*DEADLINE*/}
-        {isValidISODate(date) && !hasDatePassed(date) && (
+        {isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) && (
         <div className="flex items-center my-3 gap-3">
           {/*<RiHourglassFill className="text-amber-300" size={26} />*/}
           <p className="body-2 text-warning event_card_date">
-            {eventTranslations('register_before')} {formatDate2Digits(date, locale)}
+            {eventTranslations('register_before')} {formatDate2Digits(registration_deadline, locale)}
           </p>
         </div>
         )}
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
       <div className="flex justify-center gap-4 mt-3 my-4">
-          { isValidISODate(date) && !hasDatePassed(date) ? (
-            <Link className="flex items-center gap-1 uppercase register-btn" href={links[0].url}>
+          { isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) ? (
+            <Link className="flex items-center gap-1 uppercase register-btn" href={registration_form}>
               <MdEditDocument size={24}/>
               {eventTranslations('participation_form')}
             </Link>
@@ -85,21 +88,18 @@ const EventCard = ({ event , locale}) => {
   );
 };
 
-// PropTypes for EventCard
 EventCard.propTypes = {
   event: PropTypes.shape({
     id: PropTypes.number.isRequired,
     date: PropTypes.string,
     location: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.string),
-    description: PropTypes.string.isRequired,
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string,
-        url: PropTypes.string.isRequired,
-      })
-    ),
+    keywords: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
+    registration_form: PropTypes.string,
+    registration_deadline: PropTypes.string,
   }).isRequired,
 };
 

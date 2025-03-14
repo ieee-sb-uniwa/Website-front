@@ -7,8 +7,8 @@ import StepsList from '@components/sections/joinpage/StepsList';
 import { joinIEEEStepsGR, joinSBStepsGR, joinIEEEStepsEN, joinSBStepsEN } from '@constants/constants';
 import { useParams } from 'next/navigation';
 
-const page = ({ params }) => {
-  const { locale } = useParams(); // Get locale from URL params
+const Page = () => {
+  const { locale } = useParams(); 
   const [SB, setSB] = useState(true);  
   // Select the correct steps based on the locale
   const joinIEEESteps = locale === 'gr' ? joinIEEEStepsGR : joinIEEEStepsEN;
@@ -67,4 +67,4 @@ const page = ({ params }) => {
   )
 }
 
-export default page
+export default Page
