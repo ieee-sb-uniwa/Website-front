@@ -6,7 +6,6 @@ const imagesStorageUrl = new URL(process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [imagesStorageUrl.hostname], // Dynamically allow IMAGE_STORAGE_URL hostname
         remotePatterns: [
           {
             protocol: imagesStorageUrl.protocol.replace(':', ''), // Ensure protocol format
