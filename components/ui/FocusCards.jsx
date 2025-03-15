@@ -10,21 +10,30 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered }) => (
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "relative overflow-hidden flex items-center justify-center px-2 py-4 transition-[opacity,transform] duration-300 ease-out",
-        "h-24 md:h-28 shrink-0 basis-1/2 md:basis-1/4", // Adjust the container size
-        "hover:scale-110 focus:scale-110 active:translate-y-0 hover:-translate-y-2 focus:-translate-y-2", // Hover effects
-        hovered !== null && hovered !== index && "opacity-50 scale-95" // Hover behavior for other elements
+        "relative flex flex-col items-center justify-center px-2 py-4 transition-[opacity,transform] duration-300 ease-out",
+        "h-24 md:h-28 shrink-0 basis-1/2 md:basis-1/4",
+        "hover:scale-110 focus:scale-110 active:translate-y-0 hover:-translate-y-2 focus:-translate-y-2",
+        hovered !== null && hovered !== index && "opacity-50 scale-95"
       )}
     >
-      <div className="relative flex items-center justify-center w-full h-full">
-        {/* Use width and height for Image */}
-        <Image
-          src={card.img}
-          alt={card.title}
-          width={card.imgWidth}  // Dynamically set the width if available
-          height={card.imgHeight}  // Dynamically set the height if available
-          className="object-contain"
-        />
+      {/* Image */}
+      <Image
+        src={card.img}
+        alt={card.title}
+        width={card.imgWidth}
+        height={card.imgHeight}
+        className="object-contain"
+      />
+
+      {/* Title appears below the image and moves slightly downward on hover */}
+      <div
+        className={cn(
+          "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
+          "transition-all duration-300 transform",
+          hovered === index ? "opacity-100 translate-y-2" : "opacity-0 translate-y-0"
+        )}
+      >
+        {card.title}
       </div>
     </div>
   </Link>

@@ -16,7 +16,7 @@ export const Hero = () => {
     options={{
       type: 'fade',
       autoplay: true,
-      interval: 6000,
+      interval: 9000,
       speed: 500,
       pagination: true,
       pagination: "splide__pagination splide__pagination--custom",

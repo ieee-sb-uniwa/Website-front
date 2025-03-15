@@ -4,13 +4,13 @@ export const sponsors= [
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
 ];
 export const scientificGroupsLogos= [
-  { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:1949, imgHeight:1949}, 
-  { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:1949, imgHeight:1949}, 
-  {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:1949, imgHeight:1949},
-  { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:1949, imgHeight:1949}, 
-  { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/biomed.svg", url: "/science-teams/biomed", imgWidth:1949, imgHeight:1949}, 
-  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:1949, imgHeight:1949},  
-  { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:1949, imgHeight:1949}, 
+  { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:1700, imgHeight:1000}, 
+  { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:1700, imgHeight:1000}, 
+  {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:1700, imgHeight:1000},
+  { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:1700, imgHeight:1000}, 
+  { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/biomed.svg", url: "/science-teams/biomed", imgWidth:1700, imgHeight:1000}, 
+  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:1700, imgHeight:1000},  
+  { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:1700, imgHeight:1000}, 
 ];
 export const heroImages = [
   "/assets/photos/IEEEXTREME_18.0.jpg",
