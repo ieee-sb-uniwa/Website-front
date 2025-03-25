@@ -31,6 +31,11 @@
       "caption":"Grateful for your support",
       "paragraph":"Discover the organizations that make this journey possible by exploring the links below"
     },
+    "ScientificGroups": {
+      "heading":"Explore Our Scientific Groups",
+      "caption":"CREATE.COLLABORATE.LEAD",
+      "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects."
+    },
     "JoinPage":{
       "h3" : "Join Us",
       "subheading_first_part": "We offer flexible options to join, you can either ",

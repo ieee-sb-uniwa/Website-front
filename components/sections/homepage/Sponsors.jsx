@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 export const Sponsors = () => {
   const t = useTranslations('Sponsors');
   return (
-    <section className="bg-s3 overflow-clip bg-[url('/assets/images/text-slice-pattern.png')] bg-cover bg-center bg-no-repeat">
+    <section className="bg-s3 overflow-clip starry-night">
       <section className="mx-auto w-full max-w-7xl p-4 text-center">
           <div className="mx-auto w-full max-w-7xl px-4 relative py-10 text-center md:py-20">        
               <header className='my-10 md:my-20'>
@@ -16,7 +16,7 @@ export const Sponsors = () => {
                   </h3>
                   <p className='my-10 h6 max-lg:body-2 text-p5'>{t('paragraph')}</p>
               </header>
-              <FocusCards cards={sponsors}/>
+              <FocusCards cards={sponsors} showTitles={false}/>
           </div>
       </section>
 

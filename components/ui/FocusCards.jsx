@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
-export const CardLogo = React.memo(({ card, index, hovered, setHovered }) => (
+export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitle }) => (
   <Link href={card.url || "#"} target="_blank" rel="noopener noreferrer">
     <div
       onMouseEnter={() => setHovered(index)}
@@ -25,23 +25,23 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered }) => (
         className="object-contain"
       />
 
-      {/* Title appears below the image and moves slightly downward on hover */}
-      <div
-        className={cn(
-          "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
-          "transition-all duration-300 transform",
-          hovered === index ? "opacity-100 translate-y-2" : "opacity-0 translate-y-0"
-        )}
-      >
-        {card.title}
-      </div>
+      {showTitle && (
+        <div
+          className={cn(
+            "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
+            "transition-all duration-300 transform",
+            hovered === index ? "opacity-100 translate-y-2" : "opacity-0 translate-y-0"
+            )}>
+          {card.title}
+        </div>
+      )}
     </div>
   </Link>
 ));
 
 CardLogo.displayName = "CardLogo";
 
-export function FocusCards({ cards }) {
+export function FocusCards({ cards, showTitles }) {
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -53,6 +53,7 @@ export function FocusCards({ cards }) {
           index={index}
           hovered={hovered}
           setHovered={setHovered}
+          showTitle={showTitles}
         />
       ))}
     </div>
