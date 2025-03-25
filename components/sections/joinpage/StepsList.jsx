@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Step from './Step';
 import {fadeIn, staggerContainer, planetVariants} from '@lib/motion.js'
 
-const StepsList = ({steps, imgUrl}) => {
+const StepsList = ({steps}) => {
   return (
     <motion.div
     variants={staggerContainer}

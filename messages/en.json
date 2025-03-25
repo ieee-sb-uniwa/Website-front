@@ -51,6 +51,44 @@
       "ieee_intro" : "According to the IEEE, official members of the IEEE SB UniWA are all students of the University of West Attica who are registered members of the organization through an annual subscription.",
       "join_steps" : "How to Join?"
     },
+    "FAQ":{
+      "heading": "Frequently Asked Questions",
+      "paragraph": "We have answered the most common questions, related with registrations, please feel free to",
+      "contact_link": "contact us",
+      "paragraph_end":"if you have more questions.",
+      "questions_list": [
+        {
+          "id": "0",
+          "question": "Do I need a subscription to become a member?",
+          "answer": "A subscription to IEEE is not mandatory to participate in our teams. However, members with a subscription enjoy significant benefits, such as priority access to events with limited spots and participation in official IEEE competitions, among many others. It's also important to note that by subscribing, you support the branch itself, as part of the funds return to us, which we can use for purchasing equipment and organizing events."
+        },
+        {
+          "id": "1",
+          "question": "Must I actively participate in a scientific group / project?",
+          "answer": "Our goal is to create an active community. For this reason, we encourage every member to be part of at least one team and actively participate in one of its projects. However, in cases where participation is temporarily not possible, this can be discussed with the respective team leader or project manager."
+        },
+        {
+          "id": "2",
+          "question": "Is any previous knowledge/experience required or can I learn through participating?",
+          "answer": "There are no prior knowledge requirements for joining the branch. However, it is up to the team leader/project manager to set any specific knowledge requirements to ensure the best organization of a project."
+        },
+        {
+          "id": "3",
+          "question": "How much time do I need to devote?",
+          "answer": "The time required depends on how many projects you participate in and the demands of each project. However, a few hours per week are usually sufficient."
+        },
+        {
+          "id": "4",
+          "question": "Do I need to be an electrical or electronics engineer in order to participate?",
+          "answer": "No! The branch is open to everyone, regardless of department. In addition to the scientific groups, there are many other teams that manage important aspects of the branch and relate to fields unrelated to engineering. You can get involved with these teams after discussing them through the registration form."
+        },
+        {
+          "id": "5",
+          "question": "Must you be a student to be a part of the branch?",
+          "answer": "No. Although most members are usually undergraduates, mostly due to more free time, there is no limit to who can participate in our teams or attend our events."
+        }
+      ]
+    },
     "Council":{
       "heading": "The Executive Commitee",
       "caption": "The driving force"
