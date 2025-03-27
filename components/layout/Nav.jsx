@@ -56,7 +56,7 @@ export const Nav = () => {
     >
       <div className="container flex h-13 items-center max-lg:px-5">
         <Link href="/" className="lg:hidden flex-1 cursor-pointer z-2">
-          <Image src="/assets/logos/sblogo.svg" width={50} height={50} alt="logo" />
+          <Image src="/assets/logos/sblogo-white.svg" width={50} height={50} alt="logo" />
         </Link>
 
         <div
@@ -83,7 +83,7 @@ export const Nav = () => {
                 <li className="nav-logo">
                   <Link href="/" className={clsx("max-lg:hidden transition-transform duration-500 cursor-pointer")}>
                     <Image
-                      src="/assets/logos/sblogo-blue-text-white.svg"
+                      src="/assets/logos/sblogo-text-white.svg"
                       width={150}
                       height={150}
                       alt="logo"
