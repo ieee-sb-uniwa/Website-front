@@ -3,7 +3,7 @@ import { useState } from "react";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 
-const FaqItem = ({ item, index }) => {
+const FaqItem = ({ item, index, showNumbers }) => {
   const [activeId, setActiveId] = useState(null);
 
   const active = activeId === item.id;
@@ -17,10 +17,12 @@ const FaqItem = ({ item, index }) => {
         }}
       >
         <div className="flex-1">
-          <div className="base-bold mb-1.5 text-p6 max-lg:hidden">
-            {index < 10 ? "0" : ""}
-            {index}
-          </div>
+          {showNumbers && (
+            <div className="base-bold mb-1.5 text-p6 max-lg:hidden">
+              {index < 10 ? "0" : ""}
+              {index}
+            </div>
+          )}
           <div
             className={clsx(
               "h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",

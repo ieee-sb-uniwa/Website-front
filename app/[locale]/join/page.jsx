@@ -68,7 +68,7 @@ const Page = () => {
                 {/* Re-mount StepsList with a unique key when toggled */}
                 <StepsList key={SB ? 'sb-steps' : 'ieee-steps'} steps={SB ? joinSBSteps : joinIEEESteps} />
               </div>
-                <Faq/>
+                <Faq showNumbers={false} noOfQuestions={6}/>
             </div>
         </div>
     </section>

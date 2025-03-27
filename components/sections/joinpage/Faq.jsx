@@ -5,10 +5,9 @@ import {useTranslations} from 'next-intl';
 import FaqItem from './FaqItem';
 //import {faq} from '@constants/constants';
 
-const Faq = () => {
+const Faq = ({showNumbers, noOfQuestions=6}) => {
   const t = useTranslations('FAQ');
   const faq = t.raw('questions_list'); 
-  const halfLength = Math.floor(faq.length/2);
   return (
     <section>
         <div className='container relative z-2 py-28'>
@@ -33,14 +32,9 @@ const Faq = () => {
                     </div>
                     <div className='relative flex-1 pt-24'>
                         {faq.map((item, index) => (  
-                            <FaqItem key={item.id} item={item} index={index} noOfItems={6}/>
+                            <FaqItem key={item.id} item={item} index={index} noOfItems={noOfQuestions} showNumbers={showNumbers}/>
                         ))}
                     </div>
-                    {/*<div className='relative flex-1 lg:pt-24'>
-                        {faq.slice(halfLength).map((item, index) => (  
-                            <FaqItem key={item.id} item={item} index={halfLength + index} noOfItems={6}/>
-                        ))}
-                    </div>*/}
                 </div>
             </div>
         </div>
