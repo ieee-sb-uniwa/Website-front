@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
         router.replace(`/${nextLocale}${currentPage}`);
       });
       setIsSwitching(false);  
-    }, 100);  // Matching the duration of the animation
+    }, 10);  // Matching the duration of the animation
   };
 
   return (
@@ -45,11 +45,11 @@ export default function LanguageSwitcher() {
         style={{ display: 'inline-block' }}  // Ensure the div is inline for better control
       >
         <Image
-          src={`/assets/icons/${locale === 'en' ? 'greece' : 'great-britain'}.png`} // Use flag icons
+          src={`/assets/icons/${locale === 'en' ? 'lang-gr' : 'lang-en'}.svg`} // Use flag icons
           alt="language switcher"
-          width={40}
-          height={40}
-          className="object-cover"
+          width={32}
+          height={32}
+          className="object-cover "
         />
       </motion.div>
     </a>
