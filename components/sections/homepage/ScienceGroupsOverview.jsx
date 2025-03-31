@@ -7,7 +7,7 @@ const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
   return (
     <section className="bg-s3 overflow-clip bg-[url('/assets/photos/telecom_project.JPG')] bg-cover bg-center bg-no-repeat relative">
-      <div className="absolute inset-0 bg-black/60 z-2"></div>
+      <div className="absolute inset-0 bg-black/50 z-2"></div>
       <section className="mx-auto w-full max-w-7xl p-4 text-center relative z-10">
           <div className="mx-auto w-full max-w-7xl px-4 relative py-10 text-center md:py-20">        
               <header className='my-10 md:my-20'>

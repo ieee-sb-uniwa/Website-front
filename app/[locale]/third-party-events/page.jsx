@@ -16,14 +16,14 @@ export default async function SbEvents({ params, searchParams }) {
           <h2 className='h2 max-md:h3 text-p4 mt-32 mb-10'>
               {eventsTranslations('heading')}
           </h2>
-          <SearchForm query={query} placeholder={"What event you want to attend?"}/>
+          {/* <SearchForm query={query} placeholder={"What event you want to attend?"}/> */}
         </div>
       </section>
       <section>
         <div className='container'>
-          <h4 className='h4 max-md:h5 text-p4 my-10'>
+          {/* <h4 className='h4 max-md:h5 text-p4 my-10'>
             {query ? `${eventsTranslations('search_results')} "${query}"` : eventsTranslations('subheading')}
-          </h4>
+          </h4> */}
           
             <CardsCollection events={events} locale={locale} eventsType={'third-party'}/>
         </div>
