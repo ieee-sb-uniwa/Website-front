@@ -39,13 +39,13 @@ const FaqItem = ({ item, index, showNumbers }) => {
             active && "before:bg-warning after:rotate-0 after:bg-warning",
           )}
         >
-          <div className="g4 size-11/12 rounded-full shadow-300" />
+          <div className="g2 size-11/12 rounded-full shadow-300" />
         </div>
       </div>
 
       <SlideDown>
         {activeId === item.id && (
-          <div className="body-2  px-7 py-3.5">{item.answer}</div>
+          <div className="body-2  text-p4 px-7 py-3.5">{item.answer}</div>
         )}
       </SlideDown>
 

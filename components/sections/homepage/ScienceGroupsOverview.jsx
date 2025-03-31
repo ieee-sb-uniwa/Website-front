@@ -6,8 +6,9 @@ import { useTranslations } from 'next-intl';
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
   return (
-    <section className="bg-s3 overflow-clip hexagonal-mesh">
-      <section className="mx-auto w-full max-w-7xl p-4 text-center">
+    <section className="bg-s3 overflow-clip bg-[url('/assets/photos/telecom_project.JPG')] bg-cover bg-center bg-no-repeat relative">
+      <div className="absolute inset-0 bg-black/60 z-2"></div>
+      <section className="mx-auto w-full max-w-7xl p-4 text-center relative z-10">
           <div className="mx-auto w-full max-w-7xl px-4 relative py-10 text-center md:py-20">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>

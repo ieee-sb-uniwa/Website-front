@@ -88,14 +88,14 @@ const CustomDropdown = ({ category, items, setIsOpen }) => {
                 />
               </Button>
             </MenuHandler>
-            <MenuList className="bg-s2 w-[16em] gap-3 mt-2 z-50 overflow:visible rounded-lg">
+            <MenuList className="g2 w-[16em] gap-3 my-2 z-50 py-2 overflow:visible rounded-lg">
               <ul className="col-span-4 flex w-full flex-col gap-1">
                 {items.map(({ title, link }) => (
                   <li key={title}>
                     <Link
                       href={link}
                       onClick={()=>setIsOpen(false)}
-                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+                      className="base-bold text-p4 uppercase transition-colors duration-450 cursor-pointer hover:text-warning max-lg:my-4 max-lg:h5"
                     >
                       <MenuItem>{title}</MenuItem>
                     </Link>

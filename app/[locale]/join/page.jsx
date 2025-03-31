@@ -41,7 +41,7 @@ const Page = () => {
                       alt="logo"
                       width={525}
                       height={180}
-                      className="max-sm:w-[50%] max-sm:h-[50%] max-md:w-[40%] max-md:h-[40%] w-[30%] h-[30%] object-contain mt-10"
+                      className="max-sm:w-[40%] max-sm:h-[40%] max-md:w-[30%] max-md:h-[30%] w-[20%] h-[20%] object-contain mt-10"
                     />
                 </div>
                 {/* Conditionally render different text based on the toggle state */}
