@@ -56,7 +56,7 @@ export const Nav = () => {
     >
       <div className="container flex h-13 items-center max-lg:px-5">
         <Link href="/" className="lg:hidden flex-1 cursor-pointer z-2">
-          <Image src="/assets/logos/sblogo-white.svg" width={1949} height={1949} className='md:size-1/12 size-1/5' alt="logo" />
+          <Image src="/assets/logos/sblogo-white.svg" width={1949} height={1949} className='max-lg:size-1/12 max-md:size-1/5' alt="logo" />
         </Link>
 
         <div
