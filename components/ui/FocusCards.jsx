@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from "@i18n/navigation";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +45,7 @@ export function FocusCards({ cards, showTitles }) {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 gap-x-28 max-w-7xl mx-auto md:px-4 w-full">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-28 gap-x-20 max-w-7xl mx-auto md:px-4 w-full">
       {cards.map((card, index) => (
         <CardLogo
           key={card.title}
