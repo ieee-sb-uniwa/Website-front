@@ -1,8 +1,11 @@
 import Hyperlink from "@components/ui/Hyperlink";
+const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
+
 export const sponsors= [
   {title: "Αγροκτήματα Κιθαιρώνα",img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130},
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
 ];
+
 export const scientificGroupsLogos= [
   { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:800, imgHeight:500}, 
   { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
@@ -14,11 +17,11 @@ export const scientificGroupsLogos= [
 ];
 
 export const heroImages = [
-  "/assets/photos/IEEEXTREME_18.0.jpg",
-  "/assets/photos/incubation_centre.jpg",
- // "/assets/photos/git-workshop.jpg",
-  "/assets/photos/OPEN-DAY.jpg",
- // "/assets/photos/IEEEXtreme-17.0.jpg"
+  `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
+  `${imagesUrl}/wallpapers/incubation_centre.jpg`,
+ // `${imagesUrl}/wallpapers/IEEEXtreme-17.0.jpg`,
+  `${imagesUrl}/wallpapers/OPEN-DAY.jpg`,
+// `${imagesUrl}/wallpapers/git-workshop.jpg`, 
 ];
 
 export const joinSBStepsEN = [
