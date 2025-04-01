@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGears } from "react-icons/fa6";
-import { TiArrowBack } from "react-icons/ti";
+import { IoHome } from "react-icons/io5";
 import Button from '@components/ui/Button';
 import { useTranslations } from 'next-intl';
 
@@ -18,7 +18,7 @@ const WorkInProgress = () => {
         </p>
         <Button 
           href="/" 
-          icon={<TiArrowBack size={36} color="white" />} 
+          icon={<IoHome size={36} className='text-p4' />} 
           className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
         >
           {t('button_text')}
