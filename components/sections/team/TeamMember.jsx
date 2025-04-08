@@ -14,49 +14,53 @@ const TeamMember = ({item, containerClassName}) => {
         containerClassName
     )}>
         <div className='flex items-center max-xl:-mr-8'>
-            <div className='mr-4 size-50 shrink-0 rounded-half p-1.5'>
+            <div className='mr-4 relative'>
+                {/* Circle Animation - positioned relative to this container */}
+                <motion.svg 
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] xl:w-[320px] xl:h-[320px] max-md:hidden"
+                    fill="transparent"
+                    viewBox="0 0 506 506"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <motion.circle
+                        cx="253"
+                        cy="253" 
+                        r="133" 
+                        stroke="#3C52D9"
+                        strokeWidth="4" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                        initial={{strokeDasharray: "24 10 0 0"}}
+                        animate={{
+                            strokeDasharray:["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+                            rotate:[120, 360]
+                        }}
+                        transition={{
+                            duration: 16,
+                            repeat: Infinity,
+                            repeatType: "reverse"
+                        }}
+                    />
+                </motion.svg>
+                
+                {/* Image Container */}
                 <motion.div
                     initial={{opacity: 0}}
                     animate={{
-                        opacity:1,
-                        transition: {delay: 0.4, duration: 0.4,  ease: "easeInOut",},
+                        opacity: 1,
+                        transition: {delay: 0.4, duration: 0.4, ease: "easeInOut"}
                     }}
-                    className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px]"
+                    className="size-full relative z-10"
                 >
-                    <Image
-                        src={`${imagesUrl}${item.photo}`}
-                        width="800"
-                        height="800"
-                        alt={item.name}
-                        className='size-full object-cover rounded-full'
-                    />
-                    {/*circle*/}
-                    <motion.svg 
-                        className="absolute -top-1.5 -left-0 xl:-top-6 xl:-left-5 w-[233px] xl:w-[310px] h-[233px] xl:h-[310px] max-md:hidden"
-                        fill="transparent"
-                        viewBox="0 0 506 506"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <motion.circle
-                            cx="253"
-                            cy="253" 
-                            r="150" 
-                            stroke="#2EF2FF"
-                            strokeWidth="3" 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round"
-                            initial={{strokeDasharray: "24 10 0 0"}}
-                            animate={{
-                                strokeDasharray:["15 120 25 25", "16 25 92 72", "4 250 22 22"],
-                                rotate:[120, 360]
-                            }}
-                            transition={{
-                                duration: 16,
-                                repeat: Infinity,
-                                repeatType: "reverse"
-                            }}
+                    <div className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px] rounded-full p-1.5">
+                        <Image
+                            src={`${imagesUrl}${item.photo}`}
+                            width="800"
+                            height="800"
+                            alt={item.name}
+                            className='size-full object-cover rounded-full'
                         />
-                    </motion.svg>
+                    </div>
                 </motion.div>
             </div>
             {/* Member Details */}

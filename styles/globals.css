@@ -388,7 +388,7 @@
     @apply line-clamp-2 my-3 text-p4 break-all;
   }
   .register-btn{
-    @apply base-bold rounded-md p-3 shadow-sm shadow-neutral-800 hover:cursor-pointer text-s1 hover:text-p4 border border-p7 bg-p7 hover:bg-s1 hover:shadow-neutral-600 transform hover:scale-105 transition-all duration-200;
+    @apply base-bold rounded-md p-3 shadow-sm shadow-neutral-800 hover:cursor-pointer text-s1 hover:text-p4 border-2 border-p7 bg-p7 hover:g4 hover:shadow-neutral-600 transform hover:scale-105 transition-all duration-200;
   }
   .no-events {
     @apply text-p4 text-sm font-normal;
