@@ -131,5 +131,10 @@
         "heading":"Eκδηλώσεις",
         "subheading":"Όλες οι εκδηλώσεις",
         "search_results": "Αποτελέσματα αναζήτησης για "
+    },
+    "AboutPage":{
+      "mainTitle": "Λίγα λόγια για εμάς",
+      "introParagraph": "Σε αυτή τη σελίδα, θα μάθετε,",
+      "flippingWords": ["Τι είναι το IEEE;", "τη δομή του Region 8", "το ρόλο του IEEE Greece Section", "Τι κάνουν τα IEEE SB;","Ποιοι είναι οι βασικοί μας στόχοι ώς SB"]
     }
 }

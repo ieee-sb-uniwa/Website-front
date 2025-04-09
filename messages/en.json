@@ -125,5 +125,10 @@
       "heading":"Events",
       "subheading":"All events",
       "search_results": "Search results for "
+    },
+    "AboutPage":{
+      "mainTitle": "About Us",
+      "introParagraph": "On this page, you'll learn, ",
+      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"]    
     }
   }

@@ -98,7 +98,7 @@ export const Nav = () => {
                     {t('contact')}
                   </Link>
                   <div className="dot" />
-                  <MovingBorder bgColor="bg-s5">
+                  <MovingBorder bgColor="bg-s5" rounded='rounded-full'>
                     <Link href="/join" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                       {t('join')}
                     </Link>

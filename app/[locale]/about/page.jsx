@@ -1,8 +1,11 @@
 import React from 'react'
-import WorkInProgress from "@/components/WorkInProgress";
-
-const Page = () => {
-  return <WorkInProgress />;
-}
+import AboutIntro from '@components/sections/aboutpage/AboutIntro';
+import TextWithImageSegment from '@components/sections/aboutpage/TextWithImageSegment';
+const Page = () => (
+  <>
+  <AboutIntro/>
+  <TextWithImageSegment/>
+  </>
+)
 
 export default Page;
