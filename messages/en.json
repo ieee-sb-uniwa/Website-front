@@ -128,7 +128,7 @@
     },
     "AboutPage":{
       "mainTitle": "About Us",
-      "introParagraph": "On this page, you'll learn, ",
+      "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"]    
     }
   }
