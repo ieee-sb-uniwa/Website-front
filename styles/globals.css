@@ -310,6 +310,46 @@
   }
 
   /*END of Custom Button*/
+  /* START OF About us*/
+
+  @media (min-width: 1024px) {
+    .ieee-uniwa-grid {
+      display: grid;
+      grid-template-areas:
+        "title goalcontent"
+        "title goalcontent";
+      grid-template-columns: 26% 1fr;
+      grid-auto-rows: auto;
+      gap: 90px 0;
+    }
+  
+    .grid-title {
+      grid-area: title;
+    }
+  
+    .grid-goalcontent {
+      grid-area: goalcontent;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  } 
+  
+    .goals-title {
+      grid-area: title;
+      justify-self: end;
+      margin-top: 67px;
+      margin-right: min(6.3vw, 74px);
+      font-size: 127px;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+      text-align: right;
+    }
+  
+  /* END OF About us*/
   /* START of Feature */
   .feature-after {
     @apply after:g1 after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
