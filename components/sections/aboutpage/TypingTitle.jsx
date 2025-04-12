@@ -5,7 +5,8 @@ export const TypingTitle = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
     initial="hidden"
-    animate="show"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
     className={`text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (

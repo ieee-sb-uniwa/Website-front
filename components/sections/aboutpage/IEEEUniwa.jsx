@@ -10,7 +10,7 @@ const IEEEUniwa = () => {
 
         <div className="hidden lg:ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
-          <h4 className="goals-title grid-title text-s5">
+          <h4 className="goals-title grid-title text-p4/80">
             Our Goals
           </h4>
 

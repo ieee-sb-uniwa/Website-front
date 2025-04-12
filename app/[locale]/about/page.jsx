@@ -17,10 +17,15 @@ async function Page(props) {
   // Concatenate counselor to council
   const allMembers = [...council, ...counselor];
   const CouncilCounselorTranslations =  await getTranslations('CounselorCouncil');
-  // Get translations for TextWithImageSegments
+
+  //Get translations for TextWithImageSegments
   const IEEESegmentTranslations = await getTranslations('TextWithImageSegments.IEEE');
+  const SBSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEStudents');
   return (
   <>
+  <div className='main'>
+    <div className='gradient'/>
+  </div>
   <AboutIntro/>
   <TextWithImageSegment
         imagePosition='right'
@@ -34,6 +39,18 @@ async function Page(props) {
         imageWidth={6016}
         imageHeight={4000}
         buttonIcon='/assets/icons/ieee.svg'
+  />
+  <TextWithImageSegment
+        imagePosition='left'
+        imageSrc="/assets/images/ieee-sb-logos-collage.png"
+        imageAlt={SBSegmentTranslations('imageAlt')}
+        caption={SBSegmentTranslations('caption')}
+        text={SBSegmentTranslations('text')}
+        title={SBSegmentTranslations('title')}
+        links={SBSegmentTranslations.raw('links')}
+        imageWidth={6016}
+        imageHeight={4000}
+        buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
   <Team team={allMembers} translationsComponent={CouncilCounselorTranslations}/>

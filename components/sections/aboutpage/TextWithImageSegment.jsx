@@ -37,8 +37,8 @@ const TextWithImageSegment = ({
         <article className={`w-full ${hasImage ? 'md:w-1/2' : ''} order-2 ${isImageRight ? 'md:order-1' : 'md:order-2'}`}>
           <div className='max-w-lg mx-auto md:mx-0'>
             <p className='caption green_gradient mt-5 mb-5 mx-md:mb-2.5 '>{caption}</p>
-            {title && <TypingTitle title={title} textStyles="text-p4 h4 mb-4" />}
-            <div className='body-3 text-pretty'>
+            {title && <TypingTitle title={title} textStyles="text-white h4 mb-4"/>}
+            <div className='body-3 text-pretty text-p4'>
               {text}
             </div>
             
@@ -55,7 +55,7 @@ const TextWithImageSegment = ({
                       alt="check-circle"
                       className="size-9 object-contain"
                     />
-                    <p className="flex-1 body-3">{item}</p>
+                    <p className="flex-1 text-p4 body-3">{item}</p>
                   </li>
                 ))}
               </ul>
