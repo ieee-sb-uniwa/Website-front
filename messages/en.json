@@ -93,6 +93,10 @@
       "heading": "The Executive Commitee",
       "caption": "The driving force"
     },
+    "CounselorCouncil":{
+      "heading": "The Council & Counselor",
+      "caption": "The driving force"
+    },
     "RecentEvents":{
       "caption": "What's Happening Now",
       "heading":"Recent Activities",
@@ -129,6 +133,25 @@
     "AboutPage":{
       "mainTitle": "About Us",
       "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
-      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"]    
+      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"] 
+    },
+    "TextWithImageSegments": {
+      "IEEE": {
+        "title": "What is IEEE?",
+        "caption": "The world's largest technological organization",
+        "text": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organization, focused on advancing technology for the benefit of humanity.",
+        "bulletedList": [
+          "It was founded in 1963 through the merger of the American Institute of Electrical Engineers and the Institute of Radio Engineers.",
+          "The organization's headquarters are located in New York.",
+          "It is the largest organization of technology professionals, with approximately 430,000 members in around 160 countries.",
+          "The majority of members are engineers and scientists/academics. Most of them are computer scientists, software engineers, IT professionals, physicists, and even doctors.",
+          "For this reason, the organization often prefers using the acronym IEEE rather than its full name."
+        ],
+        "links": [
+          { "href": "/join", "text": "Join IEEE Today" },
+          { "href": "https://ieee.org", "text": "Explore More" }
+        ],
+        "imageAlt": "Photo of the IEEE Master Brand logo, taken from our office (ΖΒ006)"
+      }
     }
   }

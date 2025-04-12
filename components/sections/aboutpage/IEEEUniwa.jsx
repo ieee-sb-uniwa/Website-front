@@ -10,14 +10,14 @@ const IEEEUniwa = () => {
 
         <div className="hidden lg:ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
-          <h4 className="goals-title grid-title text-p4">
+          <h4 className="goals-title grid-title text-s5">
             Our Goals
           </h4>
 
           {/* Right Side: Content Container (Goals Text + Goal Cards) */}
           <section className="grid-goalcontent">
             {/* Goals Text */}
-            <p className="body-2 text-pretty text-left">
+            <p className="body-2 text-pretty text-p5 text-left">
               Our goal is to provide an environment that enhances and develops student participation in the academic community and promotes innovation and the creation of new technological solutions for the world. To achieve this, we organize activities such as:
             </p>
 
