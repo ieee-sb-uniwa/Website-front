@@ -18,10 +18,10 @@ export async function getEvents(locale, numOfEvents) {
       return;
     }
     if (!response.ok) {
-      throw new Error(`Failed to fetch council data: ${response.statusText}`);
+      throw new Error(`Failed to fetch events data: ${response.statusText}`);
     }
     return await response.json();
   } catch (error) {
-    throw new Error(`Fetching council data failed: ${error.message}`);
+    throw new Error(`Fetching events data failed: ${error.message}`);
   }
 }
