@@ -99,9 +99,9 @@
       "heading": "Το Προεδρείο",
       "caption": "Η κινητηριος δυναμη"
     },
-    "CounselorCouncil":{
-      "heading": "Προεδρείο & Σύμβουλος",
-      "caption": "Η κινητηριος δυναμη"
+    "Counselor":{
+      "heading": "Counselor",
+      "caption": "Ο Μεντορας"
     },
     "NotFoundPage": {
       "h4": "Υπό Κατασκευή...",
@@ -141,6 +141,11 @@
       "introParagraph": "Σε αυτή τη σελίδα, θα μάθετε, Τι είναι το IEEE; Ποιος είναι ο ρόλος της Περιφέρειας 8 του IEEE και του Greece Section στο οποίο ανήκουμε; Τι κάνει ένα Φοιτητικό Παράρτημα του IEEE; Ποιοι είναι οι βασικοί μας στόχοι ως Φοιτητικό Παράρτημα;",
       "flippingWords": ["Τι είναι το IEEE;", "τη δομή του Region 8", "το ρόλο του IEEE Greece Section", "Τι κάνουν τα IEEE SB;","Ποιοι είναι οι βασικοί μας στόχοι ώς SB"]
     },
+    "JoinUsCta": {
+      "heading": "Γίνε μέλος του IEEE Student Branch UniWA",
+      "paragraph": "Γίνε μέρος της δυναμικής IEEE κοινότητάς μας στο Πανεπιστήμιο Δυτικής Αττικής. Σύνδεσου με ομοϊδεάτες συμφοιτητές, πάρε μέρος σε πρακτικά εργαστήρια και ανάπτυξε τις σου δεξιότητες μέσα από συναρπαστικές εκδηλώσεις και διαγωνισμούς όπως το IEEEXtreme.",
+      "ctaButtonText": "Γινε μελος τωρα"
+    },
     "TextWithImageSegments": {
       "IEEE": {
         "title": "Τι είναι το IEEE;",
@@ -155,7 +160,7 @@
         ],
         "links": [
           { "href": "/join", "text": "Γινε μελος IEEE" },
-          { "href": "https://ieee.org", "text": "μαθε περισσοτερα" }
+          { "href": "https://www.ieee.org/communities/societies/index.html", "text": "ΕΞΕΡΕΥΝΗΣΕ ΤΑ SOCIETIES" }
         ],
         "imageAlt": "Φωτογραφία του λογότυπου IEEE Master Brand, από το γραφείο μας (ΖΒ006)"
       },

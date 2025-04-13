@@ -7,6 +7,7 @@ import {getCouncil, getCounselor} from "@actions/getCouncil";
 import {getTranslations} from 'next-intl/server';
 import Team from '@components/sections/team/Team';
 import MapWrapper from '@components/sections/map/MapWrapper';
+import JoinUsCTA from '@components/sections/aboutpage/JoinUsCTA';
 
 async function Page(props) {
   const params = await props.params;
@@ -15,8 +16,8 @@ async function Page(props) {
   const counselor = await getCounselor(locale);
   if (!council || !counselor) notFound();
   // Concatenate counselor to council
-  const allMembers = [...council, ...counselor];
-  const CouncilCounselorTranslations =  await getTranslations('CounselorCouncil');
+  const CouncilTranslations =  await getTranslations('Council');
+  const CounselorTranslations =  await getTranslations('Counselor');
 
   //Get translations for TextWithImageSegments
   const IEEESegmentTranslations = await getTranslations('TextWithImageSegments.IEEE');
@@ -68,7 +69,7 @@ async function Page(props) {
   />
   <TextWithImageSegment
         imagePosition='left'
-        imageSrc="/assets/images/ieee-sb-logos-collage.png"
+        imageSrc="/assets/photos/ieee-student-branch.png"
         imageAlt={SBSegmentTranslations('imageAlt')}
         caption={SBSegmentTranslations('caption')}
         text={SBSegmentTranslations('text')}
@@ -77,7 +78,9 @@ async function Page(props) {
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
-  <Team team={allMembers} translationsComponent={CouncilCounselorTranslations}/>
+  <JoinUsCTA/>
+  <Team team={council} translationsComponent={CouncilTranslations}/>
+  <Team team={counselor} translationsComponent={CounselorTranslations}/>
   <div className='g4'><MapWrapper/></div>
   
   </>

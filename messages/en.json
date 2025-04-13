@@ -90,12 +90,12 @@
       ]
     },
     "Council":{
-      "heading": "The Executive Commitee",
+      "heading": "Our Executive Commitee",
       "caption": "The driving force"
     },
-    "CounselorCouncil":{
-      "heading": "The Council & Counselor",
-      "caption": "The driving force"
+    "Counselor":{
+      "heading": "Our Counselor",
+      "caption": "The guiding mentor"
     },
     "RecentEvents":{
       "caption": "What's Happening Now",
@@ -135,6 +135,11 @@
       "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"] 
     },
+    "JoinUsCta": {
+      "heading": "Join IEEE Student Branch UniWA",
+      "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
+      "ctaButtonText": "Join now"
+    },
     "TextWithImageSegments": {
       "IEEE": {
         "title": "What is IEEE?",
@@ -149,7 +154,7 @@
         ],
         "links": [
           { "href": "/join", "text": "Join IEEE Today" },
-          { "href": "https://ieee.org", "text": "Explore More" }
+          { "href": "https://www.ieee.org/communities/societies/index.html", "text": "Explore Societies" }
         ],
         "imageAlt": "Photo of the IEEE Master Brand logo, taken from our office (ΖΒ006)"
       },
