@@ -20,6 +20,7 @@ async function Page(props) {
 
   //Get translations for TextWithImageSegments
   const IEEESegmentTranslations = await getTranslations('TextWithImageSegments.IEEE');
+  const GreeceSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEGreeceSection');
   const SBSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEStudents');
   return (
   <>
@@ -41,6 +42,18 @@ async function Page(props) {
         buttonIcon='/assets/icons/ieee.svg'
   />
   <TextWithImageSegment
+        imagePosition='right'
+        imageSrc="/assets/logos/IEEEGR.png"
+        imageAlt={GreeceSegmentTranslations('imageAlt')}
+        caption={GreeceSegmentTranslations('caption')}
+        text={GreeceSegmentTranslations('text')}
+        title={GreeceSegmentTranslations('title')}
+        links={GreeceSegmentTranslations.raw('links')}
+        imageWidth={1920}
+        imageHeight={1440}
+        buttonIcon='/assets/icons/travel-explore.svg'
+  />
+  <TextWithImageSegment
         imagePosition='left'
         imageSrc="/assets/images/ieee-sb-logos-collage.png"
         imageAlt={SBSegmentTranslations('imageAlt')}
@@ -48,8 +61,6 @@ async function Page(props) {
         text={SBSegmentTranslations('text')}
         title={SBSegmentTranslations('title')}
         links={SBSegmentTranslations.raw('links')}
-        imageWidth={6016}
-        imageHeight={4000}
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
