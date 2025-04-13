@@ -21,6 +21,7 @@ async function Page(props) {
   //Get translations for TextWithImageSegments
   const IEEESegmentTranslations = await getTranslations('TextWithImageSegments.IEEE');
   const GreeceSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEGreeceSection');
+  const Region8SegmentTranslations = await getTranslations('TextWithImageSegments.IEEERegion8');
   const SBSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEStudents');
   return (
   <>
@@ -40,6 +41,18 @@ async function Page(props) {
         imageWidth={6016}
         imageHeight={4000}
         buttonIcon='/assets/icons/ieee.svg'
+  />
+  <TextWithImageSegment
+        imagePosition='left'
+        imageSrc="/assets/images/region8-map.png"
+        imageAlt={Region8SegmentTranslations('imageAlt')}
+        caption={Region8SegmentTranslations('caption')}
+        text={Region8SegmentTranslations('text')}
+        title={Region8SegmentTranslations('title')}
+        links={Region8SegmentTranslations.raw('links')}
+        imageWidth={1600}
+        imageHeight={686}
+        buttonIcon='/assets/icons/read.svg'
   />
   <TextWithImageSegment
         imagePosition='right'
