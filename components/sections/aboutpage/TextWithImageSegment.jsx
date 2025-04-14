@@ -50,9 +50,11 @@ const TextWithImageSegment = ({
                     key={index}
                     className="relative flex items-center gap-5"
                   >
-                    <img
+                    <Image
                       src="/assets/icons/check.svg"
                       alt="check-circle"
+                      width={24}
+                      height={24}
                       className="size-9 object-contain"
                     />
                     <p className="flex-1 text-p4 body-3">{item}</p>

@@ -30,7 +30,7 @@ const Benefits = ( {benefits} ) => {
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
-                    <img
+                    <Image
                       src={item.imageUrl}
                       width={380}
                       height={362}
