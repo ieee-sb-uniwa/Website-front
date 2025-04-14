@@ -133,12 +133,40 @@
     "AboutPage":{
       "mainTitle": "About Us",
       "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
-      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"] 
-    },
-    "JoinUsCta": {
-      "heading": "Join IEEE Student Branch UniWA",
-      "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
-      "ctaButtonText": "Join now"
+      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
+      "JoinUsCta": {
+        "heading": "Join IEEE UniWA Student Branch",
+        "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
+        "ctaButtonText": "Join now"
+      },
+      "IEEEUniwa": {
+        "heading":"IEEE UniWA Student Branch",
+        "goals_title":"Our Goals",
+        "paragraph":"Our goal is to provide an environment that enhances and develops student participation in the academic community and promotes innovation and the creation of new technological solutions for the world. To achieve this, we organize activities such as:",
+        "benefitsIEEEUniwa" : [
+          {
+            "id": "0",
+            "title": "Team Projects",
+            "text": "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
+            "iconUrl": "/assets/icons/teamwork.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          },
+          {
+            "id": "1",
+            "title": "Educational Events",
+            "text": "Events open to everyone, aimed at raising awareness and expanding knowledge.",
+            "iconUrl": "/assets/icons/education.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          },
+          {
+            "id": "2",
+            "title": "Competitions",
+            "text": "We participate in both local and global competitions.",
+            "iconUrl": "/assets/icons/trophy.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          }
+        ]
+      }
     },
     "TextWithImageSegments": {
       "IEEE": {

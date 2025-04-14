@@ -2,14 +2,13 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import Button from '@components/ui/Button';
 import { Link } from '@i18n/navigation';
-
 const JoinUsCTA = () => {
-    const t = useTranslations("JoinUsCta"); 
+    const t = useTranslations("AboutPage.JoinUsCta"); 
     const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
     
     return (
         <section 
-            className="mx-auto my-16 w-full max-w-7xl p-4 text-center relative z-20 rounded-3xl overflow-hidden"
+            className="mx-auto my-12 w-full max-w-7xl p-4 text-center relative z-20 rounded-3xl overflow-hidden"
             style={{ 
                 backgroundImage: `url(${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg)`, 
                 backgroundSize: 'cover', 

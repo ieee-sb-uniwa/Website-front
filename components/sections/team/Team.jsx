@@ -9,7 +9,7 @@ export const Team = ({team, translationsComponent}) => {
         <div className="container block lg:flex">
             <div className='relative z-2 mr-20 flex-300'>
                 <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{translationsComponent('caption')}</p>
-                <h3 className='h3 max-md:h5 text-p4'>{translationsComponent('heading')}</h3>
+                <h3 className='h3 mb-9 max-md:h5 text-p4'>{translationsComponent('heading')}</h3>
             </div>
             <div className=' relative -my-12 -mr-3 flex items-start max-lg:static max-md:block'> 
                 <div className='flex-50'>

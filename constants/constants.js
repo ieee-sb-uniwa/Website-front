@@ -16,6 +16,29 @@ export const scientificGroupsLogos= [
   { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
 ];
 
+export const benefitsIEEEUniwa = [
+  {
+    id: "0",
+    title: "Team Projects",
+    text: "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
+    iconUrl: "/assets/icons/teamwork.svg",
+    imageUrl: "/assets/logos/sblogo-white.svg",
+  },
+  {
+    id: "1",
+    title: "Educational Events",
+    text: "Events open to everyone, aimed at raising awareness and expanding knowledge.",
+    iconUrl: "/assets/icons/education.svg",
+    imageUrl: "/assets/logos/sblogo-white.svg",
+  },
+  {
+    id: "2",
+    title: "Competitions",
+    text: "We participate in both local and global competitions.",
+    iconUrl: "/assets/icons/trophy.svg",
+    imageUrl: "/assets/logos/sblogo-white.svg",
+  }
+];
 export const heroImages = [
   `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,
