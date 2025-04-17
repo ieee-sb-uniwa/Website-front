@@ -141,34 +141,34 @@
       "introParagraph": "Σε αυτή τη σελίδα, θα μάθετε, Τι είναι το IEEE; Ποιος είναι ο ρόλος της Περιφέρειας 8 του IEEE και του Greece Section στο οποίο ανήκουμε; Τι κάνει ένα Φοιτητικό Παράρτημα του IEEE; Ποιοι είναι οι βασικοί μας στόχοι ως Φοιτητικό Παράρτημα;",
       "flippingWords": ["Τι είναι το IEEE;", "τη δομή του Region 8", "το ρόλο του IEEE Greece Section", "Τι κάνουν τα IEEE SB;","Ποιοι είναι οι βασικοί μας στόχοι ώς SB"],
       "JoinUsCta": {
-        "heading": "Γίνε μέλος του IEEE UniWA Student Branch",
-        "paragraph": "Γίνε μέρος της δυναμικής IEEE κοινότητάς μας στο Πανεπιστήμιο Δυτικής Αττικής. Σύνδεσου με ομοϊδεάτες συμφοιτητές, πάρε μέρος σε πρακτικά εργαστήρια και ανάπτυξε τις σου δεξιότητες μέσα από συναρπαστικές εκδηλώσεις και διαγωνισμούς όπως το IEEEXtreme.",
+        "heading": "Τι περιμένεις;",
+        "paragraph": "Γίνε μέρος της δυναμικής κοινότητας του IEEE στο Πανεπιστήμιο Δυτικής Αττικής. Σύνδεσου με ομοϊδεάτες συμφοιτητές, πάρε μέρος σε πρακτικά εργαστήρια και ανάπτυξε τις σου δεξιότητες μέσα από συναρπαστικές εκδηλώσεις και διαγωνισμούς όπως το IEEEXtreme.",
         "ctaButtonText": "Γινε μελος τωρα"
       },
       "IEEEUniwa": {
         "heading":"IEEE ΠΑΔΑ Student Branch",
-        "goals_title":"Στόχοι μας",
+        "goals_title":"Στόχοι Mας",
         "paragraph":"Στόχος μας είναι να παρέχουμε ένα περιβάλλον που θα ενισχύσει και θα αναπτύξει την συμμετοχή των φοιτητών στην ακαδημαϊκή κοινότητα και θα προωθεί την καινοτομία και τη δημιουργία νέων τεχνολογικών λύσεων για τον κόσμο. Για τον σκοπό αυτό οργανώνουμε δράσεις όπως:",
         "benefitsIEEEUniwa" : [
           {
             "id": "0",
             "title": "Ομαδικά έργα",
             "text": "Εργα βασισμένα σε ένα ευρύ φάσμα τομέων όπως η μηχανική μάθηση, η ρομποτική, το διαδίκτυο των αντικειμένων και πολλούς άλλους.",
-            "iconUrl": "/assets/icons/teamwork.svg",
+            "iconUrl": "/assets/icons/team.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           },
           {
             "id": "1",
             "title": "Εκπαιδευτικές εκδηλώσεις",
             "text": "Εκδηλώσεις ανοιχτές σε όλους με στόχο την ενημέρωση και την διεύρυνση των γνώσεων.",
-            "iconUrl": "/assets/icons/education.svg",
+            "iconUrl": "/assets/icons/graduation-cap.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           },
           {
             "id": "2",
             "title": "Διαγωνισμοί",
             "text": "Συμμετέχουμε τόσο σε τοπικούς όσο και παγκόσμιους διαγωνισμούς.",
-            "iconUrl": "/assets/icons/trophy.svg",
+            "iconUrl": "/assets/icons/medal.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           }
         ]
@@ -200,7 +200,7 @@
         "links":[
           { "href": "https://students.ieee.org/", "text": "ΕΞΕΡΕΥΝΗΣΕ ΤΟ IEEE STUDENTS" }
         ],
-        "imageAlt" : "Τυχαία λογότυπα απο IEEE Student Branches"
+        "imageAlt" : "Τυχαία λογότυπα απο ελληνικά IEEE Student Branches"
       },
       "IEEEGreeceSection": {
         "title": "Τι είναι το Greece Section;",

@@ -15,8 +15,8 @@ const Benefits = ( {benefits} ) => {
               <div className="relative z-2 flex flex-col min-h-[18rem] p-[1.8rem] pointer-events-none">
                 <Image
                     src={item.iconUrl}
-                    width={48}
-                    height={48}
+                    width={58}
+                    height={58}
                     alt={item.title}
                     className="mb-5 items-center"
                 />

@@ -45,14 +45,14 @@ async function Page(props) {
   />
   <TextWithImageSegment
         imagePosition='left'
-        imageSrc="/assets/images/region8-map.png"
+        imageSrc="/assets/images/region8-map-transparent.png"
         imageAlt={Region8SegmentTranslations('imageAlt')}
         caption={Region8SegmentTranslations('caption')}
         text={Region8SegmentTranslations('text')}
         title={Region8SegmentTranslations('title')}
         links={Region8SegmentTranslations.raw('links')}
-        imageWidth={1600}
-        imageHeight={686}
+        imageWidth={1280}
+        imageHeight={548}
         buttonIcon='/assets/icons/read.svg'
   />
   <TextWithImageSegment
@@ -69,12 +69,14 @@ async function Page(props) {
   />
   <TextWithImageSegment
         imagePosition='left'
-        imageSrc="/assets/photos/ieee-student-branch.png"
+        imageSrc="/assets/images/ieee-sb-greek-logos-collage2.PNG"
         imageAlt={SBSegmentTranslations('imageAlt')}
         caption={SBSegmentTranslations('caption')}
         text={SBSegmentTranslations('text')}
         title={SBSegmentTranslations('title')}
         links={SBSegmentTranslations.raw('links')}
+        imageWidth={3270}
+        imageHeight={2264}
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>

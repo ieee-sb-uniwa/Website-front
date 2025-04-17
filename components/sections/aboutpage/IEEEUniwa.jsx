@@ -1,6 +1,5 @@
 import React from 'react';
 import Benefits from '@components/ui/Benefits';
-import { benefitsIEEEUniwa } from "@constants/constants";
 import { useTranslations } from 'next-intl';
 
 const IEEEUniwa = () => {
@@ -12,9 +11,9 @@ const IEEEUniwa = () => {
           {t('heading')}
         </h3>
 
-        <div className="hidden lg:ieee-uniwa-grid">
+        <div className="ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
-          <h4 className="goals-title grid-title text-p1/50">
+          <h4 className="max-lg:hidden goals-title grid-title text-s3">
             {t('goals_title')}
           </h4>
 
@@ -26,8 +25,7 @@ const IEEEUniwa = () => {
             </p>
 
             {/* Goal Cards */}
-            <div className="flex flex-wrap gap-6">
-              
+            <div className="flex flex-wrap gap-6 mt-10">
               <Benefits benefits={t.raw('benefitsIEEEUniwa')}/>
             </div>
           </section>

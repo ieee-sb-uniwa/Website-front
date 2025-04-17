@@ -31,13 +31,25 @@ const TextWithImageSegment = ({
   const hasLinks = links && links.length > 0;
   
   return (
-    <div className='container mb-10 md:mb-22'>
+    <div className='container mb-10 md:mb-22 px-4 md:px-0'>
       <div className='flex flex-col items-center justify-between gap-8 md:flex-row'>
         {/* Text Content */}
-        <article className={`w-full ${hasImage ? 'md:w-1/2' : ''} order-2 ${isImageRight ? 'md:order-1' : 'md:order-2'}`}>
-          <div className='max-w-lg mx-auto md:mx-0'>
-            <p className='caption green_gradient mt-5 mb-5 mx-md:mb-2.5 '>{caption}</p>
-            {title && <TypingTitle title={title} textStyles="text-white h4 mb-4"/>}
+        <article className={`w-full ${hasImage ? 'md:w-1/2' : ''} ${isImageRight ? 'md:order-1 order-1' : 'md:order-2 order-1'}`}>
+          <div className='w-full max-w-lg mx-auto md:mx-0'>
+            <p className='caption green_gradient mt-5 mb-5 max-md:mb-2.5'>
+              {caption}
+            </p>
+            
+            {/* Improved title rendering for mobile */}
+            {title && (
+              <div className="w-full overflow-visible">
+                <TypingTitle 
+                  title={title} 
+                  textStyles="text-white h4 mb-4 max-md:h5 max-md:break-words max-md:hyphens-auto"
+                />
+              </div>
+            )}
+            
             <div className='body-3 text-pretty text-p4'>
               {text}
             </div>
@@ -62,6 +74,7 @@ const TextWithImageSegment = ({
                 ))}
               </ul>
             )}   
+            
             {/* Links/CTA Section - Only render if links exist and are not empty */}
             {hasLinks && (
               <div className="flex flex-wrap items-center gap-12 mt-10">
@@ -99,7 +112,7 @@ const TextWithImageSegment = ({
         {/* Image with hover effect - only render if we have an image */}
         {hasImage && (
           <div 
-            className={`w-full md:w-1/2 order-1 ${isImageRight ? 'md:order-2' : 'md:order-1'} relative`}
+            className={`w-full md:w-1/2 ${isImageRight ? 'md:order-2 order-2' : 'md:order-1 order-2'} relative`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

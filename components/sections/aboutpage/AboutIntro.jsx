@@ -1,6 +1,5 @@
 import React from 'react'
 import {useTranslations} from 'next-intl';
-import { FlipWords } from '@components/ui/FlipWords';
 
 const AboutIntro = () => {
   const aboutTranslation = useTranslations("AboutPage");
@@ -13,10 +12,7 @@ const AboutIntro = () => {
                 </h2>
                 <p className='h6 max-lg:body-1 max-md:body-2 relative text-center mx-auto text-p5'>
                     {aboutTranslation('introParagraph')}
-                </p>
-                <div className="h5 text-center">
-                    {/* <FlipWords words={aboutTranslation.raw('flippingWords')} className="text-p1" /> */}
-                </div>
+                </p> 
             </div>
          </div>
     </section>

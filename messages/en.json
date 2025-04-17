@@ -135,7 +135,7 @@
       "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
       "JoinUsCta": {
-        "heading": "Join IEEE UniWA Student Branch",
+        "heading": "What are you waiting?",
         "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
         "ctaButtonText": "Join now"
       },
@@ -148,21 +148,21 @@
             "id": "0",
             "title": "Team Projects",
             "text": "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
-            "iconUrl": "/assets/icons/teamwork.svg",
+            "iconUrl": "/assets/icons/team.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           },
           {
             "id": "1",
             "title": "Educational Events",
             "text": "Events open to everyone, aimed at raising awareness and expanding knowledge.",
-            "iconUrl": "/assets/icons/education.svg",
+            "iconUrl": "/assets/icons/graduation-cap.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           },
           {
             "id": "2",
             "title": "Competitions",
             "text": "We participate in both local and global competitions.",
-            "iconUrl": "/assets/icons/trophy.svg",
+            "iconUrl": "/assets/icons/medal.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           }
         ]
@@ -193,7 +193,7 @@
         "links":[
           { "href": "https://students.ieee.org/", "text": "EXPLORE IEEE STUDENTS" }
         ],
-        "imageAlt": "A random collection of IEEE SB logos"
+        "imageAlt": "A random collection of greek IEEE SB logos"
       },
       "IEEEGreeceSection": {
         "title": "What is the Greece Section?",
@@ -207,7 +207,7 @@
       "IEEERegion8": {
         "title": "What is IEEE Region 8?",
         "caption": "An IEEE Network – From Europe to Africa!",
-        "text":"The IEEE Greece Section is the national section of the Institute of Electrical and Electronics Engineers (IEEE) in Greece. As part of IEEE Region 8, the Greece Section serves IEEE members across the country and contributes to the advancement of technology and engineering in Greece, as well as to the global IEEE community. The primary mission of the IEEE Greece Section is to support and advance the interests of electrical engineering, electronics, computer science, and related fields in Greece. The Section provides a platform for professional development, innovation, and networking for its members, as well as promoting educational activities. It fosters collaboration between academia, industry, and research organizations in Greece, facilitating the exchange of technical knowledge and ideas.",
+        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE (Institute of Electrical and Electronics Engineers), which is a global professional association for advancing technology. Region 8 includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas.",
         "links":[
           { "href": "https://ieeer8.org/", "text": "LEARN MORE" },
           { "href": "https://r8.ieee.org/sac/", "text": "R8 SAC"}
