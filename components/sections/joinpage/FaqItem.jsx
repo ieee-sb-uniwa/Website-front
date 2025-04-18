@@ -1,12 +1,20 @@
 import clsx from "clsx";
-import { useState } from "react";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
+import { useState, useRef, useEffect } from "react";
 
 const FaqItem = ({ item, index, showNumbers }) => {
   const [activeId, setActiveId] = useState(null);
-
+  const [height, setHeight] = useState(0);
+  const contentRef = useRef(null);
+  
   const active = activeId === item.id;
+
+  useEffect(() => {
+    if (active && contentRef.current) {
+      setHeight(contentRef.current.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [active]);
 
   return (
     <div className="relative z-2 mb-16">
@@ -43,11 +51,14 @@ const FaqItem = ({ item, index, showNumbers }) => {
         </div>
       </div>
 
-      <SlideDown>
-        {activeId === item.id && (
-          <div className="body-2  text-p4 px-7 py-3.5">{item.answer}</div>
-        )}
-      </SlideDown>
+      <div 
+        className="overflow-hidden transition-height duration-300 ease-in-out"
+        style={{ height: height ? `${height}px` : '0px' }}
+      >
+        <div ref={contentRef} className="body-2 text-p4 px-7 py-3.5">
+          {item.answer}
+        </div>
+      </div>
 
       <div
         className={clsx(
@@ -61,4 +72,5 @@ const FaqItem = ({ item, index, showNumbers }) => {
     </div>
   );
 };
+
 export default FaqItem;
