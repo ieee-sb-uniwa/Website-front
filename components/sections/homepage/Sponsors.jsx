@@ -16,7 +16,7 @@ export const Sponsors = () => {
                   </h3>
                   <p className='my-10 h6 max-lg:body-2 text-p5'>{t('paragraph')}</p>
               </header>
-                <FocusCards cards={sponsors} showTitles={false} />
+                <FocusCards cards={sponsors} showTitles={false} openInNewTabs={true}/>
           </div>
       </section>
 

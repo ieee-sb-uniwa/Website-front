@@ -19,7 +19,7 @@ const ScienceGroupsOverview = () => {
                     {t('paragraph')}
                   </p>
               </header>
-              <FocusCards cards={scientificGroupsLogos} showTitles={true}/>
+              <FocusCards cards={scientificGroupsLogos} showTitles={true} openInNewTabs={false}/>
           </div>
       </section>
     </section>
