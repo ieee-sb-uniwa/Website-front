@@ -21,7 +21,7 @@ const TextWithImageSegment = ({
 }) => {
   
   const isImageRight = imagePosition === 'right';
-  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   
   //Don't render the image section at all if imageSrc is null or empty
   const hasImage = imageSrc && imageSrc.trim() !== '';
@@ -112,15 +112,14 @@ const TextWithImageSegment = ({
         {/* Image with hover effect - only render if we have an image */}
         {hasImage && (
           <div 
-            className={`w-full md:w-1/2 ${isImageRight ? 'md:order-2 order-2' : 'md:order-1 order-2'} relative`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={`w-full md:w-1/2 ${isImageRight ? 'md:order-2 order-2' : 'md:order-1 order-2'} relative cursor-pointer`}
+            onClick={() => setIsClicked(prev => !prev)}
           >
             <div className="relative">
               {/* Use position absolute to prevent layout shift */}
               <div className="w-full relative" style={{ height: "auto" }}>
                 {/* Always render the non-hovered image */}
-                <div className={`w-full transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'} absolute top-0 left-0`}>
+                <div className={`w-full transition-opacity duration-300 ${isClicked ? 'opacity-0' : 'opacity-100'} absolute top-0 left-0`}>
                   <Image
                     src={imageSrc}
                     alt={imageAlt}
@@ -131,7 +130,7 @@ const TextWithImageSegment = ({
                 </div>
                 
                 {/* Conditionally render the hovered image with border */}
-                <div className={`w-full transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+                <div className={`w-full transition-opacity duration-300 ${isClicked ? 'opacity-100' : 'opacity-0'}`}>
                   <MovingBorder rounded="rounded-lg" bgColor="bg-s1" borderSize="p-[4.5px]">
                     <div className="w-full">
                       <Image
@@ -147,7 +146,7 @@ const TextWithImageSegment = ({
               </div>
               
               {/* Caption that only appears when hovered */}
-              {isHovered && (
+              {isClicked && (
                 <p className="mt-4 rounded-full text-center italic body-2 text-muted-foreground transition-opacity duration-300">
                   {imageAlt}
                 </p>

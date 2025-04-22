@@ -101,8 +101,7 @@
       "caption": "What's Happening Now",
       "heading":"Recent Activities",
       "flippingWords": ["competitions", "seminars", "workshops", "courses"],
-      "sentence_before_words":"Stay updated with the latest ",
-      "sentence_after_words":"both online and in-person.",
+      "sentence1":"Stay updated with the latest events both online and in-person.",
       "sentence2":"Get involved, and you might just discover your next big passion-or at least grab a free snack!"
     },
     "EventCard":{
@@ -133,6 +132,7 @@
     "AboutPage":{
       "mainTitle": "About Us",
       "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
+      "note": "Note: You can click the images to show their captions!",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
       "JoinUsCta": {
         "heading": "What are you waiting?",
@@ -182,7 +182,7 @@
         ],
         "links": [
           { "href": "/join", "text": "Join IEEE Today" },
-          { "href": "https://www.ieee.org/communities/societies/index.html", "text": "Explore Societies" }
+          { "href": "https://www.ieee.org", "text": "IEEE MAIN PAGE" }
         ],
         "imageAlt": "Photo of the IEEE Master Brand logo, taken from our office (ΖΒ006)"
       },
