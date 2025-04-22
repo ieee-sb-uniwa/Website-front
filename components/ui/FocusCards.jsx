@@ -20,20 +20,21 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
         onMouseLeave={() => setHovered(null)}
         className={cn(
           "relative flex flex-col items-center justify-center px-2 py-4 transition-[opacity,transform] duration-300 ease-out",
-          "h-auto shrink-0 basis-1/2 md:basis-1/4",
+          "h-40 md:h-52 lg:h-64 shrink-0 basis-1/2 md:basis-1/4",
           "hover:scale-110 focus:scale-110 active:translate-y-0 hover:-translate-y-2 focus:-translate-y-2",
           hovered !== null && hovered !== index && "opacity-50 scale-95"
         )}
       >
-        {/* Image */}
-        <Image
-          src={card.img}
-          alt={card.title}
-          width={card.imgWidth}
-          height={card.imgHeight}
-          className="object-contain"
-        />
-
+        <div className="w-full h-full flex items-center justify-center">
+          {/* Image */}
+          <Image
+            src={card.img}
+            alt={card.title}
+            width={card.imgWidth}
+            height={card.imgHeight}
+            className="object-contain max-h-full"
+          />
+        </div>
         {showTitle && (
           <div
             className={cn(
@@ -111,20 +112,20 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
       </Splide>
 
       {/* Custom Arrows */}
-      <div className="flex justify-center items-center gap-8 z-2 mt-12">
+      <div className="flex justify-center items-center gap-12 z-2 mt-12">
         <button
           onClick={() => splideRef.current?.splide?.go('<')}
-          className="p-2 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
           aria-label="Previous"
         >
-          <BiSolidChevronLeft size={20} className="text-p1" />
+          <BiSolidChevronLeft size={30} className="text-p1" />
         </button>
         <button
           onClick={() => splideRef.current?.splide?.go('>')}
-          className="p-2 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
           aria-label="Next"
         >
-          <BiSolidChevronRight size={20} className="text-p1"/>
+          <BiSolidChevronRight size={30} className="text-p1"/>
         </button>
       </div>
     </div>
