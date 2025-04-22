@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import { Link } from "@i18n/navigation";
-import React, { useState } from "react";
-import { cn } from "@/lib/utils";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { BiSolidChevronRight, BiSolidChevronLeft } from "react-icons/bi";
 import { useRef } from 'react';
+import React, { useState } from "react";
+import { cn } from "@/lib/utils";
+
 
 export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitle, openInNewTab}) => {
   return (  
@@ -63,15 +64,13 @@ export function FocusCards({ cards, showTitles, openInNewTabs }) {
           index={index}
           hovered={hovered}
           setHovered={setHovered}
-          showTitle={showTitles}
+          showTitle={showTitles}          
           openInNewTab={openInNewTabs}
         />
       ))}
     </div>
   );
 }
-
-
 export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
   const splideRef = useRef(null);
   const [hovered, setHovered] = useState(null);
@@ -111,17 +110,17 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
       </Splide>
 
       {/* Custom Arrows */}
-      <div className="flex justify-center items-center gap-8 z-2 mt-12">
+      <div className="flex justify-center items-center gap-14 z-2 mt-12">
         <button
           onClick={() => splideRef.current?.splide?.go('<')}
-          className="p-2 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
           aria-label="Previous"
         >
           <BiSolidChevronLeft size={20} className="text-p1" />
         </button>
         <button
           onClick={() => splideRef.current?.splide?.go('>')}
-          className="p-2 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
           aria-label="Next"
         >
           <BiSolidChevronRight size={20} className="text-p1"/>
