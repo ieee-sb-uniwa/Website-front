@@ -2,7 +2,7 @@ import React from 'react'
 import TeamMember from './TeamMember.jsx';
 
 export const Team = ({team, translationsComponent}) => {
-  const sortedTeam = [...team].sort((a, b) => a._id - b._id);
+  const sortedTeam = [...team].sort((a, b) => a.id - b.id);
   const halfLength = Math.floor(team.length/2); 
   return (
     <section className="relative z-2 py-12 md:py-14 lg:py-16">
@@ -24,7 +24,7 @@ export const Team = ({team, translationsComponent}) => {
                 <div className='flex-50'>
                     {sortedTeam.slice(halfLength).map((member) => (
                     <TeamMember
-                        key={member._id}
+                        key={member.id}
                         item={member}
                         containerClassName="last:after-hidden after:right-auto after:left-0 after:max-md:-left-4 md:px-12"
                     />

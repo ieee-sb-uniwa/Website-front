@@ -8,7 +8,7 @@ export const Sponsors = () => {
   return (
     <section className="bg-s3 overflow-clip hexagonal-mesh">
       <section className="mx-auto w-full max-w-7xl p-4 text-center">
-          <div className="mx-auto w-full max-w-7xl px-4 relative py-10 text-center md:py-20">        
+          <div className="mx-auto w-full max-w-7xl px-4 relative pb-8 text-center md:pb-16">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>
                   <h3 className='h3 max-md:h5 text-p4 my-10'>
