@@ -90,15 +90,18 @@
       ]
     },
     "Council":{
-      "heading": "The Executive Commitee",
+      "heading": "Our Executive Commitee",
       "caption": "The driving force"
+    },
+    "Counselor":{
+      "heading": "Our Counselor",
+      "caption": "The guiding mentor"
     },
     "RecentEvents":{
       "caption": "What's Happening Now",
       "heading":"Recent Activities",
       "flippingWords": ["competitions", "seminars", "workshops", "courses"],
-      "sentence_before_words":"Stay updated with the latest ",
-      "sentence_after_words":"both online and in-person.",
+      "sentence1":"Stay updated with the latest events both online and in-person.",
       "sentence2":"Get involved, and you might just discover your next big passion-or at least grab a free snack!"
     },
     "EventCard":{
@@ -125,5 +128,91 @@
       "heading":"Events",
       "subheading":"All events",
       "search_results": "Search results for "
+    },
+    "AboutPage":{
+      "mainTitle": "About Us",
+      "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
+      "note": "Note: You can click the images to show their captions!",
+      "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
+      "JoinUsCta": {
+        "heading": "What are you waiting?",
+        "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
+        "ctaButtonText": "Join now"
+      },
+      "IEEEUniwa": {
+        "heading":"IEEE UniWA Student Branch",
+        "goals_title":"Our Goals",
+        "paragraph":"Our goal is to provide an environment that enhances and develops student participation in the academic community and promotes innovation and the creation of new technological solutions for the world. To achieve this, we organize activities such as:",
+        "benefitsIEEEUniwa" : [
+          {
+            "id": "0",
+            "title": "Team Projects",
+            "text": "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
+            "iconUrl": "/assets/icons/team.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          },
+          {
+            "id": "1",
+            "title": "Educational Events",
+            "text": "Events open to everyone, aimed at raising awareness and expanding knowledge.",
+            "iconUrl": "/assets/icons/graduation-cap.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          },
+          {
+            "id": "2",
+            "title": "Competitions",
+            "text": "We participate in both local and global competitions.",
+            "iconUrl": "/assets/icons/medal.svg",
+            "imageUrl": "/assets/logos/sblogo-white.svg"
+          }
+        ]
+      }
+    },
+    "TextWithImageSegments": {
+      "IEEE": {
+        "title": "What is IEEE?",
+        "caption": "The world's largest technological organization",
+        "text": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organization, focused on advancing technology for the benefit of humanity.",
+        "bulletedList": [
+          "It was founded in 1963 through the merger of the American Institute of Electrical Engineers and the Institute of Radio Engineers.",
+          "The organization's headquarters are located in New York.",
+          "It is the largest organization of technology professionals, with approximately 430,000 members in around 160 countries.",
+          "The majority of members are engineers and scientists/academics. Most of them are computer scientists, software engineers, IT professionals, physicists, and even doctors.",
+          "For this reason, the organization often prefers using the acronym IEEE rather than its full name."
+        ],
+        "links": [
+          { "href": "/join", "text": "Join IEEE Today" },
+          { "href": "https://www.ieee.org", "text": "IEEE MAIN PAGE" }
+        ],
+        "imageAlt": "Photo of the IEEE Master Brand logo, taken from our office (ΖΒ006)"
+      },
+      "IEEEStudents": {
+        "title": "What is an IEEE Student Branch (SB)?",
+        "caption": "ieee university-based community",
+        "text": "An IEEE Student Branch (SB) is a branch of IEEE at universities. It is aimed at students in the same scientific fields as IEEE. The branch exists to connect students with each other (either within the same university or across other IEEE SBs) or with industry professionals, in order to promote education and the technical development of electrical engineering, telecommunications, computer science, and unified standards. To achieve this, it organizes events and implements applications in this scientific field, which can be funded and promoted through IEEE. Similar branches exist at universities around the world, including in Greece.",
+        "links":[
+          { "href": "https://students.ieee.org/", "text": "EXPLORE IEEE STUDENTS" }
+        ],
+        "imageAlt": "A random collection of greek IEEE SB logos"
+      },
+      "IEEEGreeceSection": {
+        "title": "What is the Greece Section?",
+        "caption": "IEEE Community in Greece",
+        "text":"The IEEE Greece Section is the national section of the Institute of Electrical and Electronics Engineers (IEEE) in Greece. As part of IEEE Region 8, the Greece Section serves IEEE members across the country and contributes to the advancement of technology and engineering in Greece, as well as to the global IEEE community. The primary mission of the IEEE Greece Section is to support and advance the interests of electrical engineering, electronics, computer science, and related fields in Greece. The Section provides a platform for professional development, innovation, and networking for its members, as well as promoting educational activities. It fosters collaboration between academia, industry, and research organizations in Greece, facilitating the exchange of technical knowledge and ideas.",
+        "links":[
+          { "href": "https://www.ieee.gr/", "text": "EXPLORE MORE" }
+        ],
+        "imageAlt" : "Logo of the IEEE Greece Section"
+      },
+      "IEEERegion8": {
+        "title": "What is IEEE Region 8?",
+        "caption": "An IEEE Network – From Europe to Africa!",
+        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE (Institute of Electrical and Electronics Engineers), which is a global professional association for advancing technology. Region 8 includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas.",
+        "links":[
+          { "href": "https://ieeer8.org/", "text": "LEARN MORE" },
+          { "href": "https://r8.ieee.org/sac/", "text": "R8 SAC"}
+        ],
+        "imageAlt" : "World Map showing the 8 Regions of IEEE"
+      }
     }
   }

@@ -13,10 +13,10 @@ export async function getAllEvents(locale) {
       return;
     }
     if (!response.ok) {
-      throw new Error(`Failed to fetch council data: ${response.statusText}`);
+      throw new Error(`Failed to fetch all events data: ${response.statusText}`);
     }
     return await response.json();
   } catch (error) {
-    throw new Error(`Fetching council data failed: ${error.message}`);
+    throw new Error(`Fetching all events data failed: ${error.message}`);
   }
 }

@@ -13,10 +13,10 @@ export async function getAllThirdPartyEvents(locale) {
       return;
     }
     if (!response.ok) {
-      throw new Error(`Failed to fetch council data: ${response.statusText}`);
+      throw new Error(`Failed to fetch third party events data: ${response.statusText}`);
     }
     return await response.json();
   } catch (error) {
-    throw new Error(`Fetching council data failed: ${error.message}`);
+    throw new Error(`Fetching third party events data failed: ${error.message}`);
   }
 }

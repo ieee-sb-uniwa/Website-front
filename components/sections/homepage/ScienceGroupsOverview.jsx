@@ -1,15 +1,15 @@
 import React from 'react'
 import { scientificGroupsLogos } from "@/constants/constants.js";
-import { FocusCards } from "@/components/ui/FocusCards";
 import { useTranslations } from 'next-intl';
+import { FocusCardsCarousel } from "@/components/ui/FocusCards";
 
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
   return (
-    <section className="bg-s3 overflow-clip bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative">
+    <section className="bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="absolute inset-0 bg-black/50 z-2"></div>
       <section className="mx-auto w-full max-w-7xl p-4 text-center relative z-10">
-          <div className="mx-auto w-full max-w-7xl px-4 relative py-10 text-center md:py-20">        
+          <div className="mx-auto w-full max-w-7xl px-4 relative pb-10 text-center md:pb-20">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>
                   <h3 className='h3 max-md:h5 text-p4 my-10'>
@@ -19,7 +19,11 @@ const ScienceGroupsOverview = () => {
                     {t('paragraph')}
                   </p>
               </header>
-              <FocusCards cards={scientificGroupsLogos} showTitles={true}/>
+              <FocusCardsCarousel 
+                cards={scientificGroupsLogos} 
+                showTitles={true} 
+                openInNewTabs={false} 
+              />
           </div>
       </section>
     </section>

@@ -56,7 +56,7 @@ export const Nav = () => {
     >
       <div className="container flex h-13 items-center max-lg:px-5">
         <Link href="/" className="lg:hidden flex-1 cursor-pointer z-2">
-          <Image src="/assets/logos/sblogo-white.svg" width={1949} height={1949} className='size-1/12 max-sm:size-1/6' alt="logo" />
+          <Image src="/assets/logos/sblogo-white.svg" width={1949} height={1949} className='max-lg:size-1/12 max-md:size-1/12 max-sm:size-2/12' alt="logo" />
         </Link>
 
         <div
@@ -98,7 +98,7 @@ export const Nav = () => {
                     {t('contact')}
                   </Link>
                   <div className="dot" />
-                  <MovingBorder bgColor="bg-s5">
+                  <MovingBorder bgColor="bg-s5" rounded='rounded-full'>
                     <Link href="/join" onClick={() => setIsOpen(false)} className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
                       {t('join')}
                     </Link>

@@ -33,9 +33,8 @@ export const Hero = () => {
     {/* Background Slider (using Splide directly here) */}
     {heroImages.map((image, index) => (
       <SplideSlide key={index}>
-      <SplideTrack>
       <section
-        className="relative w-full h-screen overflow-hidden pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 bg-cover bg-center"
+        className="relative w-full h-screen pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }} 
       >
 
@@ -47,12 +46,12 @@ export const Hero = () => {
           <div className="text-shadow text-p4 small-1 uppercase">
             {t('caption')}
           </div>
-          <h1 className="milky_way text-border-title mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-md:mb-4 max-md:h2 max-md:leading-12"
+          <h1 className="milky_way text-border-title mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-lg:leading-12"
             style={{ letterSpacing: '3px' }}>
             IEEE SB UNIWA
           </h1>
           <h6 className="text-shadow max-w-440 h6 max-lg:body-1 text-p6">{t('subheading')}</h6>
-          <p className="text-shadow max-w-440 mb-14 h6 max-lg:body-1 max-md:mb-10 text-p4">
+          <p className="text-shadow max-w-440 my-10 h6 max-lg:body-1 max-md:my-10 text-p4">
             {t('p')} 💖
           </p>
           <Link href="/about"  className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
@@ -61,7 +60,6 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-    </SplideTrack>
     </SplideSlide>
   ))}
   </Splide>
