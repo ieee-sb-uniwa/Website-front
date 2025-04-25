@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
 
-export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitle, openInNewTab}) => {
+export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitles, openInNewTab}) => {
   return (  
     <Link  
       href={card.url || "#"} 
@@ -21,21 +21,22 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
         onMouseLeave={() => setHovered(null)}
         className={cn(
           "relative flex flex-col items-center justify-center px-2 py-4 transition-[opacity,transform] duration-300 ease-out",
-          "h-auto shrink-0 basis-1/2 md:basis-1/4",
+          "h-20 md:h-28 lg:h-40 shrink-0 basis-1/2 md:basis-1/4",
           "hover:scale-110 focus:scale-110 active:translate-y-0 hover:-translate-y-2 focus:-translate-y-2",
           hovered !== null && hovered !== index && "opacity-50 scale-95"
         )}
       >
-        {/* Image */}
-        <Image
-          src={card.img}
-          alt={card.title}
-          width={card.imgWidth}
-          height={card.imgHeight}
-          className="object-contain"
-        />
-
-        {showTitle && (
+        <div className="w-full h-full flex items-center justify-center">
+          {/* Image */}
+          <Image
+            src={card.img}
+            alt={card.title}
+            width={card.imgWidth}
+            height={card.imgHeight}
+            className="object-contain max-h-full"
+          />
+        </div>
+        {showTitles && (
           <div
             className={cn(
               "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
@@ -82,7 +83,7 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
           type: 'slide',
           perPage: 4,
           perMove: 1,
-          gap: '1.5rem',
+          gap: '2rem',
           pagination: false,
           arrows: false,
           breakpoints: {
@@ -102,7 +103,7 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
               index={index}
               hovered={hovered}
               setHovered={setHovered}
-              showTitle={showTitles}
+              showTitles={showTitles}
               openInNewTab={openInNewTabs}
             />
           </SplideSlide>
@@ -110,20 +111,20 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
       </Splide>
 
       {/* Custom Arrows */}
-      <div className="flex justify-center items-center gap-14 z-2 mt-12">
+      <div className="flex justify-center items-center gap-12 z-2 mt-12">
         <button
           onClick={() => splideRef.current?.splide?.go('<')}
-          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
           aria-label="Previous"
         >
-          <BiSolidChevronLeft size={20} className="text-p1" />
+          <BiSolidChevronLeft size={30} className="text-p1" />
         </button>
         <button
           onClick={() => splideRef.current?.splide?.go('>')}
-          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
           aria-label="Next"
         >
-          <BiSolidChevronRight size={20} className="text-p1"/>
+          <BiSolidChevronRight size={30} className="text-p1"/>
         </button>
       </div>
     </div>

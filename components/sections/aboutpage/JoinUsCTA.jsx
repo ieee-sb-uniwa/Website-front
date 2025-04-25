@@ -19,10 +19,10 @@ const JoinUsCTA = () => {
             <div className="absolute inset-0 bg-black/50 z-10"></div>
             <div className="mx-auto w-full max-w-7xl px-4 relative py-4 text-center md:py-10 z-20">
                 <header className="my-14 md:my-16">
-                    <h3 className="h3 max-md:h4 text-p4 my-10">
+                    <h3 className="text-shadow h4 max-md:h5 text-p4 my-10">
                         {t('heading')}
                     </h3>
-                    <p className="my-10 h6 max-md:body-1 text-p5">
+                    <p className="text-shadow my-10 body-1 max-md:body-2 text-p5">
                         {t('paragraph')}
                     </p>
                 </header>

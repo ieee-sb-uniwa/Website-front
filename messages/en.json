@@ -121,8 +121,8 @@
       "button_text": "Retry"
     },
     "Error404": {
-      "h4": "Page Not Found...",
-      "paragraph": "The page you're looking for doesn't exist. Click the button below to navigate back to homepage."
+      "h4": "Something went wrong",
+      "paragraph": "The page that you have requested does not exist or does no longer exists."
     },    
     "EventsPage": {
       "heading":"Events",
@@ -136,7 +136,7 @@
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
       "JoinUsCta": {
         "heading": "What are you waiting?",
-        "paragraph": "Become part of our dynamic IEEE community at the University of West Attica. Connect with like-minded fellow students, participate in hands-on workshops, and develop your skills through exciting events and competitions like IEEEXtreme.",
+        "paragraph": "Join our IEEE student branch at the University of West Attica that is making a new effort to come back dynamically. Connect with like-minded fellow students, and grow your skill set with us.",
         "ctaButtonText": "Join now"
       },
       "IEEEUniwa": {
