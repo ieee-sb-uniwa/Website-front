@@ -8,7 +8,7 @@ import '@splidejs/react-splide/css';
 import { BiSolidChevronRight, BiSolidChevronLeft } from "react-icons/bi";
 import { useRef } from 'react';
 
-export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitle, openInNewTab}) => {
+export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitles, openInNewTab}) => {
   return (  
     <Link  
       href={card.url || "#"} 
@@ -20,7 +20,7 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
         onMouseLeave={() => setHovered(null)}
         className={cn(
           "relative flex flex-col items-center justify-center px-2 py-4 transition-[opacity,transform] duration-300 ease-out",
-          "h-40 md:h-52 lg:h-64 shrink-0 basis-1/2 md:basis-1/4",
+          "h-20 md:h-28 lg:h-40 shrink-0 basis-1/2 md:basis-1/4",
           "hover:scale-110 focus:scale-110 active:translate-y-0 hover:-translate-y-2 focus:-translate-y-2",
           hovered !== null && hovered !== index && "opacity-50 scale-95"
         )}
@@ -35,7 +35,7 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
             className="object-contain max-h-full"
           />
         </div>
-        {showTitle && (
+        {showTitles && (
           <div
             className={cn(
               "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
@@ -64,14 +64,13 @@ export function FocusCards({ cards, showTitles, openInNewTabs }) {
           index={index}
           hovered={hovered}
           setHovered={setHovered}
-          showTitle={showTitles}
+          showTitles={showTitles}
           openInNewTab={openInNewTabs}
         />
       ))}
     </div>
   );
 }
-
 
 export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
   const splideRef = useRef(null);
@@ -84,7 +83,7 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
           type: 'slide',
           perPage: 4,
           perMove: 1,
-          gap: '1.5rem',
+          gap: '2rem',
           pagination: false,
           arrows: false,
           breakpoints: {
@@ -104,7 +103,7 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
               index={index}
               hovered={hovered}
               setHovered={setHovered}
-              showTitle={showTitles}
+              showTitles={showTitles}
               openInNewTab={openInNewTabs}
             />
           </SplideSlide>
@@ -115,14 +114,14 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
       <div className="flex justify-center items-center gap-12 z-2 mt-12">
         <button
           onClick={() => splideRef.current?.splide?.go('<')}
-          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
           aria-label="Previous"
         >
           <BiSolidChevronLeft size={30} className="text-p1" />
         </button>
         <button
           onClick={() => splideRef.current?.splide?.go('>')}
-          className="p-3 rounded-full bg-s1/70 hover:bg-s1 transition-colors border-[2px] border-s3 duration-300"
+          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
           aria-label="Next"
         >
           <BiSolidChevronRight size={30} className="text-p1"/>

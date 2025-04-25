@@ -12,16 +12,16 @@ const ScienceGroupsOverview = () => {
           <div className="mx-auto w-full max-w-7xl px-4 relative pb-10 text-center md:pb-20">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>
-                  <h3 className='h3 max-md:h5 text-p4 my-10'>
+                  <h3 className='text-shadow h3 max-md:h5 text-p4 my-10'>
                       {t('heading')}
                   </h3>
-                  <p className='my-10 h6 max-lg:body-2 text-p5'>
+                  <p className='text-shadow my-10 h6 max-lg:body-2 text-p5'>
                     {t('paragraph')}
                   </p>
               </header>
               <FocusCardsCarousel 
                 cards={scientificGroupsLogos} 
-                showTitles={true} 
+                showTitle={true} 
                 openInNewTabs={false} 
               />
           </div>
