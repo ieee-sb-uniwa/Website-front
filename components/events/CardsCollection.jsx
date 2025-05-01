@@ -12,7 +12,7 @@ const CardsCollection = ({ events = [], maxCards, locale, eventsType }) => {
           <EventCard key={event._id || index} event={event} locale={locale} eventType={eventsType}/>
         ))
       ) : (
-        <h4 className="h4 max-md:h6 text-red-400">No Events ☹</h4>
+        <h6 className="h6 max-md:body-1 text-warning">No Events :(</h6>
       )}
     </ul>
   );
