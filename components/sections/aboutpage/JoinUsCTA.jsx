@@ -10,7 +10,7 @@ const JoinUsCTA = () => {
         <section 
             className="mx-auto my-12 w-full max-w-7xl p-4 text-center relative z-20 rounded-3xl overflow-hidden"
             style={{ 
-                backgroundImage: `url(${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg)`, 
+                backgroundImage: `url(${imagesUrl}/events/ieeextreme17.jpg)`, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center', 
                 backgroundRepeat: 'no-repeat' 
@@ -22,7 +22,7 @@ const JoinUsCTA = () => {
                     <h3 className="text-shadow h4 max-md:h5 text-p4 my-10">
                         {t('heading')}
                     </h3>
-                    <p className="text-shadow my-10 body-1 max-md:body-2 text-p5">
+                    <p className="text-shadow my-10 h6 max-md:body-2 text-p5">
                         {t('paragraph')}
                     </p>
                 </header>

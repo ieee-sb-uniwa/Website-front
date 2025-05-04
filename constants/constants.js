@@ -15,7 +15,18 @@ export const scientificGroupsLogos= [
   { title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
   { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
 ];
-  
+
+export const collageList = [
+    {url: `${imagesUrl}/join_collage/collage1.jpg`,title: "Biomedical Workshop" },
+    {url: `${imagesUrl}/join_collage/collage2.jpg`,title: "ExCom Meeting" },
+    {url: `${imagesUrl}/join_collage/collage3.JPG`,title: "IEEEXtreme 17.0"},
+    {url: `${imagesUrl}/join_collage/collage4.jpg`,title: "Stelios Foundation SB Presentation"},
+    {url: `${imagesUrl}/join_collage/collage5.jpg`,title: "IEEEXplore Research and Publishing Event"},
+    {url: `${imagesUrl}/join_collage/collage6.jpg`,title: "IEEE Open Day"},
+    {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza" },
+    {url: `${imagesUrl}/join_collage/collage8.jpg`,title: "IEEEXtreme 17.0" },
+];
+
 export const heroImages = [
   `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,

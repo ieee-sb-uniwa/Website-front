@@ -33,7 +33,7 @@ const FaqItem = ({ item, index, showNumbers }) => {
           )}
           <div
             className={clsx(
-              "h6 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",
+              "h6 max-md:body-1 max-sm:body-2 text-p4 transition-colors duration-500 max-md:flex max-md:min-h-20 max-md:items-center",
               active && "text-warning",
             )}
           >

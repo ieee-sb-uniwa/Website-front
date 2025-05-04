@@ -13,7 +13,7 @@ const Faq = ({showNumbers, noOfQuestions=6}) => {
         <div className='container relative z-2 py-28'>
             <div>
                 <h3 className='h3 max-md:h5 max-w-640 max-lg:max-w-lg text-p4 mb-7'>{t('heading')}</h3>
-                <p className='body-1 max-lg:max-w-lg'>{t('paragraph')}{' '} 
+                <p className='body-1 max-sm:body-2 max-lg:max-w-lg'>{t('paragraph')}{' '} 
                     <Hyperlink href="/contact" className="text-p4" arrow={false}>
                         {t('contact_link')}
                     </Hyperlink>{' '} 
