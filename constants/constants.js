@@ -23,8 +23,7 @@ export const collageList = [
     {url: `${imagesUrl}/join_collage/collage4.jpg`,title: "Stelios Foundation SB Presentation"},
     {url: `${imagesUrl}/join_collage/collage5.jpg`,title: "IEEEXplore Research and Publishing Event"},
     {url: `${imagesUrl}/join_collage/collage6.jpg`,title: "IEEE Open Day"},
-    {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza" },
-    {url: `${imagesUrl}/join_collage/collage8.jpg`,title: "IEEEXtreme 17.0" },
+    {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza" }
 ];
 
 export const heroImages = [
@@ -32,7 +31,7 @@ export const heroImages = [
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,
  // `${imagesUrl}/wallpapers/IEEEXtreme-17.0.jpg`,
   `${imagesUrl}/wallpapers/OPEN-DAY.jpg`,
-// `${imagesUrl}/wallpapers/git-workshop.jpg`, 
+// `${imagesUrl}/wallpapers/git-workshop-team-photo.png`, 
 ];
 
 export const joinSBStepsEN = [

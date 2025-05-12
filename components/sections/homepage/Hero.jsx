@@ -46,7 +46,7 @@ export const Hero = () => {
           <div className="text-shadow text-p4 small-1 uppercase">
             {t('caption')}
           </div>
-          <h1 className="milky_way text-border-title mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-sm:h2 max-lg:leading-12"
+          <h1 className="milky_way text-border-title font-poppins mb-6 title uppercase max-lg:mb-7 max-lg:h1 max-sm:h2 max-lg:leading-12"
             style={{ letterSpacing: '3px' }}>
             IEEE SB UNIWA
           </h1>

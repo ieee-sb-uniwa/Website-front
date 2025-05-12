@@ -68,21 +68,13 @@ export default function TeamCollage({ images = [] }) {
             </div>
           </div>
           
-          {/* Center column - Two stacked images */}
-          <div className="col-span-3 flex flex-col gap-2 md:gap-3 lg:gap-4">
-            {/* Top center image */}
-            <div className="h-1/2 rounded-lg overflow-hidden shadow-lg">
+          {/* Center column - One centered image */}
+          <div className="col-span-3 flex flex-col justify-center items-center gap-2 md:gap-3 lg:gap-4">
+            {/* Center image */}
+            <div className="h-3/4 w-full rounded-lg overflow-hidden shadow-lg">
               <img
                 src={safeImages[3]?.url || placeholderImage}
                 alt={safeImages[3]?.title || "Team member working"}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Bottom center image */}
-            <div className="h-1/2 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={safeImages[7]?.url || placeholderImage}
-                alt={safeImages[7]?.title || "Team meeting"}
                 className="w-full h-full object-cover"
               />
             </div>

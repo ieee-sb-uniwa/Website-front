@@ -7,19 +7,17 @@ import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi
 import { useTranslations } from 'next-intl';
 import Link from "@node_modules/next/link";
 import { MdEditDocument} from "react-icons/md";
-import { RiHourglassFill } from "react-icons/ri";
 import Image from 'next/image';
 
 const EventCard = ({ event , locale, eventType}) => {
   const {_id, id, date, location, title, thumbnail, images, keywords, registration_form, registration_deadline } = event;
   const eventTranslations = useTranslations('EventCard');
-  const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   const eventDetailsLink = eventType === "third-party" ? `/third-party-events/${_id}` : `/sb-events/${_id}`;
   return (
     <li key={id} className="event-card group">
       {images && images.length > 0 && images[0].trim() !== "" && (
           <Image
-          src={`${imagesUrl}${thumbnail}`}
+          src={`${thumbnail}`}
           alt={title}
           className="event-card_img"
           width={1200}
@@ -64,7 +62,6 @@ const EventCard = ({ event , locale, eventType}) => {
         {/*DEADLINE*/}
         {isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) && (
         <div className="flex items-center my-3 gap-3">
-          {/*<RiHourglassFill className="text-amber-300" size={26} />*/}
           <p className="body-2 text-warning event_card_date">
             {eventTranslations('register_before')} {formatDate2Digits(registration_deadline, locale)}
           </p>
@@ -79,7 +76,7 @@ const EventCard = ({ event , locale, eventType}) => {
               {eventTranslations('participation_form')}
             </Link>
           ) : (
-            <p className="uppercase body-2 text-red-500 base-bold flex items-center">
+            <p className="uppercase body-2 text-error base-bold flex items-center">
               {eventTranslations('isOver')}
             </p>     
           )}

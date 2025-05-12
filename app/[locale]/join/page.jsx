@@ -20,14 +20,14 @@ const Page = () => {
   const t = useTranslations("JoinPage");
   return (
     <section>
-        <h3 className='h3 max-sm:h4 z-3 relative text-center mx-auto my-14 pt-24 md:pt-32 mx-w-lg  text-p4 max-md:my-14 max-sm:max-w-sm'>
+        <h3 className='h3 max-sm:h4 z-3 relative text-center mx-auto my-12 pt-24 md:pt-32 mx-w-lg text-p4 max-sm:max-w-sm'>
           {t('h3')} 
           <span className='green_gradient'> {t('memories')} </span>
         </h3>
         <Collage  images={collageList} />
         <div className='container'>
             <div className ="max-w-960 join-head_before relative mx-auto bg-s1/50 pb-40 pt-2 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
-                <p className='h6 max-sm:body-2 relative text-center mx-auto text-p4 mb-12 max-md:mb-9'>
+                <p className='h6 max-md:body-1 max-sm:body-2 relative text-center mx-auto text-p4 mb-12 max-md:mb-9'>
                         {t('subheading_first_part')}
                         <span className="green_gradient">{t('volunteer')}</span>
                         {t('subheading_second_part')}

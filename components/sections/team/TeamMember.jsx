@@ -7,7 +7,6 @@ import { socials } from "@constants/constants.js";
 
 const TeamMember = ({item, containerClassName}) => {
   const getSocialIcon = (type) => socials.find((social) => social.title.toLowerCase() === type)?.icon;
-  const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   return (
     <div className={clsx(
         "relative px-14 pt-11 pb-14 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md",
@@ -54,10 +53,10 @@ const TeamMember = ({item, containerClassName}) => {
                 >
                     <div className="w-[140px] md:w-[120px] xl:w-[160px] h-[140px] md:h-[120px] xl:h-[160px] rounded-full p-1.5">
                         <Image
-                            src={`${imagesUrl}${item.photo}`}
+                            src={`${item?.photo}`}
                             width="800"
                             height="800"
-                            alt={item.name}
+                            alt={item?.name}
                             className='size-full object-cover rounded-full'
                         />
                     </div>
@@ -65,20 +64,20 @@ const TeamMember = ({item, containerClassName}) => {
             </div>
             {/* Member Details */}
             <div>
-                <h4 className="body-2 mx-4 mb-1 text-p1">{item.name}</h4>
-                <p className="my-3 mx-4 small-1 uppercase text-p3">{item.role}</p>
+                <h4 className="body-2 mx-4 mb-1 text-p1">{item?.name}</h4>
+                <p className="my-3 mx-4 small-1 uppercase text-p3">{item?.role}</p>
                 <ul className="flex flex-1 mt-5 max-md:mt-10 my-3 mx-4 gap-3">
                 {item.socials?.map((social) => (
                     <li key={social.id}>
                     <a
-                        href={social.url} // Dynamically set href
+                        href={social?.url} // Dynamically set href
                         className="social-icon"
                         target="_blank" // Open in new tab for non-email links
                         rel="noopener noreferrer"
                     >
                         <Image
-                        src={getSocialIcon(social.type)} // Get icon dynamically
-                        alt={social.type}
+                        src={getSocialIcon(social?.type)} // Get icon dynamically
+                        alt={social?.type}
                         width={30} // Set appropriate width
                         height={30} // Set appropriate height
                         className="size-2/3 z-2 object-contain" // Maintain your existing class

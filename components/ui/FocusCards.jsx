@@ -83,7 +83,7 @@ export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
           type: 'slide',
           perPage: 4,
           perMove: 1,
-          gap: '2rem',
+          gap: '1rem',
           pagination: false,
           arrows: false,
           breakpoints: {

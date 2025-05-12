@@ -20,8 +20,8 @@
     "Map":{
       "map_heading": "Where to find us",
       "location_details": "The Student Branch has its own office and workplace within the University of West Attica!",
-      "office_location": "Olive Grove Campus (Campus 2), building Z, office ZB006.",
-      "workplace_location": "Olive Grove Campus (Campus 2), Library, HP Incubation Centre",
+      "office_location": "Olive Grove Campus (Campus 2), Building Z, Room ZB006.",
+      "workplace_location": "Olive Grove Campus (Campus 2), Library - 2nd Floor, HP Incubation Center",
       "map_unavailable": "Map cannot be displayed because JavaScript is disabled. Please enable it or use the following address: IEEE SB UniWA, Thivon 250, Aigaleo 122 41.",
       "CampusMap":"Campus 2 interactive map",
       "CampusMapText":"In case you get lost..."
@@ -37,8 +37,8 @@
       "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects."
     },
     "JoinPage":{
-      "h3" : "Join us",
-      "memories":"so that we create memories",
+      "h3" : "Join us to",
+      "memories":"make memories together",
       "subheading_first_part": "We offer flexible options to join, you can either ",
       "volunteer": "volunteer in our branch",
       "subheading_second_part": " or become an official member by ",
@@ -110,6 +110,13 @@
       "read_more": "Details",
       "isOver":"Completed",
       "register_before":"Register before:"
+    },
+    "EventIdPage": {
+      "register" : "Register now",
+      "event_links": "Event Resources",
+      "event_details":"About the Event",
+      "is_over" :"EVENT IS COMPLETED",
+      "register_closed" : "REGISTRATIONS CLOSED"
     },
     "NotFoundPage": {
       "h4": "Work in Progress ...",
@@ -203,7 +210,7 @@
         "links":[
           { "href": "https://www.ieee.gr/", "text": "EXPLORE MORE" }
         ],
-        "imageAlt" : "Logo of the IEEE Greece Section"
+        "imageAlt" : "IEEE Greece Section - Lead Your SB Camp Lamia 2022"
       },
       "IEEERegion8": {
         "title": "What is IEEE Region 8?",
