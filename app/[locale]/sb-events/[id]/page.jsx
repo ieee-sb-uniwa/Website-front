@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import markdownit from "markdown-it";
 import {getSBEventById} from "@actions/events/getEventById";
+import {getAllEventsByCategory} from "@actions/events/getEventsByCategory";
 import { isValidISODate, formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
 import { MdEditDocument} from "react-icons/md";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
@@ -10,18 +11,22 @@ import Button from '@components/ui/Button';
 import Hyperlink from '@components/ui/Hyperlink';
 import {getTranslations} from 'next-intl/server';
 import { RiHourglassFill } from "react-icons/ri";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import CardsCollection from '@components/events/CardsCollection';
 
 const md = markdownit();
 
-export const experimental_ppr = true;
+// export const experimental_ppr = true;
 
 const Page = async ({params}) => {
-  const filesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
-
   const { id, locale } = await params;
 
-  const event = (await getSBEventById(id, locale));
+  const event = await getSBEventById(id, locale);
   if (!event) return notFound();
+  const relatedEventsData =  await getAllEventsByCategory(event?.keywords, locale);
+  //Initiate both requests in parallel
+  //const [event, relatedEvents] = await Promise.all([eventData, relatedEventsData])
+  const relatedEvents = relatedEventsData.filter(relEvent => relEvent._id !== event._id )
   const parsedContent = md.render(event?.description || "");
 
   const eventCardTranslations =  await getTranslations('EventCard');
@@ -43,10 +48,10 @@ const Page = async ({params}) => {
         showDeadline: true,
         component: (
             <Button
-             href={event?.registration_form}
-            icon={<MdEditDocument size={32} className='text-p4'/> }
-            className="flex gap-3 items-center cursor-pointer "
-            textClassName="body-2 lg:body-1 text-p1"
+              href={event?.registration_form}
+              icon={<MdEditDocument size={30} className='text-p4'/> }
+              className="flex gap-3 items-center cursor-pointer "
+              textClassName="body-2 text-p4 hover:text-p7 transition-colors duration-300"
             >
               {eventTranslations('register')}
             </Button>
@@ -90,7 +95,7 @@ const Page = async ({params}) => {
     <section className="flex justify-center pt-36 max-md:pt-24 bg-contain flex-col items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl w-full">
           <Image 
-            src={`${filesUrl}${event.thumbnail}`}
+            src={`${event.thumbnail}`}
             alt="event thumbnail"
             width={1000}
             height={1000}
@@ -150,10 +155,14 @@ const Page = async ({params}) => {
             </div>
           </div>
       </div>
-      <div className="w-full max-w-7xl px-5 md:px-10 my-20 grid grid-cols-1 md:grid-cols-[70%_30%] gap-10 items-start">
+
+      {/* Divider */}
+      <hr className="my-20 max-sm:my-10 w-4/5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p3 to-transparent opacity-75"/>
+
+      <div className="w-full max-w-7xl px-5 md:px-10 grid grid-cols-1 md:grid-cols-[70%_30%] gap-20 max-sm:gap-10 items-start">
         {/* Event Details */}
         <div className="flex flex-col gap-4">
-          <h3 className="h3 max-md:h4 text-p4">{eventTranslations('event_details')}</h3>
+          <h3 className="h4 max-md:h5 text-p4">{eventTranslations('event_details')}</h3>
           {parsedContent ? (
             <article
               className="prose body-1 max-md:body-2 w-full break-words"
@@ -166,11 +175,12 @@ const Page = async ({params}) => {
 
         {/* Useful Links */}
         {event.links && event.links.length > 0 && (
-          <div className="flex flex-col gap-4">
-            <h3 className="h3 max-md:h4 text-p4">{eventTranslations('event_links')}</h3>
-            <ul className="list-disc pl-6 space-y-2">
+          <div className="flex flex-col gap-6">
+            <h3 className="h4 max-md:h5 text-p4">{eventTranslations('event_links')}</h3>
+            <ul className="list-disc pl-6 space-y-6">
               {event.links.map((link, idx) => (
-                <li key={idx}>
+                <li key={idx} className='flex items-center gap-4'>
+                  <FaExternalLinkAlt className="text-p4" size={24} />
                   <Hyperlink
                     href={link.url}
                     className="body-1 max-md:body-2 text-p4"
@@ -181,10 +191,19 @@ const Page = async ({params}) => {
                 </li>
               ))}
             </ul>
+            
           </div>
         )}
       </div>
-
+      {/* related events */}
+      <div className='section_container'>           
+        <div className="flex py-10 items-center">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p3"></div>
+            <span className="max-sm:h6 h5 flex-shrink mx-4 text-p5">Related Events</span>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p3 "></div>
+        </div>
+        <CardsCollection  events={relatedEvents} maxCards={3} locale={locale} eventsType={'sb-events'}/>
+       </div>
     </section>
   </>
   );

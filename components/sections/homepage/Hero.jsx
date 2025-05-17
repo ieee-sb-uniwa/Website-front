@@ -55,7 +55,7 @@ export const Hero = () => {
             {t('p')} 💖
           </p>
           <Link href="/about"  className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
-            <Button icon={<GiRead size={36} color="white"/>} >{t('learn_button')}</Button>
+            <Button textClassName="text-p6 base-bold" icon={<GiRead size={36} color="white"/> } >{t('learn_button')}</Button>
           </Link>
         </div>
       </div>

@@ -15,6 +15,7 @@ const EventCard = ({ event , locale, eventType}) => {
   const eventDetailsLink = eventType === "third-party" ? `/third-party-events/${_id}` : `/sb-events/${_id}`;
   return (
     <li key={id} className="event-card group">
+      
       {images && images.length > 0 && images[0].trim() !== "" && (
           <Image
           src={`${thumbnail}`}
@@ -60,23 +61,23 @@ const EventCard = ({ event , locale, eventType}) => {
           </div>
         )}
         {/*DEADLINE*/}
-        {isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) && (
+        {/* {isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) && (
         <div className="flex items-center my-3 gap-3">
           <p className="body-2 text-warning event_card_date">
             {eventTranslations('register_before')} {formatDate2Digits(registration_deadline, locale)}
           </p>
         </div>
-        )}
+        )} */}
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-4 mt-3 my-4">
+      <div className="flex justify-center gap-x-1 my-4">
           { isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) ? (
             <Link className="flex items-center gap-1 uppercase register-btn" href={registration_form}>
               <MdEditDocument size={24}/>
               {eventTranslations('participation_form')}
             </Link>
           ) : (
-            <p className="uppercase body-2 text-error base-bold flex items-center">
+            <p className="uppercase body-2 p-3 rounded-lg border-error text-error border-2 base-bold flex items-center">
               {eventTranslations('isOver')}
             </p>     
           )}

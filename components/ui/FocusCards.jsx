@@ -1,14 +1,22 @@
 "use client";
 import Image from "next/image";
 import { Link } from "@i18n/navigation";
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { cn } from "@/lib/utils";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import { BiSolidChevronRight, BiSolidChevronLeft } from "react-icons/bi";
+import { LuArrowBigLeftDash,LuArrowBigRightDash } from "react-icons/lu";
 import { useRef } from 'react';
 
-export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitles, openInNewTab}) => {
+// Add default props with showTitles=true
+export const CardLogo = React.memo(({ 
+  card, 
+  index, 
+  hovered, 
+  setHovered, 
+  showTitles = true, // Default to true
+  openInNewTab
+}) => {
   return (  
     <Link  
       href={card.url || "#"} 
@@ -29,22 +37,23 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
           {/* Image */}
           <Image
             src={card.img}
-            alt={card.title}
-            width={card.imgWidth}
-            height={card.imgHeight}
+            alt={card.title || "Card image"}
+            width={card.imgWidth || 100}
+            height={card.imgHeight || 100}
             className="object-contain max-h-full"
           />
         </div>
-        {showTitles && (
-          <div
-            className={cn(
-              "absolute top-full mt-2 text-p4 body-2 bg-clip-text",
-              "transition-all duration-300 transform",
-              hovered === index ? "opacity-100 translate-y-2" : "opacity-0 translate-y-0"
-            )}>
-            {card.title}
-          </div>
-        )}
+        
+        {showTitles &&
+        <div
+          className={cn(
+            "absolute top-full text-p4 body-2 text-center w-full",
+            "transition-all duration-300 transform",
+            "opacity-100 z-50" 
+          )}>
+          {card.title || "[Empty Title]"}
+        </div>
+        }
       </div>
     </Link>
   );
@@ -52,14 +61,14 @@ export const CardLogo = React.memo(({ card, index, hovered, setHovered, showTitl
 
 CardLogo.displayName = "CardLogo";
 
-export function FocusCards({ cards, showTitles, openInNewTabs }) {
+export function FocusCards({ cards, showTitles = true, openInNewTabs }) {
   const [hovered, setHovered] = useState(null);
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-28 gap-x-20 max-w-7xl mx-auto md:px-4 w-full">
       {cards.map((card, index) => (
         <CardLogo
-          key={card.title}
+          key={card.title || index}
           card={card}
           index={index}
           hovered={hovered}
@@ -72,59 +81,67 @@ export function FocusCards({ cards, showTitles, openInNewTabs }) {
   );
 }
 
-export function FocusCardsCarousel({ cards, showTitles, openInNewTabs }) {
+export function FocusCardsCarousel({ cards, showTitles = true, openInNewTabs }) {
   const splideRef = useRef(null);
   const [hovered, setHovered] = useState(null);
-
+  
   return (
-    <div className="relative w-full max-w-7xl mx-auto">
+    <div className="relative w-full h-full max-w-7xl mx-auto">
       <Splide
         options={{
-          type: 'slide',
+          type: 'loop',
           perPage: 4,
           perMove: 1,
           gap: '1rem',
           pagination: false,
+          rewind: true,
           arrows: false,
           breakpoints: {
             1024: { perPage: 4 },
             768: { perPage: 3 },
             480: { perPage: 2 },
           },
+          height: '200px',  // Ensure there's enough height for titles
         }}
         ref={splideRef}
         aria-label="Focus Cards Carousel"
-        className="focus-cards-carousel"
+        className="focus-cards-carousel pb-9" // Add padding at bottom for titles
       >
-        {cards.map((card, index) => (
-          <SplideSlide key={card.title}>
+        {cards && cards.length > 0 ? cards.map((card, index) => (
+          <SplideSlide key={card.title || index} >
             <CardLogo
               card={card}
               index={index}
               hovered={hovered}
               setHovered={setHovered}
-              showTitles={showTitles}
+              showTitles={true} // Force to true
               openInNewTab={openInNewTabs}
             />
           </SplideSlide>
-        ))}
+        )) : (
+          <SplideSlide>
+            <div className="p-4 bg-red-200 text-red-800">
+              No cards available
+            </div>
+          </SplideSlide>
+        )}
       </Splide>
 
       {/* Custom Arrows */}
-      <div className="flex justify-center items-center gap-12 z-2 mt-12">
+      <div className="flex justify-center items-center gap-12 z-2"> 
         <button
           onClick={() => splideRef.current?.splide?.go('<')}
-          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
+          className="p-2 rounded-md bg-s1 transition-colors border-[1px] border-p1/35 hover:border-p1 duration-300"
           aria-label="Previous"
         >
-          <BiSolidChevronLeft size={30} className="text-p1" />
+          <LuArrowBigLeftDash size={30} className="text-p1/75" />
         </button>
         <button
           onClick={() => splideRef.current?.splide?.go('>')}
-          className="p-3 rounded-full bg-s1/50 hover:bg-s1/90 transition-colors border-[2px] border-s4/25 duration-300"
+          className="p-2 rounded-md bg-s1 transition-colors border-[1px] border-p1/35 hover:border-p1 duration-300"
           aria-label="Next"
         >
-          <BiSolidChevronRight size={30} className="text-p1"/>
+          <LuArrowBigRightDash size={30} className="text-p1/75"/>
         </button>
       </div>
     </div>

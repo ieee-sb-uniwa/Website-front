@@ -69,7 +69,7 @@ async function Page(props) {
   />
   <TextWithImageSegment
         imagePosition='left'
-        imageSrc="/assets/images/ieee-sb-greek-logos-collage2.PNG"
+        imageSrc="/assets/images/ieee-sb-greek-logos-collage2.png"
         imageAlt={SBSegmentTranslations('imageAlt')}
         caption={SBSegmentTranslations('caption')}
         text={SBSegmentTranslations('text')}

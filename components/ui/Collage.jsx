@@ -1,6 +1,4 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import Image from 'next/image'
 
 export default function TeamCollage({ images = [] }) {
   // Default placeholder image
@@ -40,9 +38,11 @@ export default function TeamCollage({ images = [] }) {
           {/* Left column - Tall portrait */}
           <div className="col-span-2 h-full">
             <div className="h-5/6 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[0]?.url || placeholderImage}
-                alt={safeImages[0]?.title || "Team member playing ping pong"}
+                alt={safeImages[0]?.title || ""}
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -52,17 +52,21 @@ export default function TeamCollage({ images = [] }) {
           <div className="col-span-2 flex flex-col gap-2 md:gap-3 lg:gap-4">
             {/* Top image - slightly shorter */}
             <div className="h-2/5 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[1]?.url || placeholderImage}
-                alt={safeImages[1]?.title || "Team member discussing"}
+                alt={safeImages[1]?.title || ""}
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
             {/* Bottom image - slightly taller */}
             <div className="h-3/5 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[2]?.url || placeholderImage}
-                alt={safeImages[2]?.title || "Team member presenting"}
+                alt={safeImages[2]?.title || ""}
+                width={1000}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -72,9 +76,11 @@ export default function TeamCollage({ images = [] }) {
           <div className="col-span-3 flex flex-col justify-center items-center gap-2 md:gap-3 lg:gap-4">
             {/* Center image */}
             <div className="h-3/4 w-full rounded-lg overflow-hidden shadow-lg">
-              <img
+              <Image
                 src={safeImages[3]?.url || placeholderImage}
-                alt={safeImages[3]?.title || "Team member working"}
+                alt={safeImages[3]?.title || ""}
+                width={600}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -84,17 +90,21 @@ export default function TeamCollage({ images = [] }) {
           <div className="col-span-2 flex flex-col gap-2 md:gap-3 lg:gap-4">
             {/* Top image - taller */}
             <div className="h-5/6 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[4]?.url || placeholderImage}
-                alt={safeImages[4]?.title || "Team outdoors"}
+                alt={safeImages[4]?.title || ""}
+                width={600}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
             {/* Bottom image - shorter */}
             <div className="h-4/6 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[5]?.url || placeholderImage}
-                alt={safeImages[5]?.title || "Team collaboration"}
+                alt={safeImages[5]?.title || ""}
+                width={600}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -103,9 +113,11 @@ export default function TeamCollage({ images = [] }) {
           {/* Right column - Tall portrait */}
           <div className="col-span-1 h-full">
             <div className="h-5/6 rounded-lg overflow-hidden shadow-md">
-              <img
+              <Image
                 src={safeImages[6]?.url || placeholderImage}
-                alt={safeImages[6]?.title || "Team members chatting"}
+                alt={safeImages[6]?.title || ""}
+                width={600}
+                height={1000}
                 className="w-full h-full object-cover"
               />
             </div>

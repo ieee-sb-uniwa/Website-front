@@ -31,7 +31,7 @@ const JoinUsCTA = () => {
                         icon='/assets/icons/people-add.svg'
                         iconHeight={38}
                         iconWidth={38}
-                        className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+                        textClassName='base-bold text-p1'
                     >
                         {t('ctaButtonText')}
                     </Button>
