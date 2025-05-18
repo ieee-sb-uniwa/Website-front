@@ -73,7 +73,6 @@ const Page = () => {
                   </div>
                 )}
                 <h4 className='h4 max-lg:h5 py-3 md:py-5 z-3 mx-auto relative mx-w-lg my-10 text-p4 max-md:my-8'>{t('join_steps')}</h4>
-                {/* Re-mount StepsList with a unique key when toggled */}
                 <StepsList key={SB ? 'sb-steps' : 'ieee-steps'} steps={SB ? joinSBSteps : joinIEEESteps} />
               </div>
                 <Faq showNumbers={false} noOfQuestions={6}/>

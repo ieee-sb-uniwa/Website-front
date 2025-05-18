@@ -2,6 +2,8 @@ import React from 'react'
 import { scientificGroupsLogos } from "@/constants/constants.js";
 import { useTranslations } from 'next-intl';
 import { FocusCardsCarousel } from "@/components/ui/FocusCards";
+import Button from "@components/ui/Button";
+import { MdScience } from "react-icons/md";
 
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
@@ -24,6 +26,9 @@ const ScienceGroupsOverview = () => {
                 showTitles={true}
                 openInNewTabs={false} 
               />
+          </div>
+          <div className='py-7'>
+           <Button icon={<MdScience size={36} color="white"/>} textClassName='text-p1 base-bold'>{t('all_groups')}</Button>
           </div>
       </section>
     </section>

@@ -64,8 +64,8 @@ const Page = async ({params}) => {
         isOpen: false,
         showDeadline: false,
         component: (
-          <div className="border-l-4 p-4 border-error rounded-r-md">
-            <p className="uppercase body-2 lg:body-1 text-error font-semibold flex items-center">
+          <div className="border-l-4 p-4 border-warning rounded-r-md">
+            <p className="uppercase body-2 lg:body-1 text-warning font-semibold flex items-center">
               {eventTranslations('register_closed')}
             </p>
           </div>
@@ -129,8 +129,8 @@ const Page = async ({params}) => {
             {/* event date, time, location */}
             <div className="bg-s3/30 max-sm:p-3 p-6 rounded-2xl flex flex-col gap-5">
               <div className='flex gap-2 md:gap-3'>
-                <PiCalendarDotsFill className="text-[#e54e74]" size={36} />
-                <p className="body-2 lg:body-1 text-p4">
+                <PiCalendarDotsFill className="text-p4" size={36} />
+                <p className="body-2 lg:body-1 text-p5">
                   {isSameDay ? (
                     formatDate(event?.date, locale)
                   ) : (
@@ -142,15 +142,15 @@ const Page = async ({params}) => {
                 </p>
               </div>
               <div className='flex gap-2 md:gap-3'>
-                <PiClockFill className="text-[#e54e74]" size={32} />
-                <p className="body-2 lg:body-1 text-p4">
+                <PiClockFill className="text-p4" size={32} />
+                <p className="body-2 lg:body-1 text-p5">
                   {formatTime(event?.date, locale)} -  {' '}
                   {formatTime(event?.end_date, locale)}
                 </p>
               </div>
               <div className="flex gap-3">
-                <PiMapPinAreaFill className="text-[#e54e74]" size={32} />
-                <p className="body-2 lg:body-1 text-p4">{event?.location}</p>
+                <PiMapPinAreaFill className="text-p4" size={32} />
+                <p className="body-2 lg:body-1 text-p5">{event?.location}</p>
               </div>
             </div>
           </div>
