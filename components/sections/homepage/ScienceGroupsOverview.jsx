@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { FocusCardsCarousel } from "@/components/ui/FocusCards";
 import Button from "@components/ui/Button";
 import { MdScience } from "react-icons/md";
+import { Link } from '@i18n/navigation';
 
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
@@ -28,7 +29,10 @@ const ScienceGroupsOverview = () => {
               />
           </div>
           <div className='py-7'>
-           <Button icon={<MdScience size={36} color="white"/>} textClassName='text-p1 base-bold'>{t('all_groups')}</Button>
+            <Link href="/science-teams">
+                <Button icon={<MdScience size={36} color="white"/>}  textClassName='text-p1 base-bold'>{t('all_groups')}</Button>
+            </Link>
+
           </div>
       </section>
     </section>
