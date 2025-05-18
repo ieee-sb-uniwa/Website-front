@@ -6,6 +6,22 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import { routing } from "@i18n/routing";
+import { Roboto, Poppins } from 'next/font/google';
+
+const roboto = Roboto({
+  subsets: ['latin', 'greek'], 
+  variable: '--font-roboto',
+  style: ['normal', 'italic'],
+  display: 'swap',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'], 
+  variable: '--font-poppins',
+  weight: ['100','200','300','400','500','600','700','800','900'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "IEEE UniWA Student Branch",
@@ -21,14 +37,9 @@ export default async function RootLayout({ children, params }) {
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${roboto.variable} ${poppins.variable}`}>
       <body>    
         <NextIntlClientProvider messages={messages}>  
-          {/*
-            <div className='main'>
-              <div className='gradient' />
-            </div>
-            */}
             <main className='overflow-hidden'>
               <Nav/>
               {children}

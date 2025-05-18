@@ -1,6 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import CardsCollection from '@components/events/CardsCollection';
-import { getAllThirdPartyEvents } from '@actions/getAllThirdPartyEvents';
+import { getAllThirdPartyEvents } from '@actions/events/getAllThirdPartyEvents';
 import React from 'react'
 
 export default async function ThirdPartyEvents({ params, searchParams }) {

@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import CardsCollection from '@components/events/CardsCollection';
 import SearchForm from "@/components/ui/SearchForm";
-import {getAllEvents} from "@actions/getAllEvents";
+import {getAllEvents} from "@actions/events/getAllEvents";
 
 export default async function SbEvents({ params, searchParams }) {
   const query = (await searchParams).query;

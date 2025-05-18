@@ -13,7 +13,7 @@ const AboutIntro = () => {
                 <p className='body-1 max-md:body-2 relative text-center mx-auto text-p5'>
                     {aboutTranslation('introParagraph')}
                 </p> 
-                <p className='body-1 italic mt-4 max-md:body-2 relative text-center mx-auto text-p7'>
+                <p className='body-1 italic mt-4 max-md:body-2 relative text-center mx-auto text-p3'>
                     {aboutTranslation('note')}
                 </p> 
             </div>

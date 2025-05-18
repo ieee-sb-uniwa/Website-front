@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { Link } from '@i18n/navigation';
 
-const Button = ({icon, iconWidth = 26, iconHeight = 26, children, href, containerClassName, onClick}) => {
+const Button = ({icon, iconWidth = 26, iconHeight = 26, children, href, containerClassName, onClick, textClassName="base-bold"}) => {
   const Inner = () => (
     <>
         <span className='relative flex items-center min-h-[60px] px-4 g4 rounded-2xl inner-before group-hover:before:opacity-100 overflow-hidden'>
@@ -24,7 +24,7 @@ const Button = ({icon, iconWidth = 26, iconHeight = 26, children, href, containe
                 )}
               </span>
             )}
-            <span className='relative z-2 font-inter base-bold text-p1 uppercase'>{children}</span>
+              <span className={clsx('relative z-2 uppercase', textClassName)}>{children}</span>
         </span>
         <span className='glow-before glow-after' />
     </>

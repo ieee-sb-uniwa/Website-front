@@ -15,6 +15,9 @@ const nextConfig = {
           },
         ],
       },
+      // experimental : {
+      //    ppr: 'incremental'
+      // },
       env: {
         NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
         NEXT_PUBLIC_IMAGES_STORAGE_URL: process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL,

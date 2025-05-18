@@ -57,7 +57,7 @@ async function Page(props) {
   />
   <TextWithImageSegment
         imagePosition='right'
-        imageSrc="/assets/logos/IEEEGR.png"
+        imageSrc="/assets/photos/ieee-gr-section.jpg"
         imageAlt={GreeceSegmentTranslations('imageAlt')}
         caption={GreeceSegmentTranslations('caption')}
         text={GreeceSegmentTranslations('text')}
@@ -75,8 +75,8 @@ async function Page(props) {
         text={SBSegmentTranslations('text')}
         title={SBSegmentTranslations('title')}
         links={SBSegmentTranslations.raw('links')}
-        imageWidth={3270}
-        imageHeight={2264}
+        imageWidth={2048}
+        imageHeight={1536}
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>

@@ -2,6 +2,8 @@ import React from 'react'
 import { scientificGroupsLogos } from "@/constants/constants.js";
 import { useTranslations } from 'next-intl';
 import { FocusCardsCarousel } from "@/components/ui/FocusCards";
+import Button from "@components/ui/Button";
+import { MdScience } from "react-icons/md";
 
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
@@ -9,7 +11,7 @@ const ScienceGroupsOverview = () => {
     <section className="bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative">
       <div className="absolute inset-0 bg-black/50 z-2"></div>
       <section className="mx-auto w-full max-w-7xl p-4 text-center relative z-10">
-          <div className="mx-auto w-full max-w-7xl px-4 relative pb-10 text-center md:pb-20">        
+          <div className="mx-auto w-full max-w-7xl px-4 relative pb-6 text-center">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>
                   <h3 className='text-shadow h3 max-md:h5 text-p4 my-10'>
@@ -21,9 +23,12 @@ const ScienceGroupsOverview = () => {
               </header>
               <FocusCardsCarousel 
                 cards={scientificGroupsLogos} 
-                showTitle={true} 
+                showTitles={true}
                 openInNewTabs={false} 
               />
+          </div>
+          <div className='py-7'>
+           <Button icon={<MdScience size={36} color="white"/>} textClassName='text-p1 base-bold'>{t('all_groups')}</Button>
           </div>
       </section>
     </section>

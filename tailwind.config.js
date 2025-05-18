@@ -1,3 +1,4 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -19,6 +20,7 @@ module.exports = {
 		  s4: "#1959AD",
 		  s5: "#263466",
 		  warning: "#ecad15",
+		  error: "#ea3f24",
 		  black: {
 			DEFAULT: "#000000",
 			100: "#05091D",
@@ -60,9 +62,9 @@ module.exports = {
 		  500: "0px 16px 24px rgba(0, 0, 0, 0.25), 0px -14px 48px rgba(40, 51, 111, 0.7)",
 		},
 		fontFamily: {
-		  inter: ["Inter", "sans-serif"],
-		  poppins: ["Poppins", "sans-serif"],
-		  roboto: ["Roboto", "sans-serif"],
+			sans: ['var(--font-roboto)', ...fontFamily.sans],
+			roboto: ['var(--font-roboto)'],
+			poppins: ['var(--font-poppins)'],
 		},
 		transitionProperty: {
 		  borderColor: "border-color",
