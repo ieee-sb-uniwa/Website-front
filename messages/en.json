@@ -34,7 +34,8 @@
     "ScientificGroups": {
       "heading":"Explore Our Scientific Groups",
       "caption":"CREATE.COLLABORATE.LEAD",
-      "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects."
+      "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects.",
+      "all_groups":"CHECK OUT ALL GROUPS"
     },
     "JoinPage":{
       "h3" : "Join us to",
@@ -139,7 +140,7 @@
     },
     "AboutPage":{
       "mainTitle": "About Us",
-      "introParagraph": "On this page, you'll learn, What is IEEE? What is the role of IEEE Region 8 and Greece section that we belong? What an IEEE Student Branch does? and what are our key objectives as a student branch.",
+      "introParagraph": "On this page, you will discover what is the IEEE is, how the IEEE Region 8 functions, what is  the role of the IEEE Greece Section, what does an IEEE Student Branch offer, and what our goals are.",
       "note": "Note: You can click the images to show their captions!",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
       "JoinUsCta": {
@@ -178,7 +179,7 @@
     },
     "TextWithImageSegments": {
       "IEEE": {
-        "title": "What is IEEE?",
+        "title": "What is the IEEE?",
         "caption": "The world's largest technological organization",
         "text": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organization, focused on advancing technology for the benefit of humanity.",
         "bulletedList": [
@@ -196,8 +197,8 @@
       },
       "IEEEStudents": {
         "title": "What is an IEEE Student Branch (SB)?",
-        "caption": "ieee university-based community",
-        "text": "An IEEE Student Branch (SB) is a branch of IEEE at universities. It is aimed at students in the same scientific fields as IEEE. The branch exists to connect students with each other (either within the same university or across other IEEE SBs) or with industry professionals, in order to promote education and the technical development of electrical engineering, telecommunications, computer science, and unified standards. To achieve this, it organizes events and implements applications in this scientific field, which can be funded and promoted through IEEE. Similar branches exist at universities around the world, including in Greece.",
+        "caption": "University-based IEEE Community",
+        "text": "An IEEE Student Branch (SB) is a branch of IEEE at universities. It is aimed at students in the same scientific fields as IEEE. The branch exists to connect students and professionals with each other within the same and across other universities or with industry professionals, in order to promote education and the technical development of electrical engineering, telecommunications, computer science, and unified standards. To achieve this, it organizes technical events and creates applications in this scientific field, which can be funded and promoted through IEEE. Student branches exist at universities around the world, including in Greece.",
         "links":[
           { "href": "https://students.ieee.org/", "text": "EXPLORE IEEE STUDENTS" }
         ],
@@ -206,16 +207,16 @@
       "IEEEGreeceSection": {
         "title": "What is the Greece Section?",
         "caption": "IEEE Community in Greece",
-        "text":"The IEEE Greece Section is the national section of the Institute of Electrical and Electronics Engineers (IEEE) in Greece. As part of IEEE Region 8, the Greece Section serves IEEE members across the country and contributes to the advancement of technology and engineering in Greece, as well as to the global IEEE community. The primary mission of the IEEE Greece Section is to support and advance the interests of electrical engineering, electronics, computer science, and related fields in Greece. The Section provides a platform for professional development, innovation, and networking for its members, as well as promoting educational activities. It fosters collaboration between academia, industry, and research organizations in Greece, facilitating the exchange of technical knowledge and ideas.",
+        "text":"The IEEE Greece Section is the national section of the IEEE in Greece. As part of IEEE Region 8, the Greece Section serves IEEE members across the country and contributes to the advancement of technology and engineering in Greece, as well as to the global IEEE community. The primary mission of the IEEE Greece Section is to support and advance the interests of electrical engineering, electronics, computer science, and related fields in Greece. The Section provides a platform for professional development, innovation, and networking for its members, as well as promoting educational activities. It fosters collaboration between academia, industry, and research organizations in Greece, facilitating the exchange of technical knowledge and ideas.",
         "links":[
           { "href": "https://www.ieee.gr/", "text": "EXPLORE MORE" }
         ],
         "imageAlt" : "IEEE Greece Section - Lead Your SB Camp Lamia 2022"
       },
       "IEEERegion8": {
-        "title": "What is IEEE Region 8?",
+        "title": "What is the IEEE Region 8?",
         "caption": "An IEEE Network – From Europe to Africa!",
-        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE (Institute of Electrical and Electronics Engineers), which is a global professional association for advancing technology. Region 8 includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas.",
+        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE, which is a global professional association for advancing technology. Region 8 includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas.",
         "links":[
           { "href": "https://ieeer8.org/", "text": "LEARN MORE" },
           { "href": "https://r8.ieee.org/sac/", "text": "R8 SAC"}
