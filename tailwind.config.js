@@ -9,13 +9,13 @@ module.exports = {
 	theme: {
 	  extend: {
 		colors: {
-		  p1: "#2EF2FF",
+		  p1: "#2EF2FF", 
 		  p2: "#3C52D9",
 		  p3: "#C8EA80",
-		  p4: "#EAEDFF",
-		  p5: "#C4CBF5",
-		  s1: "#080D27",
-		  s2: "#0C1838",
+		  p4: "#EAEDFF", // Color for headings (light white)
+		  p5: "#C4CBF5", // Color for main body, paragraphs etc (Lilac)
+		  s1: "#080D27", // Color for Background (navy)
+		  s2: "#0C1838", 
 		  s3: "#334679",
 		  s4: "#1959AD",
 		  s5: "#263466",

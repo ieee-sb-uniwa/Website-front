@@ -7,7 +7,7 @@ import {getCouncil, getCounselor} from "@actions/getCouncil";
 import {getTranslations} from 'next-intl/server';
 import Team from '@components/sections/team/Team';
 import MapWrapper from '@components/sections/map/MapWrapper';
-import JoinUsCTA from '@components/sections/aboutpage/JoinUsCTA';
+import ReusableCTA from '@components/sections/aboutpage/ReusableCTA';
 
 async function Page(props) {
   const params = await props.params;
@@ -18,7 +18,7 @@ async function Page(props) {
   // Concatenate counselor to council
   const CouncilTranslations =  await getTranslations('Council');
   const CounselorTranslations =  await getTranslations('Counselor');
-
+  const t = await getTranslations("AboutPage.JoinUsCta"); 
   //Get translations for TextWithImageSegments
   const IEEESegmentTranslations = await getTranslations('TextWithImageSegments.IEEE');
   const GreeceSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEGreeceSection');
@@ -80,7 +80,14 @@ async function Page(props) {
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
-  <JoinUsCTA/>
+  <ReusableCTA
+            backgroundImage="wallpapers/git-workshop-team-photo.png"
+            heading={t('heading')}
+            paragraph={t('paragraph')}
+            buttonText={t('ctaButtonText')}
+            buttonLink="/join"
+            buttonIcon="/assets/icons/people-add.svg"
+   />
   <Team team={council} translationsComponent={CouncilTranslations}/>
   <Team team={counselor} translationsComponent={CounselorTranslations}/>
   <div className='g4'><MapWrapper/></div>

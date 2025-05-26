@@ -38,7 +38,7 @@
       "all_groups":"CHECK OUT ALL GROUPS"
     },
     "JoinPage":{
-      "h3" : "Join us to",
+      "h3" : "Join us",
       "memories":"make memories together",
       "subheading_first_part": "We offer flexible options to join, you can either ",
       "volunteer": "volunteer in our branch",
@@ -117,11 +117,12 @@
       "event_links": "Event Resources",
       "event_details":"About the Event",
       "is_over" :"EVENT IS COMPLETED",
-      "register_closed" : "REGISTRATIONS CLOSED"
+      "register_closed" : "REGISTRATIONS CLOSED",
+      "related_events" : "RELATED EVENTS"
     },
     "NotFoundPage": {
       "h4": "Work in Progress ...",
-      "paragraph": "Looks like we haven't built this page yet. We're probably studying for exams. Maybe next semester?",
+      "paragraph": "Looks like we haven't built this page yet.",
       "button_text": "Take Me Home"
     },
     "ErrorPage": {
@@ -147,6 +148,11 @@
         "heading": "What are you waiting?",
         "paragraph": "Join our IEEE student branch at the University of West Attica that is making a new effort to come back dynamically. Connect with like-minded fellow students, and grow your skill set with us.",
         "ctaButtonText": "Join now"
+      },
+      "SBHistory": {
+        "heading" : "A little bit of history...",
+        "paragraph" : ""
+
       },
       "IEEEUniwa": {
         "heading":"IEEE UniWA Student Branch",

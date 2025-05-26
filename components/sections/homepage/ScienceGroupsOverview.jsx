@@ -9,10 +9,10 @@ import { Link } from '@i18n/navigation';
 const ScienceGroupsOverview = () => {
   const t = useTranslations('ScientificGroups');
   return (
-    <section className="bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative">
-      <div className="absolute inset-0 bg-black/50 z-2"></div>
-      <section className="mx-auto w-full max-w-7xl p-4 text-center relative z-10">
-          <div className="mx-auto w-full max-w-7xl px-4 relative pb-6 text-center">        
+    <section className="bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative bg-s1">
+      <div className="absolute inset-0 bg-black/50 z-2 "></div>
+      <section className="mx-auto w-full max-w-7xl py-1 text-center relative z-10">
+          <div className="mx-auto w-full max-w-7xl relative text-center">        
               <header className='my-10 md:my-20'>
                   <p className='caption green_gradient mb-5 mx-md:mb-2.5 '>{t('caption')}</p>
                   <h3 className='text-shadow h3 max-md:h5 text-p4 my-10'>
