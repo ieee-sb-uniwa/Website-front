@@ -87,7 +87,8 @@ async function Page(props) {
             buttonText={t('ctaButtonText')}
             buttonLink="/join"
             buttonIcon="/assets/icons/people-add.svg"
-   />
+            overlayOpacity={50}
+   /> 
   <Team team={council} translationsComponent={CouncilTranslations}/>
   <Team team={counselor} translationsComponent={CounselorTranslations}/>
   <div className='g4'><MapWrapper/></div>
