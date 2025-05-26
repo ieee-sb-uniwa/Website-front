@@ -22,7 +22,6 @@ const Page = () => {
     <section>
         <h3 className='h3 max-sm:h4 z-3 relative text-center mx-auto my-12 pt-24 md:pt-32 mx-w-lg text-p4 max-sm:max-w-sm'>
           {t('h3')} 
-          <span className='green_gradient'> {t('memories')} </span>
         </h3>
         <Collage  images={collageList} />
         <div className='container'>

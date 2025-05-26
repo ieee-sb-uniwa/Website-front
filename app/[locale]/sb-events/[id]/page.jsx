@@ -199,7 +199,7 @@ const Page = async ({params}) => {
       <div className='section_container'>           
         <div className="flex py-10 items-center">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p3"></div>
-            <span className="max-sm:h6 h5 flex-shrink mx-4 text-p5">Related Events</span>
+            <span className="max-sm:h6 h5 flex-shrink mx-4 text-p3/50">{eventTranslations('related_events')}</span>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p3 "></div>
         </div>
         <CardsCollection  events={relatedEvents} maxCards={3} locale={locale} eventsType={'sb-events'}/>
