@@ -1,25 +1,22 @@
 import React from 'react';
 import Benefits from '@components/ui/Benefits';
 import { useTranslations } from 'next-intl';
-import ReusableCTA from '@components/sections/aboutpage/ReusableCTA';
+import CTA from '@components/sections/aboutpage/CTA';
 
 const IEEEUniwa = () => {
   const t = useTranslations("AboutPage.IEEEUniwa"); 
-  const storyTranslations = useTranslations(A);
+  const story = useTranslations("AboutPage.SBHistory"); 
   return (
     <section className="py-10">
       <div className="container">
         <h3 className="h3 text-center green_gradient mb-12">
           {t('heading')}
         </h3>
-        <ReusableCTA
-            backgroundImage="assets/photos/IEEE Student Branch Pireaus.jpg"
-            heading={t('heading')}
-            paragraph={t('paragraph')}
-            buttonText={t('ctaButtonText')}
-            buttonLink="/join"
-            buttonIcon="/assets/icons/people-add.svg"
-        />
+          <CTA
+            backgroundImage="/assets/photos/ourHistory.jpg"
+            heading= {story('heading')}
+            paragraph={story('paragraph')}
+          />
         <div className="ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
           <h4 className="max-lg:hidden goals-title grid-title text-s3">

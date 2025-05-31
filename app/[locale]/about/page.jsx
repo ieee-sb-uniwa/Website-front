@@ -7,7 +7,7 @@ import {getCouncil, getCounselor} from "@actions/getCouncil";
 import {getTranslations} from 'next-intl/server';
 import Team from '@components/sections/team/Team';
 import MapWrapper from '@components/sections/map/MapWrapper';
-import ReusableCTA from '@components/sections/aboutpage/ReusableCTA';
+import CTA from '@components/sections/aboutpage/CTA';
 
 async function Page(props) {
   const params = await props.params;
@@ -24,6 +24,8 @@ async function Page(props) {
   const GreeceSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEGreeceSection');
   const Region8SegmentTranslations = await getTranslations('TextWithImageSegments.IEEERegion8');
   const SBSegmentTranslations = await getTranslations('TextWithImageSegments.IEEEStudents');
+
+  const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
   return (
   <>
   <div className='main'>
@@ -80,13 +82,13 @@ async function Page(props) {
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
-  <ReusableCTA
-            backgroundImage="wallpapers/git-workshop-team-photo.png"
-            heading={t('heading')}
-            paragraph={t('paragraph')}
-            buttonText={t('ctaButtonText')}
-            buttonLink="/join"
-            buttonIcon="/assets/icons/people-add.svg"
+  <CTA
+      backgroundImage={`${imagesUrl}/wallpapers/git-workshop-team-photo.png`}
+      heading={t('heading')}
+      paragraph={t('paragraph')}
+      buttonText={t('ctaButtonText')}
+      buttonIcon="/assets/icons/people-add.svg"
+      buttonLink="/join"
    />
   <Team team={council} translationsComponent={CouncilTranslations}/>
   <Team team={counselor} translationsComponent={CounselorTranslations}/>

@@ -136,7 +136,8 @@
     },    
     "EventsPage": {
       "heading":"Events",
-      "subheading":"All events",
+      "subheading":"Discover events organized by IEEE Student Branch of UniWA",
+      "third_party_subheading": "Discover events organized by groups and organizations both within and outside the university.",
       "search_results": "Search results for "
     },
     "AboutPage":{
@@ -150,9 +151,8 @@
         "ctaButtonText": "Join now"
       },
       "SBHistory": {
-        "heading" : "A little bit of history...",
-        "paragraph" : ""
-
+        "heading" : "A little bit of history",
+        "paragraph" : "In March 2011, students of the former TEI of Piraeus founded the university’s student branch. The pandemic left it inactive, but we brought it back to life in October 2023."
       },
       "IEEEUniwa": {
         "heading":"IEEE UniWA Student Branch",

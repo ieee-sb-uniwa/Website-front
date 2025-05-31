@@ -18,8 +18,9 @@ const WorkInProgress = () => {
         </p>
         <Button 
           href="/" 
-          icon={<IoHome size={36} className='text-p4' />} 
-          className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+          icon={<IoHome size={32} className='text-p4' />} 
+          className="max-lg:my-4 max-lg:h5"
+          textClassName='base-bold uppercase text-p1'
         >
           {t('button_text')}
         </Button>
