@@ -157,7 +157,7 @@ useEffect(() => {
 
 
       {/* Custom Arrows */}
-      <div className="flex justify-center items-center gap-12 z-2"> 
+      <div className="flex justify-center items-center gap-12 z-2 max-lg:hidden"> 
         {/* Progress Bar */}
         <div className="w-full h-[2px] bg-p4 mt-3">
           <div

@@ -34,16 +34,16 @@
     "ScientificGroups": {
       "heading":"Explore Our Scientific Groups",
       "caption":"CREATE.COLLABORATE.LEAD",
-      "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects.",
+      "paragraph":"We have established groups dedicated to various scientific domains of interest, within which research or technological hobby projects are organized and coordinated.",
       "all_groups":"CHECK OUT ALL GROUPS"
     },
     "JoinPage":{
       "h3" : "Join us",
       "memories":"make memories together",
-      "subheading_first_part": "We offer flexible options to join, you can either ",
-      "volunteer": "volunteer in our branch",
-      "subheading_second_part": " or become an official member by ",
-      "ieee": "subscribing to ΙΕΕΕ organization.",
+      "subheading_first_part": "You can either ",
+      "volunteer": "join for free as a volunteer",
+      "subheading_second_part": " in our Student Branch or become an official member by ",
+      "ieee": "subscribing to ΙΕΕΕ.",
       "option1" : "SB of UniWa",
       "option2" : "IEEE organization",
       "sb_intro1" : "A member of our branch can be involved either in one of our ",
@@ -62,17 +62,17 @@
         {
           "id": "0",
           "question": "Do I need a subscription to become a member?",
-          "answer": "A subscription to IEEE is not mandatory to participate in our teams. However, members with a subscription enjoy significant benefits, such as priority access to events with limited spots and participation in official IEEE competitions, among many others. It's also important to note that by subscribing, you support the branch itself, as part of the funds return to us, which we can use for purchasing equipment and organizing events."
+          "answer": "A subscription to IEEE is not mandatory to participate in our teams. However, members with a subscription enjoy significant benefits, such as priority access to events with limited spots and participation in official IEEE competitions, among many others."
         },
         {
           "id": "1",
           "question": "Must I actively participate in a scientific group/project?",
-          "answer": "Our goal is to create an active community. For this reason, we encourage every member to be part of at least one team and actively participate in one of its projects. However, in cases where participation is temporarily not possible, this can be discussed with the respective team leader or project manager."
+          "answer": "Our goal is to create an active community. For this reason, we encourage every member to be part of at least one team and actively participate in one of its projects and figure out their schedule with the appropriate team leader or project manager."
         },
         {
           "id": "2",
           "question": "Is any previous knowledge/experience required or can I learn through participating?",
-          "answer": "There are no prior knowledge requirements for joining the branch. However, it is up to the team leader/project manager to set any specific knowledge requirements to ensure the best organization of a project."
+          "answer": "There are no prior knowledge requirements to join the Student Branch. However, team leaders or project managers may define specific skill or knowledge prerequisites for certain projects to ensure effective organization and successful outcomes."
         },
         {
           "id": "3",

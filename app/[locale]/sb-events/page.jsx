@@ -24,7 +24,7 @@ export default async function SbEvents({ params, searchParams }) {
       </section>
       <section className='container'>
         <div className='flex w-full flex-col gap-5 md:flex-row'>
-            <SearchForm query={query} placeholder={"What event do you want to attend?"} />
+            {/* <SearchForm query={query} placeholder={"What event do you want to attend?"} /> */}
             {/* <CategoryFilter/> */}
         </div>
  
