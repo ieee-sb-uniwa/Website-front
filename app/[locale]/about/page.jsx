@@ -83,7 +83,7 @@ async function Page(props) {
   />
   <IEEEUniwa/>
   <ReusableCTA
-            backgroundImage="wallpapers/git-workshop-team-photo.png"
+            backgroundImage={`${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`}
             heading={t('heading')}
             paragraph={t('paragraph')}
             buttonText={t('ctaButtonText')}
