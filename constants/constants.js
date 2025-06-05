@@ -54,7 +54,7 @@ export const joinIEEEStepsEN = [
   </>,
   'You will need to create an account and then log in with it.',
   'Next, select "Join IEEE" and follow the subscription steps.',
-  'The annual Subscription comes at around $27 USD.',
+  'The annual Subscription comes at around $27 USD for the whole year.',
 ];
 export const joinSBStepsGR = [
   <>

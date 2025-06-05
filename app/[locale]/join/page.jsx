@@ -10,6 +10,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Faq from '@components/sections/joinpage/Faq';
 import { collageList } from '@constants/constants';
+import Benefits from '@components/ui/Benefits';
 
 const Page = () => {
   const { locale } = useParams(); 
@@ -41,7 +42,7 @@ const Page = () => {
 
                 {/* Conditionally render different text based on the toggle state */}
                 <div className="mt-10 ml-5 b">
-                  {/* Logo as background for this specific div */}
+                  {/* Logo as background for this specific div
                   <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
                     <div className="w-full h-full relative">
                       <Image
@@ -52,7 +53,7 @@ const Page = () => {
                         priority
                       />
                     </div>
-                  </div>
+                  </div> */}
                 {SB ? (
                   <div>
                     <p className='body-1 max-md:body-2 relative mx-auto'>
@@ -74,8 +75,13 @@ const Page = () => {
                 <h4 className='h4 max-lg:h5 py-3 md:py-5 z-3 mx-auto relative mx-w-lg my-10 text-p4 max-md:my-8'>{t('join_steps')}</h4>
                 <StepsList key={SB ? 'sb-steps' : 'ieee-steps'} steps={SB ? joinSBSteps : joinIEEESteps} />
               </div>
-                <Faq showNumbers={false} noOfQuestions={6}/>
             </div>
+            <section className="bg-[url('/assets/photos/ieee-spectrums.JPG')] bg-cover bg-center bg-no-repeat relative p-20 rounded-full mb-20">
+              <div className="absolute inset-0 bg-black/20 z-0 rounded-full" />
+              <h3 className='relative z-10 h3 max-md:h5 max-w-640 max-lg:max-w-lg text-p4 text-shadow p-2'>{t('ieee_subscription_benefits')}</h3>
+            </section>
+            <Benefits benefits={t.raw('benefitsIEEE')} cardsWidth={20} />
+            <Faq showNumbers={false} noOfQuestions={6}/>
         </div>
     </section>
   )
