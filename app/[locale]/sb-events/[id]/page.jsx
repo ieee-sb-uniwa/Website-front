@@ -41,25 +41,50 @@ const Page = async ({params}) => {
 
   // Get the registration status
   const getRegistrationStatus = () => {
-    // Registration is open: valid deadline + deadline not passed + valid form
-    if (isValidRegistrationDeadline && !registrationDeadlinePassed && isValidRegistrationForm) {
+    // No registration form
+    if (!isValidRegistrationForm) {
+      // Form missing AND deadline passed → show "registration closed"
+      if (!eventEnded && registrationDeadlinePassed) {
+        return {
+          isOpen: false,
+          showDeadline: false,
+          component: (
+            <div className="border-l-4 p-4 border-warning rounded-r-md">
+              <p className="uppercase body-2 lg:body-1 text-warning font-semibold flex items-center">
+                {eventTranslations('register_closed')}
+              </p>
+            </div>
+          )
+        };
+      }
+      // Form missing AND deadline not passed → show nothing
+      return {
+        isOpen: false,
+        showDeadline: false,
+        component: null
+      };
+    }
+
+    // Valid form & registration still open
+    if (isValidRegistrationDeadline && !registrationDeadlinePassed) {
       return {
         isOpen: true,
         showDeadline: true,
         component: (
-            <Button
-              href={event?.registration_form}
-              icon={<MdEditDocument size={30} className='text-p4'/> }
-              className="flex gap-3 items-center cursor-pointer "
-              textClassName="body-2 text-p4 hover:text-p7 transition-colors duration-300"
-            >
-              {eventTranslations('register')}
-            </Button>
+          <Button
+            href={event?.registration_form}
+            icon={<MdEditDocument size={30} className='text-p4' />}
+            className="flex gap-3 items-center cursor-pointer"
+            textClassName="body-2 text-p4 hover:text-p7 transition-colors duration-300"
+          >
+            {eventTranslations('register')}
+          </Button>
         )
       };
     }
-    // Registration deadline has passed but event hasn't ended
-    else if (!eventEnded) {
+
+    // Valid form & deadline passed, but event not over
+    if (!eventEnded) {
       return {
         isOpen: false,
         showDeadline: false,
@@ -72,20 +97,19 @@ const Page = async ({params}) => {
         )
       };
     }
+
     // Event is over
-    else {
-      return {
-        isOpen: false,
-        showDeadline: false,
-        component: (
-          <div className="border-l-4 border-error p-4 rounded-r-md">
-            <p className="uppercase body-2 lg:body-1 text-error font-semibold flex items-center">
-               {eventTranslations('is_over')}
-            </p>
-          </div>
-        )
-      };
-    }
+    return {
+      isOpen: false,
+      showDeadline: false,
+      component: (
+        <div className="border-l-4 border-error p-4 rounded-r-md">
+          <p className="uppercase body-2 lg:body-1 text-error font-semibold flex items-center">
+            {eventTranslations('is_over')}
+          </p>
+        </div>
+      )
+    };
   };
 
   const registrationStatus = getRegistrationStatus();

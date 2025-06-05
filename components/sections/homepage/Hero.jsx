@@ -50,8 +50,8 @@ export const Hero = () => {
             style={{ letterSpacing: '3px' }}>
             IEEE SB UNIWA
           </h1>
-          {/* <h6 className="text-shadow max-w-440 h6 max-lg:body-1 max-sm:body-2 text-p6">{t('subheading')}</h6> */}
-          {/* <p className="text-shadow max-w-440 my-10 h6 max-lg:body-1 max-md:body-2 max-md:my-5 text-p4">
+          {/* <h6 className="text-shadow max-w-440 h6 max-lg:body-1 max-sm:body-2 text-p6">{t('subheading')}</h6>
+          <p className="text-shadow max-w-440 my-10 h6 max-lg:body-1 max-md:body-2 max-md:my-5 text-p4">
             {t('p')} 💖
           </p> */}
           <Link href="/about"  className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">

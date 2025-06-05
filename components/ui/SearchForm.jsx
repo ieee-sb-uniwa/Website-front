@@ -1,6 +1,6 @@
 import Form from "next/form";
 import SearchFormReset from "@/components/ui/SearchFormReset";
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import { PiMagnifyingGlassBold } from "react-icons/pi";
 
 const SearchForm = ({ query, placeholder }) => {
     return (
@@ -16,8 +16,8 @@ const SearchForm = ({ query, placeholder }) => {
             <div className="flex gap-2">
                 {query && <SearchFormReset />}
 
-                <button type="submit" className="search-btn text-p4">
-                    <MagnifyingGlassIcon className="size-7" />
+                <button type="submit" className="search-btn text-black">
+                    <PiMagnifyingGlassBold className="size-6" />
                 </button>
             </div>
         </Form>

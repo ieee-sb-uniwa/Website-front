@@ -34,24 +34,69 @@
     "ScientificGroups": {
       "heading":"Explore Our Scientific Groups",
       "caption":"CREATE.COLLABORATE.LEAD",
-      "paragraph":"We established groups that cover various scientific domains we have passion for. We offer the tools and equipment but we need people to create solutions and impactful projects.",
+      "paragraph":"We have established groups dedicated to various scientific domains of interest, within which research or technological hobby projects are organized and coordinated.",
       "all_groups":"CHECK OUT ALL GROUPS"
     },
     "JoinPage":{
       "h3" : "Join us",
       "memories":"make memories together",
-      "subheading_first_part": "We offer flexible options to join, you can either ",
-      "volunteer": "volunteer in our branch",
-      "subheading_second_part": " or become an official member by ",
-      "ieee": "subscribing to ΙΕΕΕ organization.",
+      "subheading_first_part": "You can either ",
+      "volunteer": "join for free as a volunteer",
+      "subheading_second_part": " in our Student Branch or become an official member by ",
+      "ieee": "subscribing to ΙΕΕΕ.",
       "option1" : "SB of UniWa",
       "option2" : "IEEE organization",
-      "sb_intro1" : "A member of our branch can be involved either in one of our ",
+      "sb_intro1" : "Any volunteer of our branch can be involved either in one of our ",
       "scientific_groups":"scientific groups",
       "sb_intro2":" or in one of our ",
       "departments":"departments.",
       "ieee_intro" : "According to the IEEE, official members of the IEEE SB UniWA are all students of the University of West Attica who are registered members of the organization through an annual subscription.",
-      "join_steps" : "How to Join?"
+      "join_steps" : "How to Join?",
+      "ieee_subscription_benefits":"IEEE Subscription Benefits",
+      "benefitsIEEE" : [
+          {
+            "id": "0",
+            "title": "Participation in Official IEEE Competitions",
+            "text": "Opportunity to participate in global technology, innovation, and robotics competitions organized by IEEE, such as IEEEXtreme (an international 24-hour programming competition) and Student Paper Contests, offering valuable experience, recognition, and networking opportunities.",
+            "iconUrl": "/assets/icons/medal.svg",
+            "imageUrl": "/assets/icons/ieee.svg"
+          },
+          {
+            "id": "1",
+            "title": "Updates on IEEE Conferences",
+            "text": "Stay informed about scientific and technological conferences organized by IEEE worldwide, with opportunities to attend or present your work. IEEE members enjoy special discounts on registration and participation fees.",
+            "iconUrl": "/assets/icons/presentation.svg",
+            "imageUrl": "/assets/icons/ieee.svg"
+          },
+          {
+            "id": "2",
+            "title": "Discounts on IEEE Societies Subscriptions",
+            "text": "Special discounts on memberships for specialized IEEE technical communities (Societies), covering fields such as robotics, telecommunications, computer science, and more.",
+            "iconUrl": "/assets/icons/cart-discount.svg",
+            "imageUrl": "/assets/icons/ieee.svg"
+          },
+          {
+            "id": "3",
+            "title": "IEEE Spectrum",
+            "text": "Access to IEEE's leading technology magazine featuring articles, analysis, and news from the world of science and engineering.",
+            "iconUrl": "/assets/icons/book-open.svg",
+            "imageUrl": "/assets/icons/ieee.svg"   
+          },
+          {
+            "id": "4",
+            "title": "Scholarships",
+            "text": "Information and access to scholarships offered by IEEE for students and researchers pursuing academic and professional goals.",
+            "iconUrl": "/assets/icons/graduation-cap.svg",
+            "imageUrl": "/assets/icons/ieee.svg"   
+          },
+          {
+            "id": "5",
+            "title": "Student Branch Executive Committee",
+            "text": "Members with an active subscription have the right to vote in the student branch elections and to run as candidates, actively participating in shaping and supporting the branch’s activities.",
+            "iconUrl": "/assets/icons/vote.svg",
+            "imageUrl": "/assets/icons/ieee.svg"   
+          }
+        ]
     },
     "FAQ":{
       "heading": "Frequently Asked Questions",
@@ -62,27 +107,27 @@
         {
           "id": "0",
           "question": "Do I need a subscription to become a member?",
-          "answer": "A subscription to IEEE is not mandatory to participate in our teams. However, members with a subscription enjoy significant benefits, such as priority access to events with limited spots and participation in official IEEE competitions, among many others. It's also important to note that by subscribing, you support the branch itself, as part of the funds return to us, which we can use for purchasing equipment and organizing events."
+          "answer": "A subscription to IEEE is not mandatory to participate in our teams. However, members with a subscription enjoy significant benefits, such as priority access to events with limited spots and participation in official IEEE competitions, among many others."
         },
         {
           "id": "1",
           "question": "Must I actively participate in a scientific group/project?",
-          "answer": "Our goal is to create an active community. For this reason, we encourage every member to be part of at least one team and actively participate in one of its projects. However, in cases where participation is temporarily not possible, this can be discussed with the respective team leader or project manager."
+          "answer": "Our goal is to create an active community. For this reason, we encourage every member to be part of at least one team and actively participate in one of its projects and figure out their schedule with the appropriate team leader or project manager."
         },
         {
           "id": "2",
           "question": "Is any previous knowledge/experience required or can I learn through participating?",
-          "answer": "There are no prior knowledge requirements for joining the branch. However, it is up to the team leader/project manager to set any specific knowledge requirements to ensure the best organization of a project."
+          "answer": "There are no prior knowledge requirements to join the Student Branch. However, team leaders or project managers may define specific skill or knowledge prerequisites for certain projects to ensure effective organization and successful outcomes."
         },
         {
           "id": "3",
           "question": "How much time do I need to devote?",
-          "answer": "The time required depends on how many projects you participate in and the demands of each project. However, a few hours per week are usually sufficient."
+          "answer": "The time required depends on how many projects you participate in and the demands of each project. However, in most cases, dedicating just a few hours per week is sufficient."
         },
         {
           "id": "4",
           "question": "Do I need to be an electrical or electronics engineer in order to participate?",
-          "answer": "No! The branch is open to everyone, regardless of department. In addition to the scientific groups, there are many other teams that manage important aspects of the branch and relate to fields unrelated to engineering. You can get involved with these teams after discussing them through the registration form."
+          "answer": "No! The Student Branch is open to everyone, even non-engineers. In addition to the scientific groups, there are many other teams that manage important aspects of the Student Branch that are unrelated to engineering. You can get involved with these teams after discussing them through the registration process."
         },
         {
           "id": "5",
@@ -136,28 +181,28 @@
     },    
     "EventsPage": {
       "heading":"Events",
-      "subheading":"All events",
+      "subheading":"Discover events organized by IEEE Student Branch of UniWA",
+      "third_party_subheading": "Discover events organized by groups and organizations both within and outside the university.",
       "search_results": "Search results for "
     },
     "AboutPage":{
       "mainTitle": "About Us",
-      "introParagraph": "On this page, you will discover what is the IEEE is, how the IEEE Region 8 functions, what is  the role of the IEEE Greece Section, what does an IEEE Student Branch offer, and what our goals are.",
+      "introParagraph": "On this page, you will discover what is the IEEE is, how the IEEE Region 8 functions, what is  the role of the IEEE Greece Section, what does an IEEE Student Branch offer, what our goals are and many more.",
       "note": "Note: You can click the images to show their captions!",
       "flippingWords": ["What is IEEE?", "The structure of Region 8", "The role of IEEE Greece Section", "What IEEE Student Branches do?", "What is our mission as a Student Branch?"],
       "JoinUsCta": {
         "heading": "What are you waiting?",
-        "paragraph": "Join our IEEE student branch at the University of West Attica that is making a new effort to come back dynamically. Connect with like-minded fellow students, and grow your skill set with us.",
+        "paragraph": "Join the IEEE Student Branch at the University of West Attica to connect with like-minded fellow students and grow your skill set with us.",
         "ctaButtonText": "Join now"
       },
       "SBHistory": {
-        "heading" : "A little bit of history...",
-        "paragraph" : ""
-
+        "heading" : "A little bit of history",
+        "paragraph" : "In March 2011, students of the former TEI of Piraeus founded the university’s student branch. The pandemic left it inactive, but we brought it back to life in October 2023."
       },
       "IEEEUniwa": {
-        "heading":"IEEE UniWA Student Branch",
+        "heading":"IEEE Student Branch of UniWA",
         "goals_title":"Our Goals",
-        "paragraph":"Our goal is to provide an environment that enhances and develops student participation in the academic community and promotes innovation and the creation of new technological solutions for the world. To achieve this, we organize activities such as:",
+        "paragraph":"Our goal is to provide an environment that enhances and develops student participation in the academic community within the University of West Attica.To achieve this, we organize activities such as:",
         "benefitsIEEEUniwa" : [
           {
             "id": "0",
@@ -176,7 +221,7 @@
           {
             "id": "2",
             "title": "Competitions",
-            "text": "We participate in both local and global competitions.",
+            "text": "Participation in local and global competitions.",
             "iconUrl": "/assets/icons/medal.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg"
           }
@@ -202,9 +247,9 @@
         "imageAlt": "Photo of the IEEE Master Brand logo, taken from our office (ΖΒ006)"
       },
       "IEEEStudents": {
-        "title": "What is an IEEE Student Branch (SB)?",
+        "title": "What is an IEEE Student Branch?",
         "caption": "University-based IEEE Community",
-        "text": "An IEEE Student Branch (SB) is a branch of IEEE at universities. It is aimed at students in the same scientific fields as IEEE. The branch exists to connect students and professionals with each other within the same and across other universities or with industry professionals, in order to promote education and the technical development of electrical engineering, telecommunications, computer science, and unified standards. To achieve this, it organizes technical events and creates applications in this scientific field, which can be funded and promoted through IEEE. Student branches exist at universities around the world, including in Greece.",
+        "text": "An IEEE Student Branch (SB) is a local unit of IEEE established within a university, designed to engage students in fields related to IEEE’s mission. The main objective of an SB is to foster connections among students—both within the university and with other IEEE Student Branches globally—as well as with industry professionals. These connections promote education, innovation, and technical development through collaboration and exposure to real-world challenges and solutions. Student Branches actively organize a variety of activities, including technical workshops, seminars, competitions, and project development. Many of these initiatives are eligible for funding and support through IEEE, helping to enrich the student experience and bridge the gap between academia and industry. Like the broader IEEE organization, an SB can also establish and host both technical societies and affinity groups that mirror IEEE’s official structure. These groups serve as a direct link to their parent IEEE entities and can be used to organize targeted events, receive funding, and pursue the specific goals and missions of each society or affinity group.",
         "links":[
           { "href": "https://students.ieee.org/", "text": "EXPLORE IEEE STUDENTS" }
         ],
@@ -213,7 +258,7 @@
       "IEEEGreeceSection": {
         "title": "What is the Greece Section?",
         "caption": "IEEE Community in Greece",
-        "text":"The IEEE Greece Section is the national section of the IEEE in Greece. As part of IEEE Region 8, the Greece Section serves IEEE members across the country and contributes to the advancement of technology and engineering in Greece, as well as to the global IEEE community. The primary mission of the IEEE Greece Section is to support and advance the interests of electrical engineering, electronics, computer science, and related fields in Greece. The Section provides a platform for professional development, innovation, and networking for its members, as well as promoting educational activities. It fosters collaboration between academia, industry, and research organizations in Greece, facilitating the exchange of technical knowledge and ideas.",
+        "text":"The IEEE Greece Section is the national branch of IEEE in Greece and operates as part of IEEE Region 8. It serves IEEE members throughout the country, contributing to the advancement of technology and engineering both locally and within the global IEEE community. As a central hub for Greek universities, the IEEE Greece Section fosters collaboration among academia, industry, and research organizations. It plays a vital role in facilitating the exchange of technical knowledge and innovative ideas across these sectors.",
         "links":[
           { "href": "https://www.ieee.gr/", "text": "EXPLORE MORE" }
         ],
@@ -222,7 +267,7 @@
       "IEEERegion8": {
         "title": "What is the IEEE Region 8?",
         "caption": "An IEEE Network – From Europe to Africa!",
-        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE, which is a global professional association for advancing technology. Region 8 includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas.",
+        "text":"IEEE Region 8 is one of the 10 geographical regions of the IEEE. It includes Europe, the Middle East, and Africa (EMEA). The region encompasses a diverse range of countries and cultures, and it plays a vital role in the development and advancement of engineering, technology, and innovation across these areas. The IEEE Region 8 Student Activities Committee (R8 SAC), one of the many committees of the region, is responsible for student initiatives, events and competitions held within the region.",
         "links":[
           { "href": "https://ieeer8.org/", "text": "LEARN MORE" },
           { "href": "https://r8.ieee.org/sac/", "text": "R8 SAC"}

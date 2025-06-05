@@ -13,7 +13,7 @@ const SearchFormReset = () => {
 
     return (
         <button type="reset" onClick={reset}>
-            <Link href={pathname} className="search-btn text-white">
+            <Link href={pathname} className="search-btn text-black">
                 <XMarkIcon className="size-7" />
             </Link>
         </button>

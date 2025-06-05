@@ -70,21 +70,26 @@ const EventCard = ({ event , locale, eventType}) => {
         )} */}
       </div>
       <hr className="mx-0 my-4 border-top border-solid border-p2 opacity-100" />
-      <div className="flex justify-center gap-x-1 my-4">
-          { isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) ? (
+        <div className="flex justify-center gap-x-1 my-4">
+          {isValidISODate(registration_deadline) && !hasDatePassed(registration_deadline) && registration_form && registration_form.trim() !== "" && (
             <Link className="flex items-center gap-1 uppercase register-btn" href={registration_form}>
               <MdEditDocument size={24}/>
               {eventTranslations('participation_form')}
             </Link>
-          ) : (
+          )}
+
+          {isValidISODate(registration_deadline) && hasDatePassed(registration_deadline) && registration_form && registration_form.trim() !== "" && (
             <p className="uppercase body-2 p-3 rounded-lg border-error text-error border-2 base-bold flex items-center">
               {eventTranslations('isOver')}
-            </p>     
+            </p>
           )}
+
+          {/* Always show Read More */}
           <Hyperlink className="uppercase text-p4 line-clamp-1" arrow={true} href={eventDetailsLink}>
             {eventTranslations('read_more')}
           </Hyperlink>
-      </div>
+        </div>
+
     </li>
   );
 };
