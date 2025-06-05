@@ -7,7 +7,7 @@ import {getCouncil, getCounselor} from "@actions/getCouncil";
 import {getTranslations} from 'next-intl/server';
 import Team from '@components/sections/team/Team';
 import MapWrapper from '@components/sections/map/MapWrapper';
-import CTA from '@components/sections/aboutpage/CTA';
+import ReusableCTA from '@components/sections/aboutpage/CTA'
 
 async function Page(props) {
   const params = await props.params;
