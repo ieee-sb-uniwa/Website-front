@@ -3,7 +3,7 @@ import Image from 'next/image';
 import markdownit from "markdown-it";
 import {getThirdPartyEventById} from "@actions/events/getEventById";
 import {getAllThirdPartyByCategory} from "@actions/events/getEventsByCategory";
-import { isValidISODate, formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
+import { isValidISODate, formatDate, formatTime, hasDatePassed } from "@lib/utils";
 import { MdEditDocument} from "react-icons/md";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
 import { notFound } from 'next/navigation';
@@ -41,30 +41,55 @@ const Page = async ({params}) => {
 
   // Get the registration status
   const getRegistrationStatus = () => {
-    // Registration is open: valid deadline + deadline not passed + valid form
-    if (isValidRegistrationDeadline && !registrationDeadlinePassed && isValidRegistrationForm) {
+    // No registration form
+    if (!isValidRegistrationForm) {
+      // Form missing AND deadline passed → show "registration closed"
+      if (!eventEnded && registrationDeadlinePassed) {
+        return {
+          isOpen: false,
+          showDeadline: false,
+          component: (
+            <div className="border-l-4 p-4 border-warning rounded-r-md">
+              <p className="uppercase body-2 lg:body-1 text-warning font-semibold flex items-center">
+                {eventTranslations('register_closed')}
+              </p>
+            </div>
+          )
+        };
+      }
+      // Form missing AND deadline not passed → show nothing
+      return {
+        isOpen: false,
+        showDeadline: false,
+        component: null
+      };
+    }
+
+    // Valid form & registration still open
+    if (isValidRegistrationDeadline && !registrationDeadlinePassed) {
       return {
         isOpen: true,
         showDeadline: true,
         component: (
-            <Button
-              href={event?.registration_form}
-              icon={<MdEditDocument size={30} className='text-p4'/> }
-              className="flex gap-3 items-center cursor-pointer "
-              textClassName="body-2 text-p4 hover:text-p7 transition-colors duration-300"
-            >
-              {eventTranslations('register')}
-            </Button>
+          <Button
+            href={event?.registration_form}
+            icon={<MdEditDocument size={30} className='text-p4' />}
+            className="flex gap-3 items-center cursor-pointer"
+            textClassName="body-2 text-p4 transition-colors duration-300"
+          >
+            {eventTranslations('register')}
+          </Button>
         )
       };
     }
-    // Registration deadline has passed but event hasn't ended
-    else if (!eventEnded) {
+
+    // Valid form & deadline passed, but event not over
+    if (!eventEnded) {
       return {
         isOpen: false,
         showDeadline: false,
         component: (
-          <div className="border-l-4 p-4 text-warning rounded-r-md">
+          <div className="border-l-4 p-4 border-warning rounded-r-md">
             <p className="uppercase body-2 lg:body-1 text-warning font-semibold flex items-center">
               {eventTranslations('register_closed')}
             </p>
@@ -72,20 +97,19 @@ const Page = async ({params}) => {
         )
       };
     }
+
     // Event is over
-    else {
-      return {
-        isOpen: false,
-        showDeadline: false,
-        component: (
-          <div className="border-l-4 border-error p-4 rounded-r-md">
-            <p className="uppercase body-2 lg:body-1 text-error font-semibold flex items-center">
-               {eventTranslations('is_over')}
-            </p>
-          </div>
-        )
-      };
-    }
+    return {
+      isOpen: false,
+      showDeadline: false,
+      component: (
+        <div className="border-l-4 border-error p-4 rounded-r-md">
+          <p className="uppercase body-2 lg:body-1 text-error font-semibold flex items-center">
+            {eventTranslations('is_over')}
+          </p>
+        </div>
+      )
+    };
   };
 
   const registrationStatus = getRegistrationStatus();
@@ -157,7 +181,7 @@ const Page = async ({params}) => {
       </div>
 
       {/* Divider */}
-      <hr className="my-20 max-sm:my-10 w-4/5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p3 to-transparent opacity-75"/>
+      <hr className="my-20 max-sm:my-10 w-4/5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p1 to-transparent opacity-75"/>
 
       <div className="w-full max-w-7xl px-5 md:px-10 grid grid-cols-1 md:grid-cols-[70%_30%] gap-20 max-sm:gap-10 items-start">
         {/* Event Details */}
@@ -198,11 +222,11 @@ const Page = async ({params}) => {
       {/* related events */}
       <div className='section_container'>           
         <div className="flex py-10 items-center">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p3"></div>
-            <span className="max-sm:h6 h5 flex-shrink mx-4 text-p5">Related Events</span>
-            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p3 "></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p1"></div>
+            <span className="max-md:h6 h5 flex-shrink mx-4 bg-p1/80 p-2 rounded-md text-s1">{eventTranslations('related_events')}</span>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p1 "></div>
         </div>
-        <CardsCollection  events={relatedEvents} maxCards={3} locale={locale} eventsType={'third-party'}/>
+        <CardsCollection  events={relatedEvents} maxCards={3} locale={locale} eventsType={'sb-events'}/>
        </div>
     </section>
   </>

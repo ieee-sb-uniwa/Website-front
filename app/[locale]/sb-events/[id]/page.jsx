@@ -75,7 +75,7 @@ const Page = async ({params}) => {
             href={event?.registration_form}
             icon={<MdEditDocument size={30} className='text-p4' />}
             className="flex gap-3 items-center cursor-pointer"
-            textClassName="body-2 text-p4 hover:text-p7 transition-colors duration-300"
+            textClassName="body-2 text-p4 transition-colors duration-300"
           >
             {eventTranslations('register')}
           </Button>
@@ -181,7 +181,7 @@ const Page = async ({params}) => {
       </div>
 
       {/* Divider */}
-      <hr className="my-20 max-sm:my-10 w-4/5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p3 to-transparent opacity-75"/>
+      <hr className="my-20 max-sm:my-10 w-4/5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p1 to-transparent opacity-75"/>
 
       <div className="w-full max-w-7xl px-5 md:px-10 grid grid-cols-1 md:grid-cols-[70%_30%] gap-20 max-sm:gap-10 items-start">
         {/* Event Details */}
@@ -222,9 +222,9 @@ const Page = async ({params}) => {
       {/* related events */}
       <div className='section_container'>           
         <div className="flex py-10 items-center">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p3"></div>
-            <span className="max-sm:h6 h5 flex-shrink mx-4 text-p3/50">{eventTranslations('related_events')}</span>
-            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p3 "></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent to-p1"></div>
+            <span className="max-md:h6 h5 flex-shrink mx-4 bg-p1/80 p-2 rounded-md text-s1">{eventTranslations('related_events')}</span>
+            <div className="h-px flex-1 bg-gradient-to-l from-transparent to-p1 "></div>
         </div>
         <CardsCollection  events={relatedEvents} maxCards={3} locale={locale} eventsType={'sb-events'}/>
        </div>

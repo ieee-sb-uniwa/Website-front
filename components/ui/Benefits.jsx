@@ -9,7 +9,7 @@ const Benefits =  ({ benefits, cardsWidth})  => {
        <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
                 <div
-                  className={`block relative p-0.5 bg-no-repeat bg-[length:100%_100%] border-[3px] border-[#035b98] rounded-20 bg-[#035b98]/50 hover:bg-[#035b98]`}
+                  className={`block relative p-0.5 bg-no-repeat bg-[length:100%_100%] border-[3px] border-[#035b98] rounded-40 bg-[#035b98]/50 hover:bg-[#035b98]/25`}
                   key={item.id}
                   style={{ maxWidth: `${cardsWidth}rem` }}
                 >
