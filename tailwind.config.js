@@ -6,6 +6,14 @@ module.exports = {
 	  './components/**/*.{js,ts,jsx,tsx,mdx}',
 	  './app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
+	safelist: [
+		{
+		pattern: /border-(web|electronics|telecom|compprog|energy|gamedev|biomed)/,
+		},
+		{
+		pattern: /bg-(web|electronics|telecom|compprog|energy|gamedev|biomed)(\/30)?/,
+		},
+	],
 	theme: {
 	  extend: {
 		colors: {
@@ -19,6 +27,13 @@ module.exports = {
 		  s3: "#334679",
 		  s4: "#1959AD",
 		  s5: "#263466",
+		  web: "#008ba1",
+		  electronics: "#98012e",
+		  telecom: "#00585f",
+		  compprog: "#e58d00",
+		  energy:"#008001",
+		  gamedev: "#030678",
+		  biomed: "#631469",
 		  warning: "#ecad15",
 		  error: "#ea3f24",
 		  black: {
@@ -31,10 +46,12 @@ module.exports = {
 		  p6: "#35edcc", //turquise
 		  p7: "#71c526", // green
 		},
+		
 		animation: {
 		  linear: 'backgroundLinear 120s linear infinite',
 		  slide: 'backgroundSlide 120s linear infinite alternate-reverse forwards',
 		  rotate: "rotate 10s linear infinite both",
+		  float: 'float 3s ease-in-out infinite',
 		},
 		
 		keyframes: {
@@ -53,6 +70,10 @@ module.exports = {
 		  pulse: {
 			"50%" : {opacity: "0.5"},
 		  },
+		  float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+          },
 		},
 		boxShadow: {
 		  100: "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD",
