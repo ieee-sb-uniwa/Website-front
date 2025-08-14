@@ -1,8 +1,15 @@
+'use client';
 import React from 'react'
-import WorkInProgress from "@/components/WorkInProgress";
+import {telecom} from '@constants/constants';
+import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 
 const Page = () => {
-  return <WorkInProgress />;
+  const telecomData = {
+    ...telecom,
+    themeClass: 'telecom'
+  };
+
+  return <ScientificGroupIntro groupData={telecomData} />;
 }
 
 export default Page;

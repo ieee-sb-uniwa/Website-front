@@ -1,8 +1,20 @@
-import React from 'react'
-import WorkInProgress from "@/components/WorkInProgress";
+'use client';
+import React from 'react';
+import { biomed } from '@constants/constants';
+import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 
 const Page = () => {
-  return <WorkInProgress />;
-}
+  const biomedData = {
+    ...biomed,
+    themeClass: 'biomed'
+  };
+
+  return (
+    <>
+      <ScientificGroupIntro groupData={biomedData} />
+
+    </>
+  );
+};
 
 export default Page;
