@@ -1,7 +1,7 @@
 import React from 'react'
 import { scientificGroupsLogos } from "@/constants/constants.js";
 import { useTranslations } from 'next-intl';
-import { FocusCardsCarousel } from "@/components/ui/FocusCards";
+import { FocusCardsCarousel, FocusCards } from "@/components/ui/FocusCards";
 import Button from "@components/ui/Button";
 import { MdScience } from "react-icons/md";
 
@@ -21,11 +21,23 @@ const ScienceGroupsOverview = () => {
                     {t('paragraph')}
                   </p>
               </header>
-              <FocusCardsCarousel 
-                cards={scientificGroupsLogos} 
-                showTitles={true}
-                openInNewTabs={false} 
-              />
+              {
+                scientificGroupsLogos.length > 4 ? (
+                  <FocusCardsCarousel 
+                    cards={scientificGroupsLogos} 
+                    showTitles={true}
+                    openInNewTabs={false} 
+                  />
+                ) : (
+                  <div className='mb-14'>
+                    <FocusCards 
+                      cards={scientificGroupsLogos}  
+                      showTitles={true} 
+                      openInNewTabs={false} 
+                    />
+                  </div>
+                )
+              }
           </div>
           <div className='py-7'>
            <Button icon={<MdScience size={36} color="white"/>} textClassName='text-p1 base-bold'>{t('all_groups')}</Button>
