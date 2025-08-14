@@ -9,10 +9,10 @@ export const sponsors= [
 export const scientificGroupsLogos= [
   { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:800, imgHeight:500}, 
   { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
-  {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:800, imgHeight:500},
+  // {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:800, imgHeight:500},
   { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
-  { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/biomed.svg", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
+  // { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/BiomedSG.png", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
+  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
   { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
 ];
 
@@ -26,6 +26,128 @@ export const collageList = [
     {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza" }
 ];
 
+/* ----------------------- SCIENTIFIC GROUPS ------------------------- */
+
+export const web =
+  {
+        "id": 0,
+        "name": "Web",
+        "name_short": "Web",
+        "wallpaper": "/assets/photos/web.JPG",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/web.svg",
+        "info": {
+            "gr": {
+                "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών."
+            },
+            "en": {
+                "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών."
+            }
+        }
+    };
+export const biomed =
+  {
+        "id": 1,
+        "name": "Biomedical Engineering",
+        "name_short": "BioMed",
+        "wallpaper": "/assets/photos/energy-project.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/biomed.svg",
+        "info": {
+            "gr": {
+                "description": "Ομάδα υλοποίησης εφαρμογών βιοϊατρικής μηχανικής. Ελάτε στην ομάδα μας να μάθετε τις βασικές πτυχές του biomedical engineering και να ασχοληθείτε με σύγχρονες τεχνικές και αλγορίθμους επεξεργασίας δεδομένων στην επιστήμη της ιατρικής και της βιολογίας."
+            },
+            "en": {
+                "description": "Ομάδα υλοποίησης εφαρμογών βιοϊατρικής μηχανικής. Ελάτε στην ομάδα μας να μάθετε τις βασικές πτυχές του biomedical engineering και να ασχοληθείτε με σύγχρονες τεχνικές και αλγορίθμους επεξεργασίας δεδομένων στην επιστήμη της ιατρικής και της βιολογίας."
+            }
+        }
+};
+export const gamedev =
+  {
+        "id": 3,
+        "name": "Game Development",
+        "name_short": "GameDev",
+        "wallpaper": "/assets/photos/Gamedev.JPG",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/gamedev.svg",
+        "info": {
+            "gr": {
+                "description": "Entry level game development team. Το Game Development είναι ένας κλάδος που έχει ανάγκη από ανθρώπους με διαφορετικά προσόντα και δεξιότητες. Ελάτε στην ομάδας μας για να δημιουργήσετε τους κόσμους και τους χαρακτήρες των παιχνιδιών ή τα γραφικά και τα εφέ. Επίσης μπορείτε να δημιουργήσετε τον κώδικα που καθοδηγεί τα παιχνίδια ή να συνεισφέρετε στην ιστορία και τα σενάρια."
+            },
+            "en": {
+                "description": "Entry level game development team. Game Development is an industry that needs people with different qualifications and skills. Join our team to create game worlds and characters or graphics and effects. You can also create the code that drives the games or contribute to the story and scenarios."
+            }
+        }
+};
+export const compprog =
+  {
+        "id": 2,
+        "name": "Competitive Programming",
+        "name_short": "CompProg",
+        "wallpaper": "/assets/photos/energy-project.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png",
+        "info": {
+            "gr": {
+                "description": "Ομάδα συμμετοχής σε διαγωνισμούς προγραμματισμού. Ελάτε στην ομάδα μας για να μάθετε αλγορίθμους, δομές δεδομένων και μεθοδολογίες επίλυσης προβλημάτων με σκοπό την συμμετοχή σε παγκόσμιους διαγωνισμούς προγραμματισμού (ΙΕΕΕΧtreme, ICPC και άλλοι)."
+            },
+            "en": {
+                "description": "Ομάδα συμμετοχής σε διαγωνισμούς προγραμματισμού. Ελάτε στην ομάδα μας για να μάθετε αλγορίθμους, δομές δεδομένων και μεθοδολογίες επίλυσης προβλημάτων με σκοπό την συμμετοχή σε παγκόσμιους διαγωνισμούς προγραμματισμού (ΙΕΕΕΧtreme, ICPC και άλλοι)."
+            }
+        }
+};
+export const telecom =
+  {
+        "id": 4,
+        "name": "Telecommunications",
+        "name_short": "Telecom",
+        "wallpaper": "/assets/photos/energy-project.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/telecom.svg",
+        "info": {
+            "gr": {
+                "description": "Ομάδα υλοποίησης τηλεπικοινωνιακών εφαρμογών. Ελάτε στην ομάδα μας να μάθουμε για τις σύγχρονες τάσεις στις τηλεπικοινωνίες, να σχεδιάσουμε κυκλώματα RF, να προσομοιώσουμε και να εξετάσουμε μοντέλα και πολλές άλλες τηλεπικοινωνιακές εφαρμογές."
+            },
+            "en": {
+                "description": "Ομάδα υλοποίησης τηλεπικοινωνιακών εφαρμογών. Ελάτε στην ομάδα μας να μάθουμε για τις σύγχρονες τάσεις στις τηλεπικοινωνίες, να σχεδιάσουμε κυκλώματα RF, να προσομοιώσουμε και να εξετάσουμε μοντέλα και πολλές άλλες τηλεπικοινωνιακές εφαρμογές."
+            }
+        }
+};
+export const energy =
+  {
+        "id": 5,
+        "name": "Energy",
+        "name_short": "Energy",
+        "wallpaper": "/assets/photos/Energy.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/energy.svg",
+        "info": {
+            "gr": {
+                "description": "Το Energy Scientific Group είναι μια ομάδα η οποία έχει ως σκοπό την διεξαγωγή ομαδικών εργασιών (Projects) σχετικά με το αντικείμενο της ενέργειας : Ηλεκτρικές Μηχανές, Ηλεκτρονικά Ισχύος, Ανανεώσιμες Πηγές Ενέργειας και ο,τι άλλο σχετικό.  Τα Projects είναι τόσο ανατπυξιακού χαρακτήρα, όσο και εκπαιδευτικού. Τυχόν ενδιαφερόμενοι μπορούν να φέρουν ιδέες για Project που θα τους ενδιέφερε να ασχοληθούν."
+            },
+            "en": {
+                "description": "The Energy Scientific Group is a team whose purpose is to carry out group projects related to energy: Electric Machines, Power Electronics, Renewable Energy Sources, and anything else related.  The projects are both developmental and educational in nature. Anyone interested can contribute ideas for projects they would like to work on."
+            }
+        }
+  };
+  export const electronics =
+  {
+        "id": 6,
+        "name": "Electronics",
+        "name_short": "Electronics",
+        "wallpaper": "/assets/photos/energy-project.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": "/assets/logos/scientific_groups/electronics.svg",
+        "info": {
+            "gr": {
+                "description": "Η ομάδα electronics ασχολείται κυρίως με projects που σχετίζονται με μικροελεγκτές και ενσωματωμένα συστήματα. Οι μικροελεγκτές και τα ενσωματωμένα συστήματα αποτελούν τον πυρήνα πολλών σύγχρονων τεχνολογικών λύσεων, καθώς χρησιμοποιούνται ευρέως σε εφαρμογές όπως αυτοματισμοί, ρομποτική, οικιακές συσκευές, αυτοκίνητα, βιομηχανικά συστήματα και το Διαδίκτυο των Πραγμάτων (IoT). Ελάτε στην ομάδα μας για να αποκτήσετε εμπειρία στους τομείς αυτούς μέσω της συμμετοχής σας σε διαγωνισμούς και στα projects μας."
+            },
+            "en": {
+                "description": "The electronics team mainly deals with projects related to microcontrollers and embedded systems. Microcontrollers and embedded systems are at the core of many modern technological solutions, as they are widely used in applications such as automation, robotics, home appliances, automobiles, industrial systems, and the Internet of Things (IoT). Join our team to gain experience in these areas by participating in competitions and our projects."
+            }
+        }
+  };
+  
 export const heroImages = [
   `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,
