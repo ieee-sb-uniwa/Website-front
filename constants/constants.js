@@ -12,7 +12,7 @@ export const scientificGroupsLogos= [
   // {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:800, imgHeight:500},
   { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
   // { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/BiomedSG.png", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
+  // { title: "Competitive Programming", img: "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
   { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
 ];
 
