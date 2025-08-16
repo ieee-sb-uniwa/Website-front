@@ -1,4 +1,6 @@
 import React from 'react'
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 
 const Projects = () => {
   return (
@@ -13,4 +15,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
