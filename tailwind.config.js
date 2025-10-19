@@ -8,10 +8,10 @@ module.exports = {
 	],
 	safelist: [
 		{
-		pattern: /border-(web|electronics|telecom|compprog|energy|gamedev|biomed)/,
+		pattern: /border-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)/,
 		},
 		{
-		pattern: /bg-(web|electronics|telecom|compprog|energy|gamedev|biomed)(\/30)?/,
+		pattern: /bg-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)(\/30)?/,
 		},
 	],
 	theme: {
@@ -27,10 +27,13 @@ module.exports = {
 		  s3: "#334679",
 		  s4: "#1959AD",
 		  s5: "#263466",
-		  web: "#008ba1",
+		  ai: "#008ba1",
+		  sb: "#084168",
+		  ieee: "#035b98",
 		  electronics: "#98012e",
-		  telecom: "#00585f",
-		  compprog: "#e58d00",
+		  naval: "#0072a7",
+		  metaverse:"#981e97",
+		  software: "#e58d00",
 		  energy:"#008001",
 		  gamedev: "#030678",
 		  biomed: "#631469",

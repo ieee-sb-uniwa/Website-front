@@ -19,7 +19,7 @@ const IEEEUniwa = () => {
           />
         <div className="ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
-          <h4 className="max-lg:hidden goals-title grid-title text-s3">
+          <h4 className="max-lg:hidden goals-title grid-title text-p5/30">
             {t('goals_title')}
           </h4>
 

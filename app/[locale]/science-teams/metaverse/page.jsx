@@ -1,17 +1,17 @@
-'use client';
+'use client'
 import React from 'react';
-import { compprog } from '@constants/constants';
+import { metaverse } from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
 const Page = () => {
-  const compprogData = {
-    ...compprog,
-    themeClass: 'compprog'
+  const metaverseData = {
+    ...metaverse,
+    themeClass: 'metaverse'
   };
 
   return (
     <>
-      <ScientificGroupIntro groupData={compprogData} />
+      <ScientificGroupIntro groupData={metaverseData} />
       <div id="projects">
         <Projects />
       </div>
@@ -20,3 +20,4 @@ const Page = () => {
 };
 
 export default Page;
+

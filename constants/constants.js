@@ -7,13 +7,14 @@ export const sponsors= [
 ];
 
 export const scientificGroupsLogos= [
-  { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:800, imgHeight:500}, 
-  { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
-  // {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:800, imgHeight:500},
-  { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
-  // { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/BiomedSG.png", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  // { title: "Competitive Programming", img: "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
-  { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
+   { title: "AI", img: `${imagesUrl}/SG/AI SG.png`, url: "/science-teams/ai", imgWidth:800, imgHeight:500}, 
+  { title: "Electronics", img: `${imagesUrl}/SG/Electronics SG.png`, url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
+   {title: "Naval",img:`${imagesUrl}/SG/Naval SG.png`, url: "/science-teams/naval" , imgWidth:800, imgHeight:500},
+  { title: "Game Development", img: `${imagesUrl}/SG/GameDev SG.png`, url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
+  { title: "Biomedical", img: `${imagesUrl}/SG/Biomed SG.png`, url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
+  { title: "Software", img: `${imagesUrl}/SG/Software SG.png`, url: "/science-teams/software", imgWidth:800, imgHeight:500},  
+  { title: "Metaverse", img: `${imagesUrl}/SG/Metaverse SG.png`, url: "/science-teams/metaverse", imgWidth:800, imgHeight:500},  
+  { title: "Energy", img: `${imagesUrl}/SG/Energy SG.png`, url: "/science-teams/energy", imgWidth:800, imgHeight:500}
 ];
 
 export const collageList = [
@@ -28,20 +29,20 @@ export const collageList = [
 
 /* ----------------------- SCIENTIFIC GROUPS ------------------------- */
 
-export const web =
+export const software =
   {
         "id": 0,
-        "name": "Web",
-        "name_short": "Web",
+        "name": "Software Engineering",
+        "name_short": "Software",
         "wallpaper": "/assets/photos/web.JPG",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/web.svg",
+        "logo": `${imagesUrl}/SG/Software SG.png`,
         "info": {
             "gr": {
-                "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών."
+                "description": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο."
             },
             "en": {
-                "description": "Ομάδα υλοποίησης διαδικτυακών εφαρμογών. Ελάτε στην ομάδα για να δημιουργήσουμε δυναμικές ιστοσελίδες που αλληλεπιδρούν με τον έξω κόσμο και εξυπηρετούν μια πραγματική εφαρμογή με χρήση σύγχρονων τεχνολογιών."
+                "description": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο."
             }
         }
     };
@@ -52,13 +53,13 @@ export const biomed =
         "name_short": "BioMed",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/biomed.svg",
+        "logo": `${imagesUrl}/SG/Biomed SG.png`,
         "info": {
             "gr": {
-                "description": "Ομάδα υλοποίησης εφαρμογών βιοϊατρικής μηχανικής. Ελάτε στην ομάδα μας να μάθετε τις βασικές πτυχές του biomedical engineering και να ασχοληθείτε με σύγχρονες τεχνικές και αλγορίθμους επεξεργασίας δεδομένων στην επιστήμη της ιατρικής και της βιολογίας."
+                "description": "Το Biomed SG είναι μια διεπιστημονική ομάδα με στόχο την έρευνα και ανάπτυξη λύσεων στον τομέα της βιοϊατρικής τεχνολογίας. Μέσα από συνεργασία, πειραματισμό και πρακτική εφαρμογή, τα μέλη εξερευνούν καινοτόμες ιδέες που συμβάλλουν στην υγεία και την ποιότητα ζωής."
             },
             "en": {
-                "description": "Ομάδα υλοποίησης εφαρμογών βιοϊατρικής μηχανικής. Ελάτε στην ομάδα μας να μάθετε τις βασικές πτυχές του biomedical engineering και να ασχοληθείτε με σύγχρονες τεχνικές και αλγορίθμους επεξεργασίας δεδομένων στην επιστήμη της ιατρικής και της βιολογίας."
+                "description": "Biomed SG is an interdisciplinary group focused on the research and development of solutions in the field of biomedical technology. Through collaboration, experimentation, and practical application, its members explore innovative ideas that contribute to health and quality of life."
             }
         }
 };
@@ -69,64 +70,64 @@ export const gamedev =
         "name_short": "GameDev",
         "wallpaper": "/assets/photos/Gamedev.JPG",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/gamedev.svg",
+        "logo": `${imagesUrl}/SG/GameDev SG.png`,
         "info": {
             "gr": {
-                "description": "Entry level game development team. Το Game Development είναι ένας κλάδος που έχει ανάγκη από ανθρώπους με διαφορετικά προσόντα και δεξιότητες. Ελάτε στην ομάδας μας για να δημιουργήσετε τους κόσμους και τους χαρακτήρες των παιχνιδιών ή τα γραφικά και τα εφέ. Επίσης μπορείτε να δημιουργήσετε τον κώδικα που καθοδηγεί τα παιχνίδια ή να συνεισφέρετε στην ιστορία και τα σενάρια."
+                "description": "Το GameDev SG φέρνει κοντά φοιτητές από διαφορετικά backgrounds με κοινό στόχο τη δημιουργία εκπαιδευτικών και ψυχαγωγικών παιχνιδιών. Η ομάδα προσφέρει hands-on εμπειρία στα στάδια παραγωγής ενός παιχνιδιού — από τον προγραμματισμό και το game design μέχρι τη μουσική, τα γραφικά και την αφήγηση."
             },
             "en": {
-                "description": "Entry level game development team. Game Development is an industry that needs people with different qualifications and skills. Join our team to create game worlds and characters or graphics and effects. You can also create the code that drives the games or contribute to the story and scenarios."
+                "description": "GameDev SG brings together students from diverse backgrounds with a shared goal of creating educational and entertainment games. The team offers hands-on experience across all stages of game development — from programming and game design to music, graphics, and storytelling."
             }
         }
 };
-export const compprog =
+export const ai =
   {
         "id": 2,
-        "name": "Competitive Programming",
-        "name_short": "CompProg",
+        "name": "Artificial Intelligence",
+        "name_short": "A.I.",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/CompetitiveProgrammingSG.png",
+        "logo": `${imagesUrl}/SG/AI SG.png`,
         "info": {
             "gr": {
-                "description": "Ομάδα συμμετοχής σε διαγωνισμούς προγραμματισμού. Ελάτε στην ομάδα μας για να μάθετε αλγορίθμους, δομές δεδομένων και μεθοδολογίες επίλυσης προβλημάτων με σκοπό την συμμετοχή σε παγκόσμιους διαγωνισμούς προγραμματισμού (ΙΕΕΕΧtreme, ICPC και άλλοι)."
+                "description": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects."
             },
             "en": {
-                "description": "Ομάδα συμμετοχής σε διαγωνισμούς προγραμματισμού. Ελάτε στην ομάδα μας για να μάθετε αλγορίθμους, δομές δεδομένων και μεθοδολογίες επίλυσης προβλημάτων με σκοπό την συμμετοχή σε παγκόσμιους διαγωνισμούς προγραμματισμού (ΙΕΕΕΧtreme, ICPC και άλλοι)."
+                "description": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects."
             }
         }
 };
-export const telecom =
+export const naval =
   {
         "id": 4,
-        "name": "Telecommunications",
-        "name_short": "Telecom",
+        "name": "Naval Architecture",
+        "name_short": "Naval",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/telecom.svg",
+        "logo": `${imagesUrl}/SG/Naval SG.png`,
         "info": {
             "gr": {
-                "description": "Ομάδα υλοποίησης τηλεπικοινωνιακών εφαρμογών. Ελάτε στην ομάδα μας να μάθουμε για τις σύγχρονες τάσεις στις τηλεπικοινωνίες, να σχεδιάσουμε κυκλώματα RF, να προσομοιώσουμε και να εξετάσουμε μοντέλα και πολλές άλλες τηλεπικοινωνιακές εφαρμογές."
+                "description": "Το Naval SG επικεντρώνεται στην εφαρμογή τεχνολογίας αιχμής στον τομέα της ναυτιλίας. Μέσα από projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων και βιώσιμων λύσεων για το μέλλον των πλοίων και των θαλάσσιων μεταφορών."
             },
             "en": {
-                "description": "Ομάδα υλοποίησης τηλεπικοινωνιακών εφαρμογών. Ελάτε στην ομάδα μας να μάθουμε για τις σύγχρονες τάσεις στις τηλεπικοινωνίες, να σχεδιάσουμε κυκλώματα RF, να προσομοιώσουμε και να εξετάσουμε μοντέλα και πολλές άλλες τηλεπικοινωνιακές εφαρμογές."
+                "description": "Naval SG focuses on the application of cutting-edge technology in the maritime sector. Through projects that combine naval architecture, electrical and mechanical engineering, and artificial intelligence, the team aims to develop smart and sustainable solutions for the future of ships and marine transportation."
             }
         }
 };
 export const energy =
   {
         "id": 5,
-        "name": "Energy",
+        "name": "Power & Energy",
         "name_short": "Energy",
         "wallpaper": "/assets/photos/Energy.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/energy.svg",
+        "logo": `${imagesUrl}/SG/Energy SG.png`,
         "info": {
             "gr": {
-                "description": "Το Energy Scientific Group είναι μια ομάδα η οποία έχει ως σκοπό την διεξαγωγή ομαδικών εργασιών (Projects) σχετικά με το αντικείμενο της ενέργειας : Ηλεκτρικές Μηχανές, Ηλεκτρονικά Ισχύος, Ανανεώσιμες Πηγές Ενέργειας και ο,τι άλλο σχετικό.  Τα Projects είναι τόσο ανατπυξιακού χαρακτήρα, όσο και εκπαιδευτικού. Τυχόν ενδιαφερόμενοι μπορούν να φέρουν ιδέες για Project που θα τους ενδιέφερε να ασχοληθούν."
+                "description": "Το Energy Scientific Group είναι μια ομάδα η οποία έχει ως σκοπό την διεξαγωγή ομαδικών εργασιών (Projects) σχετικά με το αντικείμενο της ενέργειας: Ηλεκτρικές Μηχανές, Ηλεκτρονικά Ισχύος, Ανανεώσιμες Πηγές Ενέργειας και ότι άλλο σχετικό. Τα Projects είναι τόσο αναπτυξιακού χαρακτήρα, όσο και εκπαιδευτικού.Τυχόν ενδιαφερόμενοι μπορούν να φέρουν ιδέες για Project που θα τους ενδιέφερε να ασχοληθούν."
             },
             "en": {
-                "description": "The Energy Scientific Group is a team whose purpose is to carry out group projects related to energy: Electric Machines, Power Electronics, Renewable Energy Sources, and anything else related.  The projects are both developmental and educational in nature. Anyone interested can contribute ideas for projects they would like to work on."
+                "description": "Energy SG focuses on applied technology in the fields of electrical power, renewable energy sources, electric machines, and energy systems optimization. The team carries out projects with technical, developmental, and educational objectives, bridging the gap between academic knowledge and practical application."
             }
         }
   };
@@ -137,17 +138,118 @@ export const energy =
         "name_short": "Electronics",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": "/assets/logos/scientific_groups/electronics.svg",
+        "logo": `${imagesUrl}/SG/Electronics SG.png`,
         "info": {
             "gr": {
-                "description": "Η ομάδα electronics ασχολείται κυρίως με projects που σχετίζονται με μικροελεγκτές και ενσωματωμένα συστήματα. Οι μικροελεγκτές και τα ενσωματωμένα συστήματα αποτελούν τον πυρήνα πολλών σύγχρονων τεχνολογικών λύσεων, καθώς χρησιμοποιούνται ευρέως σε εφαρμογές όπως αυτοματισμοί, ρομποτική, οικιακές συσκευές, αυτοκίνητα, βιομηχανικά συστήματα και το Διαδίκτυο των Πραγμάτων (IoT). Ελάτε στην ομάδα μας για να αποκτήσετε εμπειρία στους τομείς αυτούς μέσω της συμμετοχής σας σε διαγωνισμούς και στα projects μας."
+                "description": "Το Electronics SG ασχολείται με τον σχεδιασμό, την ανάπτυξη και την κατασκευή συστημάτων που βασίζονται σε μικροελεγκτές, ενσωματωμένα κυκλώματα και hardware τεχνολογίες. Η ομάδα επικεντρώνεται στη δημιουργία πρακτικών λύσεων σε τομείς όπως η ρομποτική, το IoT, η αυτοκίνηση και τα βιομηχανικά συστήματα."
             },
             "en": {
-                "description": "The electronics team mainly deals with projects related to microcontrollers and embedded systems. Microcontrollers and embedded systems are at the core of many modern technological solutions, as they are widely used in applications such as automation, robotics, home appliances, automobiles, industrial systems, and the Internet of Things (IoT). Join our team to gain experience in these areas by participating in competitions and our projects."
+                "description": "Electronics SG is engaged in the design, development, and construction of systems based on microcontrollers, embedded circuits, and hardware technologies. The team focuses on creating practical solutions in fields such as robotics, IoT, automotive applications, and industrial systems."
             }
         }
   };
-  
+    export const metaverse =
+  {
+        "id": 7,
+        "name": "Metaverse & XR",
+        "name_short": "Metaverse",
+        "wallpaper": "/assets/photos/energy-project.jpg",
+        "images": ["/projects/notifier.jpg"],
+        "logo": `${imagesUrl}/SG/Metaverse SG.png`,
+        "info": {
+            "gr": {
+                "description": "Το Metaverse SG επικεντρώνεται στην έρευνα και ανάπτυξη σε τομείς όπως η Εικονική (VR), Επαυξημένη (AR), Μικτή (MR) και Επεκταμένη Πραγματικότητα (XR), με εφαρμογές σε gaming, εκπαίδευση, remote engineering και αεροναυτική. Η ομάδα λειτουργεί σε συνεργασία με το Metaverse Hub του εργαστηρίου CoNSeRT του Πανεπιστημίου Δυτικής Αττικής, προσφέροντας πρόσβαση σε προηγμένες υποδομές, βιομηχανική τεχνογνωσία και διασύνδεση με διεθνή δίκτυα."
+            },
+            "en": {
+                "description": "Metaverse SG focuses on research and development in areas such as Virtual Reality (VR), Augmented Reality (AR), Mixed Reality (MR), and Extended Reality (XR), with applications in gaming, education, remote engineering, and aerospace. The team operates in collaboration with the Metaverse Hub of the CoNSeRT Laboratory at the University of West Attica, providing access to advanced infrastructure, industrial expertise, and connections with international networks."
+            }
+        }
+  };
+export const energy_projects = [
+          {
+            "index": "0",
+            "name": "DC-DC Converter",
+            "description": "Σχεδίαση και κατασκευή ενός μετατροπέα συνεχούς ρεύματος με σκοπό την ενσωμάτωσή του σε μονοθέσιο διαγωνισμού Shell Eco-Marathon.",
+            "image": `/assets/images/Power Electronics Thumbnail.jpg`,
+            "tags": [{ name: "PCB", color: "bg-gradient-energy" },{ name: "Simulink", color: "bg-gradient-energy" },{ name: "LT Spice", color: "bg-gradient-energy" }, {name:"Matlab", color:"bg-gradient-energy"}],
+            "source_code_link": "/"
+          },
+          {
+            "index": "1",
+            "name": "Reverse Engineering",
+            "description": "Επαναχρησιμοποίηση υλικών από end-of-life ηλεκτρονικές συσκευές, κατανόηση της λειτουργίας τους και δημιουργία νέων, χρήσιμων εφαρμογών.",
+            "image": "/assets/images/Reverse Engineering Thumbnail.jpg",
+            "tags": [{ name: "Energy", color: "bg-energy" }],
+            "source_code_link": "/"
+          }
+]
+export const SG= [
+          {
+            "id": "0",
+            "title": "Software",
+            "text": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο.",
+            "iconUrl": `${imagesUrl}/SG/Software.png`,
+            "imageUrl": `${imagesUrl}/SG/Software SG.png`,
+            "color": "software"
+          },
+          {
+            "id": "1",
+            "title": "Biomed",
+            "text": "Το Biomed SG είναι μια διεπιστημονική ομάδα με στόχο την έρευνα και ανάπτυξη λύσεων στον τομέα της βιοϊατρικής τεχνολογίας. Μέσα από συνεργασία, πειραματισμό και πρακτική εφαρμογή, τα μέλη εξερευνούν καινοτόμες ιδέες που συμβάλλουν στην υγεία και την ποιότητα ζωής.",
+            "iconUrl": `${imagesUrl}/SG/Biomed.png`,
+            "imageUrl": `${imagesUrl}/SG/Biomed SG.png`,
+             "color": "biomed"
+          },
+          {
+            "id": "2",
+            "title": "Electronics",
+            "text": "Το Electronics SG ασχολείται με τον σχεδιασμό, την ανάπτυξη και την κατασκευή συστημάτων που βασίζονται σε μικροελεγκτές, ενσωματωμένα κυκλώματα και hardware τεχνολογίες. Η ομάδα επικεντρώνεται στη δημιουργία πρακτικών λύσεων σε τομείς όπως η ρομποτική, το IoT, η αυτοκίνηση και τα βιομηχανικά συστήματα.",
+            "iconUrl": `${imagesUrl}/SG/Electronics.png`,
+            "imageUrl": `${imagesUrl}/SG/Electronics SG.png`,
+            "color": "electronics"
+          }
+          ,
+          {
+            "id": "3",
+            "title": "Game Development",
+            "text": "Το GameDev SG φέρνει κοντά φοιτητές από διαφορετικά backgrounds με κοινό στόχο τη δημιουργία εκπαιδευτικών και ψυχαγωγικών παιχνιδιών. Η ομάδα προσφέρει hands-on εμπειρία στα στάδια παραγωγής ενός παιχνιδιού — από τον προγραμματισμό και το game design μέχρι τη μουσική, τα γραφικά και την αφήγηση.",
+            "iconUrl": `${imagesUrl}/SG/GameDev.png`,
+            "imageUrl": `${imagesUrl}/SG/GameDev SG.png`,
+            "color": "gamedev"
+          },
+          {
+            "id": "4",
+            "title": "Metaverse",
+            "text": "Το Metaverse SG επικεντρώνεται στην έρευνα και ανάπτυξη σε τομείς όπως η Εικονική (VR), Επαυξημένη (AR), Μικτή (MR) και Επεκταμένη Πραγματικότητα (XR), με εφαρμογές σε gaming, εκπαίδευση, remote engineering και αεροναυτική.",
+            "iconUrl": `${imagesUrl}/SG/Meta.png`,
+            "imageUrl": `${imagesUrl}/SG/Metaverse SG.png`,
+            "color": "metaverse"
+          },
+          {
+            "id": "5",
+            "title": "Naval",
+            "text": "Το Naval SG επικεντρώνεται στην εφαρμογή τεχνολογίας αιχμής στον τομέα της ναυτιλίας. Μέσα από projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων και βιώσιμων λύσεων για το μέλλον των πλοίων και των θαλάσσιων μεταφορών.",
+            "iconUrl": `${imagesUrl}/SG/Naval.png`,
+            "imageUrl": `${imagesUrl}/SG/Naval SG.png`,
+            "color": "naval"
+          },
+          {
+            "id": "6",
+            "title": "Energy",
+            "text": "Το Energy SG ασχολείται με την εφαρμοσμένη τεχνολογία στους τομείς της ηλεκτρικής ενέργειας, των ανανεώσιμων πηγών, των ηλεκτρικών μηχανών και της βελτιστοποίησης ενεργειακών συστημάτων. Η ομάδα υλοποιεί projects με τεχνικό, αναπτυξιακό και εκπαιδευτικό χαρακτήρα, συνδέοντας τις γνώσεις της σχολής με την πράξη.",
+            "iconUrl": `${imagesUrl}/SG/Energy.png`,
+            "imageUrl": `${imagesUrl}/SG/Energy SG.png`,
+            "color": "energy"
+          },
+          {
+            "id": "7",
+            "title": "Artificial Intelligence",
+            "text": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects.",
+            "iconUrl": `${imagesUrl}/SG/AI.png`,
+            "imageUrl": `${imagesUrl}/SG/AI SG.png`,
+            "color": "ai"
+          }
+        ]
 export const heroImages = [
   `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,

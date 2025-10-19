@@ -83,13 +83,13 @@ const ScientificGroupIntro = ({ groupData }) => {
           </div>
           
           {/* Description */}
-          <div className="my-6">
+          <div className="my-14">
               <p className="body-1 max-xl:body-2 max-sm:body-3 text-p4 leading-relaxed">
                 {info?.en?.description}
               </p>
           </div>
           <div onClick={scrollToProjects} className="cursor-pointer">
-            <Button textClassName="text-p1 base-bold" icon={<MdOutlineWork size={30} color='white'/>}>PROJECTS</Button>
+            <Button textClassName="text-p4 base-bold" icon={<MdOutlineWork size={30} color='white'/>}>PROJECTS</Button>
           </div>
         </div>
 
@@ -98,14 +98,14 @@ const ScientificGroupIntro = ({ groupData }) => {
           {wallpaper && (
             <div className="relative">
               {/* Significantly larger circular container */}
-              <div className={`rounded-full p-[4px] bg-gradient-${themeClass} inline-block`}>
+              <div className={`rounded-full p-[2px] bg-gradient-${themeClass} inline-block`}>
                 <div className="bg-s1 rounded-full p-6"> 
                   <Image
                     src={wallpaper}
                     alt={`${name} wallpaper`}
                     width={1000}        
                     height={1000}       
-                    className="rounded-full object-cover lg:w-[35rem] lg:h-[35rem] xl:w-[42rem] xl:h-[42rem]"
+                    className="rounded-full object-cover lg:w-[32rem] lg:h-[32rem] xl:w-[42rem] xl:h-[42rem]"
                     priority
                   />
                 </div>

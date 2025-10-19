@@ -3,6 +3,7 @@ import React from 'react';
 import {energy} from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
+import { energy_projects } from '@constants/constants';
 
 const Page = () => {
   const energyData = {
@@ -13,7 +14,7 @@ const Page = () => {
     <>
       <ScientificGroupIntro groupData={energyData} />
       <div id="projects">
-        <Projects />
+        <Projects projectList={energy_projects} />
       </div>
     </>
   )

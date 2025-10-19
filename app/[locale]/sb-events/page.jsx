@@ -13,7 +13,7 @@ export default async function SbEvents({ params, searchParams }) {
   return (
     <>
       {/* Hero Section with Wallpaper */}
-      <section className="bg-[url('/assets/photos/events_wallpaper.png')] bg-cover bg-center bg-no-repeat relative h-[40vh] min-h-[250px]">
+      <section className="bg-[url('/assets/photos/events_wallpaper.png')] bg-cover bg-center bg-no-repeat relative mb-10 h-[35vh] min-h-[250px]">
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="container absolute inset-0" >
           <h2 className='h2 max-md:h3 text-p4 mt-40 text-shadow'>

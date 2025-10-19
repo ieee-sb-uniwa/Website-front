@@ -197,7 +197,7 @@
       },
       "SBHistory": {
         "heading" : "A little bit of history",
-        "paragraph" : "In March 2011, students of the former TEI of Piraeus founded the university’s student branch. The pandemic left it inactive, but we brought it back to life in October 2023."
+        "paragraph" : "In March 2011, students of the former Technological Educational Institute (TEI) of Piraeus founded the university’s student branch. Its activities were suspended during the pandemic but resumed in October 2023 with renewed enthusiasm."
       },
       "IEEEUniwa": {
         "heading":"IEEE Student Branch of UniWA",
@@ -209,21 +209,24 @@
             "title": "Team Projects",
             "text": "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
             "iconUrl": "/assets/icons/team.svg",
-            "imageUrl": "/assets/logos/sblogo-white.svg"
+            "imageUrl": "/assets/logos/sblogo-white.svg",
+            "color":"sb"
           },
           {
             "id": "1",
             "title": "Educational Events",
             "text": "Events open to everyone, aimed at raising awareness and expanding knowledge.",
             "iconUrl": "/assets/icons/graduation-cap.svg",
-            "imageUrl": "/assets/logos/sblogo-white.svg"
+            "imageUrl": "/assets/logos/sblogo-white.svg",
+            "color":"sb"
           },
           {
             "id": "2",
             "title": "Competitions",
             "text": "Participation in local and global competitions.",
             "iconUrl": "/assets/icons/medal.svg",
-            "imageUrl": "/assets/logos/sblogo-white.svg"
+            "imageUrl": "/assets/logos/sblogo-white.svg",
+            "color":"sb"
           }
         ]
       }
