@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useRef} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { cn } from "@/lib/utils";
+import { LuArrowBigLeftDash,LuArrowBigRightDash } from "react-icons/lu";
 
 const ProjectCard = ({
   index,
@@ -12,14 +13,20 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <div className="max-w-xs w-full  group/card">
+    <div className="max-w-xs w-full group/card">
       <div
         className={cn(
-          "cursor-pointer overflow-hidden relative h-96 rounded-md border-2 border-s1 hover:border-energy shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4 bg-cover bg-center"
+          "cursor-pointer overflow-hidden relative h-96 border-transparent border-[2px] hover:border-gradient-energy shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4"
         )}
-        style={{ backgroundImage: `url("/assets/images/Reverse Engineering Thumbnail.jpg")` }}
       >
-        <div className="absolute inset-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
+        {/* Background image with zoom effect */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover/card:scale-110"
+          style={{ backgroundImage: `url(${image})` }}
+        ></div>
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black-100/90 via-black-100/60 to-transparent"></div>
+      {/* <div className="absolute inset-0 transition duration-300 group-hover/card:bg-black-100 opacity-60"></div> */}
 
         <div className="absolute inset-0 flex justify-end m-3">
           <div
@@ -27,43 +34,101 @@ const ProjectCard = ({
             className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src="/assets/logos/socials/github.svg"
+              src="/assets/icons/link.svg"
               alt="source code"
               className="w-1/2 h-1/2 object-contain"
             />
           </div>
         </div>
 
-        <div className="mt-auto">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          {/* <p className="mt-2 text-secondary text-[14px]">{description}</p> */}
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={`${name}-${tag.name}`} className={`text-[14px] text-s1 ${tag.color}`}>
-                #{tag.name}
-              </p>
+        <div className="mt-auto z-1">
+                      <div className="project-tags">
+                {tags.map((tag) => (
+                  <span key={`${name}-${tag.name}`} className={`tag text-[14px]`}>
+                {tag.name}
+              </span>
             ))}
-          </div>
+            </div>
+          <h3 className="text-p4 font-bold text-[22px] my-3">{name}</h3>
+          {/* <p className="mt-2 text-secondary text-[14px]">{description}</p> */}
+
         </div>
       </div>
     </div>
   );
 };
 const Projects = ({ projectList }) => {
+  const splideRef = useRef(null);
+  const [progress, setProgress] = useState(0);
+  const splideOptions = {
+    type: 'loop',
+    perPage: 3,
+    perMove: 1,
+    gap: '1.75rem',
+    pagination: false,
+    rewind: true,
+    arrows: false,
+    breakpoints: {
+      1024: {
+        perPage: 3,
+      },
+      640: {
+        perPage: 2,
+      },
+    },
+  };
+
   return (
-    <section className='bg-black-100'>
-       <div className='container relative z-2 py-28'>
-          <div>
-            <h3 className="h3 max-md:h4 max-w-640 max-lg:max-w-lg text-p4 mb-7 font-poppins ">Projects</h3>
+    <section className="bg-black-100 py-20">
+      <div className="container mx-auto px-4 relative">
+        <div className="mb-12">        
+          {/* Custom Arrows */}
+          <div className="flex justify-center items-center gap-12 z-2 max-lg:hidden"> 
+            <h6 className="text-4xl font-bold text-p4 font-poppins">PROJECTS</h6>
+            {/* Progress Bar */}
+            <div className="flex-1 h-[3px] bg-gray-700 overflow-hidden">
+              <div 
+                className="h-full bg-energy transition-all duration-300"
+                style={{ width: `${progress * 100}%` }}
+              />
+            </div>
+            <button
+              onClick={() => splideRef.current?.splide?.go('<')}
+              className="p-2 bg-s1 transition-colors border-[1px] border-energy/35 hover:border-gradient-energy duration-300"
+              aria-label="Previous"
+            >
+              <LuArrowBigLeftDash size={30} className="text-energy/75" />
+            </button>
+            <button
+              onClick={() => splideRef.current?.splide?.go('>')}
+              className="p-2 bg-s1 transition-colors border-[1px] border-energy/35 hover:border-gradient-energy duration-300"
+              aria-label="Next"
+            >
+              <LuArrowBigRightDash size={30} className="text-energy/75"/>
+            </button>
           </div>
-          <div className='mt-20 flex flex-wrap gap-7'>
-            {projectList.map((project, index) => (
-              <ProjectCard key={`project-${index}`} index={index} {...project} />
-            ))}
-          </div>
+        </div>
+
+        <Splide 
+          ref={splideRef}
+          options={splideOptions}
+          aria-label="Focus Cards Carousel"
+        >
+          {projectList && projectList.length > 0 ? projectList.map((project, index) => (
+            <SplideSlide key={`project-${index}`}>
+              <ProjectCard index={index} {...project} />
+            </SplideSlide>
+          )): (
+            <SplideSlide>
+              <div className="p-4 bg-red-200 text-red-800">
+                No cards available
+              </div>
+            </SplideSlide>
+          )}
+        </Splide>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Projects;

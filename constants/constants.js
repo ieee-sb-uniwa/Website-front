@@ -165,21 +165,46 @@ export const energy =
             }
         }
   };
+
 export const energy_projects = [
           {
             "index": "0",
             "name": "DC-DC Converter",
             "description": "Σχεδίαση και κατασκευή ενός μετατροπέα συνεχούς ρεύματος με σκοπό την ενσωμάτωσή του σε μονοθέσιο διαγωνισμού Shell Eco-Marathon.",
-            "image": `/assets/images/Power Electronics Thumbnail.jpg`,
-            "tags": [{ name: "PCB", color: "bg-gradient-energy" },{ name: "Simulink", color: "bg-gradient-energy" },{ name: "LT Spice", color: "bg-gradient-energy" }, {name:"Matlab", color:"bg-gradient-energy"}],
+            "tags": [{ name: "PCB" },{ name: "Simulink" },{ name: "LT Spice" }, {name:"Matlab", color:"bg-gradient-energy"}],
+            "image": `/assets/images/Power-Electronics-Thumbnail.jpg`,
             "source_code_link": "/"
           },
           {
             "index": "1",
             "name": "Reverse Engineering",
             "description": "Επαναχρησιμοποίηση υλικών από end-of-life ηλεκτρονικές συσκευές, κατανόηση της λειτουργίας τους και δημιουργία νέων, χρήσιμων εφαρμογών.",
-            "image": "/assets/images/Reverse Engineering Thumbnail.jpg",
-            "tags": [{ name: "Energy", color: "bg-energy" }],
+            "tags": [{ name: "Energy"}],
+            "image": "/assets/images/Reverse-Engineering-Thumbnail.jpg",
+            "source_code_link": "/"
+          },
+          {
+            "index": "2",
+            "name": "Semiconductor Measurement Chart",
+            "description": "Δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών, ως χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς.",
+            "tags": [{ name: "Semiconductors" }],
+            "image": "/assets/images/Reverse-Engineering-Thumbnail.jpg",
+            "source_code_link": "/"
+          },
+          {
+            "index": "3",
+            "name": "Cool & Re-Use",
+            "description": "Μελέτη και ανάπτυξη ενός συστήματος εξοικονόμησης θερμότητας που βελτιώνει την απόδοση φωτοβολταϊκών πλαισίων.",
+            "tags": [{ name: "photovoltaic panels" }, {name: "thermodynamics"}, {name: "heat transfer"}],
+            "image": "/assets/images/cool-and-reuse.png",
+            "source_code_link": "/"
+          },
+          {
+            "index": "4",
+            "name": "Intelligent Lighting",
+            "description": " Ανάπτυξη ενός συστήματος φωτισμού για τη βελτίωση της απόδοσης, ποιότητας και διάρκειας ζωής εγκαταστάσεων φωτισμού.",
+            "tags": [{ name: "ReLux" }],
+            "image": "/assets/images/cool-and-reuse.png",
             "source_code_link": "/"
           }
 ]

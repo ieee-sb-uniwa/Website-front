@@ -84,7 +84,127 @@
 .milky_way {
   @apply bg-clip-text text-transparent bg-[url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] animate-linear;
 }
-/* === Scientific Group Gradient Text Classes === */
+@layer utilities {
+  /* Base utility shared by all gradient borders */
+  .border-gradient {
+    border-style: solid;
+    border-image-slice: 1;
+    transition: border-image-source 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* === AI === */
+  .border-gradient-ai {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008ba1, #00c0cf);
+  }
+  .hover\:border-gradient-ai:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008ba1, #00c0cf);
+  }
+  .group-hover\:border-gradient-ai:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008ba1, #00c0cf);
+  }
+
+  /* === Electronics === */
+  .border-gradient-electronics {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #98012e, #ff5e6c);
+  }
+  .hover\:border-gradient-electronics:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #98012e, #ff5e6c);
+  }
+  .group-hover\:border-gradient-electronics:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #98012e, #ff5e6c);
+  }
+
+  /* === Naval === */
+  .border-gradient-naval {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #0072a7, #00b3d6);
+  }
+  .hover\:border-gradient-naval:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #0072a7, #00b3d6);
+  }
+  .group-hover\:border-gradient-naval:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #0072a7, #00b3d6);
+  }
+
+  /* === Metaverse === */
+  .border-gradient-metaverse {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #981e97, #e84ac2);
+  }
+  .hover\:border-gradient-metaverse:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #981e97, #e84ac2);
+  }
+  .group-hover\:border-gradient-metaverse:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #981e97, #e84ac2);
+  }
+
+  /* === Software === */
+  .border-gradient-software {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #e58d00, #ffba42);
+  }
+  .hover\:border-gradient-software:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #e58d00, #ffba42);
+  }
+  .group-hover\:border-gradient-software:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #e58d00, #ffba42);
+  }
+
+  /* === Energy === */
+  .border-gradient-energy {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008001, #00ff55);
+  }
+  .hover\:border-gradient-energy:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008001, #00ff55);
+  }
+  .group-hover\:border-gradient-energy:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #008001, #00ff55);
+  }
+
+  /* === GameDev === */
+  .border-gradient-gamedev {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #030678, #5755ff);
+  }
+  .hover\:border-gradient-gamedev:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #030678, #5755ff);
+  }
+  .group-hover\:border-gradient-gamedev:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #030678, #5755ff);
+  }
+
+  /* === Biomed === */
+  .border-gradient-biomed {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #631469, #a72883);
+  }
+  .hover\:border-gradient-biomed:hover {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #631469, #a72883);
+  }
+  .group-hover\:border-gradient-biomed:hover > * {
+    @apply border-gradient;
+    border-image-source: linear-gradient(to right, #631469, #a72883);
+  }
+}
+
 .bg-gradient-ai {
   @apply bg-gradient-to-r from-[#008ba1] to-[#00c0cf];
 }
@@ -99,7 +219,6 @@
 .bg-gradient-metaverse {
   @apply bg-gradient-to-r from-[#981e97] to-[#e84ac2];
 }
-
 
 .bg-gradient-software {
   @apply bg-gradient-to-r from-[#e58d00] to-[#ffba42];
@@ -116,7 +235,20 @@
 .bg-gradient-biomed {
    @apply bg-gradient-to-r from-[#631469] to-[#a72883];
 }
+  .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            position: relative;
+            z-index: 1;
+  }
 
+  .tag {
+            background: #008001;
+            color: white;
+            padding: 5px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 /* Utility for applying gradient text */
 .gradient-text {
   @apply text-transparent bg-clip-text;
