@@ -173,15 +173,15 @@ export const energy_projects = [
             "description": "Σχεδίαση και κατασκευή ενός μετατροπέα συνεχούς ρεύματος με σκοπό την ενσωμάτωσή του σε μονοθέσιο διαγωνισμού Shell Eco-Marathon.",
             "tags": [{ name: "PCB" },{ name: "Simulink" },{ name: "LT Spice" }, {name:"Matlab", color:"bg-gradient-energy"}],
             "image": `/assets/images/Power-Electronics-Thumbnail.jpg`,
-            "source_code_link": "/"
+            "links": "/"
           },
           {
             "index": "1",
             "name": "Reverse Engineering",
             "description": "Επαναχρησιμοποίηση υλικών από end-of-life ηλεκτρονικές συσκευές, κατανόηση της λειτουργίας τους και δημιουργία νέων, χρήσιμων εφαρμογών.",
-            "tags": [{ name: "Energy"}],
+            "tags": [{ name: "Recycling"}],
             "image": "/assets/images/Reverse-Engineering-Thumbnail.jpg",
-            "source_code_link": "/"
+            "links": "/"
           },
           {
             "index": "2",
@@ -189,7 +189,7 @@ export const energy_projects = [
             "description": "Δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών, ως χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς.",
             "tags": [{ name: "Semiconductors" }],
             "image": "/assets/images/Reverse-Engineering-Thumbnail.jpg",
-            "source_code_link": "/"
+            "links": "/"
           },
           {
             "index": "3",
@@ -197,15 +197,15 @@ export const energy_projects = [
             "description": "Μελέτη και ανάπτυξη ενός συστήματος εξοικονόμησης θερμότητας που βελτιώνει την απόδοση φωτοβολταϊκών πλαισίων.",
             "tags": [{ name: "photovoltaic panels" }, {name: "thermodynamics"}, {name: "heat transfer"}],
             "image": "/assets/images/cool-and-reuse.png",
-            "source_code_link": "/"
+            "links": "/"
           },
           {
             "index": "4",
             "name": "Intelligent Lighting",
             "description": " Ανάπτυξη ενός συστήματος φωτισμού για τη βελτίωση της απόδοσης, ποιότητας και διάρκειας ζωής εγκαταστάσεων φωτισμού.",
             "tags": [{ name: "ReLux" }],
-            "image": "/assets/images/cool-and-reuse.png",
-            "source_code_link": "/"
+            "image": "/assets/images/SmartLighting.png",
+            "links": "/"
           }
 ]
 export const SG= [

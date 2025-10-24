@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import {software} from '@constants/constants';
+import {software, energy_projects} from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
 
@@ -12,8 +12,8 @@ const Page = () => {
   return (
     <>
       <ScientificGroupIntro groupData={softwareData} />
-      <div id="projects">
-        <Projects />
+      <div id="projects" >
+        <Projects projectList={energy_projects} themeClass={softwareData.themeClass} />
       </div>
     </>
   )

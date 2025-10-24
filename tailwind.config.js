@@ -8,10 +8,16 @@ module.exports = {
 	],
 	safelist: [
 		{
+		pattern: /hover:border-gradient-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)/,
+		},
+		{
 		pattern: /border-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)/,
 		},
 		{
 		pattern: /bg-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)(\/30)?/,
+		},
+		{
+		pattern: /text-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)(\/30)?/,
 		},
 	],
 	theme: {

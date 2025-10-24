@@ -206,34 +206,34 @@
 }
 
 .bg-gradient-ai {
-  @apply bg-gradient-to-r from-[#008ba1] to-[#00c0cf];
+  @apply bg-gradient-to-b from-[#008ba1] to-[#00c0cf];
 }
 
 .bg-gradient-electronics {
-  @apply bg-gradient-to-r from-[#98012e] to-[#ff5e6c];
+  @apply bg-gradient-to-b from-[#98012e] to-[#ff5e6c];
 }
 .bg-gradient-naval {
-  @apply bg-gradient-to-r from-[#0072a7] to-[#00b3d6];
+  @apply bg-gradient-to-b from-[#0072a7] to-[#00b3d6];
 }
 
 .bg-gradient-metaverse {
-  @apply bg-gradient-to-r from-[#981e97] to-[#e84ac2];
+  @apply bg-gradient-to-b from-[#981e97] to-[#e84ac2];
 }
 
 .bg-gradient-software {
-  @apply bg-gradient-to-r from-[#e58d00] to-[#ffba42];
+  @apply bg-gradient-to-b from-[#e58d00] to-[#ffba42];
 }
 
 .bg-gradient-energy {
-   @apply bg-gradient-to-r from-[#008001] to-[#00ff55];
+   @apply bg-gradient-to-b from-[#008001] to-[#00ff55];
 }
 
 .bg-gradient-gamedev {
-   @apply bg-gradient-to-r from-[#030678] to-[#5755ff];
+   @apply bg-gradient-to-b from-[#030678] to-[#5755ff];
 }
 
 .bg-gradient-biomed {
-   @apply bg-gradient-to-r from-[#631469] to-[#a72883];
+   @apply bg-gradient-to-b from-[#631469] to-[#a72883];
 }
   .project-tags {
             display: flex;
@@ -244,7 +244,6 @@
   }
 
   .tag {
-            background: #008001;
             color: white;
             padding: 5px 12px;
             border: 1px solid rgba(255, 255, 255, 0.3);

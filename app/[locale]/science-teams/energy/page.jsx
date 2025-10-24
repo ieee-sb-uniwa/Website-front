@@ -14,7 +14,7 @@ const Page = () => {
     <>
       <ScientificGroupIntro groupData={energyData} />
       <div id="projects">
-        <Projects projectList={energy_projects} />
+        <Projects projectList={energy_projects} themeClass={energyData.themeClass}  />
       </div>
     </>
   )
