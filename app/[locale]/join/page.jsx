@@ -76,11 +76,7 @@ const Page = () => {
                 <StepsList key={SB ? 'sb-steps' : 'ieee-steps'} steps={SB ? joinSBSteps : joinIEEESteps} />
               </div>
             </div>
-            <section className="bg-[url('/assets/photos/ieee-spectrums.JPG')] bg-cover bg-center bg-no-repeat relative p-20 rounded-full mb-20">
-              <div className="absolute inset-0 bg-black/20 z-0 rounded-full" />
-              <h3 className='relative z-10 h3 max-md:h5 max-w-640 max-lg:max-w-lg text-p4 text-shadow p-2'>{t('ieee_subscription_benefits')}</h3>
-            </section>
-            <Benefits benefits={t.raw('benefitsIEEE')} cardsWidth={20} />
+            {/* <Benefits benefits={t.raw('benefitsIEEE')} cardsWidth={20} /> */}
             <Faq showNumbers={false} noOfQuestions={6}/>
         </div>
     </section>
