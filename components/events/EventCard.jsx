@@ -21,9 +21,10 @@ const EventCard = ({ event , locale, eventType}) => {
           src={`${thumbnail}`}
           alt={title}
           className="event-card_img"
-          width={1200}
+          width={800}
           height={800}
           priority
+          unoptimized
         />
       )}
       <div className="mt-5">

@@ -83,13 +83,13 @@ async function Page(props) {
   />
   <IEEEUniwa/>
   <ReusableCTA
-            backgroundImage={`${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`}
-            heading={t('heading')}
-            paragraph={t('paragraph')}
-            buttonText={t('ctaButtonText')}
-            buttonLink="/join"
-            buttonIcon="/assets/icons/people-add.svg"
-            overlayOpacity={50}
+      backgroundImage={`${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`}
+      heading={t('heading')}
+      paragraph={t('paragraph')}
+      buttonText={t('ctaButtonText')}
+      buttonLink="/join"
+      buttonIcon="/assets/icons/people-add.svg"
+      overlayOpacity={50}
    /> 
   <Team team={council} translationsComponent={CouncilTranslations}/>
   <Team team={counselor} translationsComponent={CounselorTranslations}/>

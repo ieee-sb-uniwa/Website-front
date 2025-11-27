@@ -58,6 +58,7 @@ const TeamMember = ({item, containerClassName}) => {
                             height="800"
                             alt={item?.name}
                             className='size-full object-cover rounded-full'
+                            unoptimized
                         />
                     </div>
                 </motion.div>
