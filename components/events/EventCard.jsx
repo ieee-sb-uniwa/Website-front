@@ -24,7 +24,6 @@ const EventCard = ({ event , locale, eventType}) => {
           width={800}
           height={800}
           priority
-          unoptimized
         />
       )}
       <div className="mt-5">

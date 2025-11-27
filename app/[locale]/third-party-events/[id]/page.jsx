@@ -100,7 +100,6 @@ const Page = async ({params}) => {
             width={600}
             height={600}
             className="w-full h-full max-sm:max-h-[300px] min-h-[300px] object-cover object-center lg:rounded-lg"
-            unoptimized
           />
           {/* event title and keywords */}
           <div className="flex w-full flex-col gap-8 p-5 md:p-10">

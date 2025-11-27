@@ -44,8 +44,6 @@ export default function TeamCollage({ images = [] }) {
                 width={800}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
-
               />
             </div>
           </div>
@@ -60,8 +58,6 @@ export default function TeamCollage({ images = [] }) {
                 width={800}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
-
               />
             </div>
             {/* Bottom image - slightly taller */}
@@ -72,8 +68,6 @@ export default function TeamCollage({ images = [] }) {
                 width={800}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
-
               />
             </div>
           </div>
@@ -88,8 +82,6 @@ export default function TeamCollage({ images = [] }) {
                 width={600}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
-
               />
             </div>
           </div>
@@ -104,8 +96,6 @@ export default function TeamCollage({ images = [] }) {
                 width={600}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
-
               />
             </div>
             {/* Bottom image - shorter */}
@@ -116,7 +106,6 @@ export default function TeamCollage({ images = [] }) {
                 width={600}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
               />
             </div>
           </div>
@@ -130,7 +119,6 @@ export default function TeamCollage({ images = [] }) {
                 width={600}
                 height={1000}
                 className="w-full h-full object-cover"
-                unoptimized
               />
             </div>
           </div>
