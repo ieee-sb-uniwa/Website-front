@@ -12,11 +12,11 @@ const IEEEUniwa = () => {
         <h3 className="h3 text-center green_gradient mb-12">
           {t('heading')}
         </h3>
-          <CTA
+          {/* <CTA
             backgroundImage="/assets/photos/ourHistory.jpg"
             heading= {story('heading')}
             paragraph={story('paragraph')}
-          />
+          /> */}
         <div className="ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
           <h4 className="max-lg:hidden goals-title grid-title text-s3">
