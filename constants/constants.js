@@ -7,14 +7,14 @@ export const sponsors= [
 ];
 
 export const scientificGroupsLogos= [
-   { title: "AI", img: `${imagesUrl}/SG/AI SG.png`, url: "/science-teams/ai", imgWidth:800, imgHeight:500}, 
-  { title: "Electronics", img: `${imagesUrl}/SG/Electronics SG.png`, url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
-   {title: "Naval",img:`${imagesUrl}/SG/Naval SG.png`, url: "/science-teams/naval" , imgWidth:800, imgHeight:500},
-  { title: "Game Development", img: `${imagesUrl}/SG/GameDev SG.png`, url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
-  { title: "Biomedical", img: `${imagesUrl}/SG/Biomed SG.png`, url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  { title: "Software", img: `${imagesUrl}/SG/Software SG.png`, url: "/science-teams/software", imgWidth:800, imgHeight:500},  
-  { title: "Metaverse", img: `${imagesUrl}/SG/Metaverse SG.png`, url: "/science-teams/metaverse", imgWidth:800, imgHeight:500},  
-  { title: "Energy", img: `${imagesUrl}/SG/Energy SG.png`, url: "/science-teams/energy", imgWidth:800, imgHeight:500}
+   { title: "AI", img: `${imagesUrl}/SG/AI-SG.png`, url: "/science-teams/ai", imgWidth:800, imgHeight:500}, 
+  { title: "Electronics", img: `${imagesUrl}/SG/Electronics-SG.png`, url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
+   {title: "Naval",img:`${imagesUrl}/SG/Naval-SG.png`, url: "/science-teams/naval" , imgWidth:800, imgHeight:500},
+  { title: "Game Development", img: `${imagesUrl}/SG/GameDev-SG.png`, url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
+  { title: "Biomedical", img: `${imagesUrl}/SG/Biomed-SG.png`, url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
+  { title: "Software", img: `${imagesUrl}/SG/Software-SG.png`, url: "/science-teams/software", imgWidth:800, imgHeight:500},  
+  { title: "Metaverse", img: `${imagesUrl}/SG/Metaverse-SG.png`, url: "/science-teams/metaverse", imgWidth:800, imgHeight:500},  
+  { title: "Energy", img: `${imagesUrl}/SG/Energy-SG.png`, url: "/science-teams/energy", imgWidth:800, imgHeight:500}
 ];
 
 export const collageList = [
@@ -53,7 +53,7 @@ export const biomed =
         "name_short": "BioMed",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/Biomed SG.png`,
+        "logo": `${imagesUrl}/SG/Biomed-SG.png`,
         "info": {
             "gr": {
                 "description": "Το Biomed SG είναι μια διεπιστημονική ομάδα με στόχο την έρευνα και ανάπτυξη λύσεων στον τομέα της βιοϊατρικής τεχνολογίας. Μέσα από συνεργασία, πειραματισμό και πρακτική εφαρμογή, τα μέλη εξερευνούν καινοτόμες ιδέες που συμβάλλουν στην υγεία και την ποιότητα ζωής."
@@ -70,7 +70,7 @@ export const gamedev =
         "name_short": "GameDev",
         "wallpaper": "/assets/photos/Gamedev.JPG",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/GameDev SG.png`,
+        "logo": `${imagesUrl}/SG/GameDev-SG.png`,
         "info": {
             "gr": {
                 "description": "Το GameDev SG φέρνει κοντά φοιτητές από διαφορετικά backgrounds με κοινό στόχο τη δημιουργία εκπαιδευτικών και ψυχαγωγικών παιχνιδιών. Η ομάδα προσφέρει hands-on εμπειρία στα στάδια παραγωγής ενός παιχνιδιού — από τον προγραμματισμό και το game design μέχρι τη μουσική, τα γραφικά και την αφήγηση."
@@ -87,7 +87,7 @@ export const ai =
         "name_short": "A.I.",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/AI SG.png`,
+        "logo": `${imagesUrl}/SG/AI-SG.png`,
         "info": {
             "gr": {
                 "description": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects."
@@ -104,7 +104,7 @@ export const naval =
         "name_short": "Naval",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/Naval SG.png`,
+        "logo": `${imagesUrl}/SG/Naval-SG.png`,
         "info": {
             "gr": {
                 "description": "Το Naval SG επικεντρώνεται στην εφαρμογή τεχνολογίας αιχμής στον τομέα της ναυτιλίας. Μέσα από projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων και βιώσιμων λύσεων για το μέλλον των πλοίων και των θαλάσσιων μεταφορών."
@@ -121,7 +121,7 @@ export const energy =
         "name_short": "Energy",
         "wallpaper": "/assets/photos/Energy.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/Energy SG.png`,
+        "logo": `${imagesUrl}/SG/Energy-SG.png`,
         "info": {
             "gr": {
                 "description": "Το Energy Scientific Group είναι μια ομάδα η οποία έχει ως σκοπό την διεξαγωγή ομαδικών εργασιών (Projects) σχετικά με το αντικείμενο της ενέργειας: Ηλεκτρικές Μηχανές, Ηλεκτρονικά Ισχύος, Ανανεώσιμες Πηγές Ενέργειας και ότι άλλο σχετικό. Τα Projects είναι τόσο αναπτυξιακού χαρακτήρα, όσο και εκπαιδευτικού.Τυχόν ενδιαφερόμενοι μπορούν να φέρουν ιδέες για Project που θα τους ενδιέφερε να ασχοληθούν."
@@ -138,7 +138,7 @@ export const energy =
         "name_short": "Electronics",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/Electronics SG.png`,
+        "logo": `${imagesUrl}/SG/Electronics-SG.png`,
         "info": {
             "gr": {
                 "description": "Το Electronics SG ασχολείται με τον σχεδιασμό, την ανάπτυξη και την κατασκευή συστημάτων που βασίζονται σε μικροελεγκτές, ενσωματωμένα κυκλώματα και hardware τεχνολογίες. Η ομάδα επικεντρώνεται στη δημιουργία πρακτικών λύσεων σε τομείς όπως η ρομποτική, το IoT, η αυτοκίνηση και τα βιομηχανικά συστήματα."
@@ -155,7 +155,7 @@ export const energy =
         "name_short": "Metaverse",
         "wallpaper": "/assets/photos/energy-project.jpg",
         "images": ["/projects/notifier.jpg"],
-        "logo": `${imagesUrl}/SG/Metaverse SG.png`,
+        "logo": `${imagesUrl}/SG/Metaverse-SG.png`,
         "info": {
             "gr": {
                 "description": "Το Metaverse SG επικεντρώνεται στην έρευνα και ανάπτυξη σε τομείς όπως η Εικονική (VR), Επαυξημένη (AR), Μικτή (MR) και Επεκταμένη Πραγματικότητα (XR), με εφαρμογές σε gaming, εκπαίδευση, remote engineering και αεροναυτική. Η ομάδα λειτουργεί σε συνεργασία με το Metaverse Hub του εργαστηρίου CoNSeRT του Πανεπιστημίου Δυτικής Αττικής, προσφέροντας πρόσβαση σε προηγμένες υποδομές, βιομηχανική τεχνογνωσία και διασύνδεση με διεθνή δίκτυα."
@@ -165,7 +165,112 @@ export const energy =
             }
         }
   };
-
+export const electronics_projects = [
+      {
+            "index": "0",
+            "name": "IEEEDuino Project",
+            "description": "Ανάπτυξη και κατασκευή Arduino-based συστημάτων και εφαρμογών που θα συμμετάσχουν στον διαγωνισμό IEEEduino. Το project συνδυάζει hardware και software, δίνοντας στα μέλη πρακτική εμπειρία σε πραγματικές συνθήκες ανάπτυξης.",
+            "tags": [{ name: "C/C++" },{ name: "Arduino" },{ name: "Embedded Systems" },{ name: "Competition" }],
+            "image": "/assets/images/IEEEDuino.jpg",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  },
+    {
+            "index": "2",
+            "name": "Autonomous Fixed-Wing UAV",
+            "description": "Το UAV Project στοχεύει στη σχεδίαση και κατασκευή ενός αυτόνομου fixed-wing drone, ικανού να εκτελεί ακριβείς αποστολές μεταφοράς μικρών φορτίων σε μεγάλες αποστάσεις. Μέρος των συστημάτων (όπως custom flight controller, PCB, και αεροδυναμικό πλαίσιο) θα σχεδιαστεί και θα υλοποιηθεί εξ ολοκλήρου από την ομάδα.",
+            "tags": [{ name: "PCB" },{ name: "MATLAB/Simulink" }, { name: "CAD/CFD Design Tools" }, { name: "Sensors" }],
+            "image": "/assets/images/IEEEDuino.jpg",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  }
+]
+export const software_projects = [
+    {
+            "index": "0",
+            "name": "IEEE SB UniWA Website",
+            "description": "AI-powered σύστημα που παρακολουθεί τη διατροφή, την προπόνηση και την απόδοση αθλητών, παρέχοντας εξατομικευμένες συστάσεις για συνεχή βελτίωση.",
+            "tags": [{ name: "Next.js" },{ name: "Traefik" },{ name: "Elysia.js" },{ name: "MongoDB" },{ name: "Docker" }],
+            "image": "/assets/images/IEEE-SB-Website.jpg",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  },
+    {
+            "index": "2",
+            "name": "Competitive Programming",
+            "description": "AI-powered σύστημα που παρακολουθεί τη διατροφή, την προπόνηση και την απόδοση αθλητών, παρέχοντας εξατομικευμένες συστάσεις για συνεχή βελτίωση.",
+            "tags": [{ name: "Greedy Algorithms" },{ name: "IEEEXtreme" }, { name: "Dynamic Programming" }],
+            "image": "/assets/images/CompProgThumbnail.jpg",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  },
+    {
+            "index": "3",
+            "name": "My UniWA Schedule",
+            "description": "AI-powered σύστημα που παρακολουθεί τη διατροφή, την προπόνηση και την απόδοση αθλητών, παρέχοντας εξατομικευμένες συστάσεις για συνεχή βελτίωση.",
+            "tags": [{ name: "Android" }, { name: "React.js" },{ name: "ASP.NET" }],
+            "image": "/assets/images/.jpg",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  },
+    {
+            "index": "4",
+            "name": "UniWA Parking",
+            "description": "AI-powered σύστημα που παρακολουθεί τη διατροφή, την προπόνηση και την απόδοση αθλητών, παρέχοντας εξατομικευμένες συστάσεις για συνεχή βελτίωση.",
+            "tags": [{ name: "Node.js" }, { name: "Python OpenCV" },{ name: "Python FastAPI" },{ name: "YOLO v5" }],
+            "image": "/assets/images/PARKING-UNIWA.png",
+            "links": "https://ai-sg-uniwa.streamlit.app/milon"
+  },
+]
+export const naval_projects =[
+    {
+            "index": "0",
+            "name": "AcquaMind",
+            "description": "Έξυπνος AI βοηθός για μηχανικούς πλοίων, που υποστηρίζει τη διάγνωση και ιχνηλάτηση βλαβών με βάση δεδομένα λειτουργίας και manuals. Αναλύει δεδομένα σε πραγματικό χρόνο και βελτιστοποιεί τη συντήρηση μέσω predictive analytics.",
+            "tags": [{ name: "AI Assistant"} ],
+            "image": "/assets/images/AquaMindThumbnail.jpeg",
+            "links": ["https://ai-sg-uniwa.streamlit.app/milon"]
+  },
+    {
+            "index": "1",
+            "name": "CleanSea",
+            "description": "Αυτόνομο ηλεκτρικό σκάφος καθαρισμού θαλάσσιων επιφανειών, με φωτοβολταϊκή τροφοδοσία και συστήματα αναγνώρισης εμποδίων.Μια βιώσιμη λύση για καθαρότερους ωκεανούς και λιμάνια.",
+            "tags": [{ name: "Sensing"}, { name: "Cleanup Vessel"} ],
+            "image": "/assets/images/CleanSeaThumbnail.png",
+            "links": ["https://ai-sg-uniwa.streamlit.app/milon"]
+  },
+  {
+            "index": "2",
+            "name": "HydroNav",
+            "description": "Έξυπνο οικοσύστημα σπιτιού με αισθητήρες και AI, το οποίο φροντίζει για ανθρώπους, φυτά και κατοικίδια, προάγοντας υγεία και ευεξία.",
+            "tags": [{ name: "sonar"}, { name: "radar"}, { name: "Submarine Mapping"}],
+            "image": "/assets/images/HydroNavThumbnail.png",
+            "links": ["https://ai-sg-uniwa.streamlit.app/estia"]
+  },
+  
+]
+export const ai_projects = [
+  {
+            "index": "0",
+            "name": "Milon",
+            "description": "AI-powered σύστημα που παρακολουθεί τη διατροφή, την προπόνηση και την απόδοση αθλητών, παρέχοντας εξατομικευμένες συστάσεις για συνεχή βελτίωση.",
+            "tags": [{ name: "Food Recognition & Classification"}, { name: "Exercise Analytics"} ],
+            "image": "/assets/images/MilonThumbnail.png",
+            "links": ["https://ai-sg-uniwa.streamlit.app/milon"]
+  },
+  {
+            "index": "1",
+            "name": "Estia",
+            "description": "Έξυπνο οικοσύστημα σπιτιού με αισθητήρες και AI, το οποίο φροντίζει για ανθρώπους, φυτά και κατοικίδια, προάγοντας υγεία και ευεξία.",
+            "tags": [{ name: "Plant Disease Detection"}, { name: "Smart Home"}],
+            "image": "/assets/images/EstiaThumbnail.png",
+            "links": ["https://ai-sg-uniwa.streamlit.app/estia"]
+  },
+]
+export const gamedev_projects = [
+  {
+      "index": "0",
+      "name": "Cyber-Quest",
+      "description": "Ανάπτυξη εκπαιδευτικού 2D παιχνιδιού για παιδιά δημοτικού με θέμα την ασφάλεια στο διαδίκτυο. Μέσα από διαδραστικές αποστολές, οι μαθητές μαθαίνουν πώς να προστατεύονται online, να αναγνωρίζουν κινδύνους και να υιοθετούν καλές πρακτικές για ασφαλή χρήση του διαδικτύου. Ακόμα οι εκπαιδευτικοί μπορούν να το αξιοποιήσουν ως εργαλείο για πιο ενεργό και ευχάριστο μάθημα πληροφορικής.",
+      "tags": [{ name: "GDScript" },{ name: "Photoshop" },{ name: "Aseprite" },{ name: "Godot" } ,{ name: "Pixelorama" } ],
+      "image": "/assets/images/CyberQuestThumbnail.jpeg"
+  }
+]
 export const energy_projects = [
           {
             "index": "0",
@@ -188,7 +293,7 @@ export const energy_projects = [
             "name": "Semiconductor Measurement Chart",
             "description": "Δημιουργία ενός Χάρτη - Οδηγού Μέτρησης Ημιαγωγών, ως χρήσιμο εργαλείο αναφοράς για φοιτητές και τεχνικούς.",
             "tags": [{ name: "Semiconductors" }],
-            "image": "/assets/images/Reverse-Engineering-Thumbnail.jpg",
+            "image": "/assets/images/Semiconductor-map-thumbnail.png",
             "links": "/"
           },
           {
@@ -214,7 +319,7 @@ export const SG= [
             "title": "Software",
             "text": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο.",
             "iconUrl": `${imagesUrl}/SG/Software.png`,
-            "imageUrl": `${imagesUrl}/SG/Software SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Software-SG.png`,
             "color": "software"
           },
           {
@@ -222,7 +327,7 @@ export const SG= [
             "title": "Biomed",
             "text": "Το Biomed SG είναι μια διεπιστημονική ομάδα με στόχο την έρευνα και ανάπτυξη λύσεων στον τομέα της βιοϊατρικής τεχνολογίας. Μέσα από συνεργασία, πειραματισμό και πρακτική εφαρμογή, τα μέλη εξερευνούν καινοτόμες ιδέες που συμβάλλουν στην υγεία και την ποιότητα ζωής.",
             "iconUrl": `${imagesUrl}/SG/Biomed.png`,
-            "imageUrl": `${imagesUrl}/SG/Biomed SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Biomed-SG.png`,
              "color": "biomed"
           },
           {
@@ -230,7 +335,7 @@ export const SG= [
             "title": "Electronics",
             "text": "Το Electronics SG ασχολείται με τον σχεδιασμό, την ανάπτυξη και την κατασκευή συστημάτων που βασίζονται σε μικροελεγκτές, ενσωματωμένα κυκλώματα και hardware τεχνολογίες. Η ομάδα επικεντρώνεται στη δημιουργία πρακτικών λύσεων σε τομείς όπως η ρομποτική, το IoT, η αυτοκίνηση και τα βιομηχανικά συστήματα.",
             "iconUrl": `${imagesUrl}/SG/Electronics.png`,
-            "imageUrl": `${imagesUrl}/SG/Electronics SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Electronics-SG.png`,
             "color": "electronics"
           }
           ,
@@ -239,7 +344,7 @@ export const SG= [
             "title": "Game Development",
             "text": "Το GameDev SG φέρνει κοντά φοιτητές από διαφορετικά backgrounds με κοινό στόχο τη δημιουργία εκπαιδευτικών και ψυχαγωγικών παιχνιδιών. Η ομάδα προσφέρει hands-on εμπειρία στα στάδια παραγωγής ενός παιχνιδιού — από τον προγραμματισμό και το game design μέχρι τη μουσική, τα γραφικά και την αφήγηση.",
             "iconUrl": `${imagesUrl}/SG/GameDev.png`,
-            "imageUrl": `${imagesUrl}/SG/GameDev SG.png`,
+            "imageUrl": `${imagesUrl}/SG/GameDev-SG.png`,
             "color": "gamedev"
           },
           {
@@ -247,7 +352,7 @@ export const SG= [
             "title": "Metaverse",
             "text": "Το Metaverse SG επικεντρώνεται στην έρευνα και ανάπτυξη σε τομείς όπως η Εικονική (VR), Επαυξημένη (AR), Μικτή (MR) και Επεκταμένη Πραγματικότητα (XR), με εφαρμογές σε gaming, εκπαίδευση, remote engineering και αεροναυτική.",
             "iconUrl": `${imagesUrl}/SG/Meta.png`,
-            "imageUrl": `${imagesUrl}/SG/Metaverse SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Metaverse-SG.png`,
             "color": "metaverse"
           },
           {
@@ -255,7 +360,7 @@ export const SG= [
             "title": "Naval",
             "text": "Το Naval SG επικεντρώνεται στην εφαρμογή τεχνολογίας αιχμής στον τομέα της ναυτιλίας. Μέσα από projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων και βιώσιμων λύσεων για το μέλλον των πλοίων και των θαλάσσιων μεταφορών.",
             "iconUrl": `${imagesUrl}/SG/Naval.png`,
-            "imageUrl": `${imagesUrl}/SG/Naval SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Naval-SG.png`,
             "color": "naval"
           },
           {
@@ -263,7 +368,7 @@ export const SG= [
             "title": "Energy",
             "text": "Το Energy SG ασχολείται με την εφαρμοσμένη τεχνολογία στους τομείς της ηλεκτρικής ενέργειας, των ανανεώσιμων πηγών, των ηλεκτρικών μηχανών και της βελτιστοποίησης ενεργειακών συστημάτων. Η ομάδα υλοποιεί projects με τεχνικό, αναπτυξιακό και εκπαιδευτικό χαρακτήρα, συνδέοντας τις γνώσεις της σχολής με την πράξη.",
             "iconUrl": `${imagesUrl}/SG/Energy.png`,
-            "imageUrl": `${imagesUrl}/SG/Energy SG.png`,
+            "imageUrl": `${imagesUrl}/SG/Energy-SG.png`,
             "color": "energy"
           },
           {
@@ -271,7 +376,7 @@ export const SG= [
             "title": "Artificial Intelligence",
             "text": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects.",
             "iconUrl": `${imagesUrl}/SG/AI.png`,
-            "imageUrl": `${imagesUrl}/SG/AI SG.png`,
+            "imageUrl": `${imagesUrl}/SG/AI-SG.png`,
             "color": "ai"
           }
         ]

@@ -9,7 +9,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  links,
   themeClass,
 }) => {
   return (
@@ -28,10 +28,10 @@ const ProjectCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black-100/90 via-black-100/70 to-transparent"></div>
 
         {/* Links */}
-        {source_code_link && (
+        {links && links[0] && (
           <div className="absolute inset-0 flex justify-end m-3">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(links[0], "_blank")}
               className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -66,7 +66,7 @@ const Projects = ({ projectList, themeClass }) => {
   const [progress, setProgress] = useState(0);
 
   const splideOptions = {
-    type: 'loop',
+    type: 'splide',
     perPage: 3,
     perMove: 1,
     gap: '1.75rem',
@@ -75,12 +75,12 @@ const Projects = ({ projectList, themeClass }) => {
     arrows: false,
     breakpoints: {
       1024: { perPage: 3 },
-      640: { perPage: 2 },
+      640: { perPage: 1 },
     },
   };
 
   return (
-    <section className="bg-black-100 py-20" id="projects">
+    <section className="bg-black-100 py-20 bg-[url('/assets/images/Blue-Fade.svg')] bg-cover bg-center bg-no-repeat" id="projects">
       <div className="container mx-auto px-4 relative">
         <div className="mb-12">
           <h6 className="text-4xl font-bold text-p4 font-poppins lg:hidden">PROJECTS</h6>
@@ -88,9 +88,9 @@ const Projects = ({ projectList, themeClass }) => {
             <h6 className="text-4xl font-bold text-p4 font-poppins">PROJECTS</h6>
 
             {/* Progress Bar */}
-            <div className="flex-1 h-[3px] bg-gray-700 overflow-hidden">
+            <div className="flex-1 h-[2px] bg-gray-800">
               <div
-                className={`h-full bg-${themeClass} transition-all duration-300`}
+                className={`h-full transition-all duration-300 bg-gradient-${themeClass}`}
                 style={{ width: `${progress * 100}%` }}
               />
             </div>
@@ -113,7 +113,12 @@ const Projects = ({ projectList, themeClass }) => {
           </div>
         </div>
 
-        <Splide ref={splideRef} options={splideOptions} aria-label="Focus Cards Carousel">
+        <Splide ref={splideRef} options={splideOptions} aria-label="Focus Cards Carousel"
+          onMove={(splide) => {
+          const current = splide.index;
+          const total = splide.length;
+          setProgress((current + 1) / total);
+          }}>
           {projectList && projectList.length > 0 ? (
             projectList.map((project, index) => (
               <SplideSlide key={`project-${index}`}>

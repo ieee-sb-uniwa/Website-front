@@ -8,6 +8,9 @@ module.exports = {
 	],
 	safelist: [
 		{
+		pattern: /bg-gradient-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)(\/30)?/,
+		},
+		{
 		pattern: /hover:border-gradient-(ai|electronics|telecom|software|energy|gamedev|biomed|naval|metaverse|ieee|sb)/,
 		},
 		{

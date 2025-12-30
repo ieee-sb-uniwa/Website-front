@@ -2,7 +2,7 @@
 'use client';
 import PropTypes from "prop-types";
 import Hyperlink from "@components/ui/Hyperlink";
-import { isValidISODate,formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
+import { isValidISODate,formatDate, formatTime, hasDatePassed } from "@lib/utils";
 import { PiCalendarDotsFill, PiMapPinAreaFill, PiClockFill} from 'react-icons/pi'; 
 import { useTranslations } from 'next-intl';
 import Link from "@node_modules/next/link";

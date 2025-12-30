@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { naval } from '@constants/constants';
+import { naval,naval_projects } from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
 const Page = () => {
@@ -12,8 +12,8 @@ const Page = () => {
   return (
     <>
       <ScientificGroupIntro groupData={navalData} />
-      <div id="projects">
-        <Projects />
+      <div id="projects" >
+        <Projects projectList={naval_projects} themeClass={navalData.themeClass}/>
       </div>
     </>
   )

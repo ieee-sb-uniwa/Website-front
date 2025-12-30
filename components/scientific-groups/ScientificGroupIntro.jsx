@@ -7,7 +7,6 @@ const ScientificGroupIntro = ({ groupData }) => {
   if (!groupData) {
     return null;
   }
-
   const {
     name,
     name_short,
@@ -84,7 +83,7 @@ const ScientificGroupIntro = ({ groupData }) => {
           
           {/* Description */}
           <div className="my-14">
-              <p className="body-1 max-xl:body-2 max-sm:body-3 text-p4 leading-relaxed">
+              <p className="xl:body-1 lg:body-2 max-md:body-3 text-p4 leading-relaxed">
                 {info?.en?.description}
               </p>
           </div>

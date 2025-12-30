@@ -1,5 +1,6 @@
 import ClipPath from "./ClipPath";
 import Image from "next/image";
+import Hyperlink from "./Hyperlink";
 
 const Benefits = ({ benefits, cardsWidth }) => {
   return (
@@ -27,6 +28,15 @@ const Benefits = ({ benefits, cardsWidth }) => {
                 />
                 <h5 className="h6 mb-5 text-p4">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
+    
+                 {/* <Hyperlink 
+                 key={index} 
+                 href={item.href} 
+                 className='uppercase text-p4'
+                 >
+                  Explore more
+                </Hyperlink> */}
+
               </div>
               <div
                 className="absolute inset-0.5 bg-n-8"

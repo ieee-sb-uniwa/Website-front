@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import {gamedev} from '@constants/constants';
+import {gamedev, gamedev_projects} from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
 
@@ -13,8 +13,8 @@ const Page = () => {
   return (
     <>
       <ScientificGroupIntro groupData={gamedevData} />
-      <div id="projects">
-        <Projects />
+      <div id="projects" >
+        <Projects projectList={gamedev_projects} themeClass={gamedevData.themeClass}/>
       </div>
     </>
   )
