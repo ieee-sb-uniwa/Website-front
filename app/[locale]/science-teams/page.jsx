@@ -1,9 +1,15 @@
 
 import React from 'react'
 import WorkInProgress from "@/components/WorkInProgress";
-import {SG} from "@/constants/constants"
-import Benefits from "@/components/ui/Benefits"
-const Page = () => {
+import {SG} from "@/constants/constants";
+import {getAllSG} from "@actions/getAllScientificGroups";
+import Benefits from "@/components/ui/Benefits";
+import { mapSGAPIResponseToBenefitsFormat } from "@/lib/utils";
+
+const Page = async ({ params }) => {
+  const locale = (await params).locale; 
+  const SGApiResponse = await getAllSG(locale);
+  const SG = mapSGAPIResponseToBenefitsFormat(SGApiResponse);
   return (
     <section>
         <div className='container relative z-2 py-28'>
