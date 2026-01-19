@@ -6,17 +6,6 @@ export const sponsors= [
   { title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
 ];
 
-export const scientificGroupsLogos= [
-   { title: "AI", img: `${imagesUrl}/SG/AI-SG.png`, url: "/science-teams/ai", imgWidth:800, imgHeight:500}, 
-  { title: "Electronics", img: `${imagesUrl}/SG/Electronics-SG.png`, url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
-   {title: "Naval",img:`${imagesUrl}/SG/Naval-SG.png`, url: "/science-teams/naval" , imgWidth:800, imgHeight:500},
-  { title: "Game Development", img: `${imagesUrl}/SG/GameDev-SG.png`, url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
-  { title: "Biomedical", img: `${imagesUrl}/SG/Biomed-SG.png`, url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  { title: "Software", img: `${imagesUrl}/SG/Software-SG.png`, url: "/science-teams/software", imgWidth:800, imgHeight:500},  
-  { title: "Metaverse", img: `${imagesUrl}/SG/Metaverse-SG.png`, url: "/science-teams/metaverse", imgWidth:800, imgHeight:500},  
-  { title: "Energy", img: `${imagesUrl}/SG/Energy-SG.png`, url: "/science-teams/energy", imgWidth:800, imgHeight:500}
-];
-
 export const collageList = [
     {url: `${imagesUrl}/join_collage/collage1.jpg`,title: "Biomedical Workshop" },
     {url: `${imagesUrl}/join_collage/collage2.jpg`,title: "ExCom Meeting" },
@@ -313,73 +302,7 @@ export const energy_projects = [
             "links": "/"
           }
 ]
-export const SG= [
-          {
-            "id": "0",
-            "title": "Software",
-            "text": "Το Software SG είναι η ομάδα που εστιάζει στην εκμάθηση προγραμματισμού, την ανάπτυξη λογισμικού και την έρευνα σε αλγορίθμους. Μέσα από πρακτικά projects και συμμετοχή σε διαγωνισμούς, τα μέλη χτίζουν ισχυρές βάσεις στην επίλυση προβλημάτων και τον σύγχρονο software engineering κύκλο.",
-            "iconUrl": `${imagesUrl}/SG/Software.png`,
-            "imageUrl": `${imagesUrl}/SG/Software-SG.png`,
-            "color": "software"
-          },
-          {
-            "id": "1",
-            "title": "Biomed",
-            "text": "Το Biomed SG είναι μια διεπιστημονική ομάδα με στόχο την έρευνα και ανάπτυξη λύσεων στον τομέα της βιοϊατρικής τεχνολογίας. Μέσα από συνεργασία, πειραματισμό και πρακτική εφαρμογή, τα μέλη εξερευνούν καινοτόμες ιδέες που συμβάλλουν στην υγεία και την ποιότητα ζωής.",
-            "iconUrl": `${imagesUrl}/SG/Biomed.png`,
-            "imageUrl": `${imagesUrl}/SG/Biomed-SG.png`,
-             "color": "biomed"
-          },
-          {
-            "id": "2",
-            "title": "Electronics",
-            "text": "Το Electronics SG ασχολείται με τον σχεδιασμό, την ανάπτυξη και την κατασκευή συστημάτων που βασίζονται σε μικροελεγκτές, ενσωματωμένα κυκλώματα και hardware τεχνολογίες. Η ομάδα επικεντρώνεται στη δημιουργία πρακτικών λύσεων σε τομείς όπως η ρομποτική, το IoT, η αυτοκίνηση και τα βιομηχανικά συστήματα.",
-            "iconUrl": `${imagesUrl}/SG/Electronics.png`,
-            "imageUrl": `${imagesUrl}/SG/Electronics-SG.png`,
-            "color": "electronics"
-          }
-          ,
-          {
-            "id": "3",
-            "title": "Game Development",
-            "text": "Το GameDev SG φέρνει κοντά φοιτητές από διαφορετικά backgrounds με κοινό στόχο τη δημιουργία εκπαιδευτικών και ψυχαγωγικών παιχνιδιών. Η ομάδα προσφέρει hands-on εμπειρία στα στάδια παραγωγής ενός παιχνιδιού — από τον προγραμματισμό και το game design μέχρι τη μουσική, τα γραφικά και την αφήγηση.",
-            "iconUrl": `${imagesUrl}/SG/GameDev.png`,
-            "imageUrl": `${imagesUrl}/SG/GameDev-SG.png`,
-            "color": "gamedev"
-          },
-          {
-            "id": "4",
-            "title": "Metaverse",
-            "text": "Το Metaverse SG επικεντρώνεται στην έρευνα και ανάπτυξη σε τομείς όπως η Εικονική (VR), Επαυξημένη (AR), Μικτή (MR) και Επεκταμένη Πραγματικότητα (XR), με εφαρμογές σε gaming, εκπαίδευση, remote engineering και αεροναυτική.",
-            "iconUrl": `${imagesUrl}/SG/Meta.png`,
-            "imageUrl": `${imagesUrl}/SG/Metaverse-SG.png`,
-            "color": "metaverse"
-          },
-          {
-            "id": "5",
-            "title": "Naval",
-            "text": "Το Naval SG επικεντρώνεται στην εφαρμογή τεχνολογίας αιχμής στον τομέα της ναυτιλίας. Μέσα από projects που συνδυάζουν ναυπηγική, ηλεκτρολογία, μηχανολογία και τεχνητή νοημοσύνη, στοχεύει στην ανάπτυξη έξυπνων και βιώσιμων λύσεων για το μέλλον των πλοίων και των θαλάσσιων μεταφορών.",
-            "iconUrl": `${imagesUrl}/SG/Naval.png`,
-            "imageUrl": `${imagesUrl}/SG/Naval-SG.png`,
-            "color": "naval"
-          },
-          {
-            "id": "6",
-            "title": "Energy",
-            "text": "Το Energy SG ασχολείται με την εφαρμοσμένη τεχνολογία στους τομείς της ηλεκτρικής ενέργειας, των ανανεώσιμων πηγών, των ηλεκτρικών μηχανών και της βελτιστοποίησης ενεργειακών συστημάτων. Η ομάδα υλοποιεί projects με τεχνικό, αναπτυξιακό και εκπαιδευτικό χαρακτήρα, συνδέοντας τις γνώσεις της σχολής με την πράξη.",
-            "iconUrl": `${imagesUrl}/SG/Energy.png`,
-            "imageUrl": `${imagesUrl}/SG/Energy-SG.png`,
-            "color": "energy"
-          },
-          {
-            "id": "7",
-            "title": "Artificial Intelligence",
-            "text": "Η ομάδα επικεντρώνεται στην ανάπτυξη καινοτόμων λύσεων Τεχνητής Νοημοσύνης που απαντούν σε πραγματικές ανάγκες. Τα μέλη αποκτούν πρακτική εμπειρία σε σύγχρονα εργαλεία και τεχνολογίες του industry, υλοποιώντας end-to-end projects.",
-            "iconUrl": `${imagesUrl}/SG/AI.png`,
-            "imageUrl": `${imagesUrl}/SG/AI-SG.png`,
-            "color": "ai"
-          }
-        ]
+
 export const heroImages = [
   `${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`,
   `${imagesUrl}/wallpapers/incubation_centre.jpg`,

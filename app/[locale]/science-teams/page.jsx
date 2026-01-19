@@ -5,23 +5,25 @@ import {SG} from "@/constants/constants";
 import {getAllSG} from "@actions/getAllScientificGroups";
 import Benefits from "@/components/ui/Benefits";
 import { mapSGAPIResponseToBenefitsFormat } from "@/lib/utils";
+import { getTranslations } from 'next-intl/server';
+import PageIntro from "@/components/ui/PageIntro";
 
 const Page = async ({ params }) => {
   const locale = (await params).locale; 
   const SGApiResponse = await getAllSG(locale);
+  const t = await getTranslations('ScientificGroups');
   const SG = mapSGAPIResponseToBenefitsFormat(SGApiResponse);
   return (
-    <section>
-        <div className='container relative z-2 py-28'>
-            <div>
-                <h3 className='h3 max-md:h5 max-w-640 max-lg:max-w-lg text-p4 mb-7'>Scientific Groups</h3>
-                <p className='body-1 max-sm:body-2 max-lg:max-w-lg'></p>
-                    
-            </div>
-            <Benefits benefits={SG} cardsWidth={21}/>
-         </div>
-
-    </section>
+    <>
+      <PageIntro
+         heading={t('heading')}
+         subheading={t('paragraph')}
+         bgImage="/assets/photos/energy-project.jpg"
+      />
+      <div className='container relative z-2 py-6'>
+       <Benefits benefits={SG} cardsWidth={21}/>
+      </div>
+    </>
   );
 }
 

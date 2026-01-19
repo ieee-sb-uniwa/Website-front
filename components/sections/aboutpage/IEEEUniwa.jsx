@@ -32,7 +32,7 @@ const IEEEUniwa = () => {
 
             {/* Goal Cards */}
             <div className="flex flex-wrap gap-6 mt-10">
-              <Benefits benefits={t.raw('benefitsIEEEUniwa')} cardsWidth={15} />
+              <Benefits benefits={t.raw('benefitsIEEEUniwa')} cardsWidth={16} />
             </div>
           </section>
         </div>
