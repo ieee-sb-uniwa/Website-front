@@ -274,5 +274,13 @@
         ],
         "imageAlt" : "World Map showing the 8 Regions of IEEE"
       }
+    },
+    "ContactPage": {
+      "heading": "Contact Us",
+      "subheading": "",
+      "option_1": "SOCIAL MEDIA",
+      "option_2": "LOCATION",
+      "follow_us_title": "Follow us",
+      "follow_us_text": "Connect with us and become part of our growing community!"
     }
   }
