@@ -3,7 +3,7 @@ import CardsCollection from '@components/events/CardsCollection';
 import { getAllThirdPartyEvents } from '@actions/events/getAllThirdPartyEvents';
 import React from 'react'
 
-export default async function SbEvents({ params, searchParams }) {
+export default async function ThirdPartyEvents({ params, searchParams }) {
   const query = (await searchParams).query;
   const locale = (await params).locale; 
   const fetchParams = { search: query || null };

@@ -12,11 +12,11 @@ const IEEEUniwa = () => {
         <h3 className="h3 text-center green_gradient mb-12">
           {t('heading')}
         </h3>
-          <CTA
+          {/* <CTA
             backgroundImage="/assets/photos/ourHistory.jpg"
             heading= {story('heading')}
             paragraph={story('paragraph')}
-          />
+          /> */}
         <div className="ieee-uniwa-grid">
           {/* Left Side: Vertical Title */}
           <h4 className="max-lg:hidden goals-title grid-title text-s3">
@@ -32,7 +32,7 @@ const IEEEUniwa = () => {
 
             {/* Goal Cards */}
             <div className="flex flex-wrap gap-6 mt-10">
-              <Benefits benefits={t.raw('benefitsIEEEUniwa')} cardsWidth={15} />
+              <Benefits benefits={t.raw('benefitsIEEEUniwa')} cardsWidth={15}/>
             </div>
           </section>
         </div>

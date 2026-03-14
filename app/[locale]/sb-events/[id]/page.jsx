@@ -121,8 +121,8 @@ const Page = async ({params}) => {
           <Image 
             src={`${event.thumbnail}`}
             alt="event thumbnail"
-            width={1000}
-            height={1000}
+            width={600}
+            height={600}
             className="w-full h-full max-sm:max-h-[300px] min-h-[300px] object-cover object-center lg:rounded-lg"
           />
           {/* event title and keywords */}
