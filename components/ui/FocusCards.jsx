@@ -14,7 +14,7 @@ export const CardLogo = React.memo(({
   index, 
   hovered, 
   setHovered, 
-  showTitles = true, // Default to true
+  showTitles = false, 
   openInNewTab
 }) => {
   return (  
@@ -73,7 +73,7 @@ export function FocusCards({ cards, showTitles = true, openInNewTabs }) {
           index={index}
           hovered={hovered}
           setHovered={setHovered}
-          showTitles={showTitles}
+          showTitle={showTitles}          
           openInNewTab={openInNewTabs}
         />
       ))}

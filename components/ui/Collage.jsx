@@ -41,7 +41,7 @@ export default function TeamCollage({ images = [] }) {
               <Image
                 src={safeImages[0]?.url || placeholderImage}
                 alt={safeImages[0]?.title || ""}
-                width={1000}
+                width={800}
                 height={1000}
                 className="w-full h-full object-cover"
               />
@@ -55,7 +55,7 @@ export default function TeamCollage({ images = [] }) {
               <Image
                 src={safeImages[1]?.url || placeholderImage}
                 alt={safeImages[1]?.title || ""}
-                width={1000}
+                width={800}
                 height={1000}
                 className="w-full h-full object-cover"
               />
@@ -65,7 +65,7 @@ export default function TeamCollage({ images = [] }) {
               <Image
                 src={safeImages[2]?.url || placeholderImage}
                 alt={safeImages[2]?.title || ""}
-                width={1000}
+                width={800}
                 height={1000}
                 className="w-full h-full object-cover"
               />

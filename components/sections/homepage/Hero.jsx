@@ -1,11 +1,11 @@
 'use client';
-import React, { useState } from "react";
+import React from "react";
 import {useTranslations} from 'next-intl';
 import Button from '../../ui/Button.jsx';
 import {Link} from '@/i18n/navigation';
 import { GiRead } from "react-icons/gi";
 import { heroImages } from '@constants/constants.js';
-import { Splide, SplideSlide,SplideTrack} from '@splidejs/react-splide';
+import { Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/splide/css';
 
 export const Hero = () => {
@@ -32,14 +32,14 @@ export const Hero = () => {
   >
     {/* Background Slider (using Splide directly here) */}
     {heroImages.map((image, index) => (
+    
       <SplideSlide key={index}>
       <section
         className="relative w-full h-screen pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }} 
       >
-
       {/* MASK OVERLAY */}
-      <div className="absolute inset-0 bg-black/50 z-2 "></div>
+      <div className="absolute inset-0 bg-black/50 z-2"></div>
       {/* HERO CONTENT */}
       <div className="container">
         <div className="relative z-2 max-w-512 max-lg:max-w-388">

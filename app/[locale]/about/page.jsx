@@ -7,7 +7,7 @@ import {getCouncil, getCounselor} from "@actions/getCouncil";
 import {getTranslations} from 'next-intl/server';
 import Team from '@components/sections/team/Team';
 import MapWrapper from '@components/sections/map/MapWrapper';
-import CTA from '@components/sections/aboutpage/CTA';
+import ReusableCTA from '@components/sections/aboutpage/CTA'
 
 async function Page(props) {
   const params = await props.params;
@@ -82,14 +82,15 @@ async function Page(props) {
         buttonIcon='/assets/icons/students.svg'
   />
   <IEEEUniwa/>
-  <CTA
+  <ReusableCTA
       backgroundImage={`${imagesUrl}/wallpapers/IEEEXTREME_18.0.jpg`}
       heading={t('heading')}
       paragraph={t('paragraph')}
       buttonText={t('ctaButtonText')}
-      buttonIcon="/assets/icons/people-add.svg"
       buttonLink="/join"
-   />
+      buttonIcon="/assets/icons/people-add.svg"
+      overlayOpacity={50}
+   /> 
   <Team team={council} translationsComponent={CouncilTranslations}/>
   <Team team={counselor} translationsComponent={CounselorTranslations}/>
   <div className='g4'><MapWrapper/></div>
