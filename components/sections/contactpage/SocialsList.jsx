@@ -20,14 +20,14 @@ const SocialsList = ({ socials }) => {
         </p>
       </div>
 
-      {/* Socials List */}
+      {/* Socials Grid */}
       <div className="w-full flex justify-center mb-12">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className='flex flex-col gap-6 w-max min-w-[240px]' 
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 w-fit' 
         >
           {socials.map((social, index) => (
             <motion.div 
