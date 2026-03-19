@@ -2,6 +2,7 @@ import Hyperlink from "@components/ui/Hyperlink";
 const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
 
 export const sponsors= [
+<<<<<<< feature/sponsors
   // Top
   {title: "B&T Composites", img:"/assets/logos/sponsors/BT2.svg", url: "https://www.bt-composites.gr/" , imgWidth:'', imgHeight:'', scale: 1.3}, 
   
@@ -19,26 +20,30 @@ export const sponsors= [
   // Unknown - Bronze?
   {title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358, scale: 1},
   {title: "Αγροκτήματα Κιθαιρώνα", img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130, scale: 1},
+=======
+  {title: "Αγροκτήματα Κιθαιρώνα",img:"/assets/logos/sponsors/kitheronfarms.png", url: "https://www.kitheronfarms.gr" , imgWidth:230, imgHeight:130},
+  {title: "Mathisys Technologies Hellas", img: "/assets/logos/sponsors/MATHISYS_2024.png", url: "https://www.mathisys-hellas.com", imgWidth:5069, imgHeight:1358}, 
+>>>>>>> develop
 ];
 
 export const scientificGroupsLogos= [
-  { title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:800, imgHeight:500}, 
-  { title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
+  {title: "Web", img: "/assets/logos/scientific_groups/web.svg", url: "/science-teams/web", imgWidth:800, imgHeight:500}, 
+  {title: "Electronics", img: "/assets/logos/scientific_groups/electronics.svg", url: "/science-teams/electronics", imgWidth:800, imgHeight:500}, 
   {title: "Telecommunications",img:"/assets/logos/scientific_groups/telecom.svg", url: "/science-teams/telecom" , imgWidth:800, imgHeight:500},
-  { title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
-  { title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/biomed.svg", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
-  { title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
-  { title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
+  {title: "Game Development", img: "/assets/logos/scientific_groups/gamedev.svg", url: "/science-teams/gamedev", imgWidth:800, imgHeight:500}, 
+  {title: "Biomedical Engineering", img: "/assets/logos/scientific_groups/biomed.svg", url: "/science-teams/biomed", imgWidth:800, imgHeight:500}, 
+  {title: "Competitive Programming", img: "/assets/logos/scientific_groups/competitive programming.svg", url: "/science-teams/comp-prog", imgWidth:800, imgHeight:500},  
+  {title: "Energy", img: "/assets/logos/scientific_groups/energy.svg", url: "/science-teams/energy", imgWidth:800, imgHeight:500}, 
 ];
 
 export const collageList = [
-    {url: `${imagesUrl}/join_collage/collage1.jpg`,title: "Biomedical Workshop" },
-    {url: `${imagesUrl}/join_collage/collage2.jpg`,title: "ExCom Meeting" },
+    {url: `${imagesUrl}/join_collage/collage1.jpg`,title: "Biomedical Workshop"},
+    {url: `${imagesUrl}/join_collage/collage2.jpg`,title: "ExCom Meeting"},
     {url: `${imagesUrl}/join_collage/collage3.JPG`,title: "IEEEXtreme 17.0"},
     {url: `${imagesUrl}/join_collage/collage4.jpg`,title: "Stelios Foundation SB Presentation"},
     {url: `${imagesUrl}/join_collage/collage5.jpg`,title: "IEEEXplore Research and Publishing Event"},
     {url: `${imagesUrl}/join_collage/collage6.jpg`,title: "IEEE Open Day"},
-    {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza" }
+    {url: `${imagesUrl}/join_collage/collage7.jpg`,title: "IEEEXtreme 18.0 Pizza"}
 ];
 
 export const heroImages = [
