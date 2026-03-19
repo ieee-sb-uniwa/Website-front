@@ -41,6 +41,7 @@ export const CardLogo = React.memo(({
             width={card.imgWidth || 100}
             height={card.imgHeight || 100}
             className="object-contain max-h-full"
+            style={{ transform: `scale(${card.scale || 1})` }}
           />
         </div>
         
