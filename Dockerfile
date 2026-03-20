@@ -1,17 +1,16 @@
 # Use official Node.js image as the base image
-FROM node:20-alpine AS base
+FROM node:lts-alpine3.22
 
-# Install dependencies only when needed
-FROM base AS deps
-RUN apk add --no-cache libc6-compat
+# Set working directory
 WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm ci
 
-# Rebuild the source code only when needed
-FROM base AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+# Copy package.json and package-lock.json first to leverage caching
+COPY package.json package-lock.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application
 COPY . .
 
 ARG NEXT_PUBLIC_API_URL
@@ -20,30 +19,15 @@ ARG NEXT_PUBLIC_IMAGES_STORAGE_URL
 ENV NEXT_PUBLIC_API_URL ${NEXT_PUBLIC_API_URL}
 ENV NEXT_PUBLIC_IMAGES_STORAGE_URL ${NEXT_PUBLIC_IMAGES_STORAGE_URL}
 
+# Build the Next.js app
 RUN npm run build
 
-# Production image, copy all the files and run next
-FROM base AS runner
-WORKDIR /app
-
+# Set environment variables
 ENV NODE_ENV production
-
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder /app/public ./public
-
-# Automatically leverage output traces to reduce image size
-# https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-USER nextjs
-
-EXPOSE 3000
-
 ENV PORT 3000
 
+# Expose the port the app runs on
+EXPOSE 3000
+
 # Start the Next.js app
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
