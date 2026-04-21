@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import Button from '@components/ui/Button';
@@ -12,7 +14,7 @@ const ScientificGroupIntro = ({ groupData }) => {
     name_short,
     logo,
     wallpaper,
-    info,
+    description,
     themeClass 
   } = groupData;
 
@@ -84,7 +86,7 @@ const ScientificGroupIntro = ({ groupData }) => {
           {/* Description */}
           <div className="my-14">
               <p className="xl:body-1 lg:body-2 max-md:body-3 text-p4 leading-relaxed">
-                {info?.en?.description}
+                {description}
               </p>
           </div>
           <div onClick={scrollToProjects} className="cursor-pointer">

@@ -1,14 +1,15 @@
+"use client"
 import React, { useState, useRef} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { cn } from "@/lib/utils";
 import { LuArrowBigLeftDash,LuArrowBigRightDash } from "react-icons/lu";
 const ProjectCard = ({
-  index,
+  _id,
   name,
   description,
-  tags,
-  image,
+  technologies,
+  thumbnail,
   links,
   themeClass,
 }) => {
@@ -22,7 +23,7 @@ const ProjectCard = ({
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover/card:scale-110"
-          style={{ backgroundImage: `url(${image})` }}
+          style={{ backgroundImage: `url(${thumbnail})` }}
         ></div>
 
         <div className="absolute inset-0 bg-gradient-to-t from-black-100/90 via-black-100/70 to-transparent"></div>
@@ -45,17 +46,16 @@ const ProjectCard = ({
 
         <div className="mt-auto z-1">
           <div className="project-tags">
-            {tags.map((tag) => (
+            {technologies.map((technology) => (
               <span
-                key={`${name}-${tag.name}`}
+                key={`${technology}`}
                 className={`tag bg-${themeClass} text-[14px]`}
               >
-                {tag.name}
+                {technology}
               </span>
             ))}
           </div>
           <h3 className="text-p4 font-bold text-[22px] my-3">{name}</h3>
-          {/* <p className="mt-2 text-secondary text-[14px]">{description}</p> */}
         </div>
       </div>
     </div>
@@ -115,14 +115,14 @@ const Projects = ({ projectList, themeClass }) => {
 
         <Splide ref={splideRef} options={splideOptions} aria-label="Focus Cards Carousel"
           onMove={(splide) => {
-          const current = splide.index;
+          const current = splide._id;
           const total = splide.length;
           setProgress((current + 1) / total);
           }}>
           {projectList && projectList.length > 0 ? (
-            projectList.map((project, index) => (
-              <SplideSlide key={`project-${index}`}>
-                <ProjectCard index={index} {...project} themeClass={themeClass} />
+            projectList.map((project, _id) => (
+              <SplideSlide key={`project-${_id}`}>
+                <ProjectCard index={_id} {...project} themeClass={themeClass} />
               </SplideSlide>
             ))
           ) : (

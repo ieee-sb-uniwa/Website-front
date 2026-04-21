@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { FocusCardsCarousel, FocusCards } from "@/components/ui/FocusCards";
 import Button from "@components/ui/Button";
 import { MdScience } from "react-icons/md";
- 
+
 
 const ScienceGroupsOverview = ({ scientificGroupsLogos }) => {
   const t = useTranslations('ScientificGroups');
