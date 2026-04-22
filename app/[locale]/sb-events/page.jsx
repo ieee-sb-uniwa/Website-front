@@ -19,10 +19,11 @@ export default async function SbEvents({ params, searchParams }) {
         heading={eventsTranslations("heading")}
         subheading={eventsTranslations("subheading")}
       />
+      
       <section className='container'>
         <div className='flex w-full flex-col gap-5 md:flex-row'>
-            {/* <SearchForm query={query} placeholder={"What event do you want to attend?"} /> */}
-            {/* <CategoryFilter/> */}
+           {/* <SearchForm query={query} placeholder={"What event do you want to attend?"} /> 
+             <CategoryFilter/> */}
         </div>
  
         <CardsCollection events={events} locale={locale} eventsType={'sb-events'} />
