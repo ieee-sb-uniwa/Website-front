@@ -210,7 +210,8 @@
             "text": "Projects based on a wide range of fields, such as Machine Learning, Robotics, Internet of Things and many others.",
             "iconUrl": "/assets/icons/team.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color":"sb"
+            "color":"sb",
+            "href": "/science-teams"
           },
           {
             "id": "1",
@@ -218,7 +219,8 @@
             "text": "Events open to everyone, aimed at raising awareness and expanding knowledge.",
             "iconUrl": "/assets/icons/graduation-cap.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color":"sb"
+            "color":"sb",
+            "href": "/sb-events"
           },
           {
             "id": "2",
@@ -226,7 +228,8 @@
             "text": "Participation in local and global competitions.",
             "iconUrl": "/assets/icons/medal.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color":"sb"
+            "color":"sb",
+            "href": "/about"
           }
         ]
       }

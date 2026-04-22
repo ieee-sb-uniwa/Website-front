@@ -217,7 +217,8 @@
             "text": "Εργα βασισμένα σε ένα ευρύ φάσμα τομέων όπως η μηχανική μάθηση, η ρομποτική, το διαδίκτυο των αντικειμένων και πολλούς άλλους.",
             "iconUrl": "/assets/icons/team.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color": "sb"
+            "color": "sb",
+            "href": "/science-teams"
           },
           {
             "id": "1",
@@ -225,7 +226,8 @@
             "text": "Εκδηλώσεις ανοιχτές σε όλους με στόχο την ενημέρωση και την διεύρυνση των γνώσεων.",
             "iconUrl": "/assets/icons/graduation-cap.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color": "sb"
+            "color": "sb",
+            "href": "/sb-events"
           },
           {
             "id": "2",
@@ -233,7 +235,8 @@
             "text": "Συμμετέχουμε τόσο σε τοπικούς όσο και παγκόσμιους διαγωνισμούς.",
             "iconUrl": "/assets/icons/medal.svg",
             "imageUrl": "/assets/logos/sblogo-white.svg",
-            "color": "sb"
+            "color": "sb",
+            "href": "/about"
           }
         ]
       }
