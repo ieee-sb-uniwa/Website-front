@@ -10,6 +10,7 @@ const ProjectCard = ({
   description,
   technologies,
   thumbnail,
+  status,
   links,
   themeClass,
 }) => {
@@ -20,6 +21,21 @@ const ProjectCard = ({
           `cursor-pointer overflow-hidden relative h-96 border-transparent border-[2px] hover:border-gradient-${themeClass} shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4`
         )}
       >
+      {/* Status Badge */}
+        {status && (
+          <div className="absolute top-3 left-3 z-10">
+            <span
+              className={cn(
+                "tag text-[14px]",
+                status === "Active"
+                  ? "bg-green-500 text-white"
+                  : "bg-gray-500 text-white"
+              )}
+            >
+              {status === "Active" ? "Active" : "Inactive"}
+            </span>
+          </div>
+        )}
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover/card:scale-110"
