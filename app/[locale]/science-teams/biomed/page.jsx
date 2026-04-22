@@ -1,9 +1,12 @@
-'use client';
 import React from 'react';
-import { biomed } from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
+import Projects from '@components/scientific-groups/Projects';
+import { getSGByName, getProjectsBySG } from '@actions/getAllScientificGroups'; 
 
-const Page = () => {
+const Page = async ({params}) => {
+  const locale = params.locale; 
+  const biomed = await getSGByName(locale, 'BioMed');
+  const biomed_projects = await getProjectsBySG(locale, 'BioMed');
   const biomedData = {
     ...biomed,
     themeClass: 'biomed'
@@ -12,7 +15,9 @@ const Page = () => {
   return (
     <>
       <ScientificGroupIntro groupData={biomedData} />
-
+      <div id="projects">
+        <Projects projectList={biomed_projects} themeClass={biomedData.themeClass}/>
+      </div>
     </>
   );
 };

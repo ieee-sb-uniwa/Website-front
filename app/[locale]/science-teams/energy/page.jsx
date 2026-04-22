@@ -1,11 +1,12 @@
-'use client';
 import React from 'react';
-import {energy} from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
-import { energy_projects } from '@constants/constants';
+import { getSGByName, getProjectsBySG } from '@actions/getAllScientificGroups'; 
 
-const Page = () => {
+const Page = async ({params}) => {
+  const locale = params.locale; 
+  const energy = await getSGByName(locale, 'Energy');
+  const energy_projects = await getProjectsBySG(locale, 'Energy');
   const energyData = {
     ...energy,
     themeClass: 'energy'

@@ -1,10 +1,12 @@
-'use client';
 import React from 'react';
-import {software, software_projects} from '@constants/constants';
 import ScientificGroupIntro from '@components/scientific-groups/ScientificGroupIntro';
 import Projects from '@components/scientific-groups/Projects';
+import { getSGByName, getProjectsBySG } from '@actions/getAllScientificGroups'; 
 
-const Page = () => {
+const Page = async ({params}) => {
+  const locale = params.locale; 
+  const software = await getSGByName(locale, 'Software');
+  const software_projects = await getProjectsBySG(locale, 'Software');
   const softwareData = {
     ...software,
     themeClass: 'software'
