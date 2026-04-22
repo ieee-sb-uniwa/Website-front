@@ -5,23 +5,22 @@ const imagesStorageUrl = new URL(process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    env: {
+        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+        NEXT_PUBLIC_IMAGES_STORAGE_URL: process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL,
+    },
     images: {
         remotePatterns: [
           {
-            protocol: imagesStorageUrl.protocol.replace(':', ''), // Ensure protocol format
+            protocol: imagesStorageUrl.protocol.replace(':', ''),
             hostname: imagesStorageUrl.hostname,
-            port: imagesStorageUrl.port || '', // Include port if present
-            pathname: '/**', // Allow all paths under images storage
+            port: imagesStorageUrl.port, 
+            pathname: '/**',
           },
         ],
-      },
+      }
       // experimental : {
       //    ppr: 'incremental'
       // },
-      env: {
-        NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-        NEXT_PUBLIC_IMAGES_STORAGE_URL: process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL,
-      },
 };
- 
 module.exports = withNextIntl(nextConfig);

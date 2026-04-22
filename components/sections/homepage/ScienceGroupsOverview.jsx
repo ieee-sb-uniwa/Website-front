@@ -1,12 +1,12 @@
 import React from 'react'
-import { scientificGroupsLogos } from "@/constants/constants.js";
 import { useTranslations } from 'next-intl';
-import { FocusCardsCarousel } from "@/components/ui/FocusCards";
+import { FocusCardsCarousel, FocusCards } from "@/components/ui/FocusCards";
 import Button from "@components/ui/Button";
 import { MdScience } from "react-icons/md";
 import { Link } from '@i18n/navigation';
 
-const ScienceGroupsOverview = () => {
+
+const ScienceGroupsOverview = ({ scientificGroupsLogos }) => {
   const t = useTranslations('ScientificGroups');
   return (
     <section className="bg-[url('/assets/photos/energy-project.jpg')] bg-cover bg-center bg-no-repeat relative bg-s1">
@@ -22,11 +22,23 @@ const ScienceGroupsOverview = () => {
                     {t('paragraph')}
                   </p>
               </header>
-              <FocusCardsCarousel 
-                cards={scientificGroupsLogos} 
-                showTitles={true}
-                openInNewTabs={false} 
-              />
+              {
+                scientificGroupsLogos.length > 4 ? (
+                  <FocusCardsCarousel 
+                    cards={scientificGroupsLogos} 
+                    showTitles={true}
+                    openInNewTabs={false} 
+                  />
+                ) : (
+                  <div className='mb-14'>
+                    <FocusCards 
+                      cards={scientificGroupsLogos}  
+                      showTitles={true} 
+                      openInNewTabs={false} 
+                    />
+                  </div>
+                )
+              }
           </div>
           <div className='py-7'>
             <Link href="/science-teams">
