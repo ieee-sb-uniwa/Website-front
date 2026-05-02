@@ -1,12 +1,14 @@
 import Hyperlink from "@components/ui/Hyperlink";
 const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_STORAGE_URL;
 
+
 export const sponsors = [
-  // Top
+  // Elite
   {
     title: "B&T Composites",
     img: "/assets/logos/sponsors/BT2.svg",
     url: "https://www.bt-composites.gr/",
+    tier: "elite",
     imgWidth: "",
     imgHeight: "",
     scale: 1.3,
@@ -17,6 +19,7 @@ export const sponsors = [
     title: "ALFASOLID Works",
     img: "/assets/logos/sponsors/alfasolid.png",
     url: "https://alfasolid.gr/",
+    tier: "platinum",
     imgWidth: "",
     imgHeight: "",
     scale: 3,
@@ -27,6 +30,7 @@ export const sponsors = [
     title: "Altium",
     img: "/assets/logos/sponsors/altium-white.png",
     url: "https://www.altium.com/",
+    tier: "gold",
     imgWidth: "",
     imgHeight: "",
     scale: 1.1,
@@ -37,6 +41,7 @@ export const sponsors = [
     title: "Aytokollita",
     img: "/assets/logos/sponsors/aytokollita.png",
     url: "https://www.aytokollita.gr/",
+    tier: "bronze",
     imgWidth: "",
     imgHeight: "",
     scale: 1.1,
@@ -45,6 +50,7 @@ export const sponsors = [
     title: "Σχήμα.gr",
     img: "/assets/logos/sponsors/sxhma.png",
     url: "https://sxhma.gr/",
+    tier: "bronze",
     imgWidth: "",
     imgHeight: "",
     scale: 1.6,
@@ -53,16 +59,17 @@ export const sponsors = [
     title: "mysfragida",
     img: "/assets/logos/sponsors/mysfragida.avif",
     url: "https://mysfragida.gr/",
+    tier: "bronze",
     imgWidth: "",
     imgHeight: "",
     scale: 1.8,
   },
 
-  // Unknown - Bronze?
   {
     title: "Mathisys Technologies Hellas",
     img: "/assets/logos/sponsors/MATHISYS_2024.png",
     url: "https://www.mathisys-hellas.com",
+    tier: "gold",
     imgWidth: 5069,
     imgHeight: 1358,
     scale: 1,
@@ -71,6 +78,7 @@ export const sponsors = [
     title: "Αγροκτήματα Κιθαιρώνα",
     img: "/assets/logos/sponsors/kitheronfarms.png",
     url: "https://www.kitheronfarms.gr",
+    tier: "bronze",
     imgWidth: 230,
     imgHeight: 130,
     scale: 1,
