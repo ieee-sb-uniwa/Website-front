@@ -39,13 +39,13 @@ export const Sponsors = async () => {
               </header>
               <div className="flex flex-col gap-12">
                 {tierOrder.map((tier) => {
-                  if (!sponsors[tier] || sponsors[tier].length === 0) return null;
+                  if (!groupedSponsors[tier] || groupedSponsors[tier].length === 0) return null;
                   return (
                     <div key={tier} className={`border-4 rounded-xl p-8 ${tierStyles[tier].border}`}>
                       <h4 className={`text-2xl font-bold mb-8 uppercase tracking-widest ${tierStyles[tier].text}`}>
                         {tier}
                       </h4>
-                      <FocusCards cards={sponsors[tier]} showTitles={false} openInNewTabs={true}/>
+                      <FocusCards cards={groupedSponsors[tier]} showTitles={false} openInNewTabs={true}/>
                     </div>
                   );
                 })}
