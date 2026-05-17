@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 Clone the repository:
@@ -43,7 +41,6 @@ Open:
 ```txt
 http://localhost:3000
 ```
-
 ---
 
 ## Build for Production
@@ -54,11 +51,29 @@ npm start
 ```
 
 ---
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
+```txt
+project-root/
+│
+├── actions/             # API requests and server actions
+├── app/                 # Next.js App Router pages & layouts
+├── components/          # Reusable UI components
+├── constants/           # Static constants & configuration
+├── i18n/                # Localization configuration
+├── lib/                 # Utility functions & helpers
+├── messages/            # Translation JSON files
+├── public/              # Static assets
+├── styles/              # Global and custom styles
+│
+├── .env.local           # Environment variables
+├── middleware.js        # Middleware configuration
+├── next.config.js       # Next.js configuration
+├── package.json         # Dependencies and scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+└── README.md
+```
+---
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
