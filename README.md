@@ -76,35 +76,20 @@ project-root/
 ---
 ## Libraries & Tools
 
-### Core
+## Libraries & Documentation
 
-- Next.js
-- React
-- Tailwind CSS
-
-### UI Libraries
-
-- Material Tailwind
-- Aceternity UI
-
-### Sliders & Carousels
-
-- SplideJS
-
-### Internationalization
-
-- next-intl
-
-### Icons
-
-- Iconify
-- React Icons
-- Heroicons
-
-### Utilities
-
-- ESLint
-- PostCSS
+| Library / Tool | Purpose | Documentation |
+|---|---|---|
+| Next.js | React framework for SSR & App Router | https://nextjs.org/docs |
+| Tailwind CSS | Utility-first CSS framework | https://tailwindcss.com/ |
+| next-intl | Localization & internationalization | https://next-intl.dev/docs/getting-started/pages-router |
+| SplideJS | Sliders and carousels | https://splidejs.com/ |
+| Material Tailwind | Tailwind-based UI components | https://www.material-tailwind.com/ |
+| Aceternity UI | Modern animated UI components | https://ui.aceternity.com/ |
+| Iconify | Unified icon framework | https://iconify.design/ |
+| React Icons | Popular icon packs for React | https://react-icons.github.io/react-icons/ |
+| Heroicons | Free SVG icon library | https://heroicons.com/ |
+---
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
