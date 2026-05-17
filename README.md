@@ -74,6 +74,37 @@ project-root/
 └── README.md
 ```
 ---
+## Libraries & Tools
+
+### Core
+
+- Next.js
+- React
+- Tailwind CSS
+
+### UI Libraries
+
+- Material Tailwind
+- Aceternity UI
+
+### Sliders & Carousels
+
+- SplideJS
+
+### Internationalization
+
+- next-intl
+
+### Icons
+
+- Iconify
+- React Icons
+- Heroicons
+
+### Utilities
+
+- ESLint
+- PostCSS
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
