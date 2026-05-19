@@ -2,7 +2,7 @@
 import { notFound } from 'next/navigation';
 
 export async function getAllEventsByCategory(keywords, locale) {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const apiUrl = process.env.API_URL;
   // Determine the base endpoint based on the locale
   const baseEndpoint = locale === 'gr' ? 'events?lang=gr' : 'events?lang=en';
   
@@ -34,7 +34,7 @@ export async function getAllEventsByCategory(keywords, locale) {
 }
 
 export async function getAllThirdPartyByCategory(keywords, locale) {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const apiUrl = process.env.API_URL;
   // Determine the base endpoint based on the locale
   const baseEndpoint = locale === 'gr' ? 'thirdparty?lang=gr' : 'thirdparty?lang=en';
   

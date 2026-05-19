@@ -3,7 +3,7 @@
 import {notFound} from 'next/navigation';
 
 export async function getAllSG(locale) {
-	const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+	const apiUrl = process.env.API_URL;
 	const endpoint = locale === 'gr' ? 'scientific_groups?lang=gr' : 'scientific_groups?lang=en';
     try {
         // Fetch data from the API
@@ -22,7 +22,7 @@ export async function getAllSG(locale) {
 }
 
 export async function getSGByName(locale, name) {
-	const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+	const apiUrl = process.env.API_URL;
 	const endpoint = locale === 'gr' ? `scientific_groups/${name}?lang=gr` : `scientific_groups/${name}?lang=en`;
     try {
         // Fetch data from the API
@@ -41,7 +41,7 @@ export async function getSGByName(locale, name) {
 }
 
 export async function getProjectsBySG(locale, sgName) {
-	const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+	const apiUrl = process.env.API_URL;
 	const endpoint = locale === 'gr' ? `projects/sg/${sgName}?lang=gr` : `projects/sg/${sgName}?lang=en`;
     try {
         // Fetch data from the API

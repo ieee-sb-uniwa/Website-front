@@ -8,7 +8,7 @@ export async function getSBEventById(id, locale) {
         notFound();
         return;
     }
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = process.env.API_URL;
     if (!apiUrl) {
       throw new Error('API URL environment variable is not defined');
     }
@@ -44,7 +44,7 @@ export async function getThirdPartyEventById(id,locale) {
         notFound();
         return;
     }
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = process.env.API_URL;
     if (!apiUrl) {
       throw new Error('API URL environment variable is not defined');
     }
