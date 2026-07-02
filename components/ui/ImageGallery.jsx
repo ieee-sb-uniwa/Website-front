@@ -4,11 +4,13 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Image from "next/image";
 import { LuArrowBigLeftDash, LuArrowBigRightDash } from "react-icons/lu";
+import {useTranslations} from 'next-intl';
 
 const ImageGallery = ({ imageList, themeClass }) => {
     const splideRef = useRef(null);
     const [progress, setProgress] = useState(0);
-
+    const t = useTranslations("ProjectIdPage");
+    const [selectedImage, setSelectedImage] = useState(null);
     const splideOptions = {
         type: "splide",
         perPage: 3,
@@ -24,16 +26,14 @@ const ImageGallery = ({ imageList, themeClass }) => {
 
     return (
         <section
-            className="py-20"
-            id="images"
+            className="bg-black-100 py-20"
         >
             <div className="container mx-auto px-4 relative">
                 {/* Header */}
                 <div className="mb-12">
-                    <h6 className="text-4xl font-bold text-p4  lg:hidden">IMAGES</h6>
+                    <h3 className="h3 max-md:h5 uppercase text-p4 lg:hidden">{t('images')}</h3>
                     <div className="flex justify-center items-center gap-12 z-2 max-lg:hidden">
-                        <h6 className="text-4xl font-bold text-p4 ">IMAGES</h6>
-
+                        <h3 className="h3 max-md:h5 uppercase text-p4 ">{t('images')}</h3>
                         {/* Progress */}
                         <div className="flex-1 h-[2px] bg-gray-800">
                             <div
@@ -72,12 +72,13 @@ const ImageGallery = ({ imageList, themeClass }) => {
                     {imageList && imageList?.length > 0 ? (
                         imageList.map((img, index) => (
                             <SplideSlide key={index}>
-                                <div className="relative h-80 w-full overflow-hidden">
+                                <div className={`cursor-pointer overflow-hidden relative border-transparent border-[2px] hover:border-gradient-${themeClass} shadow-xl h-96 max-w-sm mx-auto flex flex-col justify-between p-4`}>
                                     <Image
                                         src={img}
                                         alt={`image-${index}`}
                                         fill
-                                        className="object-cover transition-transform duration-500"
+                                        className="object-cover absolute inset-0 bg-cover bg-center transition-transform duration-500 cursor-pointer hover:scale-110"
+                                        onClick={() => setSelectedImage(img)}
                                     />
                                 </div>
                             </SplideSlide>
@@ -90,6 +91,36 @@ const ImageGallery = ({ imageList, themeClass }) => {
                         </SplideSlide>
                     )}
                 </Splide>
+                {selectedImage && (
+                    <div
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <div className="relative max-w-5xl w-full p-4">
+                            <Image
+                                src={selectedImage}
+                                alt="Selected"
+                                width={1200}
+                                height={800}
+                                className="w-full h-auto object-contain"
+                            />
+
+                            {/* Close button */}
+                            <button
+                                className={`absolute top-4 -right-14 z-50 size-10 border-2 border-${themeClass} bg-black/60 flex items-center justify-center`}
+                                onClick={() => setSelectedImage(null)}
+                            >
+                                <Image
+                                    src="/assets/icons/close.svg"
+                                    alt="close"
+                                    width={18}
+                                    height={18}
+                                    className="object-contain"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                )}
             </div>
         </section>
     );

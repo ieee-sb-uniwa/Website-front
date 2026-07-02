@@ -8,10 +8,25 @@ import {getProjectById} from "@actions/projects/getProjectById";
 import StatusBadge from "@/components/ui/StatusBadge";
 import TechnologyTag from "@/components/ui/TechnologyTag";
 import ImageGallery from "@/components/ui/ImageGallery";
+import Hyperlink from "@components/ui/Hyperlink";
+import {getTranslations} from 'next-intl/server';
+import { FaExternalLinkAlt } from "react-icons/fa";
+import Button from "@components/ui/Button";
+import {MdOutlineWork} from "react-icons/md";
+const scrollToImages = () => {
+    const imagesSection = document.getElementById("images");
 
+    if (imagesSection) {
+        imagesSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+};
 const Page = async ({params}) => {
     const { id, locale } = await params;
     const project = await getProjectById(id, locale);
+    const t = await getTranslations("ProjectIdPage");
     if (!project) return notFound();
     const content = project?.description || "";
   return ( 
@@ -19,7 +34,7 @@ const Page = async ({params}) => {
     <section className="flex justify-center pt-36 max-md:pt-24 bg-contain flex-col items-center">
         <section className='container'>
             {/* Background Image */}
-            <div className="absolute inset-0 h-1/2">
+            <div className="absolute inset-0 h-1/3 sm:h-1/2">
                 <Image
                     src={project.thumbnail}
                     alt=""
@@ -41,9 +56,9 @@ const Page = async ({params}) => {
 
                 {/* Article Content */}
                 <div className="mt-10 text-center">
-                    <h1 className="h1 md:h3 font-bold text-p4">
+                    <h2 className="h2 max-md:h4 font-bold text-p4">
                         {project.name}
-                    </h1>
+                    </h2>
                     <hr className={`my-10 max-sm:my-5 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-p5 to-transparent opacity-75`}/>
 
                     <div className="mt-6 flex flex-wrap justify-center items-center gap-4">
@@ -60,9 +75,21 @@ const Page = async ({params}) => {
                                 themeClass={project.sg.toLowerCase()}
                             />
                         ))}
+                        {project.images?.length > 0 && (
+                            <>
+                                <div className="dot" />
+                                <Hyperlink
+                                    href="#project-images"
+                                    arrow={false}
+                                    className="scroll-smooth text-md text-p4"
+                                >
+                                    {t('view_images')}
+                                </Hyperlink>
+                            </>
+                        )}
                     </div>
                     {/* Project Description */}
-                    <div className="flex flex-col mt-6 gap-4 text-left">
+                    <div className="flex flex-col mt-6 gap-4 py-20 text-left">
                         {content ? (
                             <article className="prose prose-invert max-w-none body-1 max-md:body-2">
                                 <ReactMarkdown
@@ -81,10 +108,36 @@ const Page = async ({params}) => {
                             <p className="no-result">No details provided</p>
                         )}
                     </div>
+                    {/* Useful Links */}
+                    {project.links && project.links.length > 0 && (
+                        <div className="flex flex-col gap-6 pb-20">
+                            <h3 className="h3 max-md:h5 text-p4">{t('links')}</h3>
+                            <ul className="list-disc pl-6 space-y-6">
+                                {project.links.map((link, idx) => (
+                                    <li key={idx} className='flex items-center gap-4'>
+                                        <FaExternalLinkAlt className="text-p4" size={24} />
+                                        <Hyperlink
+                                            href="#"
+                                            arrow={false}
+                                            className="body-2 text-p4"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                scrollToImages();
+                                            }}
+                                        >
+                                            {link}
+                                        </Hyperlink>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+                    <div id="project-images" className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-black-100">
                         <ImageGallery
                             imageList={project.images}
                             themeClass={project.sg.toLowerCase()}
                         />
+                    </div>
                 </div>
             </div>
         </section>

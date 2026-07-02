@@ -82,7 +82,6 @@ const ProjectCard = ({
 const Projects = ({ projectList, themeClass }) => {
   const splideRef = useRef(null);
   const [progress, setProgress] = useState(0);
-
   const splideOptions = {
     type: 'splide',
     perPage: 3,
