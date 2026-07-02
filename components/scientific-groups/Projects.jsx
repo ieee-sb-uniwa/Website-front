@@ -2,8 +2,13 @@
 import React, { useState, useRef} from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { Link } from '@i18n/navigation';
 import { cn } from "@/lib/utils";
 import { LuArrowBigLeftDash,LuArrowBigRightDash } from "react-icons/lu";
+import StatusBadge from "@/components/ui/StatusBadge";
+import TechnologyTag from "@/components/ui/TechnologyTag";
+import Image from "next/image";
+
 const ProjectCard = ({
   _id,
   name,
@@ -16,6 +21,10 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="max-w-xs w-full group/card">
+       <Link
+         key={_id}
+         href={`/projects/${_id}`}
+       >
       <div
         className={cn(
           `cursor-pointer overflow-hidden relative h-96 border-transparent border-[2px] hover:border-gradient-${themeClass} shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4`
@@ -23,18 +32,9 @@ const ProjectCard = ({
       >
       {/* Status Badge */}
         {status && (
-          <div className="absolute top-3 left-3 z-10">
-            <span
-              className={cn(
-                "tag text-[14px]",
-                status === "Active"
-                  ? "bg-green-500 text-white"
-                  : "bg-gray-500 text-white"
-              )}
-            >
-              {status === "Active" ? "Active" : "Inactive"}
-            </span>
-          </div>
+            <div className="absolute top-3 left-3 z-10">
+              <StatusBadge status={status} />
+            </div>
         )}
         {/* Background image */}
         <div
@@ -49,12 +49,14 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3">
             <div
               onClick={() => window.open(links[0], "_blank")}
-              className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-black border-[1px] border-white/50 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              <Image
                 src="/assets/icons/link.svg"
                 alt="resources"
-                className="w-1/2 h-1/2 object-contain"
+                className="object-contain"
+                width={18}
+                height={18}
               />
             </div>
           </div>
@@ -63,17 +65,17 @@ const ProjectCard = ({
         <div className="mt-auto z-1">
           <div className="project-tags">
             {technologies.map((technology) => (
-              <span
-                key={`${technology}`}
-                className={`tag bg-${themeClass} text-[14px]`}
-              >
-                {technology}
-              </span>
+                <TechnologyTag
+                    key={technology}
+                    technology={technology}
+                    themeClass={themeClass}
+                />
             ))}
           </div>
           <h3 className="text-p4 font-bold text-[22px] my-3">{name}</h3>
         </div>
       </div>
+     </Link>
     </div>
   );
 };
@@ -96,7 +98,7 @@ const Projects = ({ projectList, themeClass }) => {
   };
 
   return (
-    <section className="bg-black-100 py-20 bg-[url('/assets/images/Blue-Fade.svg')] bg-cover bg-center bg-no-repeat" id="projects">
+    <section className="bg-black-100 py-20" id="projects">
       <div className="container mx-auto px-4 relative">
         <div className="mb-12">
           <h6 className="text-4xl font-bold text-p4 font-poppins lg:hidden">PROJECTS</h6>
@@ -114,14 +116,14 @@ const Projects = ({ projectList, themeClass }) => {
             {/* Arrows */}
             <button
               onClick={() => splideRef.current?.splide?.go('<')}
-              className={`p-2 bg-black-100 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
+              className={`p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
               aria-label="Previous"
             >
               <LuArrowBigLeftDash size={30} className={`text-${themeClass}/75`} />
             </button>
             <button
               onClick={() => splideRef.current?.splide?.go('>')}
-              className={`p-2 bg-black-100 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
+              className={`p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
               aria-label="Next"
             >
               <LuArrowBigRightDash size={30} className={`text-${themeClass}/75`} />

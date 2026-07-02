@@ -17,13 +17,15 @@
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.10",
-    "markdown-it": "^13.0.1",
     "next": "^15.3.2",
     "next-intl": "^3.26.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "react-scroll": "^1.9.3"
+    "react-markdown": "^10.1.0",
+    "react-scroll": "^1.9.3",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "eslint": "^8.57.1",

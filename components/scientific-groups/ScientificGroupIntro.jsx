@@ -3,7 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Button from '@components/ui/Button';
-import { MdOutlineWork } from "react-icons/md";
+import {MdOutlineWork, MdScience} from "react-icons/md";
+import {Link} from "../../i18n/navigation";
+import {GiRead} from "react-icons/gi";
 
 const ScientificGroupIntro = ({ groupData }) => {
   if (!groupData) {
@@ -89,8 +91,8 @@ const ScientificGroupIntro = ({ groupData }) => {
                 {description}
               </p>
           </div>
-          <div onClick={scrollToProjects} className="cursor-pointer">
-            <Button textClassName="text-p4 base-bold" icon={<MdOutlineWork size={30} color='white'/>}>PROJECTS</Button>
+          <div onClick={scrollToProjects} className="flex cursor-pointer">
+            <Button textClassName="text-p6 base-bold" icon={<MdOutlineWork size={30} color='white'/>}>PROJECTS</Button>
           </div>
         </div>
 
