@@ -115,14 +115,14 @@ const Projects = ({ projectList, themeClass }) => {
             {/* Arrows */}
             <button
               onClick={() => splideRef.current?.splide?.go('<')}
-              className={`p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
+              className={`rounded-lg p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
               aria-label="Previous"
             >
               <LuArrowBigLeftDash size={30} className={`text-${themeClass}/75`} />
             </button>
             <button
               onClick={() => splideRef.current?.splide?.go('>')}
-              className={`p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
+              className={`rounded-lg p-2 transition-colors border-[1px] border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
               aria-label="Next"
             >
               <LuArrowBigRightDash size={30} className={`text-${themeClass}/75`} />
