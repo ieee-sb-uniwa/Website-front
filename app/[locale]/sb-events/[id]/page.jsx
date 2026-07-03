@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import markdownit from "markdown-it";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import {getSBEventById} from "@actions/events/getEventById";
 import {getAllEventsByCategory} from "@actions/events/getEventsByCategory";
 import { isValidISODate, formatDate, formatTime, hasDatePassed, formatDate2Digits } from "@lib/utils";
@@ -14,8 +15,6 @@ import { RiHourglassFill } from "react-icons/ri";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import CardsCollection from '@components/events/CardsCollection';
 
-const md = markdownit();
-
 // export const experimental_ppr = true;
 
 const Page = async ({params}) => {
@@ -27,7 +26,7 @@ const Page = async ({params}) => {
   //Initiate both requests in parallel
   //const [event, relatedEvents] = await Promise.all([eventData, relatedEventsData])
   const relatedEvents = relatedEventsData.filter(relEvent => relEvent._id !== event._id )
-  const parsedContent = md.render(event?.description || "");
+
 
   const eventCardTranslations =  await getTranslations('EventCard');
   const eventTranslations =  await getTranslations('EventIdPage');
@@ -187,13 +186,14 @@ const Page = async ({params}) => {
         {/* Event Details */}
         <div className="flex flex-col gap-4">
           <h3 className="h4 max-md:h5 text-p4">{eventTranslations('event_details')}</h3>
-          {parsedContent ? (
-            <article
-              className="prose body-1 max-md:body-2 w-full break-words"
-              dangerouslySetInnerHTML={{ __html: parsedContent }}
-            />
+          {event?.description ? (
+              <article className="prose body-1 max-md:body-2 w-full break-words">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {event.description}
+                </ReactMarkdown>
+              </article>
           ) : (
-            <p className="no-result">No details provided</p>
+              <p className="no-result">No details provided</p>
           )}
         </div>
 

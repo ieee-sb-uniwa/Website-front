@@ -176,6 +176,11 @@
       "register_closed" : "ΟΙ ΕΓΓΡΑΦΕΣ ΕΧΟΥΝ ΚΛΕΙΣΕΙ",
       "related_events" : "ΣΧΕΤΙΚΕΣ ΕΚΔΗΛΩΣΕΙΣ"
     },
+    "ProjectIdPage":{
+      "images": "εικονες",
+      "links": "Σύνδεσμοι",
+      "view_images": "Εικόνες απο το πρότζεκτ"
+    },
     "ErrorPage": {
       "h4": "An exception was thrown... ",
       "paragraph": "Δοκιμάστε ανανεώνοντας αργότερα.",
