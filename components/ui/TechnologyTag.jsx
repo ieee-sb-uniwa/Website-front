@@ -8,7 +8,7 @@ const TechnologyTag = ({
     return (
         <span
             className={cn(
-                `inline-flex items-center px-3 py-1 text-xs font-semibold ring-1 bg-${themeClass} text-white ring-white/50`,
+                `inline-flex rounded-20 items-center px-3 py-1 text-xs font-semibold ring-1 bg-${themeClass} text-white ring-white/50`,
                 className
             )}
         >

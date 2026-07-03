@@ -44,7 +44,7 @@ const ImageGallery = ({ imageList, themeClass }) => {
                         {/* Arrows */}
                         <button
                             onClick={() => splideRef.current?.splide?.go("<")}
-                            className={`p-2  transition-colors border-[1px]  border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
+                            className={`p-2 transition-colors border-[1px]  border-${themeClass}/35 hover:border-gradient-${themeClass} duration-300`}
                         >
                             <LuArrowBigLeftDash size={30} className={`text-${themeClass}/75`} />
                         </button>
@@ -77,7 +77,7 @@ const ImageGallery = ({ imageList, themeClass }) => {
                                         src={img}
                                         alt={`image-${index}`}
                                         fill
-                                        className="object-cover absolute inset-0 bg-cover bg-center transition-transform duration-500 cursor-pointer hover:scale-110"
+                                        className="object-cover absolute rounded-[22px] inset-0 bg-cover bg-center transition-transform duration-500 cursor-pointer hover:scale-110"
                                         onClick={() => setSelectedImage(img)}
                                     />
                                 </div>
@@ -102,12 +102,12 @@ const ImageGallery = ({ imageList, themeClass }) => {
                                 alt="Selected"
                                 width={1200}
                                 height={800}
-                                className="w-full h-auto object-contain"
+                                className="rounded-[22px] object-contain"
                             />
 
                             {/* Close button */}
                             <button
-                                className={`absolute top-4 -right-14 z-50 size-10 border-2 border-${themeClass} bg-black/60 flex items-center justify-center`}
+                                className={`absolute top-4 rounded-[22px] -right-14 z-50 size-10 border-2 border-${themeClass} bg-black/60 flex items-center justify-center`}
                                 onClick={() => setSelectedImage(null)}
                             >
                                 <Image

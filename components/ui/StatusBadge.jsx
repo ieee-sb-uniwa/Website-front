@@ -8,7 +8,7 @@ const StatusBadge = ({ status, className = "" }) => {
 
     return (
         <span
-            className={`inline-flex items-center px-3 py-1 text-xs font-semibold ring-1 ${
+            className={`inline-flex rounded-20 items-center px-3 py-1 text-xs font-semibold ring-1 ${
                 isActive
                     ? "bg-green-800 text-white ring-green-500"
                     : "bg-gray-800 text-white ring-gray-500"

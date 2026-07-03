@@ -38,7 +38,7 @@ const ProjectCard = ({
         )}
         {/* Background image */}
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover/card:scale-110"
+          className="absolute rounded-[22px] inset-0 bg-cover bg-center transition-transform duration-500 group-hover/card:scale-110"
           style={{ backgroundImage: `url(${thumbnail})` }}
         ></div>
 
