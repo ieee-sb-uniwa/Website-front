@@ -1,25 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/ieee-sb-uniwa/Website-front.git
+```
+Move into the project folder:
+
+```bash
+cd project-name
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+---
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_API_URL=
+NEXT_PUBLIC_IMAGES_STORAGE_URL=
+```
+---
+
+## Running the Project
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Build for Production
 
+```bash
+npm run build
+npm start
+```
+
+---
+## Project Structure
+
+```txt
+project-root/
+│
+├── actions/             # API requests and server actions
+├── app/                 # Next.js App Router pages & layouts
+├── components/          # Reusable UI components
+├── constants/           # Static constants & configuration
+├── i18n/                # Localization configuration
+├── lib/                 # Utility functions & helpers
+├── messages/            # Translation JSON files
+├── public/              # Static assets
+├── styles/              # Global and custom styles
+│
+├── .env.local           # Environment variables
+├── middleware.js        # Middleware configuration
+├── next.config.js       # Next.js configuration
+├── package.json         # Dependencies and scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+└── README.md
+```
+---
+## Libraries & Tools
+
+## Libraries & Documentation
+
+| Library / Tool | Purpose | Documentation |
+|---|---|---|
+| Next.js | React framework for SSR & App Router | https://nextjs.org/docs |
+| Tailwind CSS | Utility-first CSS framework | https://tailwindcss.com/ |
+| next-intl | Localization & internationalization | https://next-intl.dev/docs/getting-started/pages-router |
+| SplideJS | Sliders and carousels | https://splidejs.com/ |
+| Material Tailwind | Tailwind-based UI components | https://www.material-tailwind.com/ |
+| Aceternity UI | Modern animated UI components | https://ui.aceternity.com/ |
+| Iconify | Unified icon framework | https://iconify.design/ |
+| React Icons | Popular icon packs for React | https://react-icons.github.io/react-icons/ |
+| Heroicons | Free SVG icon library | https://heroicons.com/ |
+---
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

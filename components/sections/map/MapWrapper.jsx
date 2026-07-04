@@ -21,7 +21,7 @@ const MapWrapper = () => {
               </h3>
             </div>
 
-            <p className="mb-10 body-1 mx-w-lg">
+            <p className="mb-10 body-1 max-w-lg">
               {t('location_details')}
             </p>
 
