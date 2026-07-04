@@ -37,7 +37,7 @@ export default async function RootLayout({ children, params }) {
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale} className={`${roboto.variable} ${poppins.variable}`}>
+    <html lang={locale} className={`${roboto.variable} ${poppins.variable} scroll-smooth`}>
       <body>    
         <NextIntlClientProvider messages={messages}>  
             <main className='overflow-hidden'>

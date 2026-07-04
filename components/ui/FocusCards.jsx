@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
 import { Link } from "@i18n/navigation";
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { cn } from "@/lib/utils";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { LuArrowBigLeftDash,LuArrowBigRightDash } from "react-icons/lu";
-import { useRef } from 'react';
 
 // Add default props with showTitles=true
 export const CardLogo = React.memo(({ 
