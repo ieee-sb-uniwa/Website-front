@@ -43,3 +43,19 @@ web/
 **Links keep the language.** Use `Link` from `@i18n/navigation`, not from `next/link`.
 
 **Imports use aliases:** `@components/...`, `@actions/...`, `@lib/...`, `@constants/...`.
+
+## Libraries we already use
+
+Before installing a new library, check whether one of these already does the job.
+
+| Need | Library |
+| --- | --- | 
+| UI text in Greek / English | [next-intl](https://next-intl.dev) | 
+| Icons | [react-icons](https://react-icons.github.io/react-icons/) (preferred), [Heroicons](https://heroicons.com) |
+| Animations | [Framer Motion](https://motion.dev) |
+| Carousels / sliders | [Splide](https://splidejs.com/integration/react-splide/) |
+| Rendering Markdown | [react-markdown](https://github.com/remarkjs/react-markdown) + `remark-gfm` + `rehype-raw` |
+| Combining class names | `cn()` from `@lib/utils` ([clsx](https://github.com/lukeed/clsx) + [tailwind-merge](https://github.com/dcastil/tailwind-merge)) |
+| Ready-made components | [Material Tailwind](https://www.material-tailwind.com/docs/react/installation) |
+
+The full list is in `package.json`.
