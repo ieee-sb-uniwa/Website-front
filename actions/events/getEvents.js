@@ -2,7 +2,7 @@
 import { notFound } from 'next/navigation';
 
 export async function getEvents(locale, numOfEvents) {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = process.env.API_URL;
     // Validate numOfEvents as a numeric value
     const parsedNumOfEvents = Number(numOfEvents);
     if (isNaN(parsedNumOfEvents) || parsedNumOfEvents <= 0) {
