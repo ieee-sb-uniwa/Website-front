@@ -4,7 +4,7 @@ import Projects from '@components/scientific-groups/Projects';
 import { getSGByName, getProjectsBySG } from '@actions/getAllScientificGroups'; 
 
 const Page = async ({params}) => {
-  const locale = params.locale; 
+  const {locale} = await params;
   const electronics = await getSGByName(locale, 'Electronics');
   const electronics_projects = await getProjectsBySG(locale, 'Electronics');
   const electronicsData = {
